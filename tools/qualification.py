@@ -46,9 +46,14 @@ def main():
             expected = 'PASS' if kind == 'positive' else 'FAIL'
             if result['status'] != expected or len(result['modes']) != 4:
                 raise RuntimeError('Qualification control did not produce expected '+expected)
+            if any(mode['plain'] != expected for mode in result['modes']):
+                raise RuntimeError('Every ordinary checker mode must produce '+expected)
+            if kind == 'positive' and any(mode.get('covered') != 'PASS' for mode in result['modes']):
+                raise RuntimeError('Positive instrumented control must pass every mode')
             outcomes.append({'control':kind,'expected_status':expected,'result':result})
         u=resource.getrusage(resource.RUSAGE_CHILDREN)
-        result={'status':'PASS','scope':'Synthetic checker controls, not upstream defects or full-corpus results',
+        result={'status':'PASS','scope':'Synthetic controls: negative cases test the ordinary checker only; positive case includes coverage. Not upstream defects or full-corpus results',
+                'tool_sha256':q.sha(Path(__file__)),
                 'upstream_base':pin,'controls':outcomes,'child_cpu_seconds':u.ru_utime+u.ru_stime,
                 'wall_seconds':time.monotonic()-started}
         q.save(root/'result.json',result)

@@ -3,7 +3,6 @@
   "profile": "gcc-linux-x86_64",
   "errno": 1,
   "functions_tested": 25,
-  "four_mode_replays_including_instrumented": 200,
   "processed_tests_including_repeats": 137352424,
   "fully_covered_target_files": [
     "rsqrt",
@@ -41,7 +40,7 @@
   "coverage_candidate": {
     "function": "asinpi",
     "row": "0x1.8p+0",
-    "state": "tested; independent review pending",
+    "state": "tested; source-reviewed; not submitted or accepted upstream",
     "before_arcs": [
       75,
       76
@@ -97,5 +96,14 @@
         "status": "PASS"
       }
     }
-  ]
+  ],
+  "fresh_clone": {
+    "commit": "452de585a810502abf6d4a917b0004b9dcb88559",
+    "function": "rsqrt",
+    "status": "PASS",
+    "source_download": "fresh pinned Git blobs",
+    "coverage_matches_primary_baseline": true,
+    "selftests": 14
+  },
+  "checker_executions": 200
 }

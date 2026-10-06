@@ -34,7 +34,8 @@ but not benchmarked; binary16 cbrt and binary64 pow changes are outside this
 
 ## Coverage census
 
-Target `.c` files only. Header/helper coverage is excluded from these totals.
+Target `.c` files only. Helpers attributed to separate headers are excluded;
+helper definitions inside the target `.c` file are included.
 The denominator is compiled code in this precise configuration; preprocessor-
 excluded paths are not counted. Raw gaps are never subtracted merely because
 an earlier review classified a similar path as unreachable.
@@ -76,6 +77,17 @@ then missing arcs, then function name. The complete ranked queue is in the
 receipt. It identifies a small measured gap, not necessarily the easiest proof.
 Keep the selected target active until it is closed or deliberately deferred.
 
+`asinpi` and `sin` tie at zero missing lines and one missing arc. The stated
+alphabetical tiebreak selects `asinpi`, where a simple witness is available.
+Changed-code review is a separate priority: sine received full replay and
+coverage checks this time rather than waiting behind the cleanup target.
+
+The equal cos/tan deficits (59 lines, 51 arcs) were checked against their distinct
+source hashes, raw reports and different denominators. The missing lines occur
+in corresponding fixed-point helper definitions inside each `.c` file; the
+missing arcs include different function-specific entries. They are independent
+measurements, not a copied total.
+
 ## First coverage candidate
 
 The selected `asinpi` gap is reachable. Adding **`0x1.8p+0`** (1.5, with the
@@ -99,7 +111,9 @@ classified as unreachable from lack of hits.
 The single missing outcome is the `h == 0` arm at
 [sin.c:96](https://gitlab.inria.fr/core-math/core-math/-/blob/e78b460c41e5e155f45a5ff824140b81c84f55cc/src/binary64/sin/sin.c#L96) in `u128_tod`,
 where `h = r >> 64`. It asks whether the accurate path can reach this helper
-with a nonzero fixed-point integer below 2^64. A useful next investigation is
+with a fixed-point integer below 2^64, including whether zero is excluded by the
+caller. The helper assumes nonzero input; passing zero would violate that
+precondition. A useful next investigation is
 to connect the caller's range and near-zero bounds to that condition, or find
 a public `cr_sin` input that exercises it. Calling the helper directly would
 not establish reachability from the public function.
@@ -139,7 +153,7 @@ Mac and native Windows remain unqualified; Windows users can use the tested WSL 
 - Other precisions and nonpriority functions were inventoried, not tested here.
 - Reconcile old coverage dispositions against current source/profile before
   reopening or calling an unchanged gap new.
-- The asinpi coverage-only witness is ready for independent review and optional
+- The asinpi coverage-only witness is source-reviewed and ready for optional
   upstream pickup. Retain that target until adopted or deliberately deferred.
 - Independent review, additional profile checks and fresh-clone replay are
   recorded in RELEASE-REVIEW.md before publication.

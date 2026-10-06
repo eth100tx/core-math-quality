@@ -36,7 +36,9 @@ def main():
             if not line.strip() or line.startswith('#'):
                 continue
             try: values.append(float.fromhex(line.strip()) if '0x' in line.lower() else float(line.strip()))
-            except ValueError: pass  # special NaN spellings are handled upstream
+            except ValueError:
+                if line.strip().lower() not in ('snan','+snan','-snan'):
+                    raise RuntimeError('Unrecognized corpus row: '+line)
         assert not any(abs(x)==1.5 for x in values), 'Witness already present; review candidate status'
         wc.write_text(old+ROW)
         q.save(changed/'manifest.json', {'files':{p.relative_to(changed).as_posix():q.sha(p) for p in changed.rglob('*') if p.is_file() and p.name!='manifest.json'}})

@@ -18,8 +18,9 @@ repository and does not certify the library's correctness.
 3. **Measure gaps.** Collect GCC coverage separately by build configuration;
    retain raw uncovered lines and branch outcomes.
 4. **Pick one target.** Prefer the function closest to measured coverage closure.
-   Keep it assigned until closed or deliberately deferred. Always prioritize
-   a newly changed function that needs investigation.
+   Keep it assigned until closed or deliberately deferred. Review newly changed
+   functions alongside this list: urgent regression investigation takes
+   precedence, while coverage cleanup retains one explicit target.
 5. **Improve and review.** Reproduce failures, prepare minimal `.wc` or patch
    candidates, test before/after, and obtain an independent review.
 6. **Publish a short result.** Lead with scoped health, new failures, compiler

@@ -1,6 +1,6 @@
 # asinpi: one domain-error coverage witness
 
-**State: tested candidate; independent release review pending.** No upstream
+**State: tested; source-reviewed; not submitted or accepted upstream.** No upstream
 change or acceptance is claimed. This is a test-suite improvement, not a newly
 discovered implementation defect.
 
@@ -15,6 +15,12 @@ At [asinpi.c:517](https://gitlab.inria.fr/core-math/core-math/-/blob/e78b460c41e
 false outcome. This is a normal domain-error path: the expected result is NaN,
 with invalid raised and errno EDOM. The upstream MPFR checker validates the
 result, supported exception flags and errno in all four rounding modes.
+The branch interpretation comes from inspecting the source condition; the
+before/after measurement shows that this row newly hits arc index 3.
+The checker's EDOM requirement for a normal input producing a domain NaN is
+explicit at [check_worst_uni.c:369](https://gitlab.inria.fr/core-math/core-math/-/blob/e78b460c41e5e155f45a5ff824140b81c84f55cc/src/binary64/support/check_worst_uni.c#L369).
+Upstream may prefer this domain case in its special-test harness; the `.wc`
+addition is a suggestion for optional pickup, not a required corpus convention.
 
 | Primary GCC x86-64, errno on | Original corpus | With one row |
 |---|---:|---:|

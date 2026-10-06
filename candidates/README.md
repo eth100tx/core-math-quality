@@ -2,7 +2,7 @@
 
 | Candidate | Type | State |
 |---|---|---|
-| [asinpi domain witness](asinpi-domain-witness/README.md) | One `.wc` row; closes one measured branch gap | Tested; release review pending; not applied upstream |
+| [asinpi domain witness](asinpi-domain-witness/README.md) | One `.wc` row; closes one measured branch gap | Tested; source-reviewed; not submitted or accepted upstream |
 
 Add one directory per independently reviewed candidate using `templates/PATCH.md`
 or `templates/FINDING.md`. Keep the exact upstream base, minimal witness, patch,

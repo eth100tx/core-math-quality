@@ -1,5 +1,11 @@
 # Improve the workbench
 
+Keep the version-1 25-function target population stable when validating its
+archived receipts. The validator currently uses `config/targets.json` for the
+all-population ranking gate; changing it requires a versioned schema/validator
+migration or validating old evidence at its recorded release revision. Do not
+silently reinterpret old rankings after expanding the target list.
+
 Pick one named function, profile, generator, documentation gap or candidate.
 Open an issue or propose a change in this independent repository. Do not contact
 upstream automatically. Maintainers decide when to pick up candidates.

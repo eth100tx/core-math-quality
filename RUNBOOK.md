@@ -20,6 +20,11 @@ requested file against the pinned upstream Git blob; stale or changed files are
 replaced. The local directory name is never accepted as proof of source identity.
 This avoids downloading large unchanged corpora. The original checkout stays
 untouched. Network access is still required to verify the authoritative tree.
+Files are blob-verified against GitLab's reported tree at the pinned SHA over
+TLS; the client does not independently reconstruct the entire Git commit tree.
+If GitLab rate limits or a transient download error interrupts acquisition,
+retain the verified cache and retry the same command later within a fresh outer
+timeout. Do not use an unbounded retry loop or treat acquisition failure as PASS.
 
 ## Weekly or ad hoc
 
@@ -77,6 +82,9 @@ deleting stale lock files. A remaining file alone does not mean a live run.
 prints each mode and retains child outputs. Each child runs in a process group,
 killed on timeout or a handled termination signal. Download calls also have timeouts. For an overall wall-clock
 limit that includes acquisition, use the scheduler's outer timeout.
+Cancel through the runner's parent process: this version's spawned children
+inherit blocked SIGTERM/SIGINT, while the parent handles those signals and kills
+the child process group. Directly sending SIGTERM to a checker is insufficient.
 
 Successful function results are reused only if the identity matches the source
 manifest, runner hash, config hashes, compiler/probe environment, profile, errno and selection.

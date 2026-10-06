@@ -2,6 +2,34 @@
   "scope": "Internal helper branch mapping only; not public cr_sin reachability or rounding validation",
   "pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
   "source_sha256": "be00fff46e6778510d76c06d43110c7365dc9bd76b54637fccbae8e3a4e9dbd0",
+  "coverage_flags": [
+    "-O0",
+    "-g",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-march=x86-64",
+    "-fsignaling-nans",
+    "-DCORE_MATH_SUPPORT_ERRNO",
+    "--coverage"
+  ],
+  "environment": {
+    "profile": "gcc-linux-x86_64",
+    "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "platform": "Linux",
+    "architecture": "x86_64",
+    "libc": [
+      "glibc",
+      "2.39"
+    ],
+    "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+    "status": "PASS",
+    "experimental": false,
+    "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "tool_sha256": "c505e96d06be8bcacf136c3662d8a60a4951d84cda9ee86b0565ffdbde79eff1",
   "cases": {
     "high-half-nonzero": [
       1,

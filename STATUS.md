@@ -5,12 +5,12 @@ Coverage and correctness are separate; no complete proof is claimed.
 
 - Latest: [October 6 qualification and census](weekly/2026-10-06/REPORT.md).
 - Active coverage target: **asinpi**, 0 missing lines,
-  1 missing arcs in the primary profile. A tested one-row corpus candidate closes this gap locally.
+  1 missing arc in the primary profile. A tested one-row corpus candidate closes this gap locally.
 - New sine coverage: **175/175 lines;
   43/44 arcs** in the four-mode union.
 - New confirmed rounding/compiler defects from this baseline: **none**.
 - Candidate: [asinpi domain witness](candidates/asinpi-domain-witness/README.md),
-  tested locally; independent review pending, not applied upstream.
+  tested locally; source-reviewed; not submitted or accepted upstream.
 - Proof review and untested platforms remain explicit separate work.
 
 See [machine-readable state](status.json), [configuration qualifications](docs/CONFIGURATIONS.md),

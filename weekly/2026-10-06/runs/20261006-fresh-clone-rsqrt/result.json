@@ -1,0 +1,681 @@
+{
+  "created_utc": "2026-10-06T20:13:39.855401+00:00",
+  "identity": {
+    "config_hashes": {
+      "profiles.json": "58b532226130eccb781f8c8d45fd159f708772e82484c44f04a364e61ac9edcb",
+      "source.json": "5a1282bf77e926e537e6cbe6b52cfd4db8b363fc3753969c07f9c9d108d457a8",
+      "targets.json": "db0d1cafc8a553eb7a5027f3b77b7458a890a79cb489cb104bf67c4b32f343ce"
+    },
+    "environment": {
+      "architecture": "x86_64",
+      "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "experimental": false,
+      "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "libc": [
+        "glibc",
+        "2.39"
+      ],
+      "platform": "Linux",
+      "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+      "profile": "gcc-linux-x86_64",
+      "status": "PASS"
+    },
+    "errno": 1,
+    "functions": [
+      "rsqrt"
+    ],
+    "pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
+    "profile": "gcc-linux-x86_64",
+    "resolved_profile": {
+      "cc": "gcc",
+      "coverage": true,
+      "flags": [
+        "-march=x86-64"
+      ],
+      "gcov": "gcov",
+      "machine": "x86_64",
+      "system": "Linux"
+    },
+    "runner_sha256": "64f4b38c7267b389c0ede64ae9e6b1aa968ed7f8e80063c9b523d8b23cbfa566",
+    "source_manifest": {
+      "archives": {},
+      "files": {
+        "src/binary64/rsqrt/Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+        "src/binary64/rsqrt/check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+        "src/binary64/rsqrt/function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+        "src/binary64/rsqrt/rsqrt.c": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+        "src/binary64/rsqrt/rsqrt.wc": "22863a581dbc1d2243d811713959024395760a45239160ee2b50f4fc68730f96",
+        "src/binary64/rsqrt/rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c"
+      },
+      "git_blobs": {
+        "src/binary64/rsqrt/Makefile": "28e0f600491f45e47160a457450abfe5f2fb5a64",
+        "src/binary64/rsqrt/check_special.c": "4195e1aa3a7da76e8078c9f5179d6f9533fd5a8b",
+        "src/binary64/rsqrt/function_under_test.h": "715c3a09e7814921d55e23f3b3bf95fe115ae27a",
+        "src/binary64/rsqrt/rsqrt.c": "43ffbd18659726110fa5a5d72f00dc92672599ae",
+        "src/binary64/rsqrt/rsqrt.wc": "d6f2ec4263e956639e876f88f1c2e2d64efb2a9e",
+        "src/binary64/rsqrt/rsqrt_mpfr.c": "9db3018071d733de9e83f0e0e8e3695267917c71",
+        "src/binary64/support/Makefile.bivariate": "5d9ce773ae93244b42b3c0c1183673046ff08ffe",
+        "src/binary64/support/Makefile.sincos": "a88b4c50991473e7780bc01fe1dd3bb5c26ccd8f",
+        "src/binary64/support/Makefile.univariate": "0b57d3f0911a5f286ce4e7969e3c5fe265eed3d6",
+        "src/binary64/support/check_worst.c": "f45a4d41e9631c6b24bb9b8c336a90d43b4d4f47",
+        "src/binary64/support/check_worst_sincos.c": "f4f2836057482c117ac1cfa76f88b99a42bd06ea",
+        "src/binary64/support/check_worst_uni.c": "c51dcd4b9249f913073c17a2fffd657cfe637a53",
+        "src/binary64/support/fenv_mpfr.h": "64d73ca5cc0c6d25ce6e476dce579895ac6fa376"
+      },
+      "pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc"
+    }
+  },
+  "ranking": {
+    "candidates": [],
+    "complete_population": true,
+    "measured": 1,
+    "policy": "exclude zero/zero; ascending missing lines, then missing arcs, then name; zero-line branch gaps remain eligible",
+    "population": [
+      "rsqrt"
+    ],
+    "recommendation": null
+  },
+  "results": [
+    {
+      "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+      "copied_files": {
+        "Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+        "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+        "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+        "rsqrt.c": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+        "rsqrt.wc": "22863a581dbc1d2243d811713959024395760a45239160ee2b50f4fc68730f96",
+        "rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+      },
+      "corpus_rows": 9922,
+      "corpus_sha256": "22863a581dbc1d2243d811713959024395760a45239160ee2b50f4fc68730f96",
+      "coverage_flags": [
+        "-O0",
+        "-g",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "--coverage"
+      ],
+      "coverage_union": {
+        "arcs_hit": 36,
+        "arcs_total": 36,
+        "lines_hit": 71,
+        "lines_total": 71,
+        "missing_arcs": [],
+        "missing_lines": []
+      },
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64",
+        "status": "PASS"
+      },
+      "errno": 1,
+      "expected_tests_per_mode": 19844,
+      "finished_utc": "2026-10-06T20:13:39.850930+00:00",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "rsqrt",
+      "logs": {
+        "checker-build": {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "check_worst_uni.c",
+            "-o",
+            "checker.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.524
+        },
+        "covered-build": {
+          "command": [
+            "gcc",
+            "-O0",
+            "-g",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "--coverage",
+            "-I.",
+            "-c",
+            "rsqrt.c",
+            "-o",
+            "rsqrt.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.381
+        },
+        "covered-link": {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "checker.o",
+            "rsqrt.o",
+            "ref.o",
+            "-lgcov",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "covered"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.877
+        },
+        "covered-rndd": {
+          "command": [
+            "./covered",
+            "--rndd"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.07
+        },
+        "covered-rndn": {
+          "command": [
+            "./covered",
+            "--rndn"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.093
+        },
+        "covered-rndu": {
+          "command": [
+            "./covered",
+            "--rndu"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.12
+        },
+        "covered-rndz": {
+          "command": [
+            "./covered",
+            "--rndz"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.069
+        },
+        "gcov-rndd": {
+          "command": [
+            "gcov",
+            "-b",
+            "-c",
+            "-j",
+            "rsqrt.gcno"
+          ],
+          "output": "File 'rsqrt.c'\nLines executed:91.55% of 71\nBranches executed:100.00% of 36\nTaken at least once:91.67% of 36\nCalls executed:100.00% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:100.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:91.78% of 73\n",
+          "output_bytes": 305,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.01
+        },
+        "gcov-rndn": {
+          "command": [
+            "gcov",
+            "-b",
+            "-c",
+            "-j",
+            "rsqrt.gcno"
+          ],
+          "output": "File 'rsqrt.c'\nLines executed:98.59% of 71\nBranches executed:100.00% of 36\nTaken at least once:94.44% of 36\nCalls executed:100.00% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:100.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:98.63% of 73\n",
+          "output_bytes": 305,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.009
+        },
+        "gcov-rndu": {
+          "command": [
+            "gcov",
+            "-b",
+            "-c",
+            "-j",
+            "rsqrt.gcno"
+          ],
+          "output": "File 'rsqrt.c'\nLines executed:91.55% of 71\nBranches executed:100.00% of 36\nTaken at least once:94.44% of 36\nCalls executed:100.00% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:100.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:91.78% of 73\n",
+          "output_bytes": 305,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.011
+        },
+        "gcov-rndz": {
+          "command": [
+            "gcov",
+            "-b",
+            "-c",
+            "-j",
+            "rsqrt.gcno"
+          ],
+          "output": "File 'rsqrt.c'\nLines executed:91.55% of 71\nBranches executed:100.00% of 36\nTaken at least once:91.67% of 36\nCalls executed:100.00% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:100.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:91.78% of 73\n",
+          "output_bytes": 305,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.007
+        },
+        "plain-build": {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "rsqrt.c",
+            "-o",
+            "plain.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.479
+        },
+        "plain-link": {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "checker.o",
+            "plain.o",
+            "ref.o",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "plain"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.676
+        },
+        "plain-rndd": {
+          "command": [
+            "./plain",
+            "--rndd"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.071
+        },
+        "plain-rndn": {
+          "command": [
+            "./plain",
+            "--rndn"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.07
+        },
+        "plain-rndu": {
+          "command": [
+            "./plain",
+            "--rndu"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.12
+        },
+        "plain-rndz": {
+          "command": [
+            "./plain",
+            "--rndz"
+          ],
+          "output": "19844 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.041
+        },
+        "reference-build": {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "rsqrt_mpfr.c",
+            "-o",
+            "ref.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.069
+        }
+      },
+      "macros_referenced": {
+        "CORE_MATH_CHECK_INEXACT": true,
+        "CORE_MATH_NO_OPENMP": true,
+        "CORE_MATH_SUPPORT_ERRNO": true
+      },
+      "modes": [
+        {
+          "accepted_tests": 19844,
+          "coverage": {
+            "arcs_hit": 34,
+            "arcs_total": 36,
+            "lines_hit": 70,
+            "lines_total": 71,
+            "missing_arcs": [
+              [
+                "as_rsqrt_refine",
+                150,
+                0
+              ],
+              [
+                "as_rsqrt_refine",
+                153,
+                1
+              ]
+            ],
+            "missing_lines": [
+              [
+                "as_rsqrt_refine",
+                161
+              ]
+            ]
+          },
+          "covered": "PASS",
+          "gcov_json_format_version": "1",
+          "mode": "rndn",
+          "other_instrumented_files": [
+            "xmmintrin.h"
+          ],
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 19844,
+          "coverage": {
+            "arcs_hit": 33,
+            "arcs_total": 36,
+            "lines_hit": 65,
+            "lines_total": 71,
+            "missing_arcs": [
+              [
+                "as_rsqrt_refine",
+                151,
+                1
+              ],
+              [
+                "as_rsqrt_refine",
+                152,
+                0
+              ],
+              [
+                "as_rsqrt_refine",
+                153,
+                0
+              ]
+            ],
+            "missing_lines": [
+              [
+                "as_rsqrt_refine",
+                154
+              ],
+              [
+                "as_rsqrt_refine",
+                155
+              ],
+              [
+                "as_rsqrt_refine",
+                156
+              ],
+              [
+                "as_rsqrt_refine",
+                157
+              ],
+              [
+                "as_rsqrt_refine",
+                158
+              ],
+              [
+                "as_rsqrt_refine",
+                159
+              ]
+            ]
+          },
+          "covered": "PASS",
+          "gcov_json_format_version": "1",
+          "mode": "rndz",
+          "other_instrumented_files": [
+            "xmmintrin.h"
+          ],
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 19844,
+          "coverage": {
+            "arcs_hit": 34,
+            "arcs_total": 36,
+            "lines_hit": 65,
+            "lines_total": 71,
+            "missing_arcs": [
+              [
+                "as_rsqrt_refine",
+                150,
+                0
+              ],
+              [
+                "as_rsqrt_refine",
+                153,
+                0
+              ]
+            ],
+            "missing_lines": [
+              [
+                "as_rsqrt_refine",
+                154
+              ],
+              [
+                "as_rsqrt_refine",
+                155
+              ],
+              [
+                "as_rsqrt_refine",
+                156
+              ],
+              [
+                "as_rsqrt_refine",
+                157
+              ],
+              [
+                "as_rsqrt_refine",
+                158
+              ],
+              [
+                "as_rsqrt_refine",
+                159
+              ]
+            ]
+          },
+          "covered": "PASS",
+          "gcov_json_format_version": "1",
+          "mode": "rndu",
+          "other_instrumented_files": [
+            "xmmintrin.h"
+          ],
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 19844,
+          "coverage": {
+            "arcs_hit": 33,
+            "arcs_total": 36,
+            "lines_hit": 65,
+            "lines_total": 71,
+            "missing_arcs": [
+              [
+                "as_rsqrt_refine",
+                151,
+                1
+              ],
+              [
+                "as_rsqrt_refine",
+                152,
+                0
+              ],
+              [
+                "as_rsqrt_refine",
+                153,
+                0
+              ]
+            ],
+            "missing_lines": [
+              [
+                "as_rsqrt_refine",
+                154
+              ],
+              [
+                "as_rsqrt_refine",
+                155
+              ],
+              [
+                "as_rsqrt_refine",
+                156
+              ],
+              [
+                "as_rsqrt_refine",
+                157
+              ],
+              [
+                "as_rsqrt_refine",
+                158
+              ],
+              [
+                "as_rsqrt_refine",
+                159
+              ]
+            ]
+          },
+          "covered": "PASS",
+          "gcov_json_format_version": "1",
+          "mode": "rndd",
+          "other_instrumented_files": [
+            "xmmintrin.h"
+          ],
+          "plain": "PASS"
+        }
+      ],
+      "profile": "gcc-linux-x86_64",
+      "source_sha256": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+      "started_utc": "2026-10-06T20:13:34.082192+00:00",
+      "status": "PASS"
+    }
+  ],
+  "run_id": "20261006-fresh-clone-rsqrt",
+  "schema_version": 1,
+  "scope": "upstream full .wc + unchanged checker built-in checks; four rounding modes; target .c coverage only; tested, not proven",
+  "status": "PASS",
+  "this_invocation_child_cpu_seconds": 4.400761,
+  "wall_seconds": 22.259305782999945
+}

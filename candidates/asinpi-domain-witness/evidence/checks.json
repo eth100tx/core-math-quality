@@ -1,7 +1,7 @@
 {
-  "child_cpu_seconds": 27.059835,
+  "child_cpu_seconds": 24.431998999999998,
   "pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
-  "reproduce_sha256": "84a0ed871337664c37737b14ad3e1ccc50face16b8e1ed83d0dc2c62c87df8f2",
+  "reproduce_sha256": "593c7a564717005355250584caa61224c130a4e978417dd36a6176de19b59b62",
   "results": {
     "after": {
       "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
@@ -60,7 +60,7 @@
       },
       "errno": 1,
       "expected_tests_per_mode": 116824,
-      "finished_utc": "2026-10-06T20:02:47.520340+00:00",
+      "finished_utc": "2026-10-06T20:23:07.272516+00:00",
       "flags": [
         "-O3",
         "-frounding-math",
@@ -96,7 +96,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.589
+          "wall_seconds": 0.427
         },
         "covered-build": {
           "command": [
@@ -122,7 +122,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 2.141
+          "wall_seconds": 2.034
         },
         "covered-link": {
           "command": [
@@ -151,7 +151,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.731
+          "wall_seconds": 0.68
         },
         "covered-rndd": {
           "command": [
@@ -162,7 +162,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.982
+          "wall_seconds": 1.23
         },
         "covered-rndn": {
           "command": [
@@ -173,7 +173,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.885
+          "wall_seconds": 1.435
         },
         "covered-rndu": {
           "command": [
@@ -184,7 +184,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.18
+          "wall_seconds": 1.079
         },
         "covered-rndz": {
           "command": [
@@ -195,7 +195,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.189
+          "wall_seconds": 1.288
         },
         "gcov-rndd": {
           "command": [
@@ -209,7 +209,7 @@
           "output_bytes": 309,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.215
+          "wall_seconds": 0.042
         },
         "gcov-rndn": {
           "command": [
@@ -223,7 +223,7 @@
           "output_bytes": 309,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.087
+          "wall_seconds": 0.041
         },
         "gcov-rndu": {
           "command": [
@@ -237,7 +237,7 @@
           "output_bytes": 310,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.045
+          "wall_seconds": 0.041
         },
         "gcov-rndz": {
           "command": [
@@ -251,7 +251,7 @@
           "output_bytes": 310,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.046
+          "wall_seconds": 0.044
         },
         "plain-build": {
           "command": [
@@ -275,7 +275,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.744
+          "wall_seconds": 1.428
         },
         "plain-link": {
           "command": [
@@ -303,7 +303,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.778
+          "wall_seconds": 0.68
         },
         "plain-rndd": {
           "command": [
@@ -314,7 +314,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.281
+          "wall_seconds": 0.932
         },
         "plain-rndn": {
           "command": [
@@ -325,7 +325,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.948
+          "wall_seconds": 1.484
         },
         "plain-rndu": {
           "command": [
@@ -336,7 +336,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.929
+          "wall_seconds": 1.337
         },
         "plain-rndz": {
           "command": [
@@ -347,7 +347,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.136
+          "wall_seconds": 1.134
         },
         "reference-build": {
           "command": [
@@ -371,7 +371,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.127
+          "wall_seconds": 0.123
         }
       },
       "macros_referenced": {
@@ -756,7 +756,7 @@
       ],
       "profile": "gcc-linux-x86_64",
       "source_sha256": "e9dc2ed43e86ef8924345938b25d66e3872104d826f1130dfb5f9ca94afacda5",
-      "started_utc": "2026-10-06T20:02:29.271541+00:00",
+      "started_utc": "2026-10-06T20:22:50.751469+00:00",
       "status": "PASS"
     },
     "before": {
@@ -822,7 +822,7 @@
       },
       "errno": 1,
       "expected_tests_per_mode": 116822,
-      "finished_utc": "2026-10-06T20:02:28.284104+00:00",
+      "finished_utc": "2026-10-06T20:22:49.489457+00:00",
       "flags": [
         "-O3",
         "-frounding-math",
@@ -858,7 +858,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.628
+          "wall_seconds": 0.528
         },
         "covered-build": {
           "command": [
@@ -884,7 +884,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 2.342
+          "wall_seconds": 2.546
         },
         "covered-link": {
           "command": [
@@ -913,7 +913,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.782
+          "wall_seconds": 0.68
         },
         "covered-rndd": {
           "command": [
@@ -924,7 +924,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.039
+          "wall_seconds": 1.187
         },
         "covered-rndn": {
           "command": [
@@ -935,7 +935,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.896
+          "wall_seconds": 1.429
         },
         "covered-rndu": {
           "command": [
@@ -946,7 +946,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.247
+          "wall_seconds": 0.983
         },
         "covered-rndz": {
           "command": [
@@ -957,7 +957,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.234
+          "wall_seconds": 1.179
         },
         "gcov-rndd": {
           "command": [
@@ -971,7 +971,7 @@
           "output_bytes": 309,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.04
+          "wall_seconds": 0.056
         },
         "gcov-rndn": {
           "command": [
@@ -985,7 +985,7 @@
           "output_bytes": 309,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.081
+          "wall_seconds": 0.04
         },
         "gcov-rndu": {
           "command": [
@@ -999,7 +999,7 @@
           "output_bytes": 310,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.175
+          "wall_seconds": 0.044
         },
         "gcov-rndz": {
           "command": [
@@ -1013,7 +1013,7 @@
           "output_bytes": 310,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.043
+          "wall_seconds": 0.042
         },
         "plain-build": {
           "command": [
@@ -1037,7 +1037,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 2.09
+          "wall_seconds": 1.994
         },
         "plain-link": {
           "command": [
@@ -1065,7 +1065,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.828
+          "wall_seconds": 0.735
         },
         "plain-rndd": {
           "command": [
@@ -1076,7 +1076,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.182
+          "wall_seconds": 0.927
         },
         "plain-rndn": {
           "command": [
@@ -1087,7 +1087,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.795
+          "wall_seconds": 1.387
         },
         "plain-rndu": {
           "command": [
@@ -1098,7 +1098,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.388
+          "wall_seconds": 1.133
         },
         "plain-rndz": {
           "command": [
@@ -1109,7 +1109,7 @@
           "output_bytes": 34,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 1.132
+          "wall_seconds": 0.877
         },
         "reference-build": {
           "command": [
@@ -1133,7 +1133,7 @@
           "output_bytes": 0,
           "output_truncated": false,
           "returncode": 0,
-          "wall_seconds": 0.174
+          "wall_seconds": 0.177
         }
       },
       "macros_referenced": {
@@ -1538,13 +1538,13 @@
       ],
       "profile": "gcc-linux-x86_64",
       "source_sha256": "e9dc2ed43e86ef8924345938b25d66e3872104d826f1130dfb5f9ca94afacda5",
-      "started_utc": "2026-10-06T20:02:08.494846+00:00",
+      "started_utc": "2026-10-06T20:22:32.389984+00:00",
       "status": "PASS"
     }
   },
   "runner_sha256": "64f4b38c7267b389c0ede64ae9e6b1aa968ed7f8e80063c9b523d8b23cbfa566",
   "scope": "Coverage-only corpus candidate; no implementation defect or upstream acceptance claimed",
   "status": "PASS",
-  "wall_seconds": 46.167266246000054,
+  "wall_seconds": 41.593911237,
   "witness": "0x1.8p+0"
 }
