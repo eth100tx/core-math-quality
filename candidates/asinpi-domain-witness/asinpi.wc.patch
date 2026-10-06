@@ -1,0 +1,7 @@
+--- a/src/binary64/asinpi/asinpi.wc
++++ b/src/binary64/asinpi/asinpi.wc
+@@ -58420,3 +58420,4 @@
+ -0x1.fffffffff1003p-1
+ 0x1.0000000000000p-1
+ 0x1.fffffffffffffp-1
++0x1.8p+0

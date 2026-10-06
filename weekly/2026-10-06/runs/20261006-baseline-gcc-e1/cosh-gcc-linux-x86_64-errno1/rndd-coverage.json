@@ -1,0 +1,1406 @@
+{
+  "file": "src/binary64/cosh/cosh.c",
+  "functions": [
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "fasttwosum",
+      "end_column": 1,
+      "end_line": 50,
+      "execution_count": 1208868,
+      "name": "fasttwosum",
+      "start_column": 22,
+      "start_line": 46
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "muldd",
+      "end_column": 1,
+      "end_line": 56,
+      "execution_count": 1005312,
+      "name": "muldd",
+      "start_column": 22,
+      "start_line": 52
+    },
+    {
+      "blocks": 8,
+      "blocks_executed": 8,
+      "demangled_name": "polydd",
+      "end_column": 1,
+      "end_line": 70,
+      "execution_count": 251328,
+      "name": "polydd",
+      "start_column": 22,
+      "start_line": 58
+    },
+    {
+      "blocks": 5,
+      "blocks_executed": 5,
+      "demangled_name": "as_exp_accurate",
+      "end_column": 1,
+      "end_line": 88,
+      "execution_count": 124992,
+      "name": "as_exp_accurate",
+      "start_column": 46,
+      "start_line": 72
+    },
+    {
+      "blocks": 15,
+      "blocks_executed": 14,
+      "demangled_name": "as_cosh_zero",
+      "end_column": 1,
+      "end_line": 117,
+      "execution_count": 126336,
+      "name": "as_cosh_zero",
+      "start_column": 41,
+      "start_line": 90
+    },
+    {
+      "blocks": 10,
+      "blocks_executed": 10,
+      "demangled_name": "as_cosh_database",
+      "end_column": 1,
+      "end_line": 156,
+      "execution_count": 2928,
+      "name": "as_cosh_database",
+      "start_column": 41,
+      "start_line": 119
+    },
+    {
+      "blocks": 50,
+      "blocks_executed": 50,
+      "demangled_name": "cr_cosh",
+      "end_column": 1,
+      "end_line": 378,
+      "execution_count": 440312,
+      "name": "cr_cosh",
+      "start_column": 8,
+      "start_line": 158
+    }
+  ],
+  "lines": [
+    {
+      "branches": [],
+      "count": 1208868,
+      "function_name": "fasttwosum",
+      "line_number": 46,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1208868,
+      "function_name": "fasttwosum",
+      "line_number": 47,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1208868,
+      "function_name": "fasttwosum",
+      "line_number": 48,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1208868,
+      "function_name": "fasttwosum",
+      "line_number": 49,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1005312,
+      "function_name": "muldd",
+      "line_number": 52,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1005312,
+      "function_name": "muldd",
+      "line_number": 53,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1005312,
+      "function_name": "muldd",
+      "line_number": 54,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1005312,
+      "function_name": "muldd",
+      "line_number": 55,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 251328,
+      "function_name": "polydd",
+      "line_number": 58,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 251328,
+      "function_name": "polydd",
+      "line_number": 59,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 251328,
+      "function_name": "polydd",
+      "line_number": 61,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 251328,
+      "function_name": "polydd",
+      "line_number": 62,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 628992,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 251328,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 880320,
+      "function_name": "polydd",
+      "line_number": 63,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 628992,
+      "function_name": "polydd",
+      "line_number": 64,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 628992,
+      "function_name": "polydd",
+      "line_number": 65,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 628992,
+      "function_name": "polydd",
+      "line_number": 66,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 251328,
+      "function_name": "polydd",
+      "line_number": 68,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 251328,
+      "function_name": "polydd",
+      "line_number": 69,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 72,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 76,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 77,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 78,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 79,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 80,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 81,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 82,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 83,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 84,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 85,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 86,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 124992,
+      "function_name": "as_exp_accurate",
+      "line_number": 87,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 90,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 100,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 101,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 102,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 103,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 104,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 105,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 106,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 324,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 126012,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 107,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 324,
+      "function_name": "as_cosh_zero",
+      "line_number": 108,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 0,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 324,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 324,
+      "function_name": "as_cosh_zero",
+      "line_number": 109,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 0,
+      "function_name": "as_cosh_zero",
+      "line_number": 110,
+      "unexecuted_block": true
+    },
+    {
+      "branches": [],
+      "count": 324,
+      "function_name": "as_cosh_zero",
+      "line_number": 112,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 324,
+      "function_name": "as_cosh_zero",
+      "line_number": 113,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 444,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 125892,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 126336,
+      "function_name": "as_cosh_zero",
+      "line_number": 115,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 125892,
+      "function_name": "as_cosh_zero",
+      "line_number": 116,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 2928,
+      "function_name": "as_cosh_database",
+      "line_number": 119,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 2928,
+      "function_name": "as_cosh_database",
+      "line_number": 143,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 2928,
+      "function_name": "as_cosh_database",
+      "line_number": 144,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 12744,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 2712,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 15456,
+      "function_name": "as_cosh_database",
+      "line_number": 145,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 6108,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 6636,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 12744,
+      "function_name": "as_cosh_database",
+      "line_number": 146,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 6108,
+      "function_name": "as_cosh_database",
+      "line_number": 147,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 216,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 6420,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 6636,
+      "function_name": "as_cosh_database",
+      "line_number": 148,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 216,
+      "function_name": "as_cosh_database",
+      "line_number": 149,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 216,
+      "function_name": "as_cosh_database",
+      "line_number": 150,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 6420,
+      "function_name": "as_cosh_database",
+      "line_number": 152,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12528,
+      "function_name": "as_cosh_database",
+      "line_number": 153,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 2928,
+      "function_name": "as_cosh_database",
+      "line_number": 155,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 158,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 239,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 240,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 241,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 243,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 244,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 245,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 246,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 253,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 254,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 286308,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 154004,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 440312,
+      "function_name": "cr_cosh",
+      "line_number": 255,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 240,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 286068,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 286308,
+      "function_name": "cr_cosh",
+      "line_number": 256,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 240,
+      "function_name": "cr_cosh",
+      "line_number": 257,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 286068,
+      "function_name": "cr_cosh",
+      "line_number": 268,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 286068,
+      "function_name": "cr_cosh",
+      "line_number": 269,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 286068,
+      "function_name": "cr_cosh",
+      "line_number": 271,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 159732,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 126336,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 286068,
+      "function_name": "cr_cosh",
+      "line_number": 272,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 126336,
+      "function_name": "cr_cosh",
+      "line_number": 273,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 3116,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 150888,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 154004,
+      "function_name": "cr_cosh",
+      "line_number": 277,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 56,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 3060,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 3116,
+      "function_name": "cr_cosh",
+      "line_number": 279,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 3036,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 3060,
+      "function_name": "cr_cosh",
+      "line_number": 280,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 3036,
+      "function_name": "cr_cosh",
+      "line_number": 282,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 3036,
+      "function_name": "cr_cosh",
+      "line_number": 284,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 290,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 291,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 292,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 293,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 294,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 295,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 296,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 297,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 298,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 299,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 301,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 86328,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 64560,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 150888,
+      "function_name": "cr_cosh",
+      "line_number": 303,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 51036,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 35292,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 86328,
+      "function_name": "cr_cosh",
+      "line_number": 304,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 51036,
+      "function_name": "cr_cosh",
+      "line_number": 305,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 51036,
+      "function_name": "cr_cosh",
+      "line_number": 306,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 51036,
+      "function_name": "cr_cosh",
+      "line_number": 307,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 51036,
+      "function_name": "cr_cosh",
+      "line_number": 308,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 25512,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 25524,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 51036,
+      "function_name": "cr_cosh",
+      "line_number": 309,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 311,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 312,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 313,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 314,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 315,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 316,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 317,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24672,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 852,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 0,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 24672,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 25524,
+      "function_name": "cr_cosh",
+      "line_number": 321,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24672,
+      "function_name": "cr_cosh",
+      "line_number": 322,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 324,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 325,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 326,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 327,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 328,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 329,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 330,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 331,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 333,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 17568,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 17724,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 35292,
+      "function_name": "cr_cosh",
+      "line_number": 335,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 17724,
+      "function_name": "cr_cosh",
+      "line_number": 337,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 1236,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 16488,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 17724,
+      "function_name": "cr_cosh",
+      "line_number": 338,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1236,
+      "function_name": "cr_cosh",
+      "line_number": 340,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 342,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 343,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 344,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 345,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 346,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 347,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 16488,
+      "function_name": "cr_cosh",
+      "line_number": 348,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 351,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 352,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 353,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 354,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 355,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 356,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 357,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 358,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 359,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 360,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 362,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 363,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 364,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 31932,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 32628,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 64560,
+      "function_name": "cr_cosh",
+      "line_number": 366,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32628,
+      "function_name": "cr_cosh",
+      "line_number": 367,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32628,
+      "function_name": "cr_cosh",
+      "line_number": 368,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32628,
+      "function_name": "cr_cosh",
+      "line_number": 369,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32628,
+      "function_name": "cr_cosh",
+      "line_number": 370,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 50352,
+      "function_name": "cr_cosh",
+      "line_number": 372,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 50352,
+      "function_name": "cr_cosh",
+      "line_number": 373,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 50352,
+      "function_name": "cr_cosh",
+      "line_number": 374,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 50352,
+      "function_name": "cr_cosh",
+      "line_number": 375,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 48720,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 1632,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 0,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 48720,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 50352,
+      "function_name": "cr_cosh",
+      "line_number": 376,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 48720,
+      "function_name": "cr_cosh",
+      "line_number": 377,
+      "unexecuted_block": false
+    }
+  ]
+}

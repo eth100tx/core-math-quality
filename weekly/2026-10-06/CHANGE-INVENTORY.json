@@ -1,0 +1,53 @@
+{
+  "base": "284b3b0e198042c38f5c30316f696786b10816b0",
+  "commits": [
+    "aa66f20b0118453890acb29b98b51c9c8dd92118",
+    "398b2355a19e684a737342c44ee6aa3cc3c6ef07",
+    "c01f08c5fd1b36ac4fb48bbe594daf5b43977815",
+    "19e8541871b768936ce4e836c1456bc2c6fd7f40",
+    "e072473ef919f1884b8cd0ac96817f068df793f7",
+    "e78b460c41e5e155f45a5ff824140b81c84f55cc"
+  ],
+  "cutoff_utc": "2026-10-06T19:28:31.273683+00:00",
+  "files": [
+    {
+      "classification": "inventory_only",
+      "functions": [],
+      "old_path": "src/binary16/cbrt/cbrtf16.c",
+      "path": "src/binary16/cbrt/cbrtf16.c",
+      "disposition": "Outside the priority 25-function baseline; inventoried, not tested or reviewed for correctness."
+    },
+    {
+      "classification": "inventory_only",
+      "functions": [],
+      "old_path": "src/binary64/pow/pow.c",
+      "path": "src/binary64/pow/pow.c",
+      "disposition": "Outside the priority 25-function baseline; inventoried, not tested or reviewed for correctness."
+    },
+    {
+      "classification": "inventory_only",
+      "functions": [],
+      "old_path": "src/binary64/pow/pow.h",
+      "path": "src/binary64/pow/pow.h",
+      "disposition": "Outside the priority 25-function baseline; inventoried, not tested or reviewed for correctness."
+    },
+    {
+      "classification": "needs_review",
+      "functions": [
+        "sin"
+      ],
+      "old_path": "src/binary64/sin/sin.c",
+      "path": "src/binary64/sin/sin.c",
+      "disposition": "Current modern-compiler path source-reviewed and corpus/coverage tested; fallback portability and full proof remain outside this qualification."
+    },
+    {
+      "classification": "needs_review",
+      "functions": [],
+      "old_path": "src/generic/support/perf_sincos.c",
+      "path": "src/generic/support/perf_sincos.c",
+      "disposition": "Source-reviewed: latency accumulator consumes x+y rather than only x. Benchmark not executed; no numerical implementation change in this file."
+    }
+  ],
+  "note": "Selection aid only: review shared/header/build changes manually. This does not advance a reviewed baseline.",
+  "pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc"
+}

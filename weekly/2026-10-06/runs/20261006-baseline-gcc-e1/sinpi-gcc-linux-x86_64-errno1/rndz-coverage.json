@@ -1,0 +1,1662 @@
+{
+  "file": "src/binary64/sinpi/sinpi.c",
+  "functions": [
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "fasttwosum",
+      "end_column": 1,
+      "end_line": 51,
+      "execution_count": 1248960,
+      "name": "fasttwosum",
+      "start_column": 22,
+      "start_line": 47
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "adddd",
+      "end_column": 1,
+      "end_line": 57,
+      "execution_count": 241920,
+      "name": "adddd",
+      "start_column": 22,
+      "start_line": 53
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "muldd_acc",
+      "end_column": 1,
+      "end_line": 63,
+      "execution_count": 810840,
+      "name": "muldd_acc",
+      "start_column": 22,
+      "start_line": 59
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "mulddd",
+      "end_column": 1,
+      "end_line": 71,
+      "execution_count": 32700,
+      "name": "mulddd",
+      "start_column": 22,
+      "start_line": 65
+    },
+    {
+      "blocks": 6,
+      "blocks_executed": 6,
+      "demangled_name": "polydd",
+      "end_column": 1,
+      "end_line": 84,
+      "execution_count": 186360,
+      "name": "polydd",
+      "start_column": 22,
+      "start_line": 73
+    },
+    {
+      "blocks": 13,
+      "blocks_executed": 12,
+      "demangled_name": "as_sinpi_zero",
+      "end_column": 1,
+      "end_line": 118,
+      "execution_count": 120960,
+      "name": "as_sinpi_zero",
+      "start_column": 15,
+      "start_line": 86
+    },
+    {
+      "blocks": 25,
+      "blocks_executed": 25,
+      "demangled_name": "as_sinpi_refine",
+      "end_column": 1,
+      "end_line": 152,
+      "execution_count": 32700,
+      "name": "as_sinpi_refine",
+      "start_column": 15,
+      "start_line": 120
+    },
+    {
+      "blocks": 40,
+      "blocks_executed": 40,
+      "demangled_name": "cr_sinpi",
+      "end_column": 1,
+      "end_line": 237,
+      "execution_count": 804656,
+      "name": "cr_sinpi",
+      "start_column": 8,
+      "start_line": 154
+    },
+    {
+      "blocks": 1,
+      "blocks_executed": 1,
+      "demangled_name": "sincosn",
+      "end_column": 1,
+      "end_line": 316,
+      "execution_count": 187584,
+      "name": "sincosn",
+      "start_column": 6,
+      "start_line": 239
+    },
+    {
+      "blocks": 9,
+      "blocks_executed": 9,
+      "demangled_name": "sincosn2",
+      "end_column": 1,
+      "end_line": 400,
+      "execution_count": 32700,
+      "name": "sincosn2",
+      "start_column": 6,
+      "start_line": 318
+    }
+  ],
+  "lines": [
+    {
+      "branches": [],
+      "count": 1248960,
+      "function_name": "fasttwosum",
+      "line_number": 47,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248960,
+      "function_name": "fasttwosum",
+      "line_number": 48,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248960,
+      "function_name": "fasttwosum",
+      "line_number": 49,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248960,
+      "function_name": "fasttwosum",
+      "line_number": 50,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 241920,
+      "function_name": "adddd",
+      "line_number": 53,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 241920,
+      "function_name": "adddd",
+      "line_number": 54,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 241920,
+      "function_name": "adddd",
+      "line_number": 55,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 241920,
+      "function_name": "adddd",
+      "line_number": 56,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 810840,
+      "function_name": "muldd_acc",
+      "line_number": 59,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 810840,
+      "function_name": "muldd_acc",
+      "line_number": 60,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 810840,
+      "function_name": "muldd_acc",
+      "line_number": 61,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 810840,
+      "function_name": "muldd_acc",
+      "line_number": 62,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "mulddd",
+      "line_number": 65,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "mulddd",
+      "line_number": 66,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "mulddd",
+      "line_number": 67,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "mulddd",
+      "line_number": 68,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "mulddd",
+      "line_number": 69,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "mulddd",
+      "line_number": 70,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 186360,
+      "function_name": "polydd",
+      "line_number": 73,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 186360,
+      "function_name": "polydd",
+      "line_number": 74,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 186360,
+      "function_name": "polydd",
+      "line_number": 75,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 460980,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 186360,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 647340,
+      "function_name": "polydd",
+      "line_number": 76,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 460980,
+      "function_name": "polydd",
+      "line_number": 77,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 460980,
+      "function_name": "polydd",
+      "line_number": 78,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 460980,
+      "function_name": "polydd",
+      "line_number": 79,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 460980,
+      "function_name": "polydd",
+      "line_number": 80,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 186360,
+      "function_name": "polydd",
+      "line_number": 82,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 186360,
+      "function_name": "polydd",
+      "line_number": 83,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 86,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 87,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 88,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 93,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 94,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 95,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 96,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 97,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 98,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 99,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 100,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 101,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 102,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 103,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 104,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 105,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 106,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 107,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 108,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 384,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 120576,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 109,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 384,
+      "function_name": "as_sinpi_zero",
+      "line_number": 110,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 0,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 384,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 384,
+      "function_name": "as_sinpi_zero",
+      "line_number": 111,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 0,
+      "function_name": "as_sinpi_zero",
+      "line_number": 112,
+      "unexecuted_block": true
+    },
+    {
+      "branches": [],
+      "count": 384,
+      "function_name": "as_sinpi_zero",
+      "line_number": 114,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 384,
+      "function_name": "as_sinpi_zero",
+      "line_number": 115,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "as_sinpi_zero",
+      "line_number": 117,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 120,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 121,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 127,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 128,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 129,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 130,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 131,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 132,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 133,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 134,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 135,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 136,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 137,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 138,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 32628,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 72,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 32604,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 32700,
+      "function_name": "as_sinpi_refine",
+      "line_number": 139,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 48,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 48,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 96,
+      "function_name": "as_sinpi_refine",
+      "line_number": 146,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 96,
+      "function_name": "as_sinpi_refine",
+      "line_number": 147,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 204,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 228,
+      "function_name": "as_sinpi_refine",
+      "line_number": 148,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 36,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 168,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 0,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 36,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 36,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 132,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 36,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 0,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 204,
+      "function_name": "as_sinpi_refine",
+      "line_number": 149,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32628,
+      "function_name": "as_sinpi_refine",
+      "line_number": 151,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804656,
+      "function_name": "cr_sinpi",
+      "line_number": 154,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804656,
+      "function_name": "cr_sinpi",
+      "line_number": 157,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804656,
+      "function_name": "cr_sinpi",
+      "line_number": 158,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 804632,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 804656,
+      "function_name": "cr_sinpi",
+      "line_number": 159,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804632,
+      "function_name": "cr_sinpi",
+      "line_number": 160,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804632,
+      "function_name": "cr_sinpi",
+      "line_number": 161,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804632,
+      "function_name": "cr_sinpi",
+      "line_number": 162,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804632,
+      "function_name": "cr_sinpi",
+      "line_number": 163,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 804632,
+      "function_name": "cr_sinpi",
+      "line_number": 164,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 188,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 804444,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 804632,
+      "function_name": "cr_sinpi",
+      "line_number": 165,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 80,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 108,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 188,
+      "function_name": "cr_sinpi",
+      "line_number": 166,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 56,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 80,
+      "function_name": "cr_sinpi",
+      "line_number": 167,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24,
+      "function_name": "cr_sinpi",
+      "line_number": 169,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24,
+      "function_name": "cr_sinpi",
+      "line_number": 171,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24,
+      "function_name": "cr_sinpi",
+      "line_number": 172,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 56,
+      "function_name": "cr_sinpi",
+      "line_number": 174,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 108,
+      "function_name": "cr_sinpi",
+      "line_number": 176,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 60,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 48,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 108,
+      "function_name": "cr_sinpi",
+      "line_number": 177,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 48,
+      "function_name": "cr_sinpi",
+      "line_number": 178,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 12,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 36,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 48,
+      "function_name": "cr_sinpi",
+      "line_number": 179,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 36,
+      "function_name": "cr_sinpi",
+      "line_number": 180,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 36,
+      "function_name": "cr_sinpi",
+      "line_number": 181,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 616824,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 187620,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 804444,
+      "function_name": "cr_sinpi",
+      "line_number": 184,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 616824,
+      "function_name": "cr_sinpi",
+      "line_number": 185,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24708,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 592116,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 616824,
+      "function_name": "cr_sinpi",
+      "line_number": 187,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24696,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 12,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 24708,
+      "function_name": "cr_sinpi",
+      "line_number": 188,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 3912,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 20784,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 24696,
+      "function_name": "cr_sinpi",
+      "line_number": 192,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 3912,
+      "function_name": "cr_sinpi",
+      "line_number": 193,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24696,
+      "function_name": "cr_sinpi",
+      "line_number": 195,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24696,
+      "function_name": "cr_sinpi",
+      "line_number": 196,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24696,
+      "function_name": "cr_sinpi",
+      "line_number": 197,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24696,
+      "function_name": "cr_sinpi",
+      "line_number": 198,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_sinpi",
+      "line_number": 200,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_sinpi",
+      "line_number": 201,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_sinpi",
+      "line_number": 202,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 204,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 205,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 206,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 207,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 209,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 210,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 471156,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 120960,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 592116,
+      "function_name": "cr_sinpi",
+      "line_number": 211,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120960,
+      "function_name": "cr_sinpi",
+      "line_number": 212,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187620,
+      "function_name": "cr_sinpi",
+      "line_number": 215,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 187620,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 0,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 72,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 187548,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 187620,
+      "function_name": "cr_sinpi",
+      "line_number": 216,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 48,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 72,
+      "function_name": "cr_sinpi",
+      "line_number": 218,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 24,
+      "function_name": "cr_sinpi",
+      "line_number": 219,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 48,
+      "function_name": "cr_sinpi",
+      "line_number": 220,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 24,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 48,
+      "function_name": "cr_sinpi",
+      "line_number": 222,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 225,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 226,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 227,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 228,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 229,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 230,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 231,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 232,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 233,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 234,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 154848,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 32700,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 187548,
+      "function_name": "cr_sinpi",
+      "line_number": 235,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "cr_sinpi",
+      "line_number": 236,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 239,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 292,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 293,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 294,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 295,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 296,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 298,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 299,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 300,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 301,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 303,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 304,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 305,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 307,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 308,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 311,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 312,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 314,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 315,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 187584,
+      "function_name": "sincosn",
+      "line_number": 316,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 318,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 371,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 372,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 373,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 374,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 375,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 377,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 378,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 379,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 380,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 382,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 383,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 384,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 385,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 387,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 388,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 389,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 391,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 392,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 395,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 396,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 398,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 399,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 32700,
+      "function_name": "sincosn2",
+      "line_number": 400,
+      "unexecuted_block": false
+    }
+  ]
+}

@@ -29,7 +29,8 @@ No silent replacement of published evidence. A correction is a new run or
 explicit erratum with the old report retained. Raw measured counts stay unchanged
 when a separate reviewer classifies a gap as unreachable.
 
-The workbench's Git commit in the reviewed report identifies the publication;
-the runner hash in each receipt identifies exact executed code even before a
-release commit exists. If those differ, the report must explain the change and
+The reviewed report links a Git revision containing the executed runner; the
+publication itself is identified by its enclosing Git commit and file history.
+The runner hash in each receipt identifies exact executed code even before a
+release commit exists. If the published runner differs, explain the change and
 provide the executed source version or rerun with the final runner.

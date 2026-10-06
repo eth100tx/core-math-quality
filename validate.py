@@ -36,7 +36,7 @@ def receipt(d):
         raise ValueError('Empty or duplicate selection')
     if [cell['function'] for cell in d['results']] != selected:
         raise ValueError('Receipt results do not match selected functions')
-    if any(cell['profile'] != ident['profile'] or cell['errno'] != ident['errno'] for cell in d['results']):
+    if any(cell.get('profile',ident['profile']) != ident['profile'] or cell.get('errno',ident['errno']) != ident['errno'] for cell in d['results']):
         raise ValueError('Cell configuration differs from run identity')
     keys(ident['environment'], ENV, 'environment')
     keys(ident['resolved_profile'], {'cc', 'gcov', 'system', 'machine', 'flags', 'coverage', 'experimental'}, 'profile')
@@ -81,30 +81,49 @@ def receipt(d):
         raise ValueError('Ranking differs from measured results')
 
 
+def verify_coverage(cell, folder):
+    from quality import coverage_maps, coverage_summary, add_union
+    if len(list(folder.glob('*-coverage.json'))) != 4:
+        raise ValueError('PASS needs four raw coverage files')
+    ul, ua = {}, {}
+    for mode in cell['modes']:
+        raw = json.loads((folder / (mode['mode'] + '-coverage.json')).read_text())
+        ls, ar = coverage_maps(raw)
+        if coverage_summary(ls,ar) != mode['coverage']:
+            raise ValueError('Coverage summary disagrees with raw counts')
+        ul, ua = add_union(ul,ls), add_union(ua,ar)
+    if coverage_summary(ul,ua) != cell['coverage_union']:
+        raise ValueError('Coverage union disagrees with raw counts')
+
+
 def main():
     count = 0
     for path in (ROOT/'weekly').rglob('result.json'):
         d = json.loads(path.read_text())
         receipt(d)
         if d['identity']['resolved_profile']['coverage']:
-            from quality import coverage_maps, coverage_summary, add_union
             for cell in d['results']:
                 if cell['status'] != 'PASS':
                     continue
                 folder = path.parent / f"{cell['function']}-{cell['profile']}-errno{cell['errno']}"
-                if len(list(folder.glob('*-coverage.json'))) != 4:
-                    raise ValueError('PASS needs four raw coverage files')
-                ul, ua = {}, {}
-                for mode in cell['modes']:
-                    raw = json.loads((folder / (mode['mode'] + '-coverage.json')).read_text())
-                    ls, ar = coverage_maps(raw)
-                    if coverage_summary(ls,ar) != mode['coverage']:
-                        raise ValueError('Coverage summary disagrees with raw counts')
-                    ul, ua = add_union(ul,ls), add_union(ua,ar)
-                if coverage_summary(ul,ua) != cell['coverage_union']:
-                    raise ValueError('Coverage union disagrees with raw counts')
+                verify_coverage(cell, folder)
         count += 1
-    for path in (ROOT/'weekly').rglob('*-coverage.json'):
+    for path in (ROOT/'candidates').rglob('checks.json'):
+        d=json.loads(path.read_text())
+        keys(d, {'status','pin','witness','scope','runner_sha256','reproduce_sha256','results','child_cpu_seconds','wall_seconds'}, 'candidate checks')
+        if d['status'] != 'PASS' or set(d['results']) != {'before','after'}:
+            raise ValueError('Incomplete candidate comparison')
+        for label,cell in d['results'].items():
+            keys(cell,CELL,'candidate cell')
+            if cell['status']!='PASS' or [m['mode'] for m in cell['modes']]!=['rndn','rndz','rndu','rndd']:
+                raise ValueError('Candidate lacks four-mode PASS')
+            if any(m['plain']!='PASS' or m['covered']!='PASS' or m['accepted_tests']!=cell['expected_tests_per_mode'] for m in cell['modes']):
+                raise ValueError('Candidate mode failure or count mismatch')
+            verify_coverage(cell,path.parent/label)
+        before,after=d['results']['before'],d['results']['after']
+        if before['source_sha256']!=after['source_sha256'] or after['corpus_rows']!=before['corpus_rows']+1:
+            raise ValueError('Unexpected candidate source/corpus change')
+    for path in list((ROOT/'weekly').rglob('*-coverage.json'))+list((ROOT/'candidates').rglob('*-coverage.json')):
         d = json.loads(path.read_text())
         keys(d, {'file','functions','lines'}, 'gcov file')
         if not re.fullmatch(r'src/binary64/[a-z0-9]+/[a-z0-9]+\.c',d['file']):
@@ -117,7 +136,7 @@ def main():
                         'calls','conditions'},'gcov line')
             for branch in line.get('branches',[]):
                 keys(branch,{'count','fallthrough','throw','source_block_id','destination_block_id'},'gcov branch')
-    for sums in (ROOT/'weekly').rglob('SHA256SUMS.json'):
+    for sums in list((ROOT/'weekly').rglob('SHA256SUMS.json'))+list((ROOT/'candidates').rglob('SHA256SUMS.json')):
         manifest = json.loads(sums.read_text())
         actual = {p.relative_to(sums.parent).as_posix() for p in sums.parent.rglob('*') if p.is_file() and p != sums}
         if actual != set(manifest):

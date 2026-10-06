@@ -1,0 +1,2717 @@
+{
+  "child_cpu_seconds": 13.94735,
+  "controls": [
+    {
+      "control": "positive",
+      "expected_status": "PASS",
+      "result": {
+        "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "copied_files": {
+          "Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+          "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+          "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+          "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+          "check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+          "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+          "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+          "check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+          "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+          "function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+          "rsqrt.c": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+          "rsqrt.wc": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+          "rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+        },
+        "corpus_rows": 3,
+        "corpus_sha256": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+        "coverage_flags": [
+          "-O0",
+          "-g",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO",
+          "--coverage"
+        ],
+        "coverage_union": {
+          "arcs_hit": 18,
+          "arcs_total": 36,
+          "lines_hit": 28,
+          "lines_total": 71,
+          "missing_arcs": [
+            [
+              "as_rsqrt_refine",
+              121,
+              0
+            ],
+            [
+              "as_rsqrt_refine",
+              128,
+              0
+            ],
+            [
+              "as_rsqrt_refine",
+              150,
+              0
+            ],
+            [
+              "as_rsqrt_refine",
+              150,
+              1
+            ],
+            [
+              "as_rsqrt_refine",
+              151,
+              0
+            ],
+            [
+              "as_rsqrt_refine",
+              151,
+              1
+            ],
+            [
+              "as_rsqrt_refine",
+              152,
+              0
+            ],
+            [
+              "as_rsqrt_refine",
+              152,
+              1
+            ],
+            [
+              "as_rsqrt_refine",
+              153,
+              0
+            ],
+            [
+              "as_rsqrt_refine",
+              153,
+              1
+            ],
+            [
+              "cr_rsqrt",
+              171,
+              0
+            ],
+            [
+              "cr_rsqrt",
+              172,
+              0
+            ],
+            [
+              "cr_rsqrt",
+              172,
+              1
+            ],
+            [
+              "cr_rsqrt",
+              181,
+              0
+            ],
+            [
+              "cr_rsqrt",
+              195,
+              0
+            ],
+            [
+              "cr_rsqrt",
+              198,
+              1
+            ],
+            [
+              "cr_rsqrt",
+              210,
+              1
+            ],
+            [
+              "cr_rsqrt",
+              210,
+              7
+            ]
+          ],
+          "missing_lines": [
+            [
+              "as_rsqrt_refine",
+              122
+            ],
+            [
+              "as_rsqrt_refine",
+              123
+            ],
+            [
+              "as_rsqrt_refine",
+              124
+            ],
+            [
+              "as_rsqrt_refine",
+              125
+            ],
+            [
+              "as_rsqrt_refine",
+              126
+            ],
+            [
+              "as_rsqrt_refine",
+              130
+            ],
+            [
+              "as_rsqrt_refine",
+              131
+            ],
+            [
+              "as_rsqrt_refine",
+              133
+            ],
+            [
+              "as_rsqrt_refine",
+              134
+            ],
+            [
+              "as_rsqrt_refine",
+              135
+            ],
+            [
+              "as_rsqrt_refine",
+              136
+            ],
+            [
+              "as_rsqrt_refine",
+              137
+            ],
+            [
+              "as_rsqrt_refine",
+              138
+            ],
+            [
+              "as_rsqrt_refine",
+              139
+            ],
+            [
+              "as_rsqrt_refine",
+              140
+            ],
+            [
+              "as_rsqrt_refine",
+              141
+            ],
+            [
+              "as_rsqrt_refine",
+              143
+            ],
+            [
+              "as_rsqrt_refine",
+              145
+            ],
+            [
+              "as_rsqrt_refine",
+              146
+            ],
+            [
+              "as_rsqrt_refine",
+              147
+            ],
+            [
+              "as_rsqrt_refine",
+              148
+            ],
+            [
+              "as_rsqrt_refine",
+              149
+            ],
+            [
+              "as_rsqrt_refine",
+              150
+            ],
+            [
+              "as_rsqrt_refine",
+              151
+            ],
+            [
+              "as_rsqrt_refine",
+              152
+            ],
+            [
+              "as_rsqrt_refine",
+              153
+            ],
+            [
+              "as_rsqrt_refine",
+              154
+            ],
+            [
+              "as_rsqrt_refine",
+              155
+            ],
+            [
+              "as_rsqrt_refine",
+              156
+            ],
+            [
+              "as_rsqrt_refine",
+              157
+            ],
+            [
+              "as_rsqrt_refine",
+              158
+            ],
+            [
+              "as_rsqrt_refine",
+              159
+            ],
+            [
+              "as_rsqrt_refine",
+              161
+            ],
+            [
+              "as_rsqrt_refine",
+              163
+            ],
+            [
+              "cr_rsqrt",
+              172
+            ],
+            [
+              "cr_rsqrt",
+              173
+            ],
+            [
+              "cr_rsqrt",
+              176
+            ],
+            [
+              "cr_rsqrt",
+              178
+            ],
+            [
+              "cr_rsqrt",
+              183
+            ],
+            [
+              "cr_rsqrt",
+              185
+            ],
+            [
+              "cr_rsqrt",
+              202
+            ],
+            [
+              "get_rounding_mode",
+              81
+            ],
+            [
+              "get_rounding_mode",
+              100
+            ]
+          ]
+        },
+        "environment": {
+          "architecture": "x86_64",
+          "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "experimental": false,
+          "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "libc": [
+            "glibc",
+            "2.39"
+          ],
+          "platform": "Linux",
+          "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+          "profile": "gcc-linux-x86_64",
+          "status": "PASS"
+        },
+        "errno": 1,
+        "expected_tests_per_mode": 6,
+        "finished_utc": "2026-10-06T20:01:21.564157+00:00",
+        "flags": [
+          "-O3",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO"
+        ],
+        "function": "rsqrt",
+        "logs": {
+          "checker-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "check_worst_uni.c",
+              "-o",
+              "checker.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.476
+          },
+          "covered-build": {
+            "command": [
+              "gcc",
+              "-O0",
+              "-g",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "--coverage",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "rsqrt.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.493
+          },
+          "covered-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "rsqrt.o",
+              "ref.o",
+              "-lgcov",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "covered"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.733
+          },
+          "covered-rndd": {
+            "command": [
+              "./covered",
+              "--rndd"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.024
+          },
+          "covered-rndn": {
+            "command": [
+              "./covered",
+              "--rndn"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.018
+          },
+          "covered-rndu": {
+            "command": [
+              "./covered",
+              "--rndu"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.029
+          },
+          "covered-rndz": {
+            "command": [
+              "./covered",
+              "--rndz"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.03
+          },
+          "gcov-rndd": {
+            "command": [
+              "gcov",
+              "-b",
+              "-c",
+              "-j",
+              "rsqrt.gcno"
+            ],
+            "output": "File 'rsqrt.c'\nLines executed:39.44% of 71\nBranches executed:72.22% of 36\nTaken at least once:50.00% of 36\nCalls executed:66.67% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:0.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:38.36% of 73\n",
+            "output_bytes": 301,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.042
+          },
+          "gcov-rndn": {
+            "command": [
+              "gcov",
+              "-b",
+              "-c",
+              "-j",
+              "rsqrt.gcno"
+            ],
+            "output": "File 'rsqrt.c'\nLines executed:39.44% of 71\nBranches executed:72.22% of 36\nTaken at least once:50.00% of 36\nCalls executed:66.67% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:0.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:38.36% of 73\n",
+            "output_bytes": 301,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.045
+          },
+          "gcov-rndu": {
+            "command": [
+              "gcov",
+              "-b",
+              "-c",
+              "-j",
+              "rsqrt.gcno"
+            ],
+            "output": "File 'rsqrt.c'\nLines executed:39.44% of 71\nBranches executed:72.22% of 36\nTaken at least once:50.00% of 36\nCalls executed:66.67% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:0.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:38.36% of 73\n",
+            "output_bytes": 301,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.045
+          },
+          "gcov-rndz": {
+            "command": [
+              "gcov",
+              "-b",
+              "-c",
+              "-j",
+              "rsqrt.gcno"
+            ],
+            "output": "File 'rsqrt.c'\nLines executed:39.44% of 71\nBranches executed:72.22% of 36\nTaken at least once:50.00% of 36\nCalls executed:66.67% of 3\n\nFile '/usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h'\nLines executed:0.00% of 2\nNo branches\nNo calls\n\nCreating 'rsqrt.gcov.json.gz'\nLines executed:38.36% of 73\n",
+            "output_bytes": 301,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.045
+          },
+          "plain-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "plain.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.037
+          },
+          "plain-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "plain.o",
+              "ref.o",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "plain"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.881
+          },
+          "plain-rndd": {
+            "command": [
+              "./plain",
+              "--rndd"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.016
+          },
+          "plain-rndn": {
+            "command": [
+              "./plain",
+              "--rndn"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.02
+          },
+          "plain-rndu": {
+            "command": [
+              "./plain",
+              "--rndu"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.014
+          },
+          "plain-rndz": {
+            "command": [
+              "./plain",
+              "--rndz"
+            ],
+            "output": "6 tests passed, 0 failure(s)\n",
+            "output_bytes": 29,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.019
+          },
+          "reference-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt_mpfr.c",
+              "-o",
+              "ref.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.131
+          }
+        },
+        "macros_referenced": {
+          "CORE_MATH_CHECK_INEXACT": true,
+          "CORE_MATH_NO_OPENMP": true,
+          "CORE_MATH_SUPPORT_ERRNO": true
+        },
+        "modes": [
+          {
+            "accepted_tests": 6,
+            "coverage": {
+              "arcs_hit": 18,
+              "arcs_total": 36,
+              "lines_hit": 28,
+              "lines_total": 71,
+              "missing_arcs": [
+                [
+                  "as_rsqrt_refine",
+                  121,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  128,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  171,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  181,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  195,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  198,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  7
+                ]
+              ],
+              "missing_lines": [
+                [
+                  "as_rsqrt_refine",
+                  122
+                ],
+                [
+                  "as_rsqrt_refine",
+                  123
+                ],
+                [
+                  "as_rsqrt_refine",
+                  124
+                ],
+                [
+                  "as_rsqrt_refine",
+                  125
+                ],
+                [
+                  "as_rsqrt_refine",
+                  126
+                ],
+                [
+                  "as_rsqrt_refine",
+                  130
+                ],
+                [
+                  "as_rsqrt_refine",
+                  131
+                ],
+                [
+                  "as_rsqrt_refine",
+                  133
+                ],
+                [
+                  "as_rsqrt_refine",
+                  134
+                ],
+                [
+                  "as_rsqrt_refine",
+                  135
+                ],
+                [
+                  "as_rsqrt_refine",
+                  136
+                ],
+                [
+                  "as_rsqrt_refine",
+                  137
+                ],
+                [
+                  "as_rsqrt_refine",
+                  138
+                ],
+                [
+                  "as_rsqrt_refine",
+                  139
+                ],
+                [
+                  "as_rsqrt_refine",
+                  140
+                ],
+                [
+                  "as_rsqrt_refine",
+                  141
+                ],
+                [
+                  "as_rsqrt_refine",
+                  143
+                ],
+                [
+                  "as_rsqrt_refine",
+                  145
+                ],
+                [
+                  "as_rsqrt_refine",
+                  146
+                ],
+                [
+                  "as_rsqrt_refine",
+                  147
+                ],
+                [
+                  "as_rsqrt_refine",
+                  148
+                ],
+                [
+                  "as_rsqrt_refine",
+                  149
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153
+                ],
+                [
+                  "as_rsqrt_refine",
+                  154
+                ],
+                [
+                  "as_rsqrt_refine",
+                  155
+                ],
+                [
+                  "as_rsqrt_refine",
+                  156
+                ],
+                [
+                  "as_rsqrt_refine",
+                  157
+                ],
+                [
+                  "as_rsqrt_refine",
+                  158
+                ],
+                [
+                  "as_rsqrt_refine",
+                  159
+                ],
+                [
+                  "as_rsqrt_refine",
+                  161
+                ],
+                [
+                  "as_rsqrt_refine",
+                  163
+                ],
+                [
+                  "cr_rsqrt",
+                  172
+                ],
+                [
+                  "cr_rsqrt",
+                  173
+                ],
+                [
+                  "cr_rsqrt",
+                  176
+                ],
+                [
+                  "cr_rsqrt",
+                  178
+                ],
+                [
+                  "cr_rsqrt",
+                  183
+                ],
+                [
+                  "cr_rsqrt",
+                  185
+                ],
+                [
+                  "cr_rsqrt",
+                  202
+                ],
+                [
+                  "get_rounding_mode",
+                  81
+                ],
+                [
+                  "get_rounding_mode",
+                  100
+                ]
+              ]
+            },
+            "covered": "PASS",
+            "gcov_json_format_version": "1",
+            "mode": "rndn",
+            "other_instrumented_files": [
+              "xmmintrin.h"
+            ],
+            "plain": "PASS"
+          },
+          {
+            "accepted_tests": 6,
+            "coverage": {
+              "arcs_hit": 18,
+              "arcs_total": 36,
+              "lines_hit": 28,
+              "lines_total": 71,
+              "missing_arcs": [
+                [
+                  "as_rsqrt_refine",
+                  121,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  128,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  171,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  181,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  195,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  198,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  7
+                ]
+              ],
+              "missing_lines": [
+                [
+                  "as_rsqrt_refine",
+                  122
+                ],
+                [
+                  "as_rsqrt_refine",
+                  123
+                ],
+                [
+                  "as_rsqrt_refine",
+                  124
+                ],
+                [
+                  "as_rsqrt_refine",
+                  125
+                ],
+                [
+                  "as_rsqrt_refine",
+                  126
+                ],
+                [
+                  "as_rsqrt_refine",
+                  130
+                ],
+                [
+                  "as_rsqrt_refine",
+                  131
+                ],
+                [
+                  "as_rsqrt_refine",
+                  133
+                ],
+                [
+                  "as_rsqrt_refine",
+                  134
+                ],
+                [
+                  "as_rsqrt_refine",
+                  135
+                ],
+                [
+                  "as_rsqrt_refine",
+                  136
+                ],
+                [
+                  "as_rsqrt_refine",
+                  137
+                ],
+                [
+                  "as_rsqrt_refine",
+                  138
+                ],
+                [
+                  "as_rsqrt_refine",
+                  139
+                ],
+                [
+                  "as_rsqrt_refine",
+                  140
+                ],
+                [
+                  "as_rsqrt_refine",
+                  141
+                ],
+                [
+                  "as_rsqrt_refine",
+                  143
+                ],
+                [
+                  "as_rsqrt_refine",
+                  145
+                ],
+                [
+                  "as_rsqrt_refine",
+                  146
+                ],
+                [
+                  "as_rsqrt_refine",
+                  147
+                ],
+                [
+                  "as_rsqrt_refine",
+                  148
+                ],
+                [
+                  "as_rsqrt_refine",
+                  149
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153
+                ],
+                [
+                  "as_rsqrt_refine",
+                  154
+                ],
+                [
+                  "as_rsqrt_refine",
+                  155
+                ],
+                [
+                  "as_rsqrt_refine",
+                  156
+                ],
+                [
+                  "as_rsqrt_refine",
+                  157
+                ],
+                [
+                  "as_rsqrt_refine",
+                  158
+                ],
+                [
+                  "as_rsqrt_refine",
+                  159
+                ],
+                [
+                  "as_rsqrt_refine",
+                  161
+                ],
+                [
+                  "as_rsqrt_refine",
+                  163
+                ],
+                [
+                  "cr_rsqrt",
+                  172
+                ],
+                [
+                  "cr_rsqrt",
+                  173
+                ],
+                [
+                  "cr_rsqrt",
+                  176
+                ],
+                [
+                  "cr_rsqrt",
+                  178
+                ],
+                [
+                  "cr_rsqrt",
+                  183
+                ],
+                [
+                  "cr_rsqrt",
+                  185
+                ],
+                [
+                  "cr_rsqrt",
+                  202
+                ],
+                [
+                  "get_rounding_mode",
+                  81
+                ],
+                [
+                  "get_rounding_mode",
+                  100
+                ]
+              ]
+            },
+            "covered": "PASS",
+            "gcov_json_format_version": "1",
+            "mode": "rndz",
+            "other_instrumented_files": [
+              "xmmintrin.h"
+            ],
+            "plain": "PASS"
+          },
+          {
+            "accepted_tests": 6,
+            "coverage": {
+              "arcs_hit": 18,
+              "arcs_total": 36,
+              "lines_hit": 28,
+              "lines_total": 71,
+              "missing_arcs": [
+                [
+                  "as_rsqrt_refine",
+                  121,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  128,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  171,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  181,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  195,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  198,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  7
+                ]
+              ],
+              "missing_lines": [
+                [
+                  "as_rsqrt_refine",
+                  122
+                ],
+                [
+                  "as_rsqrt_refine",
+                  123
+                ],
+                [
+                  "as_rsqrt_refine",
+                  124
+                ],
+                [
+                  "as_rsqrt_refine",
+                  125
+                ],
+                [
+                  "as_rsqrt_refine",
+                  126
+                ],
+                [
+                  "as_rsqrt_refine",
+                  130
+                ],
+                [
+                  "as_rsqrt_refine",
+                  131
+                ],
+                [
+                  "as_rsqrt_refine",
+                  133
+                ],
+                [
+                  "as_rsqrt_refine",
+                  134
+                ],
+                [
+                  "as_rsqrt_refine",
+                  135
+                ],
+                [
+                  "as_rsqrt_refine",
+                  136
+                ],
+                [
+                  "as_rsqrt_refine",
+                  137
+                ],
+                [
+                  "as_rsqrt_refine",
+                  138
+                ],
+                [
+                  "as_rsqrt_refine",
+                  139
+                ],
+                [
+                  "as_rsqrt_refine",
+                  140
+                ],
+                [
+                  "as_rsqrt_refine",
+                  141
+                ],
+                [
+                  "as_rsqrt_refine",
+                  143
+                ],
+                [
+                  "as_rsqrt_refine",
+                  145
+                ],
+                [
+                  "as_rsqrt_refine",
+                  146
+                ],
+                [
+                  "as_rsqrt_refine",
+                  147
+                ],
+                [
+                  "as_rsqrt_refine",
+                  148
+                ],
+                [
+                  "as_rsqrt_refine",
+                  149
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153
+                ],
+                [
+                  "as_rsqrt_refine",
+                  154
+                ],
+                [
+                  "as_rsqrt_refine",
+                  155
+                ],
+                [
+                  "as_rsqrt_refine",
+                  156
+                ],
+                [
+                  "as_rsqrt_refine",
+                  157
+                ],
+                [
+                  "as_rsqrt_refine",
+                  158
+                ],
+                [
+                  "as_rsqrt_refine",
+                  159
+                ],
+                [
+                  "as_rsqrt_refine",
+                  161
+                ],
+                [
+                  "as_rsqrt_refine",
+                  163
+                ],
+                [
+                  "cr_rsqrt",
+                  172
+                ],
+                [
+                  "cr_rsqrt",
+                  173
+                ],
+                [
+                  "cr_rsqrt",
+                  176
+                ],
+                [
+                  "cr_rsqrt",
+                  178
+                ],
+                [
+                  "cr_rsqrt",
+                  183
+                ],
+                [
+                  "cr_rsqrt",
+                  185
+                ],
+                [
+                  "cr_rsqrt",
+                  202
+                ],
+                [
+                  "get_rounding_mode",
+                  81
+                ],
+                [
+                  "get_rounding_mode",
+                  100
+                ]
+              ]
+            },
+            "covered": "PASS",
+            "gcov_json_format_version": "1",
+            "mode": "rndu",
+            "other_instrumented_files": [
+              "xmmintrin.h"
+            ],
+            "plain": "PASS"
+          },
+          {
+            "accepted_tests": 6,
+            "coverage": {
+              "arcs_hit": 18,
+              "arcs_total": 36,
+              "lines_hit": 28,
+              "lines_total": 71,
+              "missing_arcs": [
+                [
+                  "as_rsqrt_refine",
+                  121,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  128,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152,
+                  1
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  0
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  171,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  172,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  181,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  195,
+                  0
+                ],
+                [
+                  "cr_rsqrt",
+                  198,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  1
+                ],
+                [
+                  "cr_rsqrt",
+                  210,
+                  7
+                ]
+              ],
+              "missing_lines": [
+                [
+                  "as_rsqrt_refine",
+                  122
+                ],
+                [
+                  "as_rsqrt_refine",
+                  123
+                ],
+                [
+                  "as_rsqrt_refine",
+                  124
+                ],
+                [
+                  "as_rsqrt_refine",
+                  125
+                ],
+                [
+                  "as_rsqrt_refine",
+                  126
+                ],
+                [
+                  "as_rsqrt_refine",
+                  130
+                ],
+                [
+                  "as_rsqrt_refine",
+                  131
+                ],
+                [
+                  "as_rsqrt_refine",
+                  133
+                ],
+                [
+                  "as_rsqrt_refine",
+                  134
+                ],
+                [
+                  "as_rsqrt_refine",
+                  135
+                ],
+                [
+                  "as_rsqrt_refine",
+                  136
+                ],
+                [
+                  "as_rsqrt_refine",
+                  137
+                ],
+                [
+                  "as_rsqrt_refine",
+                  138
+                ],
+                [
+                  "as_rsqrt_refine",
+                  139
+                ],
+                [
+                  "as_rsqrt_refine",
+                  140
+                ],
+                [
+                  "as_rsqrt_refine",
+                  141
+                ],
+                [
+                  "as_rsqrt_refine",
+                  143
+                ],
+                [
+                  "as_rsqrt_refine",
+                  145
+                ],
+                [
+                  "as_rsqrt_refine",
+                  146
+                ],
+                [
+                  "as_rsqrt_refine",
+                  147
+                ],
+                [
+                  "as_rsqrt_refine",
+                  148
+                ],
+                [
+                  "as_rsqrt_refine",
+                  149
+                ],
+                [
+                  "as_rsqrt_refine",
+                  150
+                ],
+                [
+                  "as_rsqrt_refine",
+                  151
+                ],
+                [
+                  "as_rsqrt_refine",
+                  152
+                ],
+                [
+                  "as_rsqrt_refine",
+                  153
+                ],
+                [
+                  "as_rsqrt_refine",
+                  154
+                ],
+                [
+                  "as_rsqrt_refine",
+                  155
+                ],
+                [
+                  "as_rsqrt_refine",
+                  156
+                ],
+                [
+                  "as_rsqrt_refine",
+                  157
+                ],
+                [
+                  "as_rsqrt_refine",
+                  158
+                ],
+                [
+                  "as_rsqrt_refine",
+                  159
+                ],
+                [
+                  "as_rsqrt_refine",
+                  161
+                ],
+                [
+                  "as_rsqrt_refine",
+                  163
+                ],
+                [
+                  "cr_rsqrt",
+                  172
+                ],
+                [
+                  "cr_rsqrt",
+                  173
+                ],
+                [
+                  "cr_rsqrt",
+                  176
+                ],
+                [
+                  "cr_rsqrt",
+                  178
+                ],
+                [
+                  "cr_rsqrt",
+                  183
+                ],
+                [
+                  "cr_rsqrt",
+                  185
+                ],
+                [
+                  "cr_rsqrt",
+                  202
+                ],
+                [
+                  "get_rounding_mode",
+                  81
+                ],
+                [
+                  "get_rounding_mode",
+                  100
+                ]
+              ]
+            },
+            "covered": "PASS",
+            "gcov_json_format_version": "1",
+            "mode": "rndd",
+            "other_instrumented_files": [
+              "xmmintrin.h"
+            ],
+            "plain": "PASS"
+          }
+        ],
+        "profile": "gcc-linux-x86_64",
+        "source_sha256": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+        "started_utc": "2026-10-06T20:01:15.202709+00:00",
+        "status": "PASS"
+      }
+    },
+    {
+      "control": "wrong-value",
+      "expected_status": "FAIL",
+      "result": {
+        "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "copied_files": {
+          "Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+          "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+          "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+          "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+          "check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+          "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+          "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+          "check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+          "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+          "function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+          "rsqrt.c": "3ad329f35f52055431803778d3632cef62693d33d0c7c01b6a3b183fb2890af6",
+          "rsqrt.wc": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+          "rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+        },
+        "corpus_rows": 3,
+        "corpus_sha256": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+        "coverage_flags": [
+          "-O0",
+          "-g",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO",
+          "--coverage"
+        ],
+        "coverage_union": {
+          "arcs_hit": 0,
+          "arcs_total": 0,
+          "lines_hit": 0,
+          "lines_total": 0,
+          "missing_arcs": [],
+          "missing_lines": []
+        },
+        "environment": {
+          "architecture": "x86_64",
+          "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "experimental": false,
+          "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "libc": [
+            "glibc",
+            "2.39"
+          ],
+          "platform": "Linux",
+          "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+          "profile": "gcc-linux-x86_64",
+          "status": "PASS"
+        },
+        "errno": 1,
+        "expected_tests_per_mode": 6,
+        "finished_utc": "2026-10-06T20:01:33.767187+00:00",
+        "flags": [
+          "-O3",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO"
+        ],
+        "function": "rsqrt",
+        "logs": {
+          "checker-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "check_worst_uni.c",
+              "-o",
+              "checker.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.293
+          },
+          "covered-build": {
+            "command": [
+              "gcc",
+              "-O0",
+              "-g",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "--coverage",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "rsqrt.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 2.002
+          },
+          "covered-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "rsqrt.o",
+              "ref.o",
+              "-lgcov",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "covered"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.186
+          },
+          "plain-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "plain.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.916
+          },
+          "plain-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "plain.o",
+              "ref.o",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "plain"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.405
+          },
+          "plain-rndd": {
+            "command": [
+              "./plain",
+              "--rndd"
+            ],
+            "output": "FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "output_bytes": 34,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.044
+          },
+          "plain-rndn": {
+            "command": [
+              "./plain",
+              "--rndn"
+            ],
+            "output": "FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "output_bytes": 34,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.012
+          },
+          "plain-rndu": {
+            "command": [
+              "./plain",
+              "--rndu"
+            ],
+            "output": "FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "output_bytes": 34,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.025
+          },
+          "plain-rndz": {
+            "command": [
+              "./plain",
+              "--rndz"
+            ],
+            "output": "FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "output_bytes": 34,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.018
+          },
+          "reference-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt_mpfr.c",
+              "-o",
+              "ref.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.295
+          }
+        },
+        "macros_referenced": {
+          "CORE_MATH_CHECK_INEXACT": true,
+          "CORE_MATH_NO_OPENMP": true,
+          "CORE_MATH_SUPPORT_ERRNO": true
+        },
+        "modes": [
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "mode": "rndn",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "mode": "rndz",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "mode": "rndu",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: FAIL x=0x1p+2 ref=0x1p-1 z=0x0p+0\n",
+            "mode": "rndd",
+            "plain": "FAIL"
+          }
+        ],
+        "profile": "gcc-linux-x86_64",
+        "source_sha256": "3ad329f35f52055431803778d3632cef62693d33d0c7c01b6a3b183fb2890af6",
+        "started_utc": "2026-10-06T20:01:24.724925+00:00",
+        "status": "FAIL"
+      }
+    },
+    {
+      "control": "wrong-inexact",
+      "expected_status": "FAIL",
+      "result": {
+        "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "copied_files": {
+          "Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+          "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+          "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+          "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+          "check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+          "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+          "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+          "check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+          "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+          "function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+          "rsqrt.c": "ca3825f8d8f0d171ed3a615853c62ff8930423f1f7789c3183a3b3bfbe084b9f",
+          "rsqrt.wc": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+          "rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+        },
+        "corpus_rows": 3,
+        "corpus_sha256": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+        "coverage_flags": [
+          "-O0",
+          "-g",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO",
+          "--coverage"
+        ],
+        "coverage_union": {
+          "arcs_hit": 0,
+          "arcs_total": 0,
+          "lines_hit": 0,
+          "lines_total": 0,
+          "missing_arcs": [],
+          "missing_lines": []
+        },
+        "environment": {
+          "architecture": "x86_64",
+          "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "experimental": false,
+          "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "libc": [
+            "glibc",
+            "2.39"
+          ],
+          "platform": "Linux",
+          "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+          "profile": "gcc-linux-x86_64",
+          "status": "PASS"
+        },
+        "errno": 1,
+        "expected_tests_per_mode": 6,
+        "finished_utc": "2026-10-06T20:01:42.804812+00:00",
+        "flags": [
+          "-O3",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO"
+        ],
+        "function": "rsqrt",
+        "logs": {
+          "checker-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "check_worst_uni.c",
+              "-o",
+              "checker.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.528
+          },
+          "covered-build": {
+            "command": [
+              "gcc",
+              "-O0",
+              "-g",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "--coverage",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "rsqrt.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.639
+          },
+          "covered-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "rsqrt.o",
+              "ref.o",
+              "-lgcov",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "covered"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.827
+          },
+          "plain-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "plain.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.637
+          },
+          "plain-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "plain.o",
+              "ref.o",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "plain"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.778
+          },
+          "plain-rndd": {
+            "command": [
+              "./plain",
+              "--rndd"
+            ],
+            "output": "Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 51,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.022
+          },
+          "plain-rndn": {
+            "command": [
+              "./plain",
+              "--rndn"
+            ],
+            "output": "Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 51,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.034
+          },
+          "plain-rndu": {
+            "command": [
+              "./plain",
+              "--rndu"
+            ],
+            "output": "Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 51,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.024
+          },
+          "plain-rndz": {
+            "command": [
+              "./plain",
+              "--rndz"
+            ],
+            "output": "Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 51,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.016
+          },
+          "reference-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt_mpfr.c",
+              "-o",
+              "ref.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.177
+          }
+        },
+        "macros_referenced": {
+          "CORE_MATH_CHECK_INEXACT": true,
+          "CORE_MATH_NO_OPENMP": true,
+          "CORE_MATH_SUPPORT_ERRNO": true
+        },
+        "modes": [
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndn",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndz",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndu",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious inexact exception for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndd",
+            "plain": "FAIL"
+          }
+        ],
+        "profile": "gcc-linux-x86_64",
+        "source_sha256": "ca3825f8d8f0d171ed3a615853c62ff8930423f1f7789c3183a3b3bfbe084b9f",
+        "started_utc": "2026-10-06T20:01:36.519359+00:00",
+        "status": "FAIL"
+      }
+    },
+    {
+      "control": "wrong-errno",
+      "expected_status": "FAIL",
+      "result": {
+        "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "copied_files": {
+          "Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+          "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+          "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+          "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+          "check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+          "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+          "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+          "check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+          "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+          "function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+          "rsqrt.c": "b22fe9c45ef0a124d81dbaa8da8ffd5350fbde0a85ea830a4eac4637e28f515c",
+          "rsqrt.wc": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+          "rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+        },
+        "corpus_rows": 3,
+        "corpus_sha256": "9c1b1536797d144e236c79ebd54c552caf7433ce2960a7ffc271a8c5d5b2a86d",
+        "coverage_flags": [
+          "-O0",
+          "-g",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO",
+          "--coverage"
+        ],
+        "coverage_union": {
+          "arcs_hit": 0,
+          "arcs_total": 0,
+          "lines_hit": 0,
+          "lines_total": 0,
+          "missing_arcs": [],
+          "missing_lines": []
+        },
+        "environment": {
+          "architecture": "x86_64",
+          "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "experimental": false,
+          "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+          "libc": [
+            "glibc",
+            "2.39"
+          ],
+          "platform": "Linux",
+          "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+          "profile": "gcc-linux-x86_64",
+          "status": "PASS"
+        },
+        "errno": 1,
+        "expected_tests_per_mode": 6,
+        "finished_utc": "2026-10-06T20:01:50.631496+00:00",
+        "flags": [
+          "-O3",
+          "-frounding-math",
+          "-fno-finite-math-only",
+          "-ffp-contract=off",
+          "-DCORE_MATH_NO_OPENMP",
+          "-DCORE_MATH_CHECK_INEXACT",
+          "-march=x86-64",
+          "-fsignaling-nans",
+          "-DCORE_MATH_SUPPORT_ERRNO"
+        ],
+        "function": "rsqrt",
+        "logs": {
+          "checker-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "check_worst_uni.c",
+              "-o",
+              "checker.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.325
+          },
+          "covered-build": {
+            "command": [
+              "gcc",
+              "-O0",
+              "-g",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "--coverage",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "rsqrt.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.385
+          },
+          "covered-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "rsqrt.o",
+              "ref.o",
+              "-lgcov",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "covered"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.731
+          },
+          "plain-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt.c",
+              "-o",
+              "plain.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 1.291
+          },
+          "plain-link": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "checker.o",
+              "plain.o",
+              "ref.o",
+              "-lmpfr",
+              "-lgmp",
+              "-lm",
+              "-o",
+              "plain"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.677
+          },
+          "plain-rndd": {
+            "command": [
+              "./plain",
+              "--rndd"
+            ],
+            "output": "Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 46,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.019
+          },
+          "plain-rndn": {
+            "command": [
+              "./plain",
+              "--rndn"
+            ],
+            "output": "Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 46,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.017
+          },
+          "plain-rndu": {
+            "command": [
+              "./plain",
+              "--rndu"
+            ],
+            "output": "Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 46,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.021
+          },
+          "plain-rndz": {
+            "command": [
+              "./plain",
+              "--rndz"
+            ],
+            "output": "Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "output_bytes": 46,
+            "output_truncated": false,
+            "returncode": 1,
+            "wall_seconds": 0.021
+          },
+          "reference-build": {
+            "command": [
+              "gcc",
+              "-O3",
+              "-frounding-math",
+              "-fno-finite-math-only",
+              "-ffp-contract=off",
+              "-DCORE_MATH_NO_OPENMP",
+              "-DCORE_MATH_CHECK_INEXACT",
+              "-march=x86-64",
+              "-fsignaling-nans",
+              "-DCORE_MATH_SUPPORT_ERRNO",
+              "-I.",
+              "-c",
+              "rsqrt_mpfr.c",
+              "-o",
+              "ref.o"
+            ],
+            "output": "",
+            "output_bytes": 0,
+            "output_truncated": false,
+            "returncode": 0,
+            "wall_seconds": 0.183
+          }
+        },
+        "macros_referenced": {
+          "CORE_MATH_CHECK_INEXACT": true,
+          "CORE_MATH_NO_OPENMP": true,
+          "CORE_MATH_SUPPORT_ERRNO": true
+        },
+        "modes": [
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndn",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndz",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndu",
+            "plain": "FAIL"
+          },
+          {
+            "accepted_tests": null,
+            "error": "Checker failed or accepted-row count mismatch: Spurious errno=ERANGE for x=0x1p+2 (y=0x1p-1)\n",
+            "mode": "rndd",
+            "plain": "FAIL"
+          }
+        ],
+        "profile": "gcc-linux-x86_64",
+        "source_sha256": "b22fe9c45ef0a124d81dbaa8da8ffd5350fbde0a85ea830a4eac4637e28f515c",
+        "started_utc": "2026-10-06T20:01:45.502045+00:00",
+        "status": "FAIL"
+      }
+    }
+  ],
+  "scope": "Synthetic checker controls, not upstream defects or full-corpus results",
+  "status": "PASS",
+  "upstream_base": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
+  "wall_seconds": 42.22636257799968
+}

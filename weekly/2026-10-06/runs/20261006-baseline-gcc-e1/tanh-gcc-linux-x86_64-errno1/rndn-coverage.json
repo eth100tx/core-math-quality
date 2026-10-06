@@ -1,0 +1,1397 @@
+{
+  "file": "src/binary64/tanh/tanh.c",
+  "functions": [
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "fasttwosum",
+      "end_column": 1,
+      "end_line": 55,
+      "execution_count": 3620484,
+      "name": "fasttwosum",
+      "start_column": 22,
+      "start_line": 51
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "fasttwosub",
+      "end_column": 1,
+      "end_line": 61,
+      "execution_count": 86532,
+      "name": "fasttwosub",
+      "start_column": 22,
+      "start_line": 57
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "muldd_acc",
+      "end_column": 1,
+      "end_line": 67,
+      "execution_count": 1420656,
+      "name": "muldd_acc",
+      "start_column": 22,
+      "start_line": 63
+    },
+    {
+      "blocks": 2,
+      "blocks_executed": 2,
+      "demangled_name": "mulddd_acc",
+      "end_column": 1,
+      "end_line": 73,
+      "execution_count": 131100,
+      "name": "mulddd_acc",
+      "start_column": 22,
+      "start_line": 69
+    },
+    {
+      "blocks": 8,
+      "blocks_executed": 8,
+      "demangled_name": "polydd",
+      "end_column": 1,
+      "end_line": 92,
+      "execution_count": 169656,
+      "name": "polydd",
+      "start_column": 22,
+      "start_line": 77
+    },
+    {
+      "blocks": 5,
+      "blocks_executed": 5,
+      "demangled_name": "as_exp_accurate",
+      "end_column": 1,
+      "end_line": 110,
+      "execution_count": 38556,
+      "name": "as_exp_accurate",
+      "start_column": 41,
+      "start_line": 94
+    },
+    {
+      "blocks": 17,
+      "blocks_executed": 17,
+      "demangled_name": "as_tanh_zero",
+      "end_column": 1,
+      "end_line": 147,
+      "execution_count": 131100,
+      "name": "as_tanh_zero",
+      "start_column": 41,
+      "start_line": 112
+    },
+    {
+      "blocks": 10,
+      "blocks_executed": 10,
+      "demangled_name": "as_tanh_database",
+      "end_column": 1,
+      "end_line": 177,
+      "execution_count": 1248,
+      "name": "as_tanh_database",
+      "start_column": 41,
+      "start_line": 149
+    },
+    {
+      "blocks": 48,
+      "blocks_executed": 48,
+      "demangled_name": "cr_tanh",
+      "end_column": 1,
+      "end_line": 387,
+      "execution_count": 377408,
+      "name": "cr_tanh",
+      "start_column": 8,
+      "start_line": 179
+    }
+  ],
+  "lines": [
+    {
+      "branches": [],
+      "count": 3620484,
+      "function_name": "fasttwosum",
+      "line_number": 51,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 3620484,
+      "function_name": "fasttwosum",
+      "line_number": 52,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 3620484,
+      "function_name": "fasttwosum",
+      "line_number": 53,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 3620484,
+      "function_name": "fasttwosum",
+      "line_number": 54,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 86532,
+      "function_name": "fasttwosub",
+      "line_number": 57,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 86532,
+      "function_name": "fasttwosub",
+      "line_number": 58,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 86532,
+      "function_name": "fasttwosub",
+      "line_number": 59,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 86532,
+      "function_name": "fasttwosub",
+      "line_number": 60,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1420656,
+      "function_name": "muldd_acc",
+      "line_number": 63,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1420656,
+      "function_name": "muldd_acc",
+      "line_number": 64,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1420656,
+      "function_name": "muldd_acc",
+      "line_number": 65,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1420656,
+      "function_name": "muldd_acc",
+      "line_number": 66,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "mulddd_acc",
+      "line_number": 69,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "mulddd_acc",
+      "line_number": 70,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "mulddd_acc",
+      "line_number": 71,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "mulddd_acc",
+      "line_number": 72,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 169656,
+      "function_name": "polydd",
+      "line_number": 77,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 169656,
+      "function_name": "polydd",
+      "line_number": 78,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 169656,
+      "function_name": "polydd",
+      "line_number": 80,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 169656,
+      "function_name": "polydd",
+      "line_number": 81,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 1125912,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 169656,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 1295568,
+      "function_name": "polydd",
+      "line_number": 83,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1125912,
+      "function_name": "polydd",
+      "line_number": 84,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1125912,
+      "function_name": "polydd",
+      "line_number": 86,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1125912,
+      "function_name": "polydd",
+      "line_number": 87,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1125912,
+      "function_name": "polydd",
+      "line_number": 88,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 169656,
+      "function_name": "polydd",
+      "line_number": 90,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 169656,
+      "function_name": "polydd",
+      "line_number": 91,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 94,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 98,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 99,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 100,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 101,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 102,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 103,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 104,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 105,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 106,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 107,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 108,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "as_exp_accurate",
+      "line_number": 109,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 112,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 128,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 129,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 130,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 131,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 132,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 133,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 134,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 135,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 96,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 131004,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 131100,
+      "function_name": "as_tanh_zero",
+      "line_number": 136,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 96,
+      "function_name": "as_tanh_zero",
+      "line_number": 137,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 36,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 60,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 96,
+      "function_name": "as_tanh_zero",
+      "line_number": 138,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 36,
+      "function_name": "as_tanh_zero",
+      "line_number": 139,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 60,
+      "function_name": "as_tanh_zero",
+      "line_number": 141,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 96,
+      "function_name": "as_tanh_zero",
+      "line_number": 142,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 12,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 84,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 96,
+      "function_name": "as_tanh_zero",
+      "line_number": 143,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "as_tanh_zero",
+      "line_number": 144,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131088,
+      "function_name": "as_tanh_zero",
+      "line_number": 146,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248,
+      "function_name": "as_tanh_database",
+      "line_number": 149,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248,
+      "function_name": "as_tanh_database",
+      "line_number": 164,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248,
+      "function_name": "as_tanh_database",
+      "line_number": 165,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 4812,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 1188,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 6000,
+      "function_name": "as_tanh_database",
+      "line_number": 166,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 4248,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 564,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 4812,
+      "function_name": "as_tanh_database",
+      "line_number": 167,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 4248,
+      "function_name": "as_tanh_database",
+      "line_number": 168,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 60,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 504,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 564,
+      "function_name": "as_tanh_database",
+      "line_number": 169,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 60,
+      "function_name": "as_tanh_database",
+      "line_number": 170,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 60,
+      "function_name": "as_tanh_database",
+      "line_number": 171,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 504,
+      "function_name": "as_tanh_database",
+      "line_number": 173,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 4752,
+      "function_name": "as_tanh_database",
+      "line_number": 174,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1248,
+      "function_name": "as_tanh_database",
+      "line_number": 176,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377408,
+      "function_name": "cr_tanh",
+      "line_number": 179,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377408,
+      "function_name": "cr_tanh",
+      "line_number": 255,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377408,
+      "function_name": "cr_tanh",
+      "line_number": 256,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377408,
+      "function_name": "cr_tanh",
+      "line_number": 257,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 176,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 377232,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 377408,
+      "function_name": "cr_tanh",
+      "line_number": 260,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 56,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 120,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 176,
+      "function_name": "cr_tanh",
+      "line_number": 261,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 120,
+      "function_name": "cr_tanh",
+      "line_number": 262,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 96,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 120,
+      "function_name": "cr_tanh",
+      "line_number": 263,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 96,
+      "function_name": "cr_tanh",
+      "line_number": 264,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 96,
+      "function_name": "cr_tanh",
+      "line_number": 265,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 267,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 268,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 269,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 271,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 272,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 273,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 274,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 281,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 282,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 284,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 347496,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 29736,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 377232,
+      "function_name": "cr_tanh",
+      "line_number": 285,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 299520,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 47976,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 347496,
+      "function_name": "cr_tanh",
+      "line_number": 286,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 180,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 299340,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 299520,
+      "function_name": "cr_tanh",
+      "line_number": 287,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 24,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 156,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 180,
+      "function_name": "cr_tanh",
+      "line_number": 288,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 156,
+      "function_name": "cr_tanh",
+      "line_number": 291,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 108,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 48,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 156,
+      "function_name": "cr_tanh",
+      "line_number": 293,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 0,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 108,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 108,
+      "function_name": "cr_tanh",
+      "line_number": 294,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 48,
+      "function_name": "cr_tanh",
+      "line_number": 295,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 156,
+      "function_name": "cr_tanh",
+      "line_number": 297,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 302,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 303,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 304,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 305,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 306,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 307,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 319,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 168240,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 131100,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 299340,
+      "function_name": "cr_tanh",
+      "line_number": 320,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 131100,
+      "function_name": "cr_tanh",
+      "line_number": 321,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 324,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 325,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 326,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 327,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 328,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 329,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 330,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 331,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 332,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 334,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 335,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 336,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 338,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 339,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 346,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 347,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 348,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 349,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 350,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 23400,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 24576,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 47976,
+      "function_name": "cr_tanh",
+      "line_number": 351,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 355,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 356,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 357,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 358,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 364,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 365,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 366,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 367,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 368,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 15756,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 13980,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 29736,
+      "function_name": "cr_tanh",
+      "line_number": 369,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 13980,
+      "function_name": "cr_tanh",
+      "line_number": 371,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 13980,
+      "function_name": "cr_tanh",
+      "line_number": 372,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 13980,
+      "function_name": "cr_tanh",
+      "line_number": 373,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 13980,
+      "function_name": "cr_tanh",
+      "line_number": 374,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 376,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 377,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 378,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 379,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 380,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 381,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 382,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 383,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 384,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 1236,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 37320,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 38556,
+      "function_name": "cr_tanh",
+      "line_number": 385,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 37320,
+      "function_name": "cr_tanh",
+      "line_number": 386,
+      "unexecuted_block": false
+    }
+  ]
+}

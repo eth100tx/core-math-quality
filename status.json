@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-10-06T20:02:18.422643+00:00",
+  "baseline_pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
+  "baseline_profile": "gcc-linux-x86_64-errno1",
+  "active_coverage_target": {
+    "function": "asinpi",
+    "missing_arcs": 1,
+    "missing_lines": 0
+  },
+  "target_state": "tested witness candidate available; independent review pending; not applied upstream",
+  "latest_report": "weekly/2026-10-06/REPORT.md",
+  "pending": [
+    "review/pickup of asinpi coverage witness candidate",
+    "separate proof revision review",
+    "platform extensions only after qualification"
+  ]
+}
