@@ -1,0 +1,95 @@
+# Reproducible runbook
+
+## First visit
+
+Read the README and configuration table. Install the listed build dependencies
+in a user-controlled Linux/WSL environment. The runner uses Python's standard
+library. `doctor` compiles and executes a small probe of binary64 representation,
+rounding-mode behavior, subnormals, FMA and MPFR/GMP availability; checks matching
+GCC/gcov versions and checks the v3 ISA before a v3 build. A successful doctor
+is machine qualification for the probe, not a complete platform certification.
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 quality.py doctor --profile gcc-linux-x86_64
+```
+
+If you already have a CORE-MATH checkout, you may copy its `src/` directory into
+`.work/sources/FULL_CURRENT_SHA/src/` before fetching. The runner verifies each
+requested file against the pinned upstream Git blob; stale or changed files are
+replaced. The local directory name is never accepted as proof of source identity.
+This avoids downloading large unchanged corpora. The original checkout stays
+untouched. Network access is still required to verify the authoritative tree.
+
+## Weekly or ad hoc
+
+1. Read `STATUS.md` and the previous weekly report. If the operator has authorized
+   correspondence access, read new requests privately and record only neutral
+   public requirements. Anyone can run the tests without email access.
+2. Resolve the upstream GitLab implementation revision and inspect the comparison
+   from the previous reviewed baseline. Do not treat the last email date as a Git
+   commit. Proof changes and open proof obligations need a separate review.
+3. Run the selection aid, then manually review shared/build/header changes:
+
+```sh
+python3 quality.py plan --base FULL_PREVIOUS_SHA --pin FULL_CURRENT_SHA
+```
+
+4. For a fresh coverage census, run all 25 in a single comparable profile:
+
+```sh
+python3 quality.py run --pin FULL_CURRENT_SHA --functions all \
+  --profile gcc-linux-x86_64 --errno 1 --run-id YYYYMMDD-baseline --max-minutes 100
+```
+
+   For a focused request, substitute `--functions sin` or `sin,cos`. Change
+   `--errno 0` or the profile only with a different run ID. Raw reports remain
+   configuration-specific. Every function runs the entire pinned `.wc` file,
+   the upstream checker's built-in special/NaN checks, all four modes, and both
+   signs where upstream defines `WORST_SYMMETRIC`. This is **not** `check_special`
+   or exhaustive/random testing. Add those as separate recorded investigations.
+5. Read `.work/runs/RUN_ID/result.json` and `status.json`. A nonzero exit or
+   INCOMPLETE is not a clean result. Reuse the identical command to resume
+   completed functions; use a new ID after any input/tool change. Each function
+   restarts its interrupted modes as one unit to avoid mixing counters.
+6. Inspect the smallest nonzero gaps using `docs/COVERAGE.md`. Reproduce a
+   new value failure without instrumentation before labeling it a defect.
+7. Export to a new weekly directory:
+
+```sh
+python3 quality.py export --run-id YYYYMMDD-baseline --week YYYY-MM-DD
+```
+
+8. Write the report with `templates/WEEKLY.md`. Independently review evidence,
+   classification, target choice and patch candidates. Run `python3 validate.py`
+   and the selftests. Inspect the full staged diff and use a public-safe commit
+   identity. Publish only to a repository the operator authorized.
+9. Update STATUS and weekly index. Advance only the completed scope; record
+   deferred source/proof/compiler work. Review, measurement and notification
+   watermarks are separate. Never hide a missing check behind a passing total.
+
+## Resume and bounded operation
+
+The lock is kernel-managed, shared by clones using the same OS user account:
+it is released when the process exits, without
+deleting stale lock files. A remaining file alone does not mean a live run.
+`status.json` names the current function and command with its timeout. The parent
+prints each mode and retains child outputs. Each child runs in a process group,
+killed on timeout or a handled termination signal. Download calls also have timeouts. For an overall wall-clock
+limit that includes acquisition, use the scheduler's outer timeout.
+
+Successful function results are reused only if the identity matches the source
+manifest, runner hash, config hashes, compiler/probe environment, profile, errno and selection.
+Unsuccessful functions are retried whole. Raw `.gcda` counters are removed before
+each mode. Never manually edit a PASS result to force resume.
+
+CPU time in each receipt is child CPU for that invocation. Append-only
+`invocations.jsonl` retains resume accounting; parent/AI overhead is recorded by
+the operator's campaign ledger separately. Killed descendants may make collected
+child CPU a lower bound; budget conservatively in external accounting. No
+long-lived worker is installed. During a child, the status timestamp may remain
+unchanged for up to the recorded ten-minute limit; it names the bounded operation.
+
+After preserving reviewed exports, unused `.work/runs/RUN_ID` directories may be
+removed by the operator. Do not remove an active run or its source cache. This
+workbench deliberately does not install an automatic cleanup service.

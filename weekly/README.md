@@ -1,0 +1,11 @@
+# Weekly outputs
+
+Each dated directory contains a short reviewed report and immutable evidence.
+The initial October 6 qualification is an ad hoc baseline before the first Sunday
+edition, not a claim that a scheduled weekly review already ran.
+
+| Date | Kind | Report |
+|---|---|---|
+| 2026-10-06 | Initial qualification and coverage census | [Report](2026-10-06/REPORT.md) |
+
+Failed/incomplete runs remain visible. Synthetic examples live only in `examples/`.

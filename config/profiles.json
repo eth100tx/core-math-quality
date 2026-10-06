@@ -1,0 +1,6 @@
+{
+  "gcc-linux-x86_64": {"cc": "gcc", "gcov": "gcov", "system": "Linux", "machine": "x86_64", "flags": ["-march=x86-64"], "coverage": true},
+  "gcc-linux-x86_64-v3": {"cc": "gcc", "gcov": "gcov", "system": "Linux", "machine": "x86_64", "flags": ["-march=x86-64-v3"], "coverage": true},
+  "clang-linux-x86_64": {"cc": "clang-18", "system": "Linux", "machine": "x86_64", "flags": ["-march=x86-64"], "coverage": false},
+  "clang-macos-arm64-experimental": {"cc": "clang", "system": "Darwin", "machine": "arm64", "flags": [], "coverage": false, "experimental": true}
+}

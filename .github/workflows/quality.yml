@@ -1,0 +1,23 @@
+name: Workbench checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: workbench-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  selftest:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y libmpfr-dev libgmp-dev
+      - run: python3 -m unittest discover -s tests -v
+      - run: python3 validate.py
+      - run: python3 quality.py doctor
+      - name: Pinned single-function integration check
+        if: github.event_name == 'workflow_dispatch'
+        run: timeout --kill-after=10s 10m python3 quality.py run --functions rsqrt --run-id ci-rsqrt --max-minutes 8
