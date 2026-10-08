@@ -1,0 +1,207 @@
+{
+  "completed_accurate_goals": 42,
+  "cpu_allowance_seconds": 600,
+  "results": [
+    {
+      "name": "distance-replay",
+      "rc": 0
+    },
+    {
+      "name": "hardcase-suffix",
+      "rc": 0
+    },
+    {
+      "name": "reducer-exact",
+      "rc": 0
+    },
+    {
+      "name": "new-interval-exact",
+      "rc": 0
+    },
+    {
+      "name": "exact-current",
+      "rc": 0
+    },
+    {
+      "name": "cos-current",
+      "rc": 0
+    },
+    {
+      "name": "tables-build",
+      "rc": 0
+    },
+    {
+      "name": "tables-current",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-01",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-02",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-03",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-04",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-05",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-06",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-07",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-08",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-09",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-10",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-11",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-12",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-13",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-14",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-15",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-16",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-17",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-18",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-19",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-20",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-21",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-22",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-23",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-24",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-25",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-26",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-27",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-28",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-29",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-30",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-31",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-32",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-33",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-34",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-35",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-36",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-37",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-38",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-39",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-40",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-41",
+      "rc": 0
+    },
+    {
+      "name": "accurate-goal-42",
+      "rc": 0
+    }
+  ],
+  "termination": "Parent stopped at180-second exploratory rounded-high small-model timeout after all42 accurate goals and certificate/table checks passed. No result is claimed for that pilot; separate SMALL-CLOSURE.json supplies the valid original-model binding."
+}

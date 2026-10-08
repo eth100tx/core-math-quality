@@ -1,0 +1,9 @@
+
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: eps4 is a variable without definition, yet it is unbound.
+Warning: sz is a variable without definition, yet it is unbound.
+Warning: eps2 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  |t5 - T5| in [0, 627710473253429228139801478210798809456759603504735088592331b-325 {9.18356e-39, 2^(-126.356079)}]

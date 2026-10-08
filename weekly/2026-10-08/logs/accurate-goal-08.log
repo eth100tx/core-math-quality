@@ -1,0 +1,9 @@
+
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: eps4 is a variable without definition, yet it is unbound.
+Warning: sz is a variable without definition, yet it is unbound.
+Warning: eps2 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  |u4 - u2 * u2| in [0, 1020847100762815390316336846000466427905b-256 {8.81621e-39, 2^(-126.414916)}]

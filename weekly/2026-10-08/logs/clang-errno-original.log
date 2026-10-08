@@ -1,0 +1,5 @@
+
+review/source/src/binary64/sin/sin.c:973:9: error: use of undeclared identifier 'ax'
+  973 |     if (ax < 1ull<<53 || __builtin_fabs (res) < 0x1p-1022)
+      |         ^
+1 error generated.

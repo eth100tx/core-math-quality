@@ -1,0 +1,142 @@
+{
+  "cpu_seconds": 34.225533999999996,
+  "results": [
+    {
+      "accepted_tests": 219276,
+      "cc": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndn",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndz",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndu",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndd",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "clang",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndn",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "clang",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndz",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "clang",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndu",
+      "rows": 109638,
+      "status": "PASS"
+    },
+    {
+      "accepted_tests": 219276,
+      "cc": "clang",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=fast",
+        "-march=x86-64-v3",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_NO_OPENMP",
+        "-I."
+      ],
+      "mode": "rndd",
+      "rows": 109638,
+      "status": "PASS"
+    }
+  ],
+  "wall_seconds": 46.02484636700001
+}

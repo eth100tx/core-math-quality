@@ -1,0 +1,103 @@
+{
+  "cpu_seconds": 35.637863,
+  "decision": "Original hypotheses retained and justified: H2 and exact first sum s2 stay in magnitude binade[1/8,1/4], so ulp106(s2)<=2^-108<=2^-105*abs(H2). eps5/s5 follows directly from the exact-sum FastTwoSum theorem. No smallacc patch required. Alternative rounded-high pilot timed out at180s, proving nothing; excluded from closure.",
+  "results": [
+    {
+      "name": "small-bound-binades-ne-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-ne-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-ne-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-ne-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-ne-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-ne-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-zr-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-zr-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-zr-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-zr-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-zr-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-zr-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-up-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-up-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-up-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-up-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-up-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-up-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-dn-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-dn-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-dn-pos",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-binades-dn-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre1-dn-neg",
+      "rc": 0
+    },
+    {
+      "name": "small-bound-pre2-dn-neg",
+      "rc": 0
+    }
+  ],
+  "wall_seconds": 38.438471734000004
+}

@@ -1,0 +1,7 @@
+moderate-sin cells 6 log2 upper -76.4803892492144
+moderate-cos cells 2 log2 upper -92.7112894592895
+large-sin cells 37 log2 upper -69.36126726315933
+large-cos cells 3 log2 upper -83.68306462593677
+accurate-sin cells 684 log2 upper -128.6010002285822
+accurate-cos cells 1 log2 upper -128.0
+small-relative cells 3 log2 upper -112.74344715476444

@@ -1,0 +1,7 @@
+
+review/source/src/binary64/sin/sin.c: In function ‘cr_sin’:
+review/source/src/binary64/sin/sin.c:973:9: error: ‘ax’ undeclared (first use in this function); did you mean ‘au’?
+  973 |     if (ax < 1ull<<53 || __builtin_fabs (res) < 0x1p-1022)
+      |         ^~
+      |         au
+review/source/src/binary64/sin/sin.c:973:9: note: each undeclared identifier is reported only once for each function it appears in

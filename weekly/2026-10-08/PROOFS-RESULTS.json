@@ -1,0 +1,87 @@
+{
+  "gappa_version": "1.8.2",
+  "cpu_seconds": 99.01438,
+  "wall_seconds": 101.14017065500002,
+  "results": [
+    {
+      "name": "small182-ne-positive",
+      "rc": 0
+    },
+    {
+      "name": "small182-ne-negative",
+      "rc": 0
+    },
+    {
+      "name": "moderate182-ne",
+      "rc": 0
+    },
+    {
+      "name": "large182-ne",
+      "rc": 0
+    },
+    {
+      "name": "small182-zr-positive",
+      "rc": 0
+    },
+    {
+      "name": "small182-zr-negative",
+      "rc": 0
+    },
+    {
+      "name": "moderate182-zr",
+      "rc": 0
+    },
+    {
+      "name": "large182-zr",
+      "rc": 0
+    },
+    {
+      "name": "small182-up-positive",
+      "rc": 0
+    },
+    {
+      "name": "small182-up-negative",
+      "rc": 0
+    },
+    {
+      "name": "moderate182-up",
+      "rc": 0
+    },
+    {
+      "name": "large182-up",
+      "rc": 0
+    },
+    {
+      "name": "small182-dn-positive",
+      "rc": 0
+    },
+    {
+      "name": "small182-dn-negative",
+      "rc": 0
+    },
+    {
+      "name": "moderate182-dn",
+      "rc": 0
+    },
+    {
+      "name": "large182-dn",
+      "rc": 0
+    },
+    {
+      "name": "accurate-original-w1",
+      "rc": 0
+    },
+    {
+      "name": "accurate-original-w2",
+      "rc": 0
+    },
+    {
+      "name": "accurate-corrected-w1",
+      "rc": 0
+    },
+    {
+      "name": "accurate-corrected-w2",
+      "rc": 0
+    }
+  ]
+}

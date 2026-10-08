@@ -1,0 +1,332 @@
+{
+  "retrieved_utc": "2026-10-08T08:52:38.285658+00:00",
+  "repositories": {
+    "source": {
+      "project": 35719,
+      "pin": "84674bfadb0f920614355024c87a3eef73f2d938",
+      "date": "2026-10-08T08:36:00.000+02:00",
+      "title": "Merge branch 'as_sin_patch'",
+      "tree": [
+        {
+          "id": "3d6e8489a1be7e4d8d486d83d735ef831b394dec",
+          "name": "Makefile",
+          "type": "blob",
+          "path": "src/binary64/sin/Makefile",
+          "mode": "100644"
+        },
+        {
+          "id": "809c80324fa969379a804c07247cb6a4eaf2e79a",
+          "name": "buildSC.c",
+          "type": "blob",
+          "path": "src/binary64/sin/buildSC.c",
+          "mode": "100644"
+        },
+        {
+          "id": "74781158524e605097d0e9de8e10428689836fa3",
+          "name": "check_special.c",
+          "type": "blob",
+          "path": "src/binary64/sin/check_special.c",
+          "mode": "100644"
+        },
+        {
+          "id": "ee5eabc852c37b9139d1111d70e78b1125f4b784",
+          "name": "cos_accurate.sollya",
+          "type": "blob",
+          "path": "src/binary64/sin/cos_accurate.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "3e1dc7dfa1076455853f441ceb5bab7862794490",
+          "name": "cos_fast.sollya",
+          "type": "blob",
+          "path": "src/binary64/sin/cos_fast.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "a338ff8ca5d96493586916bfc6d6ea112cd2c32a",
+          "name": "function_under_test.h",
+          "type": "blob",
+          "path": "src/binary64/sin/function_under_test.h",
+          "mode": "100644"
+        },
+        {
+          "id": "3e013bd29b98494941c3ae61c26653c8c9664dbb",
+          "name": "sin.c",
+          "type": "blob",
+          "path": "src/binary64/sin/sin.c",
+          "mode": "100644"
+        },
+        {
+          "id": "db56dc939e01cb0cbd5e907524bd7a5e89d26270",
+          "name": "sin.sage",
+          "type": "blob",
+          "path": "src/binary64/sin/sin.sage",
+          "mode": "100644"
+        },
+        {
+          "id": "16e4bb5705cfbbdd246538f9643498979c02c878",
+          "name": "sin.wc",
+          "type": "blob",
+          "path": "src/binary64/sin/sin.wc",
+          "mode": "100644"
+        },
+        {
+          "id": "793d67182fe3b26735ffcc298f4d4cbe6999e133",
+          "name": "sin_accurate.sollya",
+          "type": "blob",
+          "path": "src/binary64/sin/sin_accurate.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "6c9484e6394f72e423d101ede876678516b32861",
+          "name": "sin_fast.sollya",
+          "type": "blob",
+          "path": "src/binary64/sin/sin_fast.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "b7d272054f624d8051bfbc731a4df3296ed074b7",
+          "name": "sin_mpfr.c",
+          "type": "blob",
+          "path": "src/binary64/sin/sin_mpfr.c",
+          "mode": "100644"
+        },
+        {
+          "id": "234e382515a5630dd3dbb81ff1e4745171f3cb03",
+          "name": "sinfast.sollya",
+          "type": "blob",
+          "path": "src/binary64/sin/sinfast.sollya",
+          "mode": "100644"
+        }
+      ],
+      "hashes": {
+        "src/binary64/sin/Makefile": "a910f9bf1e4de61a88a0d218e7d9d72e3403e0a0375ca2a6bfcce619727bcb39",
+        "src/binary64/sin/buildSC.c": "869eac88efcdf504312363008b4a9150309d320da0bdbc550fda3c174615c483",
+        "src/binary64/sin/check_special.c": "4d4c55ded4aaf2235080997ee05f8282744a04d829ba15c16cc933319fc80a28",
+        "src/binary64/sin/cos_accurate.sollya": "c5eaacf4c6e94a9c48c4bb6b5bf7dc43f6608925bd7bda1a6875db79cf9e86be",
+        "src/binary64/sin/cos_fast.sollya": "aa730592793cfbec9e6f30ec5237d7cbab92c568e2bbaac56d3a1f25b9359e21",
+        "src/binary64/sin/function_under_test.h": "0b2ff60b8c35320978e997fbd182339db697ccbc19ae98d89c382f3d78bf8344",
+        "src/binary64/sin/sin.c": "35384b983d2ff51561ac75e50d6bceaa1bdfb91de647e91c138d441412d58b5c",
+        "src/binary64/sin/sin.sage": "4c1733461e5142655d89cd8e524e54327a25eda82e7983ab1af2ecdf9849ff56",
+        "src/binary64/sin/sin_accurate.sollya": "d283fc18c5974327e9e8e2fedaaff28488983123d360b6872eb4ceabbb8b9233",
+        "src/binary64/sin/sin_fast.sollya": "7afcc52dc4906399a8e286a09a93a1582b70af7a15ec707c4c80d7ed060353dc",
+        "src/binary64/sin/sin_mpfr.c": "d06c602fe0c0ef15de3f25db27909f84f232b568b5c02ebf5050b24912499cc9",
+        "src/binary64/sin/sinfast.sollya": "65d081ba5d3d1bfa18ee0dc72ee93a8cb9e30f1195ca5ce80068898f7b2de8b5",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/asinpi/asinpi.wc": "59871e5d63d225a3f87ad1775dc825a827212f3de19c5073e499e77ce0828856",
+        "src/binary64/asinpi/asinpi.c": "e9dc2ed43e86ef8924345938b25d66e3872104d826f1130dfb5f9ca94afacda5"
+      }
+    },
+    "proof-source": {
+      "project": 67027,
+      "pin": "57f6899abefaaf768d6a84e2bbc24944dcb650f2",
+      "date": "2026-10-08T10:33:35.000+02:00",
+      "title": "[sin] updated commit reference and graph",
+      "tree": [
+        {
+          "id": "28fa3b52569340f25a332f4eb7402220d18abac4",
+          "name": "acclarge.g",
+          "type": "blob",
+          "path": "sin/acclarge.g",
+          "mode": "100644"
+        },
+        {
+          "id": "94d629895f7e68c04f46078cca4b1c905434d052",
+          "name": "coslarge_acc.sollya",
+          "type": "blob",
+          "path": "sin/coslarge_acc.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "0992991b7b363b5abf8fcb1de71f46145611b3a7",
+          "name": "fast.g",
+          "type": "blob",
+          "path": "sin/fast.g",
+          "mode": "100644"
+        },
+        {
+          "id": "f3d254cb59efcead8de26ce8d3a0cceec40ba291",
+          "name": "fast.sh",
+          "type": "blob",
+          "path": "sin/fast.sh",
+          "mode": "100755"
+        },
+        {
+          "id": "d239cfd2237a3c9f6ff7de6713a9a192105d92bc",
+          "name": "graph1.pdf",
+          "type": "blob",
+          "path": "sin/graph1.pdf",
+          "mode": "100644"
+        },
+        {
+          "id": "5130f6c05baddebc242b1b57ea5c555aa3538327",
+          "name": "large.g",
+          "type": "blob",
+          "path": "sin/large.g",
+          "mode": "100644"
+        },
+        {
+          "id": "595f69e458243a9fdc14a661e650117eb859002b",
+          "name": "large.sh",
+          "type": "blob",
+          "path": "sin/large.sh",
+          "mode": "100755"
+        },
+        {
+          "id": "559fa5d7c89448cd51f328cda6c260194a22e12b",
+          "name": "lemma4.g",
+          "type": "blob",
+          "path": "sin/lemma4.g",
+          "mode": "100644"
+        },
+        {
+          "id": "527e13613d66696401593cd9dcb201042956c3f9",
+          "name": "lemma4.sh",
+          "type": "blob",
+          "path": "sin/lemma4.sh",
+          "mode": "100755"
+        },
+        {
+          "id": "132817c78fddf93c65f8c5c5cf4c0b5828d54c28",
+          "name": "modacc.g",
+          "type": "blob",
+          "path": "sin/modacc.g",
+          "mode": "100644"
+        },
+        {
+          "id": "8320c9285f5b4a06e7219f6133115520f5b4a12c",
+          "name": "modacc.sh",
+          "type": "blob",
+          "path": "sin/modacc.sh",
+          "mode": "100755"
+        },
+        {
+          "id": "39f01ce0351ce0ed30dbc17eced1b18497ba0bbf",
+          "name": "modacc0.g",
+          "type": "blob",
+          "path": "sin/modacc0.g",
+          "mode": "100644"
+        },
+        {
+          "id": "df90a0f614832f1e32d61183042bacf1bf2adc5c",
+          "name": "modacc0.sh",
+          "type": "blob",
+          "path": "sin/modacc0.sh",
+          "mode": "100755"
+        },
+        {
+          "id": "5a2ea038b376f37f4d1c9002bbc98447df442ea9",
+          "name": "moderate.g",
+          "type": "blob",
+          "path": "sin/moderate.g",
+          "mode": "100644"
+        },
+        {
+          "id": "861c309c0ccc9844ad36f6016f7ba8e6e7315228",
+          "name": "moderate.sh",
+          "type": "blob",
+          "path": "sin/moderate.sh",
+          "mode": "100755"
+        },
+        {
+          "id": "c35b89028dd4b2bba1f39fe4a0dc6427e81ff16b",
+          "name": "sin.sage",
+          "type": "blob",
+          "path": "sin/sin.sage",
+          "mode": "100644"
+        },
+        {
+          "id": "c54f541db23c07c71f8507ec2455db476c047a6a",
+          "name": "sin.tex",
+          "type": "blob",
+          "path": "sin/sin.tex",
+          "mode": "100644"
+        },
+        {
+          "id": "5f4d14902ff45205250108d1ca2058d14de9b855",
+          "name": "sinlarge.sollya",
+          "type": "blob",
+          "path": "sin/sinlarge.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "4223fb955fef485a47d0409e7c383f184a3b0591",
+          "name": "sinlarge_acc.sollya",
+          "type": "blob",
+          "path": "sin/sinlarge_acc.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "61c501e61da1ca8456847b34dfad5ece2a7a3f51",
+          "name": "sinmoderate.sollya",
+          "type": "blob",
+          "path": "sin/sinmoderate.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "9ca9d4e8bd90611269c3b4079343e41783985764",
+          "name": "sinmoderate_acc.sollya",
+          "type": "blob",
+          "path": "sin/sinmoderate_acc.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "2ea60f776b1dc3d196cb99aee0d6bb6e3e4bed5d",
+          "name": "sinsmall_acc.sollya",
+          "type": "blob",
+          "path": "sin/sinsmall_acc.sollya",
+          "mode": "100644"
+        },
+        {
+          "id": "97e916ff1811305aa113c25171cfe5d81aed5582",
+          "name": "smallacc.g",
+          "type": "blob",
+          "path": "sin/smallacc.g",
+          "mode": "100644"
+        },
+        {
+          "id": "64d0dd9603522ddc4e59e19bf03827bac56b2ac2",
+          "name": "smallacc.sh",
+          "type": "blob",
+          "path": "sin/smallacc.sh",
+          "mode": "100755"
+        }
+      ],
+      "hashes": {
+        "sin/acclarge.g": "ebe00cebce27cf24a810e9c8f32814292d5b29e0db196656f80b463cd3a6d896",
+        "sin/coslarge_acc.sollya": "b08b7d8f84e5482b93c219b04ccf5827fc9083a7acc5fe18354bb12582ea50c1",
+        "sin/fast.g": "af7ba9c53ce0ca0936e01337430c0d62481258bc8490aa0d33e28561cdabb914",
+        "sin/fast.sh": "bbab9e040f4d833d7fd714d2fab8efa8a31818d79ffa03457ceecc9d9836c46c",
+        "sin/graph1.pdf": "bd646d05f5515ecae6dbfa6dee80adfa19153b3db6bde32a441bcf841c21b5a0",
+        "sin/large.g": "e057ee0398817f4f088972b5421d1d1dff59712b405d07a63ee5c3b59a2ab1d6",
+        "sin/large.sh": "5e8c617da60a8e50eaf61828e95848b7bf5e7cf67cd420d14181cfacd7ff8ce7",
+        "sin/lemma4.g": "6e803ca8a3f94c09907c5a1c913dc22dfec92797aa63a36ddc04c22ffa70cc3c",
+        "sin/lemma4.sh": "313a06e9bcd005a4465a18d7c27fec018a08457406cad33a838a77da3783937c",
+        "sin/modacc.g": "0036322b58ef8bb95ec5f122d1856993939ec55edc2f067159370c85f6f5d51c",
+        "sin/modacc.sh": "c0b89a81dd9bae7a02b8334b424b50b16386fdc0cf84af86e4a83fe265eb405e",
+        "sin/modacc0.g": "9d81e37ca5d860a4bab0dead4445dba0b2219a9cf4b04a8c3aaae9452ad09b9f",
+        "sin/modacc0.sh": "13989695a7d90e28684b05a0a479cb5e9c7c7ccb9cf69e5d6a29d228b99c171a",
+        "sin/moderate.g": "f028d6096c30ff08fdd1c1b5c313bcd87d33cd799559f85f69718e6933780dc2",
+        "sin/moderate.sh": "fd581d2c7f929ec1c068474cba3c81395d7341809257aa41395369988d09467c",
+        "sin/sin.sage": "0a9032cd554d23854e8847a03d08688ee1acec2fa57847c1bc476b424748b4d5",
+        "sin/sin.tex": "031edc0f2b4b0ef7fa9b782a68e04efdb1c9b87cc5097d306ede6e073af449a9",
+        "sin/sinlarge.sollya": "3d596e1667994fa8c4a3e1a12cb09d66a39c2cacd1a9bf964d822c251c648425",
+        "sin/sinlarge_acc.sollya": "4c93782769d30992f780c1c6953b857cb1deaaa614c2d2373c2e77e8f1fa6e99",
+        "sin/sinmoderate.sollya": "74f31d625f8915586398592af441f47446fab9d4aab8fcec8a4cd08c1b84637a",
+        "sin/sinmoderate_acc.sollya": "1e35118f245b3a16e164bb7d351209e34bb855188d69a3e92369d65dfd9ac273",
+        "sin/sinsmall_acc.sollya": "12278a7dc982a61b79c613686fe064c9baef9d0a065a75bb5e9abcab08eebfa9",
+        "sin/smallacc.g": "5b15e9649a5ef9675188f281a5ff00bdb4c4f8e65d178c447266bf96a8044fd0",
+        "sin/smallacc.sh": "1a9cf47729fe39ec3778132856dd6edfa0a2452e3af1518b26008b38c21fb95a"
+      }
+    }
+  },
+  "pdf-07": {
+    "sha256": "07730b51bb1aae3aa97331a02c0e9fbdd091db3257b06e20fe53bc083ff33d49",
+    "bytes": 274896
+  },
+  "pdf-08": {
+    "sha256": "dcd915fa2620bce63f8a60a29e552860e5179ae0e61c1a816ac077fdaab7dc6a",
+    "bytes": 274711
+  }
+}

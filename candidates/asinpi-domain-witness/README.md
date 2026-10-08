@@ -1,8 +1,13 @@
 # asinpi: one domain-error coverage witness
 
-**State: tested; source-reviewed; not submitted or accepted upstream.** No upstream
-change or acceptance is claimed. This is a test-suite improvement, not a newly
-discovered implementation defect.
+**State: accepted upstream; verified October 8.** The upstream corpus at
+`84674bfadb0f920614355024c87a3eef73f2d938` includes the witness and passes the
+full four-mode GCC checks with 258/258 lines and 76/76 arcs.
+[Pickup verification](../../weekly/2026-10-08/REPORT.md).
+
+The original candidate and before/after evidence below remain a historical
+reproduction at the earlier base. Do not apply this patch again to current upstream.
+This is a test-suite improvement, not a newly discovered implementation defect.
 
 Base: `e78b460c41e5e155f45a5ff824140b81c84f55cc`.
 Add the single row `0x1.8p+0` to `src/binary64/asinpi/asinpi.wc`.

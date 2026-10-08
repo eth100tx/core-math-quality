@@ -1,0 +1,7 @@
+fast_table mode=0 pairs=16384 sin_error_upper=0x1.336cad30f21eap-105 cos_error_upper=0x1.c0615937bef35p-53 low_abs_max=0x1.c0615937bef35p-53 high_abs_max=0x1p+0 cos_abs_max=0x1p+0
+fast_table mode=1 pairs=16384 sin_error_upper=0x1.859a9c1b355fap-104 cos_error_upper=0x1.503b04a52c1bdp-52 low_abs_max=0x1.503b04a52c1bbp-52 high_abs_max=0x1p+0 cos_abs_max=0x1p+0
+fast_table mode=2 pairs=16384 sin_error_upper=0x1.93c69cacee1cp-104 cos_error_upper=0x1.4b9c7979cd812p-52 low_abs_max=0x1.58f64b032ba6p-52 high_abs_max=0x1p+0 cos_abs_max=0x1p+0
+fast_table mode=3 pairs=16384 sin_error_upper=0x1.859a9c1b355fap-104 cos_error_upper=0x1.58f64b032ba62p-52 low_abs_max=0x1.503b04a52c1bbp-52 high_abs_max=0x1p+0 cos_abs_max=0x1p+0
+simple_magnitude_condition_failures=0 (not necessarily failure of the broader FastTwoSum theorem)
+accurate_table pairs=4096 sin_error_upper=0x1.3d1ab531f61c6p-126 cos_error_upper=0x1.3d1ab531f61c6p-126 S_below_2p128=3 C_below_2p128=3
+

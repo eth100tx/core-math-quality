@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "rows": 1024,
+  "pi_identity": "pi=4*(atan(1/2)+atan(1/3));900 alternating terms",
+  "method": "Separate exact Fraction continued-fraction recurrence and independent tighter pi enclosure verify every recorded row; mathematical best-approximation theorem remains explicit."
+}

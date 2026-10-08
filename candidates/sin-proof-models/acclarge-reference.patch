@@ -1,0 +1,29 @@
+--- a/sin/acclarge.g
++++ b/sin/acclarge.g
+@@ -36,7 +36,7 @@
+ c7 = 0xd00d00bfff5eep-64;
+ u2h = fixed<-64,dn>(u2);
+ u2l = -(u2h-u2);
+-S5 = c5-c7*u2;
++S5 = c5-c7*U2;
+ s5 = c5-c7*u2h;
+ # s_1 \leftarrow c_1 - \mhUU(c_3, u_2)
+ ah4 = fixed<-64,dn>(c3);
+@@ -81,7 +81,7 @@
+ v6 = 0x5b05b05b05ac1a642013bc289028b6p-128;
+ v8 = 0x1a0193d9a550cp-64;
+ # c_6 \leftarrow v_6 - v_8 u_{2h}
+-C6 = v6-v8*u2;
++C6 = v6-v8*U2;
+ c6 = v6-v8*u2h;
+ # c_4 \leftarrow v_4 - \mhUU(c_6, u_2)
+ ah7 = fixed<-64,dn>(c6);
+@@ -115,7 +115,7 @@
+ ahbh9 = ah9*bh5;
+ ahbl9 = ah9*bl5;
+ albh9 = al9*bh5;
+-T5 = c4*U4;
++T5 = C4*U4;
+ t5 = ahbh9 + (fixed<-128,dn>(ahbl9) + fixed<-128,dn>(albh9));
+ Cr = C0+T5; # Cr represents C(2piR)
+ CR = Cr + eps4; # CR represents cos(2piR) and |eps4|<=2^-128 the Sollya error

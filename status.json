@@ -1,18 +1,31 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-10-06T20:30:22.137166+00:00",
+  "updated_utc": "2026-10-08T09:58:31.706214+00:00",
   "baseline_pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
   "baseline_profile": "gcc-linux-x86_64-errno1",
   "active_coverage_target": {
-    "function": "asinpi",
-    "missing_arcs": 1,
+    "function": "sin",
+    "missing_arcs": 0,
     "missing_lines": 0
   },
-  "target_state": "tested witness candidate available; source-reviewed; not submitted or accepted upstream",
-  "latest_report": "weekly/2026-10-06/REPORT.md",
+  "target_state": "closed for primary GCC errno-on profile after upstream dead-arm removal and local errno fix; next target selected at Sunday census",
+  "latest_report": "weekly/2026-10-08/REPORT.md",
   "pending": [
-    "review/pickup of asinpi coverage witness candidate",
-    "separate proof revision review",
+    "upstream pickup of sine errno build-fix candidate and proof-model corrections",
+    "review exp change a37b7ae5 at next Sunday run",
+    "select next coverage target from refreshed census",
+    "historical full-domain hard-case-search reproducibility remains separate",
     "platform extensions only after qualification"
-  ]
+  ],
+  "latest_focused_check": {
+    "implementation_pin": "74fcd1094a316164c94481f40f5c9658439bee63",
+    "proof_pin": "57f6899abefaaf768d6a84e2bbc24944dcb650f2",
+    "function": "sin",
+    "candidate_change": "ax-to-au errno fix only",
+    "profile": "gcc-linux-x86_64",
+    "errno": 1,
+    "lines": "177/177",
+    "arcs": "42/42",
+    "full_repository_baseline_unchanged": true
+  }
 }

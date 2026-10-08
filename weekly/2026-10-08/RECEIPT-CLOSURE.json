@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "name": "small-ne-positive",
+      "rc": 0,
+      "model_sha256": "74b41d7009268a1f088e0ca835346c6ee29a80887df9911d7c8571427a3269e7",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "small-tight-binades-dn-neg",
+      "rc": 0,
+      "model_sha256": "7d3c263491adae59a6133727c3abc84e874aa9d41161b99484e1426b74b78995",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-dn-pos",
+      "rc": 0,
+      "model_sha256": "7b165cdf30e17ac737568f28b329e34e4cb98b7a292375192f1bf5f0dfeb7bed",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-ne-neg",
+      "rc": 0,
+      "model_sha256": "57f5ee3761014afd5b9451b8e8b6fd7759d4dc7c47f4aa939c7189f73206cd1c",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-ne-pos",
+      "rc": 0,
+      "model_sha256": "871b9053fd4ea264a00349a9970ccb0f6cc5d97a10c8d938e336fa749bdc7152",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-up-neg",
+      "rc": 0,
+      "model_sha256": "ada1c28ed575f63af720ea0e27a8405eaff1a8dc3b0a8489cc737aa62a25c696",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-up-pos",
+      "rc": 0,
+      "model_sha256": "d395f3edbaf1cd48b3d2f3ad0a228e0c158628114283d8f90e16258ac282f7be",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-zr-neg",
+      "rc": 0,
+      "model_sha256": "b72d7a477853309db2204c60a0dc3293575c59c3c4da8bc79844a278882849b2",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    },
+    {
+      "name": "small-tight-binades-zr-pos",
+      "rc": 0,
+      "model_sha256": "2bb08ce32f5774358f615c1887889ba3f97b4751ed22a19ea755368d4c5d6171",
+      "log_sha256": "fafd56de13aad4fb629de3512a055e2c6d556ec52f160dd7238114f8c7997e20"
+    }
+  ],
+  "cpu_seconds": 18.298543000000002,
+  "wall_seconds": 19.083757805999994
+}

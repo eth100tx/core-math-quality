@@ -1,0 +1,13 @@
+{
+  "proved": true,
+  "domain": "2^-26 <= abs(x) <= old x0",
+  "old_x0": "0x1.7137449123ef6p-26",
+  "cut": "0x1.7137449122ef5p-26",
+  "error_allowance": "3247657313705851/766247770432944429179173513575154591809369561091801088",
+  "normal_spacing": "1/302231454903657293676544",
+  "midpoint_margin_at_cut": "80771244678485251982117341012405729630722637229015412908814671968766950818282034317197069279711860262485797036805752053622539547311/25798571263428505337588752018474494371502391155190510740852972755585321422602580043557506910394151731240506469936862220994525480868626512136650429453153195610884538368",
+  "statement": "Assuming |h+l-sin(x)| <2^-102*abs(x), every newly routed input up to cut is farther from every active-mode rounding boundary than its approximation error. All remaining inputs lie in the tested contiguous4097-positive-input suffix cut+ulp through x0 (both signs). The x=2^-26 binade boundary is treated separately. Oddness and exchanging directed modes cover negative inputs.",
+  "method": "Exact rational alternating Taylor bounds for x-sin(x), monotonic derivative1-cos(x)>=0, constant binary64 spacing except at lower endpoint.",
+  "all_suffix_inputs_present": true,
+  "both_signs_and_four_modes_verified": true
+}

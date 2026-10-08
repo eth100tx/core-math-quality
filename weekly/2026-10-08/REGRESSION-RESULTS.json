@@ -1,0 +1,142 @@
+{
+  "cpu_seconds": 865.340528,
+  "pin": "84674bfadb0f920614355024c87a3eef73f2d938",
+  "results": [
+    {
+      "corpus_rows": 1975927,
+      "coverage_union": {
+        "arcs_hit": 37,
+        "arcs_total": 38,
+        "lines_hit": 174,
+        "lines_total": 174,
+        "missing_arcs": [
+          [
+            "u128_tod",
+            108,
+            1
+          ]
+        ],
+        "missing_lines": []
+      },
+      "error": null,
+      "expected_tests_per_mode": 3951854,
+      "label": "original-full",
+      "status": "PASS"
+    },
+    {
+      "corpus_rows": 1975927,
+      "coverage_union": {
+        "arcs_hit": 43,
+        "arcs_total": 44,
+        "lines_hit": 178,
+        "lines_total": 178,
+        "missing_arcs": [
+          [
+            "u128_tod",
+            108,
+            1
+          ]
+        ],
+        "missing_lines": []
+      },
+      "error": null,
+      "expected_tests_per_mode": 3951854,
+      "label": "candidate-full",
+      "status": "PASS"
+    },
+    {
+      "corpus_rows": 1975927,
+      "coverage_union": null,
+      "error": null,
+      "expected_tests_per_mode": 3951854,
+      "label": "candidate-clang-full",
+      "status": "PASS"
+    },
+    {
+      "corpus_rows": 58412,
+      "coverage_union": {
+        "arcs_hit": 76,
+        "arcs_total": 76,
+        "lines_hit": 258,
+        "lines_total": 258,
+        "missing_arcs": [],
+        "missing_lines": []
+      },
+      "error": null,
+      "expected_tests_per_mode": 116824,
+      "label": "asinpi-pickup",
+      "status": "PASS"
+    },
+    {
+      "corpus_rows": 109638,
+      "coverage_union": {
+        "arcs_hit": 39,
+        "arcs_total": 44,
+        "lines_hit": 173,
+        "lines_total": 178,
+        "missing_arcs": [
+          [
+            "cr_sin",
+            983,
+            0
+          ],
+          [
+            "reduce_large",
+            251,
+            0
+          ],
+          [
+            "reduce_large_acc",
+            585,
+            1
+          ],
+          [
+            "sin_large_accurate",
+            853,
+            0
+          ],
+          [
+            "u128_tod",
+            108,
+            1
+          ]
+        ],
+        "missing_lines": [
+          [
+            "cr_sin",
+            984
+          ],
+          [
+            "reduce_large",
+            252
+          ],
+          [
+            "reduce_large",
+            253
+          ],
+          [
+            "sin_large_accurate",
+            854
+          ],
+          [
+            "sin_large_accurate",
+            855
+          ]
+        ]
+      },
+      "error": null,
+      "expected_tests_per_mode": 219276,
+      "label": "boundary-gcc-v3",
+      "status": "PASS"
+    },
+    {
+      "corpus_rows": 109638,
+      "coverage_union": null,
+      "error": null,
+      "expected_tests_per_mode": 219276,
+      "label": "boundary-clang",
+      "status": "PASS"
+    }
+  ],
+  "wall_seconds": 1052.442969153
+}

@@ -1,0 +1,10 @@
+
+Warning: eps1 is a variable without definition, yet it is unbound.
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: eps4 is a variable without definition, yet it is unbound.
+Warning: sz is a variable without definition, yet it is unbound.
+Warning: eps2 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  u - pi2 * R in [-3192038560971473357b-188 {-8.13634e-39, -2^(-126.530761)}, 0]

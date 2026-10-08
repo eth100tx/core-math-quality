@@ -6,6 +6,7 @@ edition, not a claim that a scheduled weekly review already ran.
 
 | Date | Kind | Report |
 |---|---|---|
+| 2026-10-08 | Requested sine proof and coverage follow-up; asinpi pickup | [Report](2026-10-08/REPORT.md) |
 | 2026-10-06 | Initial qualification and coverage census | [Report](2026-10-06/REPORT.md) |
 
 Failed/incomplete runs remain visible. Synthetic examples live only in `examples/`.

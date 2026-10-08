@@ -1,0 +1,8 @@
+
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: sz is a variable without definition, yet it is unbound.
+Warning: eps2 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  |cr - CR| in [0, 552491592615937137662575570038523617221565369936673088826197b-324 {1.61662e-38, 2^(-125.540283)}]
