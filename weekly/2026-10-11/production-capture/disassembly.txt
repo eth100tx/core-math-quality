@@ -1,0 +1,74 @@
+
+plain:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000002500 <as_exp_database>:
+    2500:	0f 28 d0             	movaps %xmm0,%xmm2
+    2503:	ba 19 00 00 00       	mov    $0x19,%edx
+    2508:	0f 28 c1             	movaps %xmm1,%xmm0
+    250b:	45 31 c9             	xor    %r9d,%r9d
+    250e:	66 48 0f 7e d7       	movq   %xmm2,%rdi
+    2513:	41 ba 32 00 00 00    	mov    $0x32,%r10d
+    2519:	4c 8d 1d 00 2b 00 00 	lea    0x2b00(%rip),%r11        # 5020 <db>
+    2520:	48 63 c2             	movslq %edx,%rax
+    2523:	49 8b 04 c3          	mov    (%r11,%rax,8),%rax
+    2527:	48 39 f8             	cmp    %rdi,%rax
+    252a:	73 09                	jae    2535 <as_exp_database+0x35>
+    252c:	44 8d 4a 01          	lea    0x1(%rdx),%r9d
+    2530:	e9 80 00 00 00       	jmp    25b5 <as_exp_database+0xb5>
+    2535:	48 39 c7             	cmp    %rax,%rdi
+    2538:	75 77                	jne    25b1 <as_exp_database+0xb1>
+    253a:	89 d0                	mov    %edx,%eax
+    253c:	4c 8d 05 3d 22 00 00 	lea    0x223d(%rip),%r8        # 4780 <s2.0>
+    2543:	8d 0c 12             	lea    (%rdx,%rdx,1),%ecx
+    2546:	c1 f8 05             	sar    $0x5,%eax
+    2549:	83 e1 3f             	and    $0x3f,%ecx
+    254c:	66 48 0f 7e c6       	movq   %xmm0,%rsi
+    2551:	48 98                	cltq
+    2553:	49 8b 04 c0          	mov    (%r8,%rax,8),%rax
+    2557:	4c 8d 46 ff          	lea    -0x1(%rsi),%r8
+    255b:	48 d3 e8             	shr    %cl,%rax
+    255e:	48 89 c1             	mov    %rax,%rcx
+    2561:	4c 31 c1             	xor    %r8,%rcx
+    2564:	80 e1 03             	and    $0x3,%cl
+    2567:	74 0e                	je     2577 <as_exp_database+0x77>
+    2569:	48 89 c1             	mov    %rax,%rcx
+    256c:	48 31 f1             	xor    %rsi,%rcx
+    256f:	80 e1 03             	and    $0x3,%cl
+    2572:	75 31                	jne    25a5 <as_exp_database+0xa5>
+    2574:	49 89 f0             	mov    %rsi,%r8
+    2577:	89 d1                	mov    %edx,%ecx
+    2579:	ba c9 03 00 00       	mov    $0x3c9,%edx
+    257e:	66 49 0f 6e d8       	movq   %r8,%xmm3
+    2583:	48 b8 9b 9c 35 8d 99 	movabs $0x12f998d359c9b,%rax
+    258a:	2f 01 00 
+    258d:	48 d3 e8             	shr    %cl,%rax
+    2590:	48 c1 e2 34          	shl    $0x34,%rdx
+    2594:	48 c1 e0 3f          	shl    $0x3f,%rax
+    2598:	48 09 d0             	or     %rdx,%rax
+    259b:	66 48 0f 6e c0       	movq   %rax,%xmm0
+    25a0:	f2 0f 58 c3          	addsd  %xmm3,%xmm0
+    25a4:	c3                   	ret
+    25a5:	48 ff c6             	inc    %rsi
+    25a8:	48 31 f0             	xor    %rsi,%rax
+    25ab:	a8 03                	test   $0x3,%al
+    25ad:	75 06                	jne    25b5 <as_exp_database+0xb5>
+    25af:	eb c3                	jmp    2574 <as_exp_database+0x74>
+    25b1:	44 8d 52 ff          	lea    -0x1(%rdx),%r10d
+    25b5:	43 8d 14 11          	lea    (%r9,%r10,1),%edx
+    25b9:	d1 fa                	sar    $1,%edx
+    25bb:	45 39 d1             	cmp    %r10d,%r9d
+    25be:	0f 8e 5c ff ff ff    	jle    2520 <as_exp_database+0x20>
+    25c4:	c3                   	ret
+
+Disassembly of section .fini:

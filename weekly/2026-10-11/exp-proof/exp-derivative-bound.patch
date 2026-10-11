@@ -1,0 +1,35 @@
+--- a/exp/exp.tex
++++ b/exp/exp.tex
+@@ -605,18 +605,25 @@
+ $$|(Q(D) + 1)| \cdot |(t_h + t_\ell) - 2^{i_0/2^6 + i_1/2^{12}}|\leq (1 + 2^{-12.99}) \cdot 2^{-102.5} \leq 2^{-102.4}.$$
+ % Gappa goal  |y1_real| in ?
+ Since $i_0 < 2^6$ and $i_1 < 2^{6}$, we have 
+-$2^{i_0/2^6 + i_1/2^{12}} < 2^{3/2},$
+-and thus, using the mean value inequality:
++$2^{i_0/2^6 + i_1/2^{12}} < 2^{3/2}$.
++For the exact dyadic coefficients $a_j$ of $Q(z)=\sum_{j=1}^7 a_j z^j$,
++set $J=[-9/100000,9/100000]$. The triangle inequality gives
++$\|Q'\|_{\infty,J} \le \sum_{j=1}^7 j|a_j|(9/100000)^{j-1}<1.0001$.
++The derivative bound $<1.0001$ is an exact rational comparison using the coefficient pairs.
++Here $r=x-t\log(2)/2^{12}$ as in Eq.~(\ref{redacc}),
++and $|r|\leq 2^{-13.528}$ implies $r\in J$.
++Also $|d_x|<2^{-13.523}$ and $|D-d_x|<2^{-23}$ imply $D\in J$.
++Thus, using the mean value inequality:
+ \begin{eqnarray*}
+-  2^{i_0/2^6 + i_1/2^{12}} |Q(D) - Q(r)| & \leq & 2^{3/2} \cdot ||Q'||_{\infty,I} \cdot |D - r| \\
+-  & \leq & 2^{3/2} \cdot 2^{-0.99} \cdot 2^{-117.98} \\
+-  & = & 2^{-117.47}
++  2^{i_0/2^6 + i_1/2^{12}} |Q(D) - Q(r)| & \leq & 2^{3/2} \cdot \|Q'\|_{\infty,J} \cdot |D - r| \\
++  & \leq & 2^{3/2} \cdot 1.0001 \cdot 2^{-117.98} \\
++  & < & 2^{-116.47}
+ \end{eqnarray*}
+ Finally, we use Sollya to bound the approximation error of $Q$:
+ $$2^{i_0/2^6 + i_1/2^{12}} |(1 + Q(r)) - \exp(r)| \leq 2^{3/2} \cdot 2^{-126}$$ 
+ By adding these bounds together:
+-$$2^{-100.677} + 2^{-102.4} + 2^{-117.47} + 2^{-124.5} < 2^{-100.29} $$
+-% sage: 2^(-100.677) + 2^(-102.4) + 2^(-124.5) + 2^(-115.49) < 2^(-100.29)
++$$2^{-100.677} + 2^{-102.4} + 2^{-116.47} + 2^{-124.5} < 2^{-100.29} $$
++% sage: 2^(-100.677) + 2^(-102.4) + 2^(-124.5) + 2^(-116.47) < 2^(-100.29)
+ % True
+ 
+ \end{proof}

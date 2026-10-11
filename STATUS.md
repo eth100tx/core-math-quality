@@ -1,27 +1,11 @@
 # Current status
 
-**Latest focused sine review: no numerical mismatch in the tested corpora;
-one errno-enabled source build regression has a tested one-word fix.**
-The revised sine has **177/177 lines and 42/42 arcs** in the four-mode GCC
-union after the local fix. The removed missing arm is supported by a
-source-bound range proof. Three proof-model reference corrections are supplied.
+**All25 selected functions pass the October11 GCC regression. Three small
+source/proof corrections are proposed; no new public wrong-value witness.**
 
-- Latest: [October 8 sine proof and coverage follow-up](weekly/2026-10-08/REPORT.md).
-- Full coverage census: [October 6 table and run receipt](weekly/2026-10-06/REPORT.md).
-  Its 25/25 primary GCC regression baseline remains pinned to `e78b460c`;
-  it is not a claim about every function at today's revision.
-- Current focused sine pin: `74fcd1094a316164c94481f40f5c9658439bee63`,
-  **with the local ax-to-au errno candidate**, GCC x86-64, four modes.
-  [Exact checker/coverage receipt](weekly/2026-10-08/runs/latest-candidate-full/sin-gcc-linux-x86_64-errno1/cell.json).
-- Asinpi's witness was accepted upstream and rechecked at `84674bfa`:
-  **258/258 lines and 76/76 arcs**, full corpus PASS in the primary profile.
-- Coverage target **sin is closed for this profile**. The Sunday review will
-  select the next target from the refreshed census and latest requests.
-- New candidates: [sine errno build fix](candidates/sin-errno-name/README.md)
-  and [proof model corrections](candidates/sin-proof-models/README.md).
-- Coverage closure and finite test passes do not prove universal correct
-  rounding. Historical full-domain hard-case searches were not regenerated.
-- The intervening exp change `a37b7ae5` is queued for Sunday, not reviewed here.
-
-See [machine-readable state](status.json), [configuration qualifications](docs/CONFIGURATIONS.md),
-[runbook](RUNBOOK.md) and [weekly index](weekly/README.md).
+- [Latest weekly report](weekly/2026-10-11/REPORT.md), [full missing-line/arc census](weekly/2026-10-11/MISSING-COVERAGE.json).
+- Baseline `81a899d67953a619d703660fd9630f0554673524`, GCC13.3 x86-64, errno on, four modes, O3 regression/O0 coverage. 17/25 target files have no missing lines/arcs.
+- One active coverage target: **exp**, 0 missing lines/1 missing arc. Finite exception-key replay complete; portable unreachability deliberately deferred.
+- [Candidates](candidates/README.md): log2 sign equivalence, sinh mask width, exp proof derivative term. Earlier sine fixes and asinpi witness are accepted upstream.
+- Coverage rises largely because upstream removed predicates; this is not new testing of deleted paths or a universal correct-rounding proof.
+- [Source review and open obligations](weekly/2026-10-11/SOURCE-REVIEW.md), [weekly index](weekly/README.md), [supported configurations](docs/CONFIGURATIONS.md).

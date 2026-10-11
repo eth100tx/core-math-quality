@@ -1,0 +1,185 @@
+{
+  "checks": [
+    {
+      "command": [
+        "gcc",
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-fsanitize=shift",
+        "-fno-sanitize-recover=shift",
+        "-I.",
+        "check_worst_uni.c",
+        "sinpi.c",
+        "sinpi_mpfr.c",
+        "-lmpfr",
+        "-lgmp",
+        "-lm",
+        "-o",
+        "check"
+      ],
+      "label": "build",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 1.074
+    },
+    {
+      "command": [
+        "./check",
+        "--rndn"
+      ],
+      "corpus_sha256": "a9646d6f122d3c503a8e80ffb3ce77810d2c144f35a6d2bdeece9ccec10607b4",
+      "expected_tests": 134136,
+      "label": "sinpi-rndn",
+      "mode": "rndn",
+      "output": "134136 tests passed, 0 failure(s)\n",
+      "output_bytes": 34,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 67068,
+      "wall_seconds": 0.723
+    },
+    {
+      "command": [
+        "./check",
+        "--rndz"
+      ],
+      "corpus_sha256": "a9646d6f122d3c503a8e80ffb3ce77810d2c144f35a6d2bdeece9ccec10607b4",
+      "expected_tests": 134136,
+      "label": "sinpi-rndz",
+      "mode": "rndz",
+      "output": "134136 tests passed, 0 failure(s)\n",
+      "output_bytes": 34,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 67068,
+      "wall_seconds": 0.672
+    },
+    {
+      "command": [
+        "./check",
+        "--rndu"
+      ],
+      "corpus_sha256": "a9646d6f122d3c503a8e80ffb3ce77810d2c144f35a6d2bdeece9ccec10607b4",
+      "expected_tests": 134136,
+      "label": "sinpi-rndu",
+      "mode": "rndu",
+      "output": "134136 tests passed, 0 failure(s)\n",
+      "output_bytes": 34,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 67068,
+      "wall_seconds": 0.728
+    },
+    {
+      "command": [
+        "./check",
+        "--rndd"
+      ],
+      "corpus_sha256": "a9646d6f122d3c503a8e80ffb3ce77810d2c144f35a6d2bdeece9ccec10607b4",
+      "expected_tests": 134136,
+      "label": "sinpi-rndd",
+      "mode": "rndd",
+      "output": "134136 tests passed, 0 failure(s)\n",
+      "output_bytes": 34,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 67068,
+      "wall_seconds": 0.677
+    },
+    {
+      "command": [
+        "./check",
+        "--rndn"
+      ],
+      "corpus_sha256": "8e8eadef42acf758a3197b0b92ad80421e283b93fa01fef2606470b1f0af6705",
+      "expected_tests": 8204,
+      "label": "extra-rndn",
+      "mode": "rndn",
+      "output": "8204 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4102,
+      "wall_seconds": 0.071
+    },
+    {
+      "command": [
+        "./check",
+        "--rndz"
+      ],
+      "corpus_sha256": "8e8eadef42acf758a3197b0b92ad80421e283b93fa01fef2606470b1f0af6705",
+      "expected_tests": 8204,
+      "label": "extra-rndz",
+      "mode": "rndz",
+      "output": "8204 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4102,
+      "wall_seconds": 0.073
+    },
+    {
+      "command": [
+        "./check",
+        "--rndu"
+      ],
+      "corpus_sha256": "8e8eadef42acf758a3197b0b92ad80421e283b93fa01fef2606470b1f0af6705",
+      "expected_tests": 8204,
+      "label": "extra-rndu",
+      "mode": "rndu",
+      "output": "8204 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4102,
+      "wall_seconds": 0.072
+    },
+    {
+      "command": [
+        "./check",
+        "--rndd"
+      ],
+      "corpus_sha256": "8e8eadef42acf758a3197b0b92ad80421e283b93fa01fef2606470b1f0af6705",
+      "expected_tests": 8204,
+      "label": "extra-rndd",
+      "mode": "rndd",
+      "output": "8204 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4102,
+      "wall_seconds": 0.071
+    }
+  ],
+  "child_cpu_seconds": 3.1699040000000034,
+  "compiler": "gcc",
+  "flags": [
+    "-O3",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-march=x86-64",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-DCORE_MATH_SUPPORT_ERRNO",
+    "-fsignaling-nans",
+    "-fsanitize=shift",
+    "-fno-sanitize-recover=shift"
+  ],
+  "function": "sinpi",
+  "kind": "shift",
+  "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+  "status": "PASS",
+  "tested_source_sha256": "4c30b2e834bcff8fd54d8a8cd229b4b8b707c769d0b1979bee8838fd367b1218",
+  "upstream_source_sha256": "4c30b2e834bcff8fd54d8a8cd229b4b8b707c769d0b1979bee8838fd367b1218",
+  "wall_seconds": 4.59230796199995
+}

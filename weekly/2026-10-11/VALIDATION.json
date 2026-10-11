@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "direct_selftests": 15,
+  "nested_selftests": 15,
+  "new_test_failed_old_runner_direct_and_nested": true,
+  "checks": [
+    {
+      "name": "selftests",
+      "returncode": 0,
+      "wall_seconds": 2.798
+    },
+    {
+      "name": "public-validate",
+      "returncode": 0,
+      "wall_seconds": 87.79
+    },
+    {
+      "name": "log2-patch-check",
+      "returncode": 0,
+      "wall_seconds": 0.051
+    },
+    {
+      "name": "log2-patch-apply",
+      "returncode": 0,
+      "wall_seconds": 0.07
+    },
+    {
+      "name": "sinh-patch-check",
+      "returncode": 0,
+      "wall_seconds": 0.038
+    },
+    {
+      "name": "sinh-patch-apply",
+      "returncode": 0,
+      "wall_seconds": 0.043
+    },
+    {
+      "name": "proof-patch-check",
+      "returncode": 0,
+      "wall_seconds": 0.038
+    },
+    {
+      "name": "proof-patch-apply",
+      "returncode": 0,
+      "wall_seconds": 0.071
+    },
+    {
+      "name": "arithmetic-replay",
+      "returncode": 0,
+      "wall_seconds": 0.223
+    },
+    {
+      "name": "capture-replay",
+      "returncode": 0,
+      "wall_seconds": 0.168
+    }
+  ],
+  "supplement_cells_verified": 38,
+  "limits": "Proof text patch applied and arithmetic checked; full multi-file PDF rebuild not performed.",
+  "baseline_runner_sha256": "64f4b38c7267b389c0ede64ae9e6b1aa968ed7f8e80063c9b523d8b23cbfa566",
+  "corrected_runner_sha256": "dd122d7b1defa62af28087f859c0f799dbe0cec058ea116e1df5777533b05565"
+}

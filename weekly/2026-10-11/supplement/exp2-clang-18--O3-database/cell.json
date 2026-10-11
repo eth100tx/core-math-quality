@@ -1,0 +1,115 @@
+{
+  "checks": [
+    {
+      "command": [
+        "clang-18",
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-I.",
+        "check_worst_uni.c",
+        "exp2.c",
+        "exp2_mpfr.c",
+        "-lmpfr",
+        "-lgmp",
+        "-lm",
+        "-o",
+        "check"
+      ],
+      "label": "build",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 1.476
+    },
+    {
+      "command": [
+        "./check",
+        "--rndn"
+      ],
+      "corpus_sha256": "fa33637ef9b507256fc5cd7ed4deef199d722e04d6bc9cef3c6177bf92b36b3b",
+      "expected_tests": 43,
+      "label": "database-rndn",
+      "mode": "rndn",
+      "output": "DATABASE entries=126 exhausted=0\n43 tests passed, 0 failure(s)\n",
+      "output_bytes": 63,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 43,
+      "wall_seconds": 0.03
+    },
+    {
+      "command": [
+        "./check",
+        "--rndz"
+      ],
+      "corpus_sha256": "fa33637ef9b507256fc5cd7ed4deef199d722e04d6bc9cef3c6177bf92b36b3b",
+      "expected_tests": 43,
+      "label": "database-rndz",
+      "mode": "rndz",
+      "output": "DATABASE entries=132 exhausted=0\n43 tests passed, 0 failure(s)\n",
+      "output_bytes": 63,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 43,
+      "wall_seconds": 0.011
+    },
+    {
+      "command": [
+        "./check",
+        "--rndu"
+      ],
+      "corpus_sha256": "fa33637ef9b507256fc5cd7ed4deef199d722e04d6bc9cef3c6177bf92b36b3b",
+      "expected_tests": 43,
+      "label": "database-rndu",
+      "mode": "rndu",
+      "output": "DATABASE entries=114 exhausted=0\n43 tests passed, 0 failure(s)\n",
+      "output_bytes": 63,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 43,
+      "wall_seconds": 0.01
+    },
+    {
+      "command": [
+        "./check",
+        "--rndd"
+      ],
+      "corpus_sha256": "fa33637ef9b507256fc5cd7ed4deef199d722e04d6bc9cef3c6177bf92b36b3b",
+      "expected_tests": 43,
+      "label": "database-rndd",
+      "mode": "rndd",
+      "output": "DATABASE entries=102 exhausted=0\n43 tests passed, 0 failure(s)\n",
+      "output_bytes": 63,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 43,
+      "wall_seconds": 0.009
+    }
+  ],
+  "child_cpu_seconds": 1.1863439999999992,
+  "compiler": "clang-18",
+  "flags": [
+    "-O3",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-march=x86-64",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-DCORE_MATH_SUPPORT_ERRNO"
+  ],
+  "function": "exp2",
+  "kind": "database",
+  "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+  "status": "PASS",
+  "tested_source_sha256": "55a791e0b1127ce13d176d3ab4a1a93bc7c07876f2005476f6c2662fe5585b04",
+  "upstream_source_sha256": "27508901fa5df2c4ce4783aa6a24bed843aba2e6c838725d0089c24eecd83389",
+  "wall_seconds": 1.7771152159998564
+}

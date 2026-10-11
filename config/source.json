@@ -1,8 +1,8 @@
 {
   "project_api": "https://gitlab.inria.fr/api/v4/projects/35719",
   "repository": "https://gitlab.inria.fr/core-math/core-math",
-  "default_pin": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
-  "previous_review_pin": "284b3b0e198042c38f5c30316f696786b10816b0",
+  "default_pin": "81a899d67953a619d703660fd9630f0554673524",
+  "previous_review_pin": "81a899d67953a619d703660fd9630f0554673524",
   "proof_repository": "https://gitlab.inria.fr/zimmerma/core-math-proofs",
-  "previous_proof_pin": "24e46e3d8e689fe163d4d5ee7a9d9c8dc0a5eb7b"
+  "previous_proof_pin": "58df57e5a46310d0e47d140ad23f146461788e0e"
 }

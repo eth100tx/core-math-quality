@@ -62,3 +62,5 @@ source's license; the workbench license does not replace upstream notices.
 
 [Before/after receipts](evidence/checks.json), [artifact hashes](evidence/SHA256SUMS.json),
 and [release review](../../weekly/2026-10-06/RELEASE-REVIEW.md).
+
+Upstream adoption verified October8 and refreshed October11: full primary corpus passes, 258/258 lines and76/76 arcs. [Report](../../weekly/2026-10-11/REPORT.md).

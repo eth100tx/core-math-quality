@@ -2,11 +2,13 @@
 
 | Candidate | Type | State |
 |---|---|---|
-| [asinpi domain witness](asinpi-domain-witness/README.md) | One `.wc` row; closes one measured branch gap | Tested; source-reviewed; not submitted or accepted upstream |
+| [log2 sign step](log2-sign-step/README.md) | Source equivalence | Proposed; GCC/Clang tested; no public wrong-value witness |
+| [sinh mask width](sinh-mask-width/README.md) | Restore int64_t | Proposed; GCC/Clang tested |
+| [exp derivative bound](exp-derivative-bound/README.md) | Proof calculation | Proposed; exact coefficient bound and corrected sum checked |
+| [sine errno name](sin-errno-name/README.md) | Build fix | Accepted upstream; byte-verified October11 |
+| [sine proof references](sin-proof-models/README.md) | Three model corrections | Accepted upstream; byte-verified October11 |
+| [asinpi domain witness](asinpi-domain-witness/README.md) | One .wc row | Accepted upstream; regression/coverage refreshed October11 |
 
-Add one directory per independently reviewed candidate using `templates/PATCH.md`
-or `templates/FINDING.md`. Keep the exact upstream base, minimal witness, patch,
-before/after results and review together. Preserve original license notices for
-source-derived hunks. The workbench's MIT license does not replace upstream rights.
-Maintainers may download/apply candidates in a disposable checkout at their
-discretion. This repository never pushes changes into CORE-MATH automatically.
+Each directory records the exact base and limits. Apply patches only to a
+disposable checkout at the stated base. The workbench never pushes upstream.
+Its MIT license does not replace upstream rights in source-derived hunks.

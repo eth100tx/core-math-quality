@@ -74,6 +74,8 @@ def command(args, cwd=None, stdin=None, timeout=300):
     def limits():
         import resource
         resource.setrlimit(resource.RLIMIT_FSIZE, (256 * 1024 * 1024, 256 * 1024 * 1024))
+        # The spawn guard belongs to the parent; preserve the caller's child mask.
+        signal.pthread_sigmask(signal.SIG_SETMASK, previous_mask)
     # Block termination around spawn so no detached child escapes the handler.
     previous_mask = signal.pthread_sigmask(signal.SIG_BLOCK, {signal.SIGTERM, signal.SIGINT})
     with tempfile.TemporaryFile() as output:

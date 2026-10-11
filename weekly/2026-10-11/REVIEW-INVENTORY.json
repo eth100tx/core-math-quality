@@ -1,0 +1,252 @@
+{
+  "cutoff_utc": "2026-10-11T13:02:14.646567+00:00",
+  "implementation_pin": "81a899d67953a619d703660fd9630f0554673524",
+  "proof_pin": "58df57e5a46310d0e47d140ad23f146461788e0e",
+  "inventory_bases": {
+    "implementation-review": "284b3b0e198042c38f5c30316f696786b10816b0",
+    "implementation-measurement": "e78b460c41e5e155f45a5ff824140b81c84f55cc",
+    "implementation-sine": "74fcd1094a316164c94481f40f5c9658439bee63",
+    "proof-review": "24e46e3d8e689fe163d4d5ee7a9d9c8dc0a5eb7b",
+    "proof-sine": "57f6899abefaaf768d6a84e2bbc24944dcb650f2"
+  },
+  "changes": [
+    {
+      "repository": "implementation",
+      "path": "src/binary128/log/logq.c",
+      "deleted": false,
+      "disposition": "outside 25-function scope; deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary16/cbrt/cbrtf16.c",
+      "deleted": false,
+      "disposition": "outside 25-function scope; deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/asinpi/asinpi.wc",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cosh/cosh.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cospi/cospi.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cospi/cospi.wc",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp/exp.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp10/exp10.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp2/exp2.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log/log.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log10/log10.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log2/log2.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/pow/pow.c",
+      "deleted": false,
+      "disposition": "outside 25-function scope; deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/pow/pow.h",
+      "deleted": false,
+      "disposition": "outside 25-function scope; deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sin/Makefile",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sin/check_special.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sin/sin.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinh/sinh.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinpi/sinpi.c",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinpi/sinpi.wc",
+      "deleted": false,
+      "disposition": "source-reviewed; bounded checks and residual obligations in SOURCE-REVIEW.md"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binaryb16/acos/acos_bf16.c",
+      "deleted": false,
+      "disposition": "outside 25-function scope; deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binaryb16/support/check_exhaustive_uni.c",
+      "deleted": false,
+      "disposition": "outside 25-function scope; deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/generic/support/perf_sincos.c",
+      "deleted": false,
+      "disposition": "source-reviewed; performance harness only, not used by correctness runner; benchmark not run"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/exp.sage",
+      "deleted": false,
+      "disposition": "new exp reduction/model reviewed; four-mode lemma replay, remaining proof dependencies explicit"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/exp.tex",
+      "deleted": false,
+      "disposition": "new exp reduction/model reviewed; four-mode lemma replay, remaining proof dependencies explicit"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/lemma4bis.g",
+      "deleted": false,
+      "disposition": "new exp reduction/model reviewed; four-mode lemma replay, remaining proof dependencies explicit"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/lemma4bis_negative.g",
+      "deleted": true,
+      "disposition": "new exp reduction/model reviewed; four-mode lemma replay, remaining proof dependencies explicit"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/lemma4bis_t1.g",
+      "deleted": true,
+      "disposition": "new exp reduction/model reviewed; four-mode lemma replay, remaining proof dependencies explicit"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/prove_lemma4bis.sh",
+      "deleted": false,
+      "disposition": "new exp reduction/model reviewed; four-mode lemma replay, remaining proof dependencies explicit"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/acclarge.g",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/graph1.pdf",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/large.g",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/sin.sage",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/sin.tex",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled",
+      "collapsed_diff_resolution": {
+        "base_sha256": "d04852f2758d09eaaf80b372cbd4633093ee5047fa2d419db60228ac2dffafc0",
+        "head_sha256": "6219dcb6249be2f71b2609a89bf11cab8dc613cbb6626ae82c2084ab62e75b4f",
+        "method": "full raw endpoint comparison, not collapsed API diff"
+      }
+    },
+    {
+      "repository": "proof",
+      "path": "sin/smallacc.g",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/smallacc.sh",
+      "deleted": false,
+      "disposition": "October8 review retained; new acclarge corrections and date/acknowledgement reconciled"
+    }
+  ],
+  "sine_reconciliation": [
+    {
+      "artifact": "sin.c",
+      "sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+      "matches_oct8_tested_candidate": true
+    },
+    {
+      "artifact": "sin/acclarge.g",
+      "sha256": "2aa1dd3dc0453d883bfe206a9b9fa19d24fc06977a2f6ed7455137a47470debe",
+      "matches_oct8_proposed_three_references": true
+    }
+  ],
+  "ci": {
+    "implementation": "success, observed latest pipeline iid3708",
+    "proof": "unavailable HTTP403, not classified as failed"
+  },
+  "scope": "All changed paths inventoried; outside-scope changes explicitly deferred, not tested."
+}

@@ -11,6 +11,19 @@ spec.loader.exec_module(q)
 
 
 class MeasurementTests(unittest.TestCase):
+    def test_child_preserves_callers_signal_mask(self):
+        import signal, sys
+        original = signal.pthread_sigmask(signal.SIG_BLOCK, [])
+        known = (original - {signal.SIGTERM, signal.SIGINT}) | {signal.SIGUSR1}
+        try:
+            signal.pthread_sigmask(signal.SIG_SETMASK, known)
+            result = q.command([sys.executable, '-c',
+                'import signal,json; print(json.dumps(sorted(signal.pthread_sigmask(signal.SIG_BLOCK, []))))'])
+            self.assertEqual(result['returncode'], 0)
+            self.assertEqual(set(json.loads(result['output'])), known)
+        finally:
+            signal.pthread_sigmask(signal.SIG_SETMASK, original)
+
     def cell(self, name, lines, arcs, status='PASS'):
         return {'function': name, 'status': status, 'coverage_union': {
             'lines_total': 10, 'lines_hit': 10-lines, 'arcs_total': 20, 'arcs_hit': 20-arcs}}

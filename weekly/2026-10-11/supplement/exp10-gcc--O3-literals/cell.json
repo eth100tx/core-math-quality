@@ -1,0 +1,117 @@
+{
+  "checks": [
+    {
+      "command": [
+        "gcc",
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-I.",
+        "check_worst_uni.c",
+        "exp10.c",
+        "exp10_mpfr.c",
+        "-lmpfr",
+        "-lgmp",
+        "-lm",
+        "-o",
+        "check"
+      ],
+      "label": "build",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 1.678
+    },
+    {
+      "command": [
+        "./check",
+        "--rndn"
+      ],
+      "corpus_sha256": "8a5d5d730af7438e455cd5751cd050469c147b1710cc6563be8029dfcb06b8f1",
+      "expected_tests": 3998,
+      "label": "extra-rndn",
+      "mode": "rndn",
+      "output": "3998 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 3998,
+      "wall_seconds": 0.039
+    },
+    {
+      "command": [
+        "./check",
+        "--rndz"
+      ],
+      "corpus_sha256": "8a5d5d730af7438e455cd5751cd050469c147b1710cc6563be8029dfcb06b8f1",
+      "expected_tests": 3998,
+      "label": "extra-rndz",
+      "mode": "rndz",
+      "output": "3998 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 3998,
+      "wall_seconds": 0.037
+    },
+    {
+      "command": [
+        "./check",
+        "--rndu"
+      ],
+      "corpus_sha256": "8a5d5d730af7438e455cd5751cd050469c147b1710cc6563be8029dfcb06b8f1",
+      "expected_tests": 3998,
+      "label": "extra-rndu",
+      "mode": "rndu",
+      "output": "3998 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 3998,
+      "wall_seconds": 0.071
+    },
+    {
+      "command": [
+        "./check",
+        "--rndd"
+      ],
+      "corpus_sha256": "8a5d5d730af7438e455cd5751cd050469c147b1710cc6563be8029dfcb06b8f1",
+      "expected_tests": 3998,
+      "label": "extra-rndd",
+      "mode": "rndd",
+      "output": "3998 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 3998,
+      "wall_seconds": 0.037
+    }
+  ],
+  "child_cpu_seconds": 1.3182219999999987,
+  "compiler": "gcc",
+  "flags": [
+    "-O3",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-march=x86-64",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-DCORE_MATH_SUPPORT_ERRNO",
+    "-fsignaling-nans"
+  ],
+  "function": "exp10",
+  "kind": "literals",
+  "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+  "status": "PASS",
+  "tested_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+  "upstream_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+  "wall_seconds": 2.03585729800011
+}

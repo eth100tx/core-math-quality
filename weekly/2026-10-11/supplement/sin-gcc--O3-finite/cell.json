@@ -1,0 +1,219 @@
+{
+  "checker_flags": [
+    "-O3",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-march=x86-64",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-DCORE_MATH_SUPPORT_ERRNO",
+    "-fsignaling-nans"
+  ],
+  "checks": [
+    {
+      "command": [
+        "gcc",
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-ffinite-math-only",
+        "-I.",
+        "-c",
+        "sin.c",
+        "-o",
+        "finite.o"
+      ],
+      "label": "function-build",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.274
+    },
+    {
+      "command": [
+        "gcc",
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-I.",
+        "check_worst_uni.c",
+        "finite.o",
+        "sin_mpfr.c",
+        "-lmpfr",
+        "-lgmp",
+        "-lm",
+        "-o",
+        "check"
+      ],
+      "label": "checker-build-link",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.774
+    },
+    {
+      "command": [
+        "./check",
+        "--rndn"
+      ],
+      "corpus_sha256": "0df7c4c199834785a6955c2a16dc5ba35197994dc39dc45d7a98bebdaee274bb",
+      "expected_tests": 3951854,
+      "label": "sin-rndn",
+      "mode": "rndn",
+      "output": "3951854 tests passed, 0 failure(s)\n",
+      "output_bytes": 35,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 1975927,
+      "wall_seconds": 32.91
+    },
+    {
+      "command": [
+        "./check",
+        "--rndz"
+      ],
+      "corpus_sha256": "0df7c4c199834785a6955c2a16dc5ba35197994dc39dc45d7a98bebdaee274bb",
+      "expected_tests": 3951854,
+      "label": "sin-rndz",
+      "mode": "rndz",
+      "output": "3951854 tests passed, 0 failure(s)\n",
+      "output_bytes": 35,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 1975927,
+      "wall_seconds": 25.423
+    },
+    {
+      "command": [
+        "./check",
+        "--rndu"
+      ],
+      "corpus_sha256": "0df7c4c199834785a6955c2a16dc5ba35197994dc39dc45d7a98bebdaee274bb",
+      "expected_tests": 3951854,
+      "label": "sin-rndu",
+      "mode": "rndu",
+      "output": "3951854 tests passed, 0 failure(s)\n",
+      "output_bytes": 35,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 1975927,
+      "wall_seconds": 25.529
+    },
+    {
+      "command": [
+        "./check",
+        "--rndd"
+      ],
+      "corpus_sha256": "0df7c4c199834785a6955c2a16dc5ba35197994dc39dc45d7a98bebdaee274bb",
+      "expected_tests": 3951854,
+      "label": "sin-rndd",
+      "mode": "rndd",
+      "output": "3951854 tests passed, 0 failure(s)\n",
+      "output_bytes": 35,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 1975927,
+      "wall_seconds": 25.027
+    },
+    {
+      "command": [
+        "./check",
+        "--rndn"
+      ],
+      "corpus_sha256": "8709878e4a05b50bb728e6e97918caf67b4aed6722b67630f2facf683a76256e",
+      "expected_tests": 8910,
+      "label": "extra-rndn",
+      "mode": "rndn",
+      "output": "8910 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4455,
+      "wall_seconds": 0.072
+    },
+    {
+      "command": [
+        "./check",
+        "--rndz"
+      ],
+      "corpus_sha256": "8709878e4a05b50bb728e6e97918caf67b4aed6722b67630f2facf683a76256e",
+      "expected_tests": 8910,
+      "label": "extra-rndz",
+      "mode": "rndz",
+      "output": "8910 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4455,
+      "wall_seconds": 0.07
+    },
+    {
+      "command": [
+        "./check",
+        "--rndu"
+      ],
+      "corpus_sha256": "8709878e4a05b50bb728e6e97918caf67b4aed6722b67630f2facf683a76256e",
+      "expected_tests": 8910,
+      "label": "extra-rndu",
+      "mode": "rndu",
+      "output": "8910 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4455,
+      "wall_seconds": 0.07
+    },
+    {
+      "command": [
+        "./check",
+        "--rndd"
+      ],
+      "corpus_sha256": "8709878e4a05b50bb728e6e97918caf67b4aed6722b67630f2facf683a76256e",
+      "expected_tests": 8910,
+      "label": "extra-rndd",
+      "mode": "rndd",
+      "output": "8910 tests passed, 0 failure(s)\n",
+      "output_bytes": 32,
+      "output_truncated": false,
+      "returncode": 0,
+      "rows": 4455,
+      "wall_seconds": 0.069
+    }
+  ],
+  "child_cpu_seconds": 100.89834499999999,
+  "compiler": "gcc",
+  "flags": [
+    "-O3",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-march=x86-64",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-DCORE_MATH_SUPPORT_ERRNO",
+    "-fsignaling-nans",
+    "-ffinite-math-only"
+  ],
+  "function": "sin",
+  "kind": "finite",
+  "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+  "status": "PASS",
+  "tested_source_sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+  "upstream_source_sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+  "wall_seconds": 113.49945925499992
+}

@@ -1,0 +1,105 @@
+{
+  "arithmetic": {
+    "certificate_bound": "1025 * 2^-128",
+    "certificate_log2": "-117.998591805607191611093389833498310947576668828420653776440229094820716509087432575656564",
+    "corrected_sum_terms": [
+      "-100.677",
+      "-102.4",
+      "-116.47",
+      "-124.5"
+    ],
+    "derivative_at_zero": "1 exactly",
+    "derivative_bound": "42539124214018284899091455932783791232122325383888104131841969564867/42535295865117307932921825928971026432000000000000000000000000000000",
+    "derivative_less_than_1_0001": true,
+    "radius": "9/100000",
+    "sum_below_claim": true,
+    "sum_log2": "-100.295233950377784393523999402678402029591986408814385173514164501707290502361121035117238"
+  },
+  "checks": [
+    {
+      "mode": "ne",
+      "model_sha256": "551fb130aebb1aa96437b0bcda566f3649804bc433e707a3a976971ef06a2961",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "ordinary",
+      "wall_seconds": 0.261
+    },
+    {
+      "mode": "zr",
+      "model_sha256": "f28dd2d327f58a2c678409e22e9f1d4fb71d5fbd83e9449b27a433b30b001680",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "ordinary",
+      "wall_seconds": 0.223
+    },
+    {
+      "mode": "up",
+      "model_sha256": "6a8fbddeeab84754aca8cb68287139781a05cda3e3004aa2baca959f8e169b29",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "ordinary",
+      "wall_seconds": 0.223
+    },
+    {
+      "mode": "dn",
+      "model_sha256": "ebbf86fd3bc30bceb105e95a8232c71717a340055f310a26e7d271cbd360dd79",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "ordinary",
+      "wall_seconds": 0.175
+    },
+    {
+      "mode": "ne",
+      "model_sha256": "702308d3d1357f4face867023fb26bf658a10dd5be3ce9d1254d47fbe68db8ad",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "contracted-dxll",
+      "wall_seconds": 0.176
+    },
+    {
+      "mode": "zr",
+      "model_sha256": "f094106cccaf5f33f9a4eadc7c37c40254b12191eace4fc630a52ddb3f30f9ed",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "contracted-dxll",
+      "wall_seconds": 0.174
+    },
+    {
+      "mode": "up",
+      "model_sha256": "8991382ed92ebf52156d4962f27dd1e7590cb61bb3c14e4555a3dbb8ee07852e",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "contracted-dxll",
+      "wall_seconds": 0.174
+    },
+    {
+      "mode": "dn",
+      "model_sha256": "39e2de68cac22ddafccde75ac88cc415e3edc721d90ef6602abf3ef3593faf1e",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "variant": "contracted-dxll",
+      "wall_seconds": 0.173
+    }
+  ],
+  "child_cpu_seconds": 1.143994,
+  "gappa_sha256": "f4a610b32c7d5602f37eaf5e9de61a5c87bcf744a506f56df4b5f23bb8a031c4",
+  "proof_pin": "58df57e5a46310d0e47d140ad23f146461788e0e",
+  "scope": "Conditional Gappa model bound; exact-operation assumptions require the separate source/math review. Decimal sum check is high-precision arithmetic, not a formal certificate.",
+  "upstream_model_sha256": "8f40fb86b0d55714d8a90a8adfa59d76a1c38607860b9e1f3ced9f2dfc3f4b06"
+}

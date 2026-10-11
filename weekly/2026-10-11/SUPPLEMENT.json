@@ -1,0 +1,1361 @@
+{
+  "status": "PASS",
+  "completed_cells": 38,
+  "results": [
+    {
+      "function": "exp",
+      "compiler": "gcc",
+      "flags": [
+        "-O0",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "tested_source_sha256": "6068432c9489305501206e3b703e3d8adf8bf1e961f6dad5b5b4bd06428fac16",
+      "child_cpu_seconds": 1.086793,
+      "wall_seconds": 2.7363151570000355,
+      "receipt": "supplement/exp-gcc--O0-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=108 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=186 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=174 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=162 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp2",
+      "compiler": "gcc",
+      "flags": [
+        "-O0",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "27508901fa5df2c4ce4783aa6a24bed843aba2e6c838725d0089c24eecd83389",
+      "tested_source_sha256": "55a791e0b1127ce13d176d3ab4a1a93bc7c07876f2005476f6c2662fe5585b04",
+      "child_cpu_seconds": 1.0920390000000002,
+      "wall_seconds": 1.9322257579999587,
+      "receipt": "supplement/exp2-gcc--O0-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=126 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=132 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=114 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=102 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp10",
+      "compiler": "gcc",
+      "flags": [
+        "-O0",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "tested_source_sha256": "0e33d72ab088724ba04bdb8c8cbc05a3456787b8855cfd5bbc0430b074d760c1",
+      "child_cpu_seconds": 0.9513020000000001,
+      "wall_seconds": 1.7124299009999504,
+      "receipt": "supplement/exp10-gcc--O0-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=78 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=210 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=216 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=216 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "tested_source_sha256": "6068432c9489305501206e3b703e3d8adf8bf1e961f6dad5b5b4bd06428fac16",
+      "child_cpu_seconds": 1.096517,
+      "wall_seconds": 1.7756984170000578,
+      "receipt": "supplement/exp-gcc--O3-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=108 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=186 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=174 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=162 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp2",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "27508901fa5df2c4ce4783aa6a24bed843aba2e6c838725d0089c24eecd83389",
+      "tested_source_sha256": "55a791e0b1127ce13d176d3ab4a1a93bc7c07876f2005476f6c2662fe5585b04",
+      "child_cpu_seconds": 1.3371870000000001,
+      "wall_seconds": 2.211063620999994,
+      "receipt": "supplement/exp2-gcc--O3-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=126 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=132 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=114 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=102 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp10",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "tested_source_sha256": "0e33d72ab088724ba04bdb8c8cbc05a3456787b8855cfd5bbc0430b074d760c1",
+      "child_cpu_seconds": 1.3133439999999998,
+      "wall_seconds": 2.037243933999889,
+      "receipt": "supplement/exp10-gcc--O3-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=78 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=210 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=216 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=216 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "tested_source_sha256": "6068432c9489305501206e3b703e3d8adf8bf1e961f6dad5b5b4bd06428fac16",
+      "child_cpu_seconds": 1.0063810000000015,
+      "wall_seconds": 1.6970007099998838,
+      "receipt": "supplement/exp-clang-18--O3-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=108 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=186 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=174 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=162 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp2",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "27508901fa5df2c4ce4783aa6a24bed843aba2e6c838725d0089c24eecd83389",
+      "tested_source_sha256": "55a791e0b1127ce13d176d3ab4a1a93bc7c07876f2005476f6c2662fe5585b04",
+      "child_cpu_seconds": 1.1863439999999992,
+      "wall_seconds": 1.7771152159998564,
+      "receipt": "supplement/exp2-clang-18--O3-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=126 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=132 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=114 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=102 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "exp10",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "database",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "tested_source_sha256": "0e33d72ab088724ba04bdb8c8cbc05a3456787b8855cfd5bbc0430b074d760c1",
+      "child_cpu_seconds": 1.183427,
+      "wall_seconds": 1.7525922590000391,
+      "receipt": "supplement/exp10-clang-18--O3-database/cell.json",
+      "observations": [
+        {
+          "check": "database-rndn",
+          "text": "DATABASE entries=78 exhausted=0"
+        },
+        {
+          "check": "database-rndz",
+          "text": "DATABASE entries=210 exhausted=0"
+        },
+        {
+          "check": "database-rndu",
+          "text": "DATABASE entries=216 exhausted=0"
+        },
+        {
+          "check": "database-rndd",
+          "text": "DATABASE entries=216 exhausted=0"
+        }
+      ]
+    },
+    {
+      "function": "log2",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "tested_source_sha256": "c52061bf87e4fd7e8575442ef75c43a31fd2a2edddea96b654da7b5bfff62c5b",
+      "child_cpu_seconds": 1.7652460000000008,
+      "wall_seconds": 3.0111709249999876,
+      "receipt": "supplement/log2-gcc--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "log2-rndn",
+          "text": "AUDIT n=36 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndz",
+          "text": "AUDIT n=84 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndu",
+          "text": "AUDIT n=114 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndd",
+          "text": "AUDIT n=102 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "sinh",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "e75191636f1c4fad3f11796fc0e72428a59b81c695868da9ae50b3bfd1df69dd",
+      "tested_source_sha256": "7f8352ffebf50e782907f3e2fdf30571f15beac92d23ec66a4cb4bb18cedb3b9",
+      "child_cpu_seconds": 16.861594000000004,
+      "wall_seconds": 19.526401222000004,
+      "receipt": "supplement/sinh-gcc--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "sinh-rndn",
+          "text": "AUDIT n=69936 bad=0 diff=25260 x=40505a1a1b748058 tail=bc9fffffffffffe8"
+        },
+        {
+          "check": "sinh-rndz",
+          "text": "AUDIT n=3122232 bad=0 diff=70440 x=40425fe6781dedf8 tail=3cafffffffffff67"
+        },
+        {
+          "check": "sinh-rndu",
+          "text": "AUDIT n=3122232 bad=0 diff=69732 x=40425fe6781dedf8 tail=b9d2c00000000000"
+        },
+        {
+          "check": "sinh-rndd",
+          "text": "AUDIT n=3122232 bad=0 diff=70548 x=40425fe6781dedf8 tail=3cafffffffffff67"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=60 bad=0 diff=24 x=c081600000000000 tail=3c9ffd1b9eb45ec9"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=648 bad=0 diff=24 x=c07ae00000000000 tail=bcaffa1fd436deec"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=624 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=624 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "cosh",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "aa9e80b3fe3fa4aa0b3b2abf11a9fe184f0170c5faa042ad80dcd4698417842b",
+      "tested_source_sha256": "820903c84aed05c89e8ef244a116589641aca0674976dafdc5dca8a97c103eb5",
+      "child_cpu_seconds": 2.7222679999999975,
+      "wall_seconds": 3.978779996000185,
+      "receipt": "supplement/cosh-gcc--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "cosh-rndn",
+          "text": "AUDIT n=74964 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "cosh-rndz",
+          "text": "AUDIT n=75876 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "cosh-rndu",
+          "text": "AUDIT n=75876 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "cosh-rndd",
+          "text": "AUDIT n=75876 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=108 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=264 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=240 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=228 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "exp2",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "27508901fa5df2c4ce4783aa6a24bed843aba2e6c838725d0089c24eecd83389",
+      "tested_source_sha256": "6164f03ee409b8f66b61b35221f82a6519f279770bba30b87520ad094d284d93",
+      "child_cpu_seconds": 2.6868150000000015,
+      "wall_seconds": 4.09877944699997,
+      "receipt": "supplement/exp2-gcc--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "exp2-rndn",
+          "text": "AUDIT n=192 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "exp2-rndz",
+          "text": "AUDIT n=228 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "exp2-rndu",
+          "text": "AUDIT n=156 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "exp2-rndd",
+          "text": "AUDIT n=228 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "sinpi",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-fsanitize=shift",
+        "-fno-sanitize-recover=shift"
+      ],
+      "kind": "shift",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "4c30b2e834bcff8fd54d8a8cd229b4b8b707c769d0b1979bee8838fd367b1218",
+      "tested_source_sha256": "4c30b2e834bcff8fd54d8a8cd229b4b8b707c769d0b1979bee8838fd367b1218",
+      "child_cpu_seconds": 3.1699040000000034,
+      "wall_seconds": 4.59230796199995,
+      "receipt": "supplement/sinpi-gcc--O3-shift/cell.json",
+      "observations": []
+    },
+    {
+      "function": "cospi",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-fsanitize=shift",
+        "-fno-sanitize-recover=shift"
+      ],
+      "kind": "shift",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "417b3e3803e5c0538f015b4c29920d1093b1f86ccaae51ff3ef5b45c0e4bd3ab",
+      "tested_source_sha256": "417b3e3803e5c0538f015b4c29920d1093b1f86ccaae51ff3ef5b45c0e4bd3ab",
+      "child_cpu_seconds": 2.6353559999999954,
+      "wall_seconds": 3.8741737099999227,
+      "receipt": "supplement/cospi-gcc--O3-shift/cell.json",
+      "observations": []
+    },
+    {
+      "function": "exp",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "tested_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "child_cpu_seconds": 1.2856150000000017,
+      "wall_seconds": 1.9929364049999094,
+      "receipt": "supplement/exp-gcc--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "exp10",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "tested_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "child_cpu_seconds": 1.3182219999999987,
+      "wall_seconds": 2.03585729800011,
+      "receipt": "supplement/exp10-gcc--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "922af9ae4b4bd009bf13238ac8a20c1be25d1fee912b0c35dbfd4962c1572497",
+      "tested_source_sha256": "922af9ae4b4bd009bf13238ac8a20c1be25d1fee912b0c35dbfd4962c1572497",
+      "child_cpu_seconds": 1.539244000000001,
+      "wall_seconds": 2.2380793979998543,
+      "receipt": "supplement/log-gcc--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log10",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "32eae639bee4d0f77721c7abc9322a58eb05d6303be49386961b6399fe4de066",
+      "tested_source_sha256": "32eae639bee4d0f77721c7abc9322a58eb05d6303be49386961b6399fe4de066",
+      "child_cpu_seconds": 1.8394180000000038,
+      "wall_seconds": 2.5542484009999953,
+      "receipt": "supplement/log10-gcc--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log2",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "candidate",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "tested_source_sha256": "e68bda38b566087fa6661bfc70b2014ec7414b15e4d5038416eba309a4466f59",
+      "child_cpu_seconds": 1.5425770000000023,
+      "wall_seconds": 2.5917717050001556,
+      "receipt": "supplement/log2-gcc--O3-candidate/cell.json",
+      "observations": []
+    },
+    {
+      "function": "sinh",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "candidate",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "e75191636f1c4fad3f11796fc0e72428a59b81c695868da9ae50b3bfd1df69dd",
+      "tested_source_sha256": "bafb6b0e42c69607ee36d00b5d72724c4662881e1152cdc0adc02c4bdbf3edb6",
+      "child_cpu_seconds": 16.823151999999997,
+      "wall_seconds": 19.41025279900009,
+      "receipt": "supplement/sinh-gcc--O3-candidate/cell.json",
+      "observations": []
+    },
+    {
+      "function": "sin",
+      "compiler": "gcc",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans",
+        "-ffinite-math-only"
+      ],
+      "kind": "finite",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+      "tested_source_sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+      "child_cpu_seconds": 100.89834499999999,
+      "wall_seconds": 113.49945925499992,
+      "receipt": "supplement/sin-gcc--O3-finite/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log2",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "tested_source_sha256": "c52061bf87e4fd7e8575442ef75c43a31fd2a2edddea96b654da7b5bfff62c5b",
+      "child_cpu_seconds": 1.7121500000000118,
+      "wall_seconds": 2.737887786000101,
+      "receipt": "supplement/log2-clang-18--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "log2-rndn",
+          "text": "AUDIT n=36 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndz",
+          "text": "AUDIT n=84 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndu",
+          "text": "AUDIT n=114 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndd",
+          "text": "AUDIT n=102 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "sinh",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "e75191636f1c4fad3f11796fc0e72428a59b81c695868da9ae50b3bfd1df69dd",
+      "tested_source_sha256": "7f8352ffebf50e782907f3e2fdf30571f15beac92d23ec66a4cb4bb18cedb3b9",
+      "child_cpu_seconds": 16.850921999999997,
+      "wall_seconds": 19.216566348000015,
+      "receipt": "supplement/sinh-clang-18--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "sinh-rndn",
+          "text": "AUDIT n=69936 bad=0 diff=25260 x=40505a1a1b748058 tail=bc9fffffffffffe8"
+        },
+        {
+          "check": "sinh-rndz",
+          "text": "AUDIT n=3122232 bad=0 diff=70440 x=40425fe6781dedf8 tail=3cafffffffffff67"
+        },
+        {
+          "check": "sinh-rndu",
+          "text": "AUDIT n=3122232 bad=0 diff=69732 x=40425fe6781dedf8 tail=b9d2c00000000000"
+        },
+        {
+          "check": "sinh-rndd",
+          "text": "AUDIT n=3122232 bad=0 diff=70548 x=40425fe6781dedf8 tail=3cafffffffffff67"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=60 bad=0 diff=24 x=c081600000000000 tail=3c9ffd1b9eb45ec9"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=648 bad=0 diff=24 x=c07ae00000000000 tail=bcaffa1fd436deec"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=624 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=624 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "cosh",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "aa9e80b3fe3fa4aa0b3b2abf11a9fe184f0170c5faa042ad80dcd4698417842b",
+      "tested_source_sha256": "820903c84aed05c89e8ef244a116589641aca0674976dafdc5dca8a97c103eb5",
+      "child_cpu_seconds": 2.948583000000017,
+      "wall_seconds": 4.158222095999918,
+      "receipt": "supplement/cosh-clang-18--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "cosh-rndn",
+          "text": "AUDIT n=74964 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "cosh-rndz",
+          "text": "AUDIT n=75876 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "cosh-rndu",
+          "text": "AUDIT n=75876 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "cosh-rndd",
+          "text": "AUDIT n=75876 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=108 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=264 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=240 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=228 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "exp2",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "27508901fa5df2c4ce4783aa6a24bed843aba2e6c838725d0089c24eecd83389",
+      "tested_source_sha256": "6164f03ee409b8f66b61b35221f82a6519f279770bba30b87520ad094d284d93",
+      "child_cpu_seconds": 3.188102999999984,
+      "wall_seconds": 4.420116633000134,
+      "receipt": "supplement/exp2-clang-18--O3-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "exp2-rndn",
+          "text": "AUDIT n=192 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "exp2-rndz",
+          "text": "AUDIT n=228 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "exp2-rndu",
+          "text": "AUDIT n=156 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "exp2-rndd",
+          "text": "AUDIT n=228 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "sinpi",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsanitize=shift",
+        "-fno-sanitize-recover=shift"
+      ],
+      "kind": "shift",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "4c30b2e834bcff8fd54d8a8cd229b4b8b707c769d0b1979bee8838fd367b1218",
+      "tested_source_sha256": "4c30b2e834bcff8fd54d8a8cd229b4b8b707c769d0b1979bee8838fd367b1218",
+      "child_cpu_seconds": 3.32891199999999,
+      "wall_seconds": 5.747019059999957,
+      "receipt": "supplement/sinpi-clang-18--O3-shift/cell.json",
+      "observations": []
+    },
+    {
+      "function": "cospi",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsanitize=shift",
+        "-fno-sanitize-recover=shift"
+      ],
+      "kind": "shift",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "417b3e3803e5c0538f015b4c29920d1093b1f86ccaae51ff3ef5b45c0e4bd3ab",
+      "tested_source_sha256": "417b3e3803e5c0538f015b4c29920d1093b1f86ccaae51ff3ef5b45c0e4bd3ab",
+      "child_cpu_seconds": 2.5915579999999903,
+      "wall_seconds": 4.905691430999923,
+      "receipt": "supplement/cospi-clang-18--O3-shift/cell.json",
+      "observations": []
+    },
+    {
+      "function": "exp",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "tested_source_sha256": "39b15256ce4632b163a9f93325c9ada678aacedcdf46cb32ee56f44860a87e64",
+      "child_cpu_seconds": 1.1766539999999992,
+      "wall_seconds": 1.7945563410000887,
+      "receipt": "supplement/exp-clang-18--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "exp10",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "tested_source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+      "child_cpu_seconds": 1.277648999999995,
+      "wall_seconds": 1.8647728470000402,
+      "receipt": "supplement/exp10-clang-18--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "922af9ae4b4bd009bf13238ac8a20c1be25d1fee912b0c35dbfd4962c1572497",
+      "tested_source_sha256": "922af9ae4b4bd009bf13238ac8a20c1be25d1fee912b0c35dbfd4962c1572497",
+      "child_cpu_seconds": 1.032875999999991,
+      "wall_seconds": 1.5861394040000505,
+      "receipt": "supplement/log-clang-18--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log10",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "literals",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "32eae639bee4d0f77721c7abc9322a58eb05d6303be49386961b6399fe4de066",
+      "tested_source_sha256": "32eae639bee4d0f77721c7abc9322a58eb05d6303be49386961b6399fe4de066",
+      "child_cpu_seconds": 0.8735030000000226,
+      "wall_seconds": 1.3464599040000849,
+      "receipt": "supplement/log10-clang-18--O3-literals/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log2",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "candidate",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "tested_source_sha256": "e68bda38b566087fa6661bfc70b2014ec7414b15e4d5038416eba309a4466f59",
+      "child_cpu_seconds": 1.7744159999999756,
+      "wall_seconds": 2.9023965090000274,
+      "receipt": "supplement/log2-clang-18--O3-candidate/cell.json",
+      "observations": []
+    },
+    {
+      "function": "sinh",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "candidate",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "e75191636f1c4fad3f11796fc0e72428a59b81c695868da9ae50b3bfd1df69dd",
+      "tested_source_sha256": "bafb6b0e42c69607ee36d00b5d72724c4662881e1152cdc0adc02c4bdbf3edb6",
+      "child_cpu_seconds": 16.99768,
+      "wall_seconds": 19.356773486999828,
+      "receipt": "supplement/sinh-clang-18--O3-candidate/cell.json",
+      "observations": []
+    },
+    {
+      "function": "sin",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-ffinite-math-only"
+      ],
+      "kind": "finite",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+      "tested_source_sha256": "cd772a06d75d1bb8bb4374847065acfab28d5a06c7fb81be3b36127f65d8b1c2",
+      "child_cpu_seconds": 100.83467900000002,
+      "wall_seconds": 112.68101054399995,
+      "receipt": "supplement/sin-clang-18--O3-finite/cell.json",
+      "observations": []
+    },
+    {
+      "function": "log2",
+      "compiler": "gcc",
+      "flags": [
+        "-O0",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fsignaling-nans"
+      ],
+      "kind": "instrumented",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "tested_source_sha256": "c52061bf87e4fd7e8575442ef75c43a31fd2a2edddea96b654da7b5bfff62c5b",
+      "child_cpu_seconds": 1.3741459999999819,
+      "wall_seconds": 2.5426306330000443,
+      "receipt": "supplement/log2-gcc--O0-instrumented/cell.json",
+      "observations": [
+        {
+          "check": "log2-rndn",
+          "text": "AUDIT n=36 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndz",
+          "text": "AUDIT n=84 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndu",
+          "text": "AUDIT n=114 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "log2-rndd",
+          "text": "AUDIT n=102 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndn",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndz",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndu",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        },
+        {
+          "check": "extra-rndd",
+          "text": "AUDIT n=0 bad=0 diff=0 x=0000000000000000 tail=0000000000000000"
+        }
+      ]
+    },
+    {
+      "function": "log2",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "plain",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "tested_source_sha256": "b3b0db1e500bcfa487b5c3547927088ba9576f66b94f2a7355e1a8088c93edd9",
+      "child_cpu_seconds": 1.520796,
+      "wall_seconds": 2.47833797699991,
+      "receipt": "supplement/log2-clang-18--O3-plain/cell.json",
+      "observations": []
+    },
+    {
+      "function": "sinh",
+      "compiler": "clang-18",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "kind": "plain",
+      "status": "PASS",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "upstream_source_sha256": "e75191636f1c4fad3f11796fc0e72428a59b81c695868da9ae50b3bfd1df69dd",
+      "tested_source_sha256": "e75191636f1c4fad3f11796fc0e72428a59b81c695868da9ae50b3bfd1df69dd",
+      "child_cpu_seconds": 16.764364,
+      "wall_seconds": 19.061722608999844,
+      "receipt": "supplement/sinh-clang-18--O3-plain/cell.json",
+      "observations": []
+    }
+  ],
+  "scope": "Finite full-corpus/extra-boundary/finite-key checks as distinguished in each receipt; no universal correctness or uninstrumented intermediate-state proof."
+}
