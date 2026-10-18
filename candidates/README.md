@@ -2,12 +2,15 @@
 
 | Candidate | Type | State |
 |---|---|---|
-| [log2 sign step](log2-sign-step/README.md) | Source equivalence | Proposed; GCC/Clang tested; no public wrong-value witness |
-| [sinh mask width](sinh-mask-width/README.md) | Restore int64_t | Proposed; GCC/Clang tested |
-| [exp derivative bound](exp-derivative-bound/README.md) | Proof calculation | Proposed; exact coefficient bound and corrected sum checked |
-| [sine errno name](sin-errno-name/README.md) | Build fix | Accepted upstream; byte-verified October11 |
-| [sine proof references](sin-proof-models/README.md) | Three model corrections | Accepted upstream; byte-verified October11 |
-| [asinpi domain witness](asinpi-domain-witness/README.md) | One .wc row | Accepted upstream; regression/coverage refreshed October11 |
+| [rsqrt reciprocal range](rsqrt-underflow-range/README.md) | Spurious-underflow regression | Confirmed; GCC/Clang candidate tested, not merged |
+| [exp fast allowance](exp-fast-allowance/README.md) | Historical wrong-value failure | Reproduced; GCC/Clang candidate tested, not merged |
+| [exp FastTwoSum model](exp-fasttwosum-model/README.md) | Directed-rounding model correction | Four corrected Gappa certificates; conditional, not full correctness |
+| [log2 sign step](log2-sign-step/README.md) | Source equivalence | Semantic correction accepted upstream; October 18 verified |
+| [sinh mask width](sinh-mask-width/README.md) | Restore int64_t | Accepted upstream; October 18 verified |
+| [exp derivative bound](exp-derivative-bound/README.md) | Proof calculation | Corrected bound adopted upstream; current hull bound rechecked |
+| [sine errno name](sin-errno-name/README.md) | Build fix | Accepted upstream; October 11 verified |
+| [sine proof references](sin-proof-models/README.md) | Three model corrections | Accepted upstream; October 11 verified |
+| [asinpi domain witness](asinpi-domain-witness/README.md) | One .wc row | Accepted upstream; October 11 verified |
 
 Each directory records the exact base and limits. Apply patches only to a
 disposable checkout at the stated base. The workbench never pushes upstream.

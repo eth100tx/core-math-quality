@@ -1,11 +1,10 @@
 # Current status
 
-**All25 selected functions pass the October11 GCC regression. Three small
-source/proof corrections are proposed; no new public wrong-value witness.**
+**October 18: all 25 pinned corpora pass, but supplementary checks confirm a new
+rsqrt underflow-flag regression and the known exp wrong-value failure.**
 
-- [Latest weekly report](weekly/2026-10-11/REPORT.md), [full missing-line/arc census](weekly/2026-10-11/MISSING-COVERAGE.json).
-- Baseline `81a899d67953a619d703660fd9630f0554673524`, GCC13.3 x86-64, errno on, four modes, O3 regression/O0 coverage. 17/25 target files have no missing lines/arcs.
-- One active coverage target: **exp**, 0 missing lines/1 missing arc. Finite exception-key replay complete; portable unreachability deliberately deferred.
-- [Candidates](candidates/README.md): log2 sign equivalence, sinh mask width, exp proof derivative term. Earlier sine fixes and asinpi witness are accepted upstream.
-- Coverage rises largely because upstream removed predicates; this is not new testing of deleted paths or a universal correct-rounding proof.
-- [Source review and open obligations](weekly/2026-10-11/SOURCE-REVIEW.md), [weekly index](weekly/README.md), [supported configurations](docs/CONFIGURATIONS.md).
+- [Latest report](weekly/2026-10-18/REPORT.md), [raw missing-line/arc census](weekly/2026-10-18/MISSING-COVERAGE.json).
+- GCC 13.3 x86-64, errno on, four modes; 19/25 target files have no measured gap.
+- exp's new database has full measured coverage. **Active: exp10**, 0 missing lines/1 missing arc. Finite trigger set excludes the exit in measured O3/O0 binaries; portable closure remains open.
+- Two tested source patches and one corrected conditional proof model are [proposed](candidates/README.md). Last week's log2/sinh corrections and exp derivative bound are upstream.
+- [Proof obligations](weekly/2026-10-18/SOURCE-REVIEW.md), [hypot pilot proposal—not run](docs/BIVARIATE-PILOT.md), [weekly index](weekly/README.md).

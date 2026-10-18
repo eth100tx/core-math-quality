@@ -1,5 +1,8 @@
 # log2: preserve the two sign cases
 
+**October 18 status:** The semantic sign correction is upstream in implementation commit 26247716d2a0613bf0a7009f472f4cde66371d40. The new shift expression yields ±1 on the qualified signed-shift configuration; this is a semantic pickup, not byte-identical adoption of the old patch.
+
+
 Proposed, tested and independently reviewed; not merged at the reviewed pin.
 
 Base implementation: `81a899d67953a619d703660fd9630f0554673524`.

@@ -1,0 +1,86 @@
+
+plain:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.got:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000003530 <as_exp10_database>:
+    3530:	66 0f 28 d0          	movapd %xmm0,%xmm2
+    3534:	b8 18 00 00 00       	mov    $0x18,%eax
+    3539:	66 0f 28 c1          	movapd %xmm1,%xmm0
+    353d:	31 f6                	xor    %esi,%esi
+    353f:	66 49 0f 7e d0       	movq   %xmm2,%r8
+    3544:	bf 30 00 00 00       	mov    $0x30,%edi
+    3549:	4c 8d 0d b0 22 00 00 	lea    0x22b0(%rip),%r9        # 5800 <db.1>
+    3550:	eb 19                	jmp    356b <as_exp10_database+0x3b>
+    3552:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+    3558:	8d 70 01             	lea    0x1(%rax),%esi
+    355b:	8d 14 3e             	lea    (%rsi,%rdi,1),%edx
+    355e:	89 d0                	mov    %edx,%eax
+    3560:	c1 e8 1f             	shr    $0x1f,%eax
+    3563:	01 d0                	add    %edx,%eax
+    3565:	d1 f8                	sar    $1,%eax
+    3567:	39 fe                	cmp    %edi,%esi
+    3569:	7f 24                	jg     358f <as_exp10_database+0x5f>
+    356b:	48 63 d0             	movslq %eax,%rdx
+    356e:	49 8b 14 d1          	mov    (%r9,%rdx,8),%rdx
+    3572:	4c 39 c2             	cmp    %r8,%rdx
+    3575:	72 e1                	jb     3558 <as_exp10_database+0x28>
+    3577:	49 39 d0             	cmp    %rdx,%r8
+    357a:	74 14                	je     3590 <as_exp10_database+0x60>
+    357c:	8d 78 ff             	lea    -0x1(%rax),%edi
+    357f:	8d 14 3e             	lea    (%rsi,%rdi,1),%edx
+    3582:	89 d0                	mov    %edx,%eax
+    3584:	c1 e8 1f             	shr    $0x1f,%eax
+    3587:	01 d0                	add    %edx,%eax
+    3589:	d1 f8                	sar    $1,%eax
+    358b:	39 fe                	cmp    %edi,%esi
+    358d:	7e dc                	jle    356b <as_exp10_database+0x3b>
+    358f:	c3                   	ret
+    3590:	89 c2                	mov    %eax,%edx
+    3592:	4c 8d 1d 47 22 00 00 	lea    0x2247(%rip),%r11        # 57e0 <s2.0>
+    3599:	66 49 0f 7e c2       	movq   %xmm0,%r10
+    359e:	89 c1                	mov    %eax,%ecx
+    35a0:	c1 fa 05             	sar    $0x5,%edx
+    35a3:	83 e1 1f             	and    $0x1f,%ecx
+    35a6:	48 63 d2             	movslq %edx,%rdx
+    35a9:	01 c9                	add    %ecx,%ecx
+    35ab:	49 8b 14 d3          	mov    (%r11,%rdx,8),%rdx
+    35af:	48 d3 ea             	shr    %cl,%rdx
+    35b2:	49 8d 4a ff          	lea    -0x1(%r10),%rcx
+    35b6:	49 89 d3             	mov    %rdx,%r11
+    35b9:	49 31 cb             	xor    %rcx,%r11
+    35bc:	41 83 e3 03          	and    $0x3,%r11d
+    35c0:	74 46                	je     3608 <as_exp10_database+0xd8>
+    35c2:	4c 89 d1             	mov    %r10,%rcx
+    35c5:	48 31 d1             	xor    %rdx,%rcx
+    35c8:	83 e1 03             	and    $0x3,%ecx
+    35cb:	74 11                	je     35de <as_exp10_database+0xae>
+    35cd:	49 83 c2 01          	add    $0x1,%r10
+    35d1:	4c 31 d2             	xor    %r10,%rdx
+    35d4:	83 e2 03             	and    $0x3,%edx
+    35d7:	75 82                	jne    355b <as_exp10_database+0x2b>
+    35d9:	66 49 0f 6e c2       	movq   %r10,%xmm0
+    35de:	48 ba 4d a9 ec d3 d9 	movabs $0x151d9d3eca94d,%rdx
+    35e5:	51 01 00 
+    35e8:	89 c1                	mov    %eax,%ecx
+    35ea:	48 b8 00 00 00 00 00 	movabs $0x3c90000000000000,%rax
+    35f1:	00 90 3c 
+    35f4:	48 d3 ea             	shr    %cl,%rdx
+    35f7:	48 c1 e2 3f          	shl    $0x3f,%rdx
+    35fb:	48 09 c2             	or     %rax,%rdx
+    35fe:	66 48 0f 6e da       	movq   %rdx,%xmm3
+    3603:	f2 0f 58 c3          	addsd  %xmm3,%xmm0
+    3607:	c3                   	ret
+    3608:	66 48 0f 6e c1       	movq   %rcx,%xmm0
+    360d:	eb cf                	jmp    35de <as_exp10_database+0xae>
+
+Disassembly of section .fini:

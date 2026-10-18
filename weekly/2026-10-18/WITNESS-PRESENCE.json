@@ -1,0 +1,21 @@
+{
+  "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+  "checked": "numeric equality of parsed finite binary64 values; comments ignored",
+  "rows": [
+    {
+      "function": "rsqrt",
+      "witness": "0x1.0000000000001p+1022",
+      "present": false,
+      "matches": [],
+      "corpus_sha256": "9a42b4d5e26c743fdd410e2d22ab93425e6f07eca695693245b3ed58c6d534eb"
+    },
+    {
+      "function": "exp",
+      "witness": "0x1.5a3a157335f3bp+9",
+      "present": false,
+      "matches": [],
+      "corpus_sha256": "3f1622b3ed80806bfdffd406a9f479dba4f0e03af7358036c1929acfe04b86da"
+    }
+  ],
+  "cpu_seconds": 1.625
+}

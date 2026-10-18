@@ -1,0 +1,13 @@
+--- a/exp/generate.py
++++ b/exp/generate.py
+@@ -63,8 +63,8 @@
+     res=[f"# {h},{l} <- fasttwosum({a},{b})"]
+     goal_list.append(f"{b} // {a} in [-1,1]")
+     # add hint (h+l) - (a+b) -> l - (-(h-(a+b)));
+-    hint_list.append(f"({h} + {l}) - ({a} + {b}) -> {l} - (-({h} - ({a} + {b})))")
+-    return f"{h}=rnd({a} + {b});\n{l}=-rnd({h} - ({a} + {b}));"
++    hint_list.append(f"({h} + {l}) - ({a} + {b}) -> {l} - (({a} + {b}) - {h})")
++    return f"{h}=rnd({a} + {b});\n{l}=rnd(({a} + {b}) - {h});"
+ 
+ def fast_sum(h,l,ah,al,bh,bl):
+     """

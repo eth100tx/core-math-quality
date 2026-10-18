@@ -1,0 +1,26 @@
+[
+  {
+    "candidate": "rsqrt-underflow-range",
+    "base": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+    "source": "src/binary64/rsqrt/rsqrt.c",
+    "before_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+    "after_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+    "patch_sha256": "c5d468c3448df148fdec4c293cd45400ab8cf57dc6a52ff3b8014fc200dd36b3"
+  },
+  {
+    "candidate": "exp-fast-allowance",
+    "base": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+    "source": "src/binary64/exp/exp.c",
+    "before_sha256": "55ad39a6610e0f46794be6b70a1ee4d76b10dd4f64d47b61c4e918d711e3041d",
+    "after_sha256": "65af7f572ce97327b63700dd76bd6bf753c087fe326c83c7dbbd674ab168a84d",
+    "patch_sha256": "2e3d637426dc40fa4bf50b3926b4d5a53622d87f5b6a12a3a3603ef7851af466"
+  },
+  {
+    "candidate": "exp-fasttwosum-model",
+    "base": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a",
+    "source": "exp/generate.py",
+    "before_sha256": "8452d6ff48f1a461ea612f7b36024da8918dced38dc0e8df1af069b6441fe7e6",
+    "after_sha256": "084026f1c035b66c7ecf927c3a5df6b1e172daac298df3e03e242d438d015aea",
+    "patch_sha256": "a0c14883fca6f0b752eef9212b79d2b115b54cccf372b12c660a959e9284d02f"
+  }
+]

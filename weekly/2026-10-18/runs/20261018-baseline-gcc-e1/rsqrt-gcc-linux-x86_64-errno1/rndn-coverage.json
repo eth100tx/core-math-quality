@@ -1,0 +1,708 @@
+{
+  "file": "src/binary64/rsqrt/rsqrt.c",
+  "functions": [
+    {
+      "blocks": 6,
+      "blocks_executed": 6,
+      "demangled_name": "get_rounding_mode",
+      "end_column": 1,
+      "end_line": 107,
+      "execution_count": 1098,
+      "name": "get_rounding_mode",
+      "start_column": 19,
+      "start_line": 81
+    },
+    {
+      "blocks": 18,
+      "blocks_executed": 17,
+      "demangled_name": "as_rsqrt_refine",
+      "end_column": 1,
+      "end_line": 166,
+      "execution_count": 1146,
+      "name": "as_rsqrt_refine",
+      "start_column": 41,
+      "start_line": 119
+    },
+    {
+      "blocks": 22,
+      "blocks_executed": 22,
+      "demangled_name": "cr_rsqrt",
+      "end_column": 1,
+      "end_line": 217,
+      "execution_count": 119072,
+      "name": "cr_rsqrt",
+      "start_column": 8,
+      "start_line": 168
+    }
+  ],
+  "lines": [
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "get_rounding_mode",
+      "line_number": 81,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "get_rounding_mode",
+      "line_number": 100,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1146,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 119,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1146,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 120,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 72,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 1074,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 1146,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 121,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 72,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 122,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 72,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 123,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 72,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 124,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 72,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 125,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 72,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 126,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 1098,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 48,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 1146,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 128,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 130,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 131,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 133,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 134,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 135,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 136,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 137,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 138,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 139,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 140,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 141,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 143,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 145,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 146,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 147,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 148,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 149,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 0,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 1098,
+          "fallthrough": true,
+          "throw": false
+        }
+      ],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 150,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 648,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 450,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 151,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 450,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 648,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 152,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 1098,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 0,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 153,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 154,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 155,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 156,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 157,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 158,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 159,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 0,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 161,
+      "unexecuted_block": true
+    },
+    {
+      "branches": [],
+      "count": 1098,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 163,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1146,
+      "function_name": "as_rsqrt_refine",
+      "line_number": 165,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 119072,
+      "function_name": "cr_rsqrt",
+      "line_number": 168,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 119072,
+      "function_name": "cr_rsqrt",
+      "line_number": 169,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 119072,
+      "function_name": "cr_rsqrt",
+      "line_number": 171,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 84,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 118988,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 119072,
+      "function_name": "cr_rsqrt",
+      "line_number": 172,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 72,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 12,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 84,
+      "function_name": "cr_rsqrt",
+      "line_number": 173,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 72,
+      "function_name": "cr_rsqrt",
+      "line_number": 174,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_rsqrt",
+      "line_number": 177,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_rsqrt",
+      "line_number": 179,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 59400,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 59588,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 118988,
+      "function_name": "cr_rsqrt",
+      "line_number": 181,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59400,
+      "function_name": "cr_rsqrt",
+      "line_number": 183,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 12,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 59576,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 59588,
+      "function_name": "cr_rsqrt",
+      "line_number": 184,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_rsqrt",
+      "line_number": 185,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59576,
+      "function_name": "cr_rsqrt",
+      "line_number": 187,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 12,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 59564,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 59576,
+      "function_name": "cr_rsqrt",
+      "line_number": 188,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_rsqrt",
+      "line_number": 190,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_rsqrt",
+      "line_number": 192,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 56,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 59508,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 59564,
+      "function_name": "cr_rsqrt",
+      "line_number": 194,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 59496,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 12,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 59508,
+      "function_name": "cr_rsqrt",
+      "line_number": 195,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59496,
+      "function_name": "cr_rsqrt",
+      "line_number": 197,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59496,
+      "function_name": "cr_rsqrt",
+      "line_number": 199,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59496,
+      "function_name": "cr_rsqrt",
+      "line_number": 200,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 12,
+      "function_name": "cr_rsqrt",
+      "line_number": 202,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 205,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 207,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 210,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 211,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 212,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 213,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [
+        {
+          "count": 58806,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 678,
+          "fallthrough": false,
+          "throw": false
+        },
+        {
+          "count": 468,
+          "fallthrough": true,
+          "throw": false
+        },
+        {
+          "count": 58338,
+          "fallthrough": false,
+          "throw": false
+        }
+      ],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 214,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 1146,
+      "function_name": "cr_rsqrt",
+      "line_number": 215,
+      "unexecuted_block": false
+    },
+    {
+      "branches": [],
+      "count": 59484,
+      "function_name": "cr_rsqrt",
+      "line_number": 216,
+      "unexecuted_block": false
+    }
+  ]
+}

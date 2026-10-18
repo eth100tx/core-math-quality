@@ -1,5 +1,8 @@
 # exp proof: correct the derivative term
 
+**October 18 status:** The revised proof at 5a42d3fb72533077c8b745b9fcd39b84ad3ee92a adopts the corrected derivative bound 1.0001. Its surrounding theorem changed; the October 18 source review rechecks the derivative on the hull of r and D. The old text patch is historical, not a patch for the current manuscript.
+
+
 Proposed; not merged at proof pin `58df57e5a46310d0e47d140ad23f146461788e0e`.
 
 Q'(0)=1 refutes the displayed 2^-0.99 derivative bound. Exact dyadic coefficient arithmetic proves |Q'|<1.0001 on a rational interval containing the cited reduction interval. The corrected contribution is <2^-116.47; the final sum remains below 2^-100.29. This patch repairs that calculation, not the entire accurate-path proof or its other open obligations.

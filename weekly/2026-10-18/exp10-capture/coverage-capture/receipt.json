@@ -1,0 +1,5899 @@
+{
+  "baseline_cell": "20261018-baseline-gcc-e1/exp10-gcc-linux-x86_64-errno1",
+  "binary_kind": "covered",
+  "binary_sha256": "f0d1bc10e521c204eac988edceaf34b647e17b28928540b260f233379e9fbef2",
+  "captured_copy_sha256": "f0d1bc10e521c204eac988edceaf34b647e17b28928540b260f233379e9fbef2",
+  "child_cpu_seconds": 1.932974,
+  "environment": {
+    "architecture": "x86_64",
+    "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "experimental": false,
+    "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "libc": [
+      "glibc",
+      "2.39"
+    ],
+    "platform": "Linux",
+    "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+    "profile": "gcc-linux-x86_64",
+    "status": "PASS"
+  },
+  "flags": [
+    "-O0",
+    "-g",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-ffp-contract=off",
+    "-DCORE_MATH_NO_OPENMP",
+    "-DCORE_MATH_CHECK_INEXACT",
+    "-march=x86-64",
+    "-fsignaling-nans",
+    "-DCORE_MATH_SUPPORT_ERRNO",
+    "--coverage"
+  ],
+  "key_bits": [
+    "3f4821e0f2afb970",
+    "3f57c3ddd23ac8ca",
+    "3f5a2d7c1699e82d",
+    "3f7ec65645edc394",
+    "3f890d7373b3a546",
+    "3f97e3c84f2cb9b5",
+    "3fa25765968ecd68",
+    "3fa9aa6fd4d21a47",
+    "3fae7b525705edef",
+    "3fd12e02aa997af2",
+    "3fdc414aa8bd83b1",
+    "3fdd7d271ab4eeb4",
+    "3fe1fe5f30572361",
+    "3fe522c9f19cc202",
+    "3ff1daf94cf0bd01",
+    "3ff75f49c6ad3bad",
+    "3ffa3c782d4f54fc",
+    "3ffcc30b915ec8c4",
+    "400ee9674267e65f",
+    "4012d5494eb1dd13",
+    "40389063309f3004",
+    "4052a59b82b6fc5e",
+    "406cde37694f4d10",
+    "bf045ddb10382e3f",
+    "bf0485426a688467",
+    "bf06506061aae6f7",
+    "bf0898a8c3990624",
+    "bf117362e953393b",
+    "bf1e40231e216cad",
+    "bf27a7f33cc3fd0b",
+    "bf363df14c04ab23",
+    "bf3a1b18d3a28957",
+    "bf3e12494018e44c",
+    "bf44c7a2be09b10e",
+    "bf4de686910f4f52",
+    "bf5ebb11d32c9493",
+    "bf7f6f96f005fd47",
+    "bf8b44e17164ce91",
+    "bf93b95082297ea7",
+    "bf95b25114a07a72",
+    "bfba9cf11e5adbc5",
+    "bfcc360cdde773f7",
+    "bfd56ff305822f26",
+    "bfdc03419f51b93e",
+    "bfe1416c72a588a6",
+    "bfed18176754aac7",
+    "c01aa5575135e2d3",
+    "c034cd4af2fca2b4",
+    "c05da5b10d8689fd"
+  ],
+  "modes": [
+    {
+      "accepted_tests": 49,
+      "distinct_helper_keys": 13,
+      "failures": 0,
+      "helper_calls": 78,
+      "mode": "rndn",
+      "observations": [
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff00db40291e4f6",
+          "key_index": 1,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "3f57c3ddd23ac8ca"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff00db40291e4f6",
+          "key_index": 1,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "3f57c3ddd23ac8ca"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff00db40291e4f6",
+          "key_index": 1,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "3f57c3ddd23ac8ca"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff00db40291e4f6",
+          "key_index": 1,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "3f57c3ddd23ac8ca"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff00db40291e4f6",
+          "key_index": 1,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "3f57c3ddd23ac8ca"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff00db40291e4f6",
+          "key_index": 1,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "3f57c3ddd23ac8ca"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff07502eb858f20",
+          "key_index": 4,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "3f890d7373b3a546"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff07502eb858f20",
+          "key_index": 4,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "3f890d7373b3a546"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff07502eb858f20",
+          "key_index": 4,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "3f890d7373b3a546"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff07502eb858f20",
+          "key_index": 4,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "3f890d7373b3a546"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff07502eb858f20",
+          "key_index": 4,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "3f890d7373b3a546"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff07502eb858f20",
+          "key_index": 4,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "3f890d7373b3a546"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0e20cd9bd42aa",
+          "key_index": 5,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "3f97e3c84f2cb9b5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0e20cd9bd42aa",
+          "key_index": 5,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "3f97e3c84f2cb9b5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0e20cd9bd42aa",
+          "key_index": 5,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "3f97e3c84f2cb9b5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0e20cd9bd42aa",
+          "key_index": 5,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "3f97e3c84f2cb9b5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0e20cd9bd42aa",
+          "key_index": 5,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "3f97e3c84f2cb9b5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0e20cd9bd42aa",
+          "key_index": 5,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "3f97e3c84f2cb9b5"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffdafa4a686c180",
+          "key_index": 9,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "3fd12e02aa997af2"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffdafa4a686c180",
+          "key_index": 9,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "3fd12e02aa997af2"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffdafa4a686c180",
+          "key_index": 9,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "3fd12e02aa997af2"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffdafa4a686c180",
+          "key_index": 9,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "3fd12e02aa997af2"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffdafa4a686c180",
+          "key_index": 9,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "3fd12e02aa997af2"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffdafa4a686c180",
+          "key_index": 9,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "3fd12e02aa997af2"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff24df069ec6c7a",
+          "key_index": 13,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "3fe522c9f19cc202"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff24df069ec6c7a",
+          "key_index": 13,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "3fe522c9f19cc202"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff24df069ec6c7a",
+          "key_index": 13,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "3fe522c9f19cc202"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff24df069ec6c7a",
+          "key_index": 13,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "3fe522c9f19cc202"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff24df069ec6c7a",
+          "key_index": 13,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "3fe522c9f19cc202"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff24df069ec6c7a",
+          "key_index": 13,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "3fe522c9f19cc202"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff8f189a48a6a86",
+          "key_index": 19,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "4012d5494eb1dd13"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff8f189a48a6a86",
+          "key_index": 19,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "4012d5494eb1dd13"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff8f189a48a6a86",
+          "key_index": 19,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "4012d5494eb1dd13"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff8f189a48a6a86",
+          "key_index": 19,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "4012d5494eb1dd13"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff8f189a48a6a86",
+          "key_index": 19,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "4012d5494eb1dd13"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff8f189a48a6a86",
+          "key_index": 19,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "4012d5494eb1dd13"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff2210fd5a164b6",
+          "key_index": 22,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "406cde37694f4d10"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff2210fd5a164b6",
+          "key_index": 22,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "406cde37694f4d10"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff2210fd5a164b6",
+          "key_index": 22,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "406cde37694f4d10"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff2210fd5a164b6",
+          "key_index": 22,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "406cde37694f4d10"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff2210fd5a164b6",
+          "key_index": 22,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "406cde37694f4d10"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff2210fd5a164b6",
+          "key_index": 22,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "406cde37694f4d10"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff4301df6b36",
+          "key_index": 24,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "bf0485426a688467"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff4301df6b36",
+          "key_index": 24,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "bf0485426a688467"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff4301df6b36",
+          "key_index": 24,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "bf0485426a688467"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff4301df6b36",
+          "key_index": 24,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "bf0485426a688467"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff4301df6b36",
+          "key_index": 24,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "bf0485426a688467"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff4301df6b36",
+          "key_index": 24,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "bf0485426a688467"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff1d78c1eafb",
+          "key_index": 26,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "bf0898a8c3990624"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff1d78c1eafb",
+          "key_index": 26,
+          "mxcsr": 8096,
+          "stored_residue": 3,
+          "x_bits": "bf0898a8c3990624"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff1d78c1eafb",
+          "key_index": 26,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "bf0898a8c3990624"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff1d78c1eafb",
+          "key_index": 26,
+          "mxcsr": 8100,
+          "stored_residue": 3,
+          "x_bits": "bf0898a8c3990624"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff1d78c1eafb",
+          "key_index": 26,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "bf0898a8c3990624"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff1d78c1eafb",
+          "key_index": 26,
+          "mxcsr": 8101,
+          "stored_residue": 3,
+          "x_bits": "bf0898a8c3990624"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffdd2d6abfcf1",
+          "key_index": 28,
+          "mxcsr": 8096,
+          "stored_residue": 2,
+          "x_bits": "bf1e40231e216cad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffdd2d6abfcf1",
+          "key_index": 28,
+          "mxcsr": 8096,
+          "stored_residue": 2,
+          "x_bits": "bf1e40231e216cad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffdd2d6abfcf1",
+          "key_index": 28,
+          "mxcsr": 8100,
+          "stored_residue": 2,
+          "x_bits": "bf1e40231e216cad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffdd2d6abfcf1",
+          "key_index": 28,
+          "mxcsr": 8100,
+          "stored_residue": 2,
+          "x_bits": "bf1e40231e216cad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffdd2d6abfcf1",
+          "key_index": 28,
+          "mxcsr": 8101,
+          "stored_residue": 2,
+          "x_bits": "bf1e40231e216cad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffdd2d6abfcf1",
+          "key_index": 28,
+          "mxcsr": 8101,
+          "stored_residue": 2,
+          "x_bits": "bf1e40231e216cad"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff708106038d24",
+          "key_index": 36,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "bf7f6f96f005fd47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff708106038d24",
+          "key_index": 36,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "bf7f6f96f005fd47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff708106038d24",
+          "key_index": 36,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "bf7f6f96f005fd47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff708106038d24",
+          "key_index": 36,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "bf7f6f96f005fd47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff708106038d24",
+          "key_index": 36,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "bf7f6f96f005fd47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff708106038d24",
+          "key_index": 36,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "bf7f6f96f005fd47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd9862d491397a",
+          "key_index": 42,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "bfd56ff305822f26"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd9862d491397a",
+          "key_index": 42,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "bfd56ff305822f26"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd9862d491397a",
+          "key_index": 42,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "bfd56ff305822f26"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd9862d491397a",
+          "key_index": 42,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "bfd56ff305822f26"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd9862d491397a",
+          "key_index": 42,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "bfd56ff305822f26"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd9862d491397a",
+          "key_index": 42,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "bfd56ff305822f26"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffdce2dfaaf67ca",
+          "key_index": 47,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "c034cd4af2fca2b4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffdce2dfaaf67ca",
+          "key_index": 47,
+          "mxcsr": 8096,
+          "stored_residue": 1,
+          "x_bits": "c034cd4af2fca2b4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffdce2dfaaf67ca",
+          "key_index": 47,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "c034cd4af2fca2b4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffdce2dfaaf67ca",
+          "key_index": 47,
+          "mxcsr": 8100,
+          "stored_residue": 1,
+          "x_bits": "c034cd4af2fca2b4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffdce2dfaaf67ca",
+          "key_index": 47,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "c034cd4af2fca2b4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffdce2dfaaf67ca",
+          "key_index": 47,
+          "mxcsr": 8101,
+          "stored_residue": 1,
+          "x_bits": "c034cd4af2fca2b4"
+        }
+      ],
+      "returncode": 0,
+      "tested_public_keys": 49,
+      "wall_seconds": 0.419
+    },
+    {
+      "accepted_tests": 49,
+      "distinct_helper_keys": 35,
+      "failures": 0,
+      "helper_calls": 210,
+      "mode": "rndz",
+      "observations": [
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff0477a5e0c9213",
+          "key_index": 3,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff0477a5e0c9213",
+          "key_index": 3,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff0477a5e0c9213",
+          "key_index": 3,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff0477a5e0c9213",
+          "key_index": 3,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff0477a5e0c9213",
+          "key_index": 3,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff0477a5e0c9213",
+          "key_index": 3,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffa1efc3ce340d2",
+          "key_index": 14,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffa1efc3ce340d2",
+          "key_index": 14,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffa1efc3ce340d2",
+          "key_index": 14,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffa1efc3ce340d2",
+          "key_index": 14,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffa1efc3ce340d2",
+          "key_index": 14,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffa1efc3ce340d2",
+          "key_index": 14,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffb5f92b2a65f97",
+          "key_index": 21,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffb5f92b2a65f97",
+          "key_index": 21,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffb5f92b2a65f97",
+          "key_index": 21,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffb5f92b2a65f97",
+          "key_index": 21,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffb5f92b2a65f97",
+          "key_index": 21,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffb5f92b2a65f97",
+          "key_index": 21,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff999cab1babb",
+          "key_index": 30,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff999cab1babb",
+          "key_index": 30,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff999cab1babb",
+          "key_index": 30,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff999cab1babb",
+          "key_index": 30,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff999cab1babb",
+          "key_index": 30,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff999cab1babb",
+          "key_index": 30,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff87d54fafc19",
+          "key_index": 31,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff87d54fafc19",
+          "key_index": 31,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff87d54fafc19",
+          "key_index": 31,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff87d54fafc19",
+          "key_index": 31,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff87d54fafc19",
+          "key_index": 31,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff87d54fafc19",
+          "key_index": 31,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff7596cdd0f69",
+          "key_index": 32,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff7596cdd0f69",
+          "key_index": 32,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff7596cdd0f69",
+          "key_index": 32,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff7596cdd0f69",
+          "key_index": 32,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff7596cdd0f69",
+          "key_index": 32,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffff7596cdd0f69",
+          "key_index": 32,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffeece539c5bda",
+          "key_index": 34,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffeece539c5bda",
+          "key_index": 34,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffeece539c5bda",
+          "key_index": 34,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffeece539c5bda",
+          "key_index": 34,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffeece539c5bda",
+          "key_index": 34,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffeece539c5bda",
+          "key_index": 34,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffdcb23b597a6f",
+          "key_index": 35,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffdcb23b597a6f",
+          "key_index": 35,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffdcb23b597a6f",
+          "key_index": 35,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffdcb23b597a6f",
+          "key_index": 35,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffdcb23b597a6f",
+          "key_index": 35,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffdcb23b597a6f",
+          "key_index": 35,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe9c9ca3499b0d",
+          "key_index": 38,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe9c9ca3499b0d",
+          "key_index": 38,
+          "mxcsr": 32672,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe9c9ca3499b0d",
+          "key_index": 38,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe9c9ca3499b0d",
+          "key_index": 38,
+          "mxcsr": 32676,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe9c9ca3499b0d",
+          "key_index": 38,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe9c9ca3499b0d",
+          "key_index": 38,
+          "mxcsr": 32677,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 32672,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 32676,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 32677,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 32672,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 32676,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 32677,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd43c2f5ee8437",
+          "key_index": 46,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd43c2f5ee8437",
+          "key_index": 46,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd43c2f5ee8437",
+          "key_index": 46,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd43c2f5ee8437",
+          "key_index": 46,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd43c2f5ee8437",
+          "key_index": 46,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd43c2f5ee8437",
+          "key_index": 46,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 32672,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 32676,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 32677,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        }
+      ],
+      "returncode": 0,
+      "tested_public_keys": 49,
+      "wall_seconds": 0.469
+    },
+    {
+      "accepted_tests": 49,
+      "distinct_helper_keys": 36,
+      "failures": 0,
+      "helper_calls": 216,
+      "mode": "rndu",
+      "observations": [
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff006f3a519f98a",
+          "key_index": 0,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff00f18ca21b5f5",
+          "key_index": 2,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff00f18ca21b5f5",
+          "key_index": 2,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff00f18ca21b5f5",
+          "key_index": 2,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff00f18ca21b5f5",
+          "key_index": 2,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff00f18ca21b5f5",
+          "key_index": 2,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff00f18ca21b5f5",
+          "key_index": 2,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0477a5e0c9214",
+          "key_index": 3,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0477a5e0c9214",
+          "key_index": 3,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0477a5e0c9214",
+          "key_index": 3,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0477a5e0c9214",
+          "key_index": 3,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0477a5e0c9214",
+          "key_index": 3,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0477a5e0c9214",
+          "key_index": 3,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff1602fbb34d8af",
+          "key_index": 6,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff1602fbb34d8af",
+          "key_index": 6,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff1602fbb34d8af",
+          "key_index": 6,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff1602fbb34d8af",
+          "key_index": 6,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff1602fbb34d8af",
+          "key_index": 6,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff1602fbb34d8af",
+          "key_index": 6,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff1f525a9f09338",
+          "key_index": 7,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff1f525a9f09338",
+          "key_index": 7,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff1f525a9f09338",
+          "key_index": 7,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff1f525a9f09338",
+          "key_index": 7,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff1f525a9f09338",
+          "key_index": 7,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff1f525a9f09338",
+          "key_index": 7,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff259ccebe317c0",
+          "key_index": 8,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff259ccebe317c0",
+          "key_index": 8,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff259ccebe317c0",
+          "key_index": 8,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff259ccebe317c0",
+          "key_index": 8,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff259ccebe317c0",
+          "key_index": 8,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff259ccebe317c0",
+          "key_index": 8,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff61bfb59b7b128",
+          "key_index": 10,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff61bfb59b7b128",
+          "key_index": 10,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff61bfb59b7b128",
+          "key_index": 10,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff61bfb59b7b128",
+          "key_index": 10,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff61bfb59b7b128",
+          "key_index": 10,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff61bfb59b7b128",
+          "key_index": 10,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff71ce472eb84c9",
+          "key_index": 11,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff71ce472eb84c9",
+          "key_index": 11,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff71ce472eb84c9",
+          "key_index": 11,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff71ce472eb84c9",
+          "key_index": 11,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff71ce472eb84c9",
+          "key_index": 11,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff71ce472eb84c9",
+          "key_index": 11,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffd33582532e5b1",
+          "key_index": 12,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffd33582532e5b1",
+          "key_index": 12,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffd33582532e5b1",
+          "key_index": 12,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffd33582532e5b1",
+          "key_index": 12,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffd33582532e5b1",
+          "key_index": 12,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffd33582532e5b1",
+          "key_index": 12,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffa1efc3ce340d3",
+          "key_index": 14,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffa1efc3ce340d3",
+          "key_index": 14,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffa1efc3ce340d3",
+          "key_index": 14,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffa1efc3ce340d3",
+          "key_index": 14,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffa1efc3ce340d3",
+          "key_index": 14,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffa1efc3ce340d3",
+          "key_index": 14,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffce41d8fa665fb",
+          "key_index": 15,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffce41d8fa665fb",
+          "key_index": 15,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffce41d8fa665fb",
+          "key_index": 15,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffce41d8fa665fb",
+          "key_index": 15,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffce41d8fa665fb",
+          "key_index": 15,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffce41d8fa665fb",
+          "key_index": 15,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff5d05adfa6a8a2",
+          "key_index": 16,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff5d05adfa6a8a2",
+          "key_index": 16,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff5d05adfa6a8a2",
+          "key_index": 16,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff5d05adfa6a8a2",
+          "key_index": 16,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff5d05adfa6a8a2",
+          "key_index": 16,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff5d05adfa6a8a2",
+          "key_index": 16,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fff60165d5bc3e2",
+          "key_index": 17,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fff60165d5bc3e2",
+          "key_index": 17,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fff60165d5bc3e2",
+          "key_index": 17,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fff60165d5bc3e2",
+          "key_index": 17,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fff60165d5bc3e2",
+          "key_index": 17,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fff60165d5bc3e2",
+          "key_index": 17,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffc8ed39b9d8a38",
+          "key_index": 18,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffc8ed39b9d8a38",
+          "key_index": 18,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffc8ed39b9d8a38",
+          "key_index": 18,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffc8ed39b9d8a38",
+          "key_index": 18,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffc8ed39b9d8a38",
+          "key_index": 18,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffc8ed39b9d8a38",
+          "key_index": 18,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff83fe31fe6a9d7",
+          "key_index": 20,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff83fe31fe6a9d7",
+          "key_index": 20,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff83fe31fe6a9d7",
+          "key_index": 20,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff83fe31fe6a9d7",
+          "key_index": 20,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff83fe31fe6a9d7",
+          "key_index": 20,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff83fe31fe6a9d7",
+          "key_index": 20,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffb5f92b2a65f98",
+          "key_index": 21,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffb5f92b2a65f98",
+          "key_index": 21,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffb5f92b2a65f98",
+          "key_index": 21,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffb5f92b2a65f98",
+          "key_index": 21,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffb5f92b2a65f98",
+          "key_index": 21,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffb5f92b2a65f98",
+          "key_index": 21,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff446cc3068e",
+          "key_index": 23,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff446cc3068e",
+          "key_index": 23,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff446cc3068e",
+          "key_index": 23,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff446cc3068e",
+          "key_index": 23,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff446cc3068e",
+          "key_index": 23,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffff446cc3068e",
+          "key_index": 23,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffff327da56829",
+          "key_index": 25,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffff327da56829",
+          "key_index": 25,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffff327da56829",
+          "key_index": 25,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffff327da56829",
+          "key_index": 25,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffff327da56829",
+          "key_index": 25,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffff327da56829",
+          "key_index": 25,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffffebe92022beb",
+          "key_index": 27,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffffebe92022beb",
+          "key_index": 27,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffffebe92022beb",
+          "key_index": 27,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffffebe92022beb",
+          "key_index": 27,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffffebe92022beb",
+          "key_index": 27,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffffebe92022beb",
+          "key_index": 27,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffffc98a8e780fc",
+          "key_index": 29,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffffc98a8e780fc",
+          "key_index": 29,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffffc98a8e780fc",
+          "key_index": 29,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffffc98a8e780fc",
+          "key_index": 29,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffffc98a8e780fc",
+          "key_index": 29,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffffc98a8e780fc",
+          "key_index": 29,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff999cab1babc",
+          "key_index": 30,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff999cab1babc",
+          "key_index": 30,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff999cab1babc",
+          "key_index": 30,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff999cab1babc",
+          "key_index": 30,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff999cab1babc",
+          "key_index": 30,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff999cab1babc",
+          "key_index": 30,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff87d54fafc1a",
+          "key_index": 31,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff87d54fafc1a",
+          "key_index": 31,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff87d54fafc1a",
+          "key_index": 31,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff87d54fafc1a",
+          "key_index": 31,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff87d54fafc1a",
+          "key_index": 31,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff87d54fafc1a",
+          "key_index": 31,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff7596cdd0f6a",
+          "key_index": 32,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff7596cdd0f6a",
+          "key_index": 32,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff7596cdd0f6a",
+          "key_index": 32,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff7596cdd0f6a",
+          "key_index": 32,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff7596cdd0f6a",
+          "key_index": 32,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff7596cdd0f6a",
+          "key_index": 32,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff40c0192f170",
+          "key_index": 33,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff40c0192f170",
+          "key_index": 33,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff40c0192f170",
+          "key_index": 33,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff40c0192f170",
+          "key_index": 33,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff40c0192f170",
+          "key_index": 33,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff40c0192f170",
+          "key_index": 33,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffeece539c5bdb",
+          "key_index": 34,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffeece539c5bdb",
+          "key_index": 34,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffeece539c5bdb",
+          "key_index": 34,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffeece539c5bdb",
+          "key_index": 34,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffeece539c5bdb",
+          "key_index": 34,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffeece539c5bdb",
+          "key_index": 34,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffdcb23b597a70",
+          "key_index": 35,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffdcb23b597a70",
+          "key_index": 35,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffdcb23b597a70",
+          "key_index": 35,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffdcb23b597a70",
+          "key_index": 35,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffdcb23b597a70",
+          "key_index": 35,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffdcb23b597a70",
+          "key_index": 35,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff08a757b7706f",
+          "key_index": 37,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff08a757b7706f",
+          "key_index": 37,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff08a757b7706f",
+          "key_index": 37,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff08a757b7706f",
+          "key_index": 37,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff08a757b7706f",
+          "key_index": 37,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff08a757b7706f",
+          "key_index": 37,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffe9c9ca3499b0e",
+          "key_index": 38,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffe9c9ca3499b0e",
+          "key_index": 38,
+          "mxcsr": 24480,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffe9c9ca3499b0e",
+          "key_index": 38,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffe9c9ca3499b0e",
+          "key_index": 38,
+          "mxcsr": 24484,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffe9c9ca3499b0e",
+          "key_index": 38,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffe9c9ca3499b0e",
+          "key_index": 38,
+          "mxcsr": 24485,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe79ed6c92103d",
+          "key_index": 39,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe79ed6c92103d",
+          "key_index": 39,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe79ed6c92103d",
+          "key_index": 39,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe79ed6c92103d",
+          "key_index": 39,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe79ed6c92103d",
+          "key_index": 39,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffe79ed6c92103d",
+          "key_index": 39,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff9301d2902eba8",
+          "key_index": 40,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff9301d2902eba8",
+          "key_index": 40,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff9301d2902eba8",
+          "key_index": 40,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff9301d2902eba8",
+          "key_index": 40,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff9301d2902eba8",
+          "key_index": 40,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff9301d2902eba8",
+          "key_index": 40,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff343a134e572cf",
+          "key_index": 41,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff343a134e572cf",
+          "key_index": 41,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff343a134e572cf",
+          "key_index": 41,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff343a134e572cf",
+          "key_index": 41,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff343a134e572cf",
+          "key_index": 41,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff343a134e572cf",
+          "key_index": 41,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff75c468428b7c1",
+          "key_index": 43,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff75c468428b7c1",
+          "key_index": 43,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff75c468428b7c1",
+          "key_index": 43,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff75c468428b7c1",
+          "key_index": 43,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff75c468428b7c1",
+          "key_index": 43,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff75c468428b7c1",
+          "key_index": 43,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff27d838f22d0a1",
+          "key_index": 44,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff27d838f22d0a1",
+          "key_index": 44,
+          "mxcsr": 24480,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff27d838f22d0a1",
+          "key_index": 44,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff27d838f22d0a1",
+          "key_index": 44,
+          "mxcsr": 24484,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff27d838f22d0a1",
+          "key_index": 44,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff27d838f22d0a1",
+          "key_index": 44,
+          "mxcsr": 24485,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff8db9b16b1433",
+          "key_index": 45,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff8db9b16b1433",
+          "key_index": 45,
+          "mxcsr": 24480,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff8db9b16b1433",
+          "key_index": 45,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff8db9b16b1433",
+          "key_index": 45,
+          "mxcsr": 24484,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff8db9b16b1433",
+          "key_index": 45,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fff8db9b16b1433",
+          "key_index": 45,
+          "mxcsr": 24485,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffd43c2f5ee8438",
+          "key_index": 46,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffd43c2f5ee8438",
+          "key_index": 46,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffd43c2f5ee8438",
+          "key_index": 46,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffd43c2f5ee8438",
+          "key_index": 46,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffd43c2f5ee8438",
+          "key_index": 46,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffd43c2f5ee8438",
+          "key_index": 46,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0a267404067fc",
+          "key_index": 48,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0a267404067fc",
+          "key_index": 48,
+          "mxcsr": 24480,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0a267404067fc",
+          "key_index": 48,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0a267404067fc",
+          "key_index": 48,
+          "mxcsr": 24484,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0a267404067fc",
+          "key_index": 48,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff0a267404067fc",
+          "key_index": 48,
+          "mxcsr": 24485,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        }
+      ],
+      "returncode": 0,
+      "tested_public_keys": 49,
+      "wall_seconds": 0.469
+    },
+    {
+      "accepted_tests": 49,
+      "distinct_helper_keys": 36,
+      "failures": 0,
+      "helper_calls": 216,
+      "mode": "rndd",
+      "observations": [
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff006f3a519f989",
+          "key_index": 0,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff006f3a519f989",
+          "key_index": 0,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff006f3a519f989",
+          "key_index": 0,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff006f3a519f989",
+          "key_index": 0,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff006f3a519f989",
+          "key_index": 0,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff006f3a519f989",
+          "key_index": 0,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3f4821e0f2afb970"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff00f18ca21b5f4",
+          "key_index": 2,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "3f5a2d7c1699e82d"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0477a5e0c9212",
+          "key_index": 3,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0477a5e0c9212",
+          "key_index": 3,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0477a5e0c9212",
+          "key_index": 3,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0477a5e0c9212",
+          "key_index": 3,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0477a5e0c9212",
+          "key_index": 3,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0477a5e0c9212",
+          "key_index": 3,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3f7ec65645edc394"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff1602fbb34d8ad",
+          "key_index": 6,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3fa25765968ecd68"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff1f525a9f09336",
+          "key_index": 7,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3fa9aa6fd4d21a47"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff259ccebe317be",
+          "key_index": 8,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3fae7b525705edef"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff61bfb59b7b126",
+          "key_index": 10,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "3fdc414aa8bd83b1"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff71ce472eb84c7",
+          "key_index": 11,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "3fdd7d271ab4eeb4"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffd33582532e5af",
+          "key_index": 12,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "3fe1fe5f30572361"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffa1efc3ce340d1",
+          "key_index": 14,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffa1efc3ce340d1",
+          "key_index": 14,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffa1efc3ce340d1",
+          "key_index": 14,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffa1efc3ce340d1",
+          "key_index": 14,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffa1efc3ce340d1",
+          "key_index": 14,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffa1efc3ce340d1",
+          "key_index": 14,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3ff1daf94cf0bd01"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffce41d8fa665f9",
+          "key_index": 15,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "3ff75f49c6ad3bad"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ff5d05adfa6a8a0",
+          "key_index": 16,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "3ffa3c782d4f54fc"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fff60165d5bc3e0",
+          "key_index": 17,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "3ffcc30b915ec8c4"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffc8ed39b9d8a36",
+          "key_index": 18,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "400ee9674267e65f"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff83fe31fe6a9d5",
+          "key_index": 20,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff83fe31fe6a9d5",
+          "key_index": 20,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff83fe31fe6a9d5",
+          "key_index": 20,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff83fe31fe6a9d5",
+          "key_index": 20,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff83fe31fe6a9d5",
+          "key_index": 20,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff83fe31fe6a9d5",
+          "key_index": 20,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "40389063309f3004"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffb5f92b2a65f96",
+          "key_index": 21,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffb5f92b2a65f96",
+          "key_index": 21,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffb5f92b2a65f96",
+          "key_index": 21,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffb5f92b2a65f96",
+          "key_index": 21,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffb5f92b2a65f96",
+          "key_index": 21,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffb5f92b2a65f96",
+          "key_index": 21,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "4052a59b82b6fc5e"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3fffff446cc3068c",
+          "key_index": 23,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf045ddb10382e3f"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3fffff327da56827",
+          "key_index": 25,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bf06506061aae6f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ffffebe92022be9",
+          "key_index": 27,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bf117362e953393b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffffc98a8e780fa",
+          "key_index": 29,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bf27a7f33cc3fd0b"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff999cab1baba",
+          "key_index": 30,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff999cab1baba",
+          "key_index": 30,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff999cab1baba",
+          "key_index": 30,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff999cab1baba",
+          "key_index": 30,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff999cab1baba",
+          "key_index": 30,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffff999cab1baba",
+          "key_index": 30,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bf363df14c04ab23"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff87d54fafc18",
+          "key_index": 31,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff87d54fafc18",
+          "key_index": 31,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff87d54fafc18",
+          "key_index": 31,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff87d54fafc18",
+          "key_index": 31,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff87d54fafc18",
+          "key_index": 31,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff87d54fafc18",
+          "key_index": 31,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf3a1b18d3a28957"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff7596cdd0f68",
+          "key_index": 32,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff7596cdd0f68",
+          "key_index": 32,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff7596cdd0f68",
+          "key_index": 32,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff7596cdd0f68",
+          "key_index": 32,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff7596cdd0f68",
+          "key_index": 32,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffff7596cdd0f68",
+          "key_index": 32,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf3e12494018e44c"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffff40c0192f16f",
+          "key_index": 33,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bf44c7a2be09b10e"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffeece539c5bd9",
+          "key_index": 34,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffeece539c5bd9",
+          "key_index": 34,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffeece539c5bd9",
+          "key_index": 34,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffeece539c5bd9",
+          "key_index": 34,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffeece539c5bd9",
+          "key_index": 34,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fffeece539c5bd9",
+          "key_index": 34,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bf4de686910f4f52"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffdcb23b597a6e",
+          "key_index": 35,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffdcb23b597a6e",
+          "key_index": 35,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffdcb23b597a6e",
+          "key_index": 35,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffdcb23b597a6e",
+          "key_index": 35,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffdcb23b597a6e",
+          "key_index": 35,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3fffdcb23b597a6e",
+          "key_index": 35,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bf5ebb11d32c9493"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff08a757b7706d",
+          "key_index": 37,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bf8b44e17164ce91"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffe9c9ca3499b0c",
+          "key_index": 38,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffe9c9ca3499b0c",
+          "key_index": 38,
+          "mxcsr": 16288,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffe9c9ca3499b0c",
+          "key_index": 38,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffe9c9ca3499b0c",
+          "key_index": 38,
+          "mxcsr": 16292,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffe9c9ca3499b0c",
+          "key_index": 38,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 2,
+          "f_bits": "3ffe9c9ca3499b0c",
+          "key_index": 38,
+          "mxcsr": 16293,
+          "stored_residue": 1,
+          "x_bits": "bf93b95082297ea7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ffe79ed6c92103b",
+          "key_index": 39,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bf95b25114a07a72"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff9301d2902eba6",
+          "key_index": 40,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "bfba9cf11e5adbc5"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3ff343a134e572cd",
+          "key_index": 41,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bfcc360cdde773f7"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff75c468428b7bf",
+          "key_index": 43,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bfdc03419f51b93e"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 16288,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 16292,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 1,
+          "f_bits": "3ff27d838f22d09f",
+          "key_index": 44,
+          "mxcsr": 16293,
+          "stored_residue": 0,
+          "x_bits": "bfe1416c72a588a6"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 16288,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 16292,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 3,
+          "f_bits": "3fff8db9b16b1431",
+          "key_index": 45,
+          "mxcsr": 16293,
+          "stored_residue": 2,
+          "x_bits": "bfed18176754aac7"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd43c2f5ee8436",
+          "key_index": 46,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd43c2f5ee8436",
+          "key_index": 46,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd43c2f5ee8436",
+          "key_index": 46,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd43c2f5ee8436",
+          "key_index": 46,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd43c2f5ee8436",
+          "key_index": 46,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ffd43c2f5ee8436",
+          "key_index": 46,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "c01aa5575135e2d3"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 16288,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 16292,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        },
+        {
+          "exhaustion_residue": 0,
+          "f_bits": "3ff0a267404067fa",
+          "key_index": 48,
+          "mxcsr": 16293,
+          "stored_residue": 3,
+          "x_bits": "c05da5b10d8689fd"
+        }
+      ],
+      "returncode": 0,
+      "tested_public_keys": 49,
+      "wall_seconds": 0.469
+    }
+  ],
+  "scope": "Finite necessary trigger set; unchanged primary GCC binary observed at helper entry. Plain is O3/uninstrumented; covered is original O0/gcov binary. Offline residue check excludes inner-loop exhaustion for all observed helper arguments. No claim about other binaries/platforms or arbitrary helper f.",
+  "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+  "source_sha256": "44fb9f1896e1af6411c680b361ca9001fa4a2d9f3d1c6ce67e4d9b3c85f480b2",
+  "status": "PASS"
+}

@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "binary_sha256": "41bb81542241c7805d6fd169f25d177bd5b2addb4a5d5b69cf666418dbc82ad4",
+      "function": "rsqrt",
+      "mode": "rndn",
+      "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+      "output_bytes": 86,
+      "output_truncated": false,
+      "returncode": 1,
+      "wall_seconds": 0.025,
+      "witness": "0x1.0000000000001p+1022"
+    },
+    {
+      "binary_sha256": "41bb81542241c7805d6fd169f25d177bd5b2addb4a5d5b69cf666418dbc82ad4",
+      "function": "rsqrt",
+      "mode": "rndz",
+      "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+      "output_bytes": 86,
+      "output_truncated": false,
+      "returncode": 1,
+      "wall_seconds": 0.009,
+      "witness": "0x1.0000000000001p+1022"
+    },
+    {
+      "binary_sha256": "41bb81542241c7805d6fd169f25d177bd5b2addb4a5d5b69cf666418dbc82ad4",
+      "function": "rsqrt",
+      "mode": "rndu",
+      "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1p-511)\n",
+      "output_bytes": 72,
+      "output_truncated": false,
+      "returncode": 1,
+      "wall_seconds": 0.01,
+      "witness": "0x1.0000000000001p+1022"
+    },
+    {
+      "binary_sha256": "41bb81542241c7805d6fd169f25d177bd5b2addb4a5d5b69cf666418dbc82ad4",
+      "function": "rsqrt",
+      "mode": "rndd",
+      "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+      "output_bytes": 86,
+      "output_truncated": false,
+      "returncode": 1,
+      "wall_seconds": 0.01,
+      "witness": "0x1.0000000000001p+1022"
+    },
+    {
+      "binary_sha256": "5e6e7d995cd5c1bc52836c9f4f4e873a77c5ff2424c2704f92a8f0275a6de3e1",
+      "function": "exp",
+      "mode": "rndn",
+      "output": "1 tests passed, 0 failure(s)\n",
+      "output_bytes": 29,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.01,
+      "witness": "0x1.5a3a157335f3bp+9"
+    },
+    {
+      "binary_sha256": "5e6e7d995cd5c1bc52836c9f4f4e873a77c5ff2424c2704f92a8f0275a6de3e1",
+      "function": "exp",
+      "mode": "rndz",
+      "output": "FAIL x=0x1.5a3a157335f3bp+9 ref=0x1.ffdebdc4e28abp+998 z=0x1.ffdebdc4e28acp+998\n",
+      "output_bytes": 80,
+      "output_truncated": false,
+      "returncode": 1,
+      "wall_seconds": 0.009,
+      "witness": "0x1.5a3a157335f3bp+9"
+    },
+    {
+      "binary_sha256": "5e6e7d995cd5c1bc52836c9f4f4e873a77c5ff2424c2704f92a8f0275a6de3e1",
+      "function": "exp",
+      "mode": "rndu",
+      "output": "1 tests passed, 0 failure(s)\n",
+      "output_bytes": 29,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.011,
+      "witness": "0x1.5a3a157335f3bp+9"
+    },
+    {
+      "binary_sha256": "5e6e7d995cd5c1bc52836c9f4f4e873a77c5ff2424c2704f92a8f0275a6de3e1",
+      "function": "exp",
+      "mode": "rndd",
+      "output": "1 tests passed, 0 failure(s)\n",
+      "output_bytes": 29,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.009,
+      "witness": "0x1.5a3a157335f3bp+9"
+    }
+  ],
+  "child_cpu_seconds": 0.024158,
+  "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3"
+}

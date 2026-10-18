@@ -1,0 +1,930 @@
+{
+  "cutoff_utc": "2026-10-18T13:02:58.683244+00:00",
+  "implementation": {
+    "base": "81a899d67953a619d703660fd9630f0554673524",
+    "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3"
+  },
+  "proof": {
+    "base": "58df57e5a46310d0e47d140ad23f146461788e0e",
+    "pin": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a"
+  },
+  "files": [
+    {
+      "repository": "implementation",
+      "path": "README.md",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Compiler/configuration notes reviewed; unsupported compiler versions/platforms deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/acos/acosq.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/acos/acosq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/asin/asinq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/atan/atanq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/atan2/atan2q.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/cbrt/cbrtq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/cos/cosq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/exp/expq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/exp10/exp10q.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/exp2/exp2q.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/expm1/expm1q.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/hypot/hypotq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/log/logq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/rsqrt/rsqrtq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/sin/sinq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary128/sqrt/sqrtq.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary32/atan2/atan2f.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary32/atan2pi/atan2pif.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary32/compound/compoundf.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary32/hypot/hypotf.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary32/pow/powf.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary32/rsqrt/rsqrtf.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/acos/acos.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/acosh/acosh.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/acospi/acospi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/asin/asin.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/asinh/asinh.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/asinh/check_special.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Source review and compile/link check; exhaustive/random campaign not run"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/asinpi/asinpi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/atan/atan.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/atan2/atan2.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/atan2pi/atan2pi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/atanh/atanh.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/atanh/check_special.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Source review and compile/link check; exhaustive/random campaign not run"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/atanpi/atanpi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cbrt/cbrt.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cos/cos.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cosh/cosh.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cospi/check_special.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Source review and compile/link check; exhaustive/random campaign not run"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cospi/cospi.sage",
+      "new_file": true,
+      "deleted_file": false,
+      "disposition": "Generator source review only; no open-ended generation"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/cospi/cospi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/erf/erf.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/erfc/erfc.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp/exp.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Pinned full-corpus regression and coverage; changed source reviewed"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp/exp.sage",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Generator source review only; no open-ended generation"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp/exp.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp10/exp10.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp10m1/exp10m1.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp2/exp2.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/exp2m1/exp2m1.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/expm1/expm1.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/hypot/hypot.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/lgamma/lgamma.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log/log.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log10/log10.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log10p1/log10p1.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log1p/log1p.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log2/log2.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Pinned full-corpus regression and coverage; changed source reviewed"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log2/log2.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/log2p1/log2p1.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/pow/pow.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/rsqrt/rsqrt.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Pinned full-corpus regression and coverage; changed source reviewed"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/rsqrt/rsqrt.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sin/sin.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sincos/sincos.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinh/sinh.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Pinned full-corpus regression and coverage; changed source reviewed"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinh/sinh.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinpi/sinpi.sage",
+      "new_file": true,
+      "deleted_file": false,
+      "disposition": "Generator source review only; no open-ended generation"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/sinpi/sinpi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/tan/tan.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/tanh/tanh.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/tanpi/check_special.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Source review and compile/link check; exhaustive/random campaign not run"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/tanpi/tanpi.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Pinned full-corpus regression and coverage; changed source reviewed"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/tanpi/tanpi.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Corpus byte/hash and row delta; included in full-corpus regression"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary64/tgamma/tgamma.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/atan2/atan2l.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/cbrt/cbrtl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/cos/cosl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/exp/expl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/exp2/exp2l.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/hypot/hypotl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/log2/check_special.c",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/log2/log2l.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/pow/powl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/rsqrt/rsqrtl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "implementation",
+      "path": "src/binary80/sin/sinl.wc",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Inventoried; outside selected25 binary64 unary scope, deferred"
+    },
+    {
+      "repository": "proof",
+      "path": "cm.bib",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Bibliography update; no fresh independent review of cited paper"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/accurate.sollya",
+      "new_file": true,
+      "deleted_file": false,
+      "disposition": "exp proof review and bounded model checks; historical search completeness deferred"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/exp.sage",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "exp proof review and bounded model checks; historical search completeness deferred"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/exp.tex",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "exp proof review and bounded model checks; historical search completeness deferred"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/generate.py",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "exp proof review and bounded model checks; historical search completeness deferred"
+    },
+    {
+      "repository": "proof",
+      "path": "exp/lemma4bis.g",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "exp proof review and bounded model checks; historical search completeness deferred"
+    },
+    {
+      "repository": "proof",
+      "path": "sin/sin.tex",
+      "new_file": false,
+      "deleted_file": false,
+      "disposition": "Sine formatting only; prior proof obligations retained"
+    }
+  ],
+  "corpora": [
+    {
+      "function": "exp",
+      "old_rows": 1129432,
+      "new_rows": 1129432,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "7ca839bf4f267a8f75e71e0594e526e5ca51eb4dc2f3db438c4afb311dc97d00",
+      "after_sha256": "3f1622b3ed80806bfdffd406a9f479dba4f0e03af7358036c1929acfe04b86da"
+    },
+    {
+      "function": "log",
+      "old_rows": 134957,
+      "new_rows": 134957,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "618d1fe4ec00af88230839bcca7b9cc912351cac4bb23cdd440dce7069f4d2d8",
+      "after_sha256": "2d213b6758e257a1dc68dee717af2fc04b2907db19639b80bf196dfbf04ed9fb"
+    },
+    {
+      "function": "exp2",
+      "old_rows": 77182,
+      "new_rows": 77182,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "f816e56ca9921287da1739e59f6219066569a9c656bea692142245e310731a12",
+      "after_sha256": "51f847cf7102c56fb6d474a304cc56f55ae84b405c8366d77fba3d22523d0f2b"
+    },
+    {
+      "function": "log2",
+      "old_rows": 33248,
+      "new_rows": 33248,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "a91a756404be64bd60cd3c1fbf50fac801bb5b90afd51f8ea14d10408e04f927",
+      "after_sha256": "13f1db9db800e4c87c8e4770b3efb9088093cc1ed63a152c665e5d6347add5e8"
+    },
+    {
+      "function": "exp10",
+      "old_rows": 65430,
+      "new_rows": 65430,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "a4fef854ebf9332e1af09a1a1cd9ad43ef2a039c39985ac1741682377d355bc1",
+      "after_sha256": "7b8ec15fcce6e8907bfe1bbc30c8355f02e57a2361ecf76fb3307408570bacd3"
+    },
+    {
+      "function": "log10",
+      "old_rows": 65528,
+      "new_rows": 65528,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "4c209dd08aab938d9cace8f6750493ddb0a66a2fdb0b4d29f8f6256aaa5304c9",
+      "after_sha256": "335684ba7dca5a4d56fe6f2a057da9211f864331381d867c7c4f1fb6ea71fa01"
+    },
+    {
+      "function": "rsqrt",
+      "old_rows": 9922,
+      "new_rows": 9922,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "22863a581dbc1d2243d811713959024395760a45239160ee2b50f4fc68730f96",
+      "after_sha256": "9a42b4d5e26c743fdd410e2d22ab93425e6f07eca695693245b3ed58c6d534eb"
+    },
+    {
+      "function": "sin",
+      "old_rows": 1975927,
+      "new_rows": 1975927,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "0df7c4c199834785a6955c2a16dc5ba35197994dc39dc45d7a98bebdaee274bb",
+      "after_sha256": "8fb40c3d2f0c371ada505c05f4634ec838b3f3c47a477ee6ce1cf6db5fab672e"
+    },
+    {
+      "function": "cos",
+      "old_rows": 1090161,
+      "new_rows": 1090161,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "a17ad2d8dfd9ea248a03a5a0b393f0534b7438f8d40b7ab14d132495a8368f5d",
+      "after_sha256": "65375658ef47dee861e1167fc654d1fc1421c98b9254743bcc99aed81fd6e9ec"
+    },
+    {
+      "function": "tan",
+      "old_rows": 1077363,
+      "new_rows": 1077363,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "c2b4b483d42fc6b5251b8acfccf8dc044136e1f9a63078fb69493cdbedb5412a",
+      "after_sha256": "2174a4a59d46175a7e902734bb75cfa7d15e8cef73640ae1b062c0639fae7ea6"
+    },
+    {
+      "function": "asin",
+      "old_rows": 249134,
+      "new_rows": 249134,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "e97d39f3ff9610d2d1c3af37129a439d998576edffdd54673225ae5b31a99096",
+      "after_sha256": "c7869311e52f598490c4d67f57f1fd6b25737da7672cd3b266704426a9970830"
+    },
+    {
+      "function": "acos",
+      "old_rows": 264099,
+      "new_rows": 264099,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "a551d0a8826847fc7877e6c99fb6040befdeeb9b0e70bbf076c4f58c0ef90dfa",
+      "after_sha256": "644f8c4c1033a7e3108a1793e70279d32a8ed2bccf22de8c894f877c88e0c4ab"
+    },
+    {
+      "function": "atan",
+      "old_rows": 55770,
+      "new_rows": 55770,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "8ddf2cd76f82bd7478fe620ee4ac639b7b31e007382ee102f56046ac3786c167",
+      "after_sha256": "fe98befdfbda787b6e2a252fde328448b0040bb0988502282187eec177d6b7b5"
+    },
+    {
+      "function": "sinpi",
+      "old_rows": 67068,
+      "new_rows": 74277,
+      "added_unique_rows": 7203,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": false,
+      "before_sha256": "a9646d6f122d3c503a8e80ffb3ce77810d2c144f35a6d2bdeece9ccec10607b4",
+      "after_sha256": "476d2c6bad1332cc2257a9b73dd95fcc86aa8ec2288d31db30695ed105955c37"
+    },
+    {
+      "function": "cospi",
+      "old_rows": 43852,
+      "new_rows": 51564,
+      "added_unique_rows": 497,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": false,
+      "before_sha256": "978984e19016e394e35cdb63eeb696f80196fdc1b0bcb4982b4f50acabce496e",
+      "after_sha256": "ae02bccca8ea664673cf5b1035acb66d8bd3d74ad14d1e6f321ea73a2ae7e34f"
+    },
+    {
+      "function": "tanpi",
+      "old_rows": 57049,
+      "new_rows": 98557,
+      "added_unique_rows": 41508,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": false,
+      "before_sha256": "eb20443caa736dbb612ad6595c92776f8276a60b6dbda08946edd0e4dd49283c",
+      "after_sha256": "9b73038d5317619d62154ee3a9c55630cf8319244f86a3a904c76836e2cdee56"
+    },
+    {
+      "function": "asinpi",
+      "old_rows": 58412,
+      "new_rows": 58412,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "59871e5d63d225a3f87ad1775dc825a827212f3de19c5073e499e77ce0828856",
+      "after_sha256": "a8cf5030a03eb9b33fbac6d2310f0742d0dff950ef037c5f654d01d5b27dd520"
+    },
+    {
+      "function": "acospi",
+      "old_rows": 82380,
+      "new_rows": 82380,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "820a0b1bdb7479ff6ebe57830e8e607712c334727b0097948aeb913e644214bb",
+      "after_sha256": "68438a8cd1a3184fa243b0e2e5c715e9d80abbfd6cd3ea0e71e9902f5973f15f"
+    },
+    {
+      "function": "atanpi",
+      "old_rows": 114384,
+      "new_rows": 114384,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "34dd34ea52d46166c5091e8e6254eae1320de90f7ab33e6fa2e1ff5a9eeac32e",
+      "after_sha256": "2c74dc501da554ffbc7792a12c89c78d54068d8569a9153fd0a38c20c028f585"
+    },
+    {
+      "function": "sinh",
+      "old_rows": 290545,
+      "new_rows": 290545,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "5b8eee97281b63a00982692aba1098bcd3b01a626b7f3102b95d69b4bf3eaf78",
+      "after_sha256": "a3d0cf4201d7eb853ecab88884bac9485af065ba502e7ddaf3ebccaa9ba073f4"
+    },
+    {
+      "function": "cosh",
+      "old_rows": 36692,
+      "new_rows": 36692,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "29a31a7248511eb622d45ce57589ffad3c29995b28414d4c77d0e78fff51946d",
+      "after_sha256": "cb1022f3d31648ef5c98cf220dd1f748a13f471af00d6b38cc78b2d6171045a9"
+    },
+    {
+      "function": "tanh",
+      "old_rows": 31450,
+      "new_rows": 31450,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "154c54f920d659742e4045bb33e3c7dd92626f6ea9c382910b3368a99c43e50f",
+      "after_sha256": "dbd212e657b8e458f02e305300d6fea7a562f092a05623604f206a8654c3675f"
+    },
+    {
+      "function": "asinh",
+      "old_rows": 1174907,
+      "new_rows": 1174907,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "f1083e40fb54ce42afb5749f6ba42a23560e22daf6b8458be6674d45eb9cce88",
+      "after_sha256": "c5835d0d56244e3ce1455358225934c9c5360c2abb7de512680bc9d64ea29e30"
+    },
+    {
+      "function": "acosh",
+      "old_rows": 1121440,
+      "new_rows": 1121441,
+      "added_unique_rows": 1,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": false,
+      "before_sha256": "c0a02ba2ba0e49f27a9469dc808409f2259be6af69aec9e94090ecf338705674",
+      "after_sha256": "bff2682a4d5a535794530602ba181c06a1bba1349b4a729b370e4b2b9db7b131"
+    },
+    {
+      "function": "atanh",
+      "old_rows": 31113,
+      "new_rows": 31113,
+      "added_unique_rows": 0,
+      "removed_unique_rows": 0,
+      "numeric_rows_unchanged": true,
+      "before_sha256": "80077091b625cca2fd3df675b26609c023e4aa8005d8d71b9be8719c6476c8a1",
+      "after_sha256": "e61150a8182f70b2278443b8cf9ed89174e4ddd941ca39c408954d95b0e11ce7"
+    }
+  ],
+  "implementation_pipeline": {
+    "id": 1509059,
+    "status": "success",
+    "url": "https://gitlab.inria.fr/core-math/core-math/-/pipelines/1509059"
+  },
+  "proof_pipeline": "Unavailable: HTTP403",
+  "cpu_seconds": 14.828125
+}

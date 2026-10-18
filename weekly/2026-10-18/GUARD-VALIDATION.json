@@ -1,0 +1,16 @@
+{
+  "mutations_rejected": [
+    "wrong witness",
+    "contraction enabled",
+    "candidate failure",
+    "missing assembly",
+    "corpus failure",
+    "truncated failure",
+    "extra diagnostics",
+    "missing accepted count"
+  ],
+  "saved_receipts_accepted": 14,
+  "scope": "Acceptance guard independently exercised on actual receipts and adversarial mutations; numerical matrix not rerun.",
+  "script_sha256": "13a597ba8a34ba76770a90ff8b03e2f4657e87a81b3209d89ff38fd2fe29d8f6",
+  "status": "PASS"
+}

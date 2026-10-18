@@ -1,0 +1,158 @@
+{
+  "arithmetic": {
+    "derivative_bound_rational": "42539124214018284899091455932783791232122325383888104131841969564867/42535295865117307932921825928971026432000000000000000000000000000000",
+    "derivative_radius": "9/100000",
+    "less_than_1_0001": true,
+    "sum_log2": "-100.698966769888191065895645293203902027689558576876729868331839228728628968618457940851747",
+    "sum_terms": [
+      "-101.191",
+      "-102.490",
+      "-116.97",
+      "-128"
+    ]
+  },
+  "checks": [
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "generated-ne.g"
+      ],
+      "label": "generated-ne",
+      "output": "Results:\n  |y - y_real| in [0, 648943366934403087b-162 {1.11007e-31, 2^(-102.829101)}]\n  |yl| in [0, 7513155793461627b-103 {7.40855e-16, 2^(-50.261657)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 30.761
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "generated-zr.g"
+      ],
+      "label": "generated-zr",
+      "output": "Results:\n  |y - y_real| in [0, 252318441177205719b-159 {3.45287e-31, 2^(-101.191894)}]\n  |yl| in [0, 2441381882749335b-101 {9.62956e-16, 2^(-49.883361)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 32.172
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "generated-up.g"
+      ],
+      "label": "generated-up",
+      "output": "Results:\n  |y - y_real| in [0, 865140969017362755b-161 {2.95977e-31, 2^(-101.414184)}]\n  |yl| in [0, 1220690941374639b-100 {9.62956e-16, 2^(-49.883361)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 28.762
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "generated-dn.g"
+      ],
+      "label": "generated-dn",
+      "output": "Results:\n  |y - y_real| in [0, 216289644158241751b-159 {2.95983e-31, 2^(-101.414184)}]\n  |yl| in [0, 2441381882749335b-101 {9.62956e-16, 2^(-49.883361)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 31.719
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "reduction-ne.g"
+      ],
+      "label": "reduction-ne",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.173
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "reduction-zr.g"
+      ],
+      "label": "reduction-zr",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.122
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "reduction-up.g"
+      ],
+      "label": "reduction-up",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.122
+    },
+    {
+      "command": [
+        "<gappa-1.8.2>",
+        "reduction-dn.g"
+      ],
+      "label": "reduction-dn",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.173
+    },
+    {
+      "command": [
+        "gcc",
+        "-O3",
+        "-frounding-math",
+        "-ffp-contract=off",
+        "-march=x86-64",
+        "exp_tables.c",
+        "-lmpfr",
+        "-lgmp",
+        "-lm",
+        "-o",
+        "tables"
+      ],
+      "label": "tables-build",
+      "output": "",
+      "output_bytes": 0,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 1.899
+    },
+    {
+      "command": [
+        "./tables"
+      ],
+      "label": "tables",
+      "output": "cells=16384 failures=0 max_error_upper=1.402798558198510358631754502600885014755129892713109555757502886593583700516018e-31 at i=46 j=58 mode=3\nendpoint=-0x1.6232bdd7abcd2p+9 r_lower=2.7475416721234714307797770512316180869711334969702248281653011909546293560323524e-14 r_upper=2.7475416721234714307797770512316180869711334969702248281653029596419494393746117e-14\nedge=-0x1.6232bdd7abcd2p+9 mode=0 t=-4186112 ie=-1022 accurate=0x1.000000000007cp-1022\nedge=-0x1.6232bdd7abcd2p+9 mode=1 t=-4186112 ie=-1022 accurate=0x1.000000000007bp-1022\nedge=-0x1.6232bdd7abcd2p+9 mode=2 t=-4186112 ie=-1022 accurate=0x1.000000000007cp-1022\nedge=-0x1.6232bdd7abcd2p+9 mode=3 t=-4186112 ie=-1022 accurate=0x1.000000000007bp-1022\nendpoint=-0x1.6232bdd7abcd3p+9 r_lower=-8.6211421000381315431582112300183819130288665030297751718346988090453706439676476e-14 r_upper=-8.6211421000381315431582112300183819130288665030297751718346970403580505606253883e-14\nedge=-0x1.6232bdd7abcd3p+9 mode=0 t=-4186112 ie=-1022 accurate=0x0.ffffffffffe7cp-1022\nedge=-0x1.6232bdd7abcd3p+9 mode=1 t=-4186112 ie=-1022 accurate=0x0.ffffffffffe7bp-1022\nedge=-0x1.6232bdd7abcd3p+9 mode=2 t=-4186112 ie=-1022 accurate=0x0.ffffffffffe7cp-1022\nedge=-0x1.6232bdd7abcd3p+9 mode=3 t=-4186112 ie=-1022 accurate=0x0.ffffffffffe7bp-1022\nendpoint=-0x1.74910d52d3051p+9 r_lower=9.9203673596270693420910654831937274398179731010205398143617407741930437489672999e-14 r_upper=9.9203673596270693420910654831937274398179731010205398143617425428803638323095592e-14\nedge=-0x1.74910d52d3051p+9 mode=0 t=-4403200 ie=-1075 accurate=0x0.0000000000001p-1022\nedge=-0x1.74910d52d3051p+9 mode=1 t=-4403200 ie=-1075 accurate=0x0p+0\nedge=-0x1.74910d52d3051p+9 mode=2 t=-4403200 ie=-1075 accurate=0x0.0000000000001p-1022\nedge=-0x1.74910d52d3051p+9 mode=3 t=-4403200 ie=-1075 accurate=0x0p+0\nENDPOINT_SUMMARY failures=0\n",
+      "output_bytes": 1841,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 0.17
+    }
+  ],
+  "child_cpu_seconds": 0.73053,
+  "gappa_sha256": "f4a610b32c7d5602f37eaf5e9de61a5c87bcf744a506f56df4b5f23bb8a031c4",
+  "proof_files": {
+    "accurate.sollya": "b37d1e77f151c9f09df1e9499180830453c23c33c29334d029ac06a7e95dedf4",
+    "exp.sage": "0d17c1ec8c0bcf23cded1cc6a6062d6493665987fc7b5f48948df101c2f88a6e",
+    "exp.tex": "352df37ae549e6dea390c663406b645caa5abe4b0009162c824e8f10d05966f4",
+    "generate.py": "8452d6ff48f1a461ea612f7b36024da8918dced38dc0e8df1af069b6441fe7e6",
+    "lemma4bis.g": "acba0511017e83f734cb358a3ea82d42d6b590b43e51b4e8c6c10d34e2c44eff"
+  },
+  "proof_pin": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a",
+  "scope": "Conditional model checks and finite table enumeration; full correct rounding and historical hardcase completeness are not established.",
+  "source_sha256": "55ad39a6610e0f46794be6b70a1ee4d76b10dd4f64d47b61c4e918d711e3041d",
+  "publication_note": "Selected successful original-model, reduction, Sollya and table checks. An initial local harness missing math.h was corrected; a first model-repair hint gave a coarse bound. Those attempts are retained privately. The faithful-model receipt is the corrected source-model result.",
+  "table_driver_sha256": "ba84c5f9ef51cd24c8045d4c282274b8805a847b1f36b1db7e6382a387a30f9e"
+}

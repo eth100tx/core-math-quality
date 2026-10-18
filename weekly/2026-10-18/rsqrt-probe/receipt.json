@@ -1,0 +1,563 @@
+{
+  "child_cpu_seconds": 7.394375999999999,
+  "results": [
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 1.171
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=12\n",
+        "output_bytes": 4457,
+        "output_truncated": false,
+        "returncode": 1,
+        "wall_seconds": 0.011
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+      "variant": "upstream"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.921
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.01
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+      "variant": "candidate"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.92
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.01
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "source_sha256": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+      "variant": "previous"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.871
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=12\n",
+        "output_bytes": 4457,
+        "output_truncated": false,
+        "returncode": 1,
+        "wall_seconds": 0.01
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64-v3",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64-v3",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64-v3",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+      "variant": "upstream"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.87
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=12\n",
+        "output_bytes": 4457,
+        "output_truncated": false,
+        "returncode": 1,
+        "wall_seconds": 0.01
+      },
+      "contraction": "on",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64-v3",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=on",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64-v3",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64-v3",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+      "variant": "upstream"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.87
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.01
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64-v3",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64-v3",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64-v3",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+      "variant": "candidate"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.87
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.01
+      },
+      "contraction": "on",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64-v3",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=on",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64-v3",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64-v3",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+      "variant": "candidate"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.87
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.01
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64-v3",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64-v3",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64-v3",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "source_sha256": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+      "variant": "previous"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.87
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.009
+      },
+      "contraction": "on",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64-v3",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=on",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64-v3",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "gcc-linux-x86_64-v3",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "source_sha256": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+      "variant": "previous"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.92
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=12\n",
+        "output_bytes": 4457,
+        "output_truncated": false,
+        "returncode": 1,
+        "wall_seconds": 0.009
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "clang-linux-x86_64",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+      "variant": "upstream"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.771
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.01
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "clang-linux-x86_64",
+      "source_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+      "variant": "candidate"
+    },
+    {
+      "build": {
+        "output": "",
+        "output_bytes": 0,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.72
+      },
+      "check": {
+        "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+        "output_bytes": 4456,
+        "output_truncated": false,
+        "returncode": 0,
+        "wall_seconds": 0.009
+      },
+      "contraction": "off",
+      "driver_sha256": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "profile": "clang-linux-x86_64",
+      "source_pin": "81a899d67953a619d703660fd9630f0554673524",
+      "source_sha256": "ebb76abe297088b93af256221e779daeca796d357db6ef8a97e36c29392c508e",
+      "variant": "previous"
+    }
+  ]
+}

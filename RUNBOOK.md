@@ -82,9 +82,10 @@ deleting stale lock files. A remaining file alone does not mean a live run.
 prints each mode and retains child outputs. Each child runs in a process group,
 killed on timeout or a handled termination signal. Download calls also have timeouts. For an overall wall-clock
 limit that includes acquisition, use the scheduler's outer timeout.
-Cancel through the runner's parent process: this version's spawned children
-inherit blocked SIGTERM/SIGINT, while the parent handles those signals and kills
-the child process group. Directly sending SIGTERM to a checker is insufficient.
+Cancel through the runner's parent process so it records the interruption and
+terminates the child process group. The runner restores the caller's original
+signal mask in spawned children; its temporary spawn guard is not inherited.
+Signals intentionally blocked by the caller remain blocked.
 
 Successful function results are reused only if the identity matches the source
 manifest, runner hash, config hashes, compiler/probe environment, profile, errno and selection.

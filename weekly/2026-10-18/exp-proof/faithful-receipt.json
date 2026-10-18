@@ -1,0 +1,58 @@
+{
+  "candidate_generator_sha256": "084026f1c035b66c7ecf927c3a5df6b1e172daac298df3e03e242d438d015aea",
+  "checks": [
+    {
+      "bounds_strictly_below_paper_claims": true,
+      "mode": "ne",
+      "model_sha256": "86deaa4ff8551290697540815746c84ed3c8406d64ec8e4a54ece81befe2b12c",
+      "output": "Results:\n  |y - y_real| in [0, 648943366934403087b-162 {1.11007e-31, 2^(-102.829101)}]\n  |yl| in [0, 7513155793461627b-103 {7.40855e-16, 2^(-50.261657)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 30.418
+    },
+    {
+      "bounds_strictly_below_paper_claims": true,
+      "mode": "zr",
+      "model_sha256": "48e3e2721ab2919130131b59ba9491150fae2399ce7853c76628a06a3fe222f4",
+      "output": "Results:\n  |y - y_real| in [0, 252318441177205719b-159 {3.45287e-31, 2^(-101.191894)}]\n  |yl| in [0, 2441381882749335b-101 {9.62956e-16, 2^(-49.883361)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 32.475
+    },
+    {
+      "bounds_strictly_below_paper_claims": true,
+      "mode": "up",
+      "model_sha256": "e43904dc34f9c6ad2a366571d4e418d07dec141883e330d85e6003b247f39827",
+      "output": "Results:\n  |y - y_real| in [0, 1009256157093218627b-161 {3.45281e-31, 2^(-101.191894)}]\n  |yl| in [0, 1220690941374639b-100 {9.62956e-16, 2^(-49.883361)}]\n",
+      "output_bytes": 155,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 28.862
+    },
+    {
+      "bounds_strictly_below_paper_claims": true,
+      "mode": "dn",
+      "model_sha256": "fe8d9c56f6aa081cd9158f0ae769b74e904feb3d397396fb271f9ea9846e3e3e",
+      "output": "Results:\n  |y - y_real| in [0, 252318441177205719b-159 {3.45287e-31, 2^(-101.191894)}]\n  |yl| in [0, 2441381882749335b-101 {9.62956e-16, 2^(-49.883361)}]\n",
+      "output_bytes": 154,
+      "output_truncated": false,
+      "returncode": 0,
+      "wall_seconds": 31.57
+    }
+  ],
+  "child_cpu_seconds": 123.64809299999999,
+  "direction_counterexample": {
+    "output": "mode=rndu a=0x1p+0 b=0x1p-154 C_low=-0x1.fffffffffffffp-53 old_model_low=-0x1p-52\nmode=rndd a=0x1p+0 b=-0x1p-154 C_low=0x1.fffffffffffffp-54 old_model_low=0x1p-53\n",
+    "output_bytes": 163,
+    "output_truncated": false,
+    "returncode": 0,
+    "wall_seconds": 0.01
+  },
+  "direction_driver_sha256": "01ca9ba7dd3fc0880ec5872744d02aa78133fd1deacfef72fc14341c44eec4c7",
+  "gappa_sha256": "f4a610b32c7d5602f37eaf5e9de61a5c87bcf744a506f56df4b5f23bb8a031c4",
+  "original_generator_sha256": "8452d6ff48f1a461ea612f7b36024da8918dced38dc0e8df1af069b6441fe7e6",
+  "proof_pin": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a",
+  "scope": "Correct low-part rounding direction plus matching exact algebraic hint; uncontracted conditional Gappa model only."
+}

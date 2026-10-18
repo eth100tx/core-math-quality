@@ -1,5 +1,8 @@
 # sinh: retain the full mask width
 
+**October 18 status:** The int64_t restoration is upstream in implementation commit 6a4458059c4f552ff2cf219cf4e91d778db325ab.
+
+
 Proposed, tested and independently reviewed; not merged at the reviewed pin.
 
 Base implementation: `81a899d67953a619d703660fd9630f0554673524`.

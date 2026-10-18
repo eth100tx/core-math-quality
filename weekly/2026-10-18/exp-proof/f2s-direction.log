@@ -1,0 +1,2 @@
+mode=rndu a=0x1p+0 b=0x1p-154 C_low=-0x1.fffffffffffffp-53 old_model_low=-0x1p-52
+mode=rndd a=0x1p+0 b=-0x1p-154 C_low=0x1.fffffffffffffp-54 old_model_low=0x1p-53

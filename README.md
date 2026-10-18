@@ -9,6 +9,10 @@ the complete target list. No AI subscription is needed to execute the tests.
 or the [runbook](RUNBOOK.md).** This project is not an official CORE-MATH
 repository and does not certify the library's correctness.
 
+The [bounded bivariate research proposal](docs/BIVARIATE-PILOT.md) describes a
+separate hypot pilot and possible follow-ons. It is a plan, not an executed
+search or an extension of the 25-function coverage ranking.
+
 ## The weekly flow
 
 1. **Choose a revision.** Review upstream changes and any newly authorized

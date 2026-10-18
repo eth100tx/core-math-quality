@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "name": "selftests",
+      "returncode": 0,
+      "wall_seconds": 2.335
+    },
+    {
+      "name": "rsqrt-underflow-range-apply",
+      "returncode": 0,
+      "wall_seconds": 0.044
+    },
+    {
+      "name": "exp-fast-allowance-apply",
+      "returncode": 0,
+      "wall_seconds": 0.036
+    },
+    {
+      "name": "exp-fasttwosum-model-apply",
+      "returncode": 0,
+      "wall_seconds": 0.036
+    },
+    {
+      "name": "generator-replay",
+      "returncode": 0,
+      "wall_seconds": 0.069
+    },
+    {
+      "name": "arithmetic-replay",
+      "returncode": 0,
+      "wall_seconds": 0.218
+    },
+    {
+      "name": "capture-replay",
+      "returncode": 0,
+      "wall_seconds": 0.167
+    }
+  ],
+  "child_cpu_seconds": 0.7868949999999999,
+  "known_failure_cells": 2,
+  "limits": "Finite tests and conditional proof models. Public adapter parsed/path adaptation reviewed; full identical science matrix not redundantly rerun. No multi-file proof PDF build.",
+  "patches_applied_and_hash_bound": 3,
+  "status": "PASS",
+  "supplement_cells_verified": 14
+}
