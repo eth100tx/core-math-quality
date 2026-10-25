@@ -81,9 +81,16 @@ def receipt(d):
         raise ValueError('Ranking differs from measured results')
 
 
+def raw_coverage_paths(folder, recursive=True):
+    # pathlib glob is case-insensitive on Windows. Keep the Linux filename
+    # contract on Python 3.10 too (case_sensitive= requires Python 3.12).
+    paths = folder.rglob('*-coverage.json') if recursive else folder.glob('*-coverage.json')
+    return sorted(p for p in paths if p.name.endswith('-coverage.json'))
+
+
 def verify_coverage(cell, folder):
     from quality import coverage_maps, coverage_summary, add_union
-    if len(list(folder.glob('*-coverage.json'))) != 4:
+    if len(raw_coverage_paths(folder, recursive=False)) != 4:
         raise ValueError('PASS needs four raw coverage files')
     ul, ua = {}, {}
     for mode in cell['modes']:
@@ -123,7 +130,7 @@ def main():
         before,after=d['results']['before'],d['results']['after']
         if before['source_sha256']!=after['source_sha256'] or after['corpus_rows']!=before['corpus_rows']+1:
             raise ValueError('Unexpected candidate source/corpus change')
-    for path in list((ROOT/'weekly').rglob('*-coverage.json'))+list((ROOT/'candidates').rglob('*-coverage.json')):
+    for path in raw_coverage_paths(ROOT/'weekly') + raw_coverage_paths(ROOT/'candidates'):
         d = json.loads(path.read_text())
         keys(d, {'file','functions','lines'}, 'gcov file')
         if not re.fullmatch(r'src/binary64/[a-z0-9]+/[a-z0-9]+\.c',d['file']):
