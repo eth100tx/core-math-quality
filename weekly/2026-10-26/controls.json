@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "name": "wrong-sine-coefficient",
+      "expected_rejection": true,
+      "returncode": 1,
+      "output": "",
+      "diagnostic_tail": [
+        "RuntimeError: Certificate subdivision cap reached: PS"
+      ]
+    },
+    {
+      "name": "polynomial-hypothesis-mismatch",
+      "expected_rejection": true,
+      "returncode": 1,
+      "output": "",
+      "diagnostic_tail": [
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "real-bindings",
+      "expected_rejection": false,
+      "returncode": 0,
+      "output": "Nine coefficients bound to C, Gappa and TeX; six bounds and aggregate verified\n",
+      "diagnostic_tail": []
+    },
+    {
+      "name": "hypot-domain",
+      "expected_rejection": false,
+      "returncode": 0,
+      "output": "13890474264137233239365855961379 13890474264137242246565110702370\n",
+      "diagnostic_tail": []
+    },
+    {
+      "name": "asin-predicate",
+      "expected_rejection": false,
+      "returncode": 0,
+      "output": "23923 synthetic encoding pairs passed\n",
+      "diagnostic_tail": []
+    }
+  ],
+  "child_cpu_seconds": 2.2449969999999997,
+  "wall_seconds": 3.891396730999986
+}

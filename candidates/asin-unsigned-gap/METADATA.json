@@ -1,0 +1,23 @@
+{
+  "base_pin": "336752ca18e1204321225ec90c1f43fcb90ada1b",
+  "classification": "optional portability cleanup; no demonstrated value defect",
+  "original_source_sha256": "471e22c2769db115b715a7747f234bdde7b96da8a665b5705e7268d24967f095",
+  "patch_sha256": "33d9627f8db5f2b5148bf7e3889a5e6aef4d1faaefc301291af0335969ef2209",
+  "tested_source_sha256": "75b6c144edfb405e916c84931d37e718470948b28c2475b95a2d2459965b2b4d",
+  "profiles": [
+    "gcc-linux-x86_64",
+    "clang-linux-x86_64"
+  ],
+  "errno": 1,
+  "rounding_modes": [
+    "rndn",
+    "rndz",
+    "rndu",
+    "rndd"
+  ],
+  "limits": [
+    "No Windows/32-bit executable qualification.",
+    "No new proof of every asin phi/ph range precondition.",
+    "Not proposed as a wrong-result fix."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "implementation_pin": "336752ca18e1204321225ec90c1f43fcb90ada1b",
+  "proof_pin": "d0fc1625fd88f9987bc89c83e271b39b8201b7f7",
+  "comparison_base": {
+    "implementation": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+    "proof": "3ec3c827eb3b0c4849ad2f47da20ec68dadf8482"
+  },
+  "implementation": {
+    "README.md": "macOS ldexp fix documentation inspected; no Apple-platform verification claimed.",
+    "prof.sh": "Shebang changes sh to bash; not executed.",
+    "src/binary64/cos/cos.c": "Sign normalization moved inside cos_accurate. Source-inspected; numerical regression deferred to next eligible weekly task.",
+    "src/binary64/sin/sin.c": "Changed accurate scaling/coefficients reviewed and independently certified; focused tests in SINE-REPLAY.json."
+  },
+  "proof": {
+    "sin/coslarge_acc.sollya": "Changed target inspected. dirtyinfnorm is exploratory; independent exact certificate supplied.",
+    "sin/sinlarge_acc.sollya": "Changed target inspected. dirtyinfnorm is exploratory; independent exact certificate supplied.",
+    "sin/sin.tex": "Changed evalPS/evalPC algorithms and bounds bound to C and Gappa. Whole-document/historical search completeness not newly certified."
+  },
+  "carried_obligation": "October25 sin/acclarge.g scaling/reference-model review is discharged for the selected changed kernel by 13 Gappa goals and exact coefficient binding.",
+  "deferrals": [
+    "Historical full-domain sine hard-case census not regenerated.",
+    "October25 log near-zero model and other pending reviews retain their prior status.",
+    "exp work paused; preserve existing candidate and adoption history.",
+    "No coverage census/ranking.",
+    "No archived bivariate-family completeness or angular/pow import claim."
+  ],
+  "watermarks": "Focused review only. Global repository source/proof watermarks do not advance."
+}

@@ -1,0 +1,5 @@
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  |w1 - W1| in [0, 602758963270987491374865668841333874229255989197637870918087b-323 {3.52741e-38, 2^(-124.414550)}]

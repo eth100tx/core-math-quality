@@ -2,6 +2,7 @@
 
 | Candidate | Type | State |
 |---|---|---|
+| [asin unsigned gap](asin-unsigned-gap/README.md) | Optional portability cleanup | Tested GCC/Clang, four modes; no demonstrated wrong-answer bug; not yet upstream at the selected pin. |
 | [rsqrt reciprocal range](rsqrt-underflow-range/README.md) | Spurious-underflow regression | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |
 | [exp fast allowance](exp-fast-allowance/README.md) | Historical wrong-value failure | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |
 | [exp FastTwoSum model](exp-fasttwosum-model/README.md) | Directed-rounding model correction | Four corrected Gappa certificates; conditional, not full correctness |

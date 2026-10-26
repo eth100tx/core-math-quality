@@ -1,0 +1,71 @@
+{
+  "old_pin": "74fcd1094a316164c94481f40f5c9658439bee63",
+  "new_pin": "336752ca18e1204321225ec90c1f43fcb90ada1b",
+  "old_source_sha256": "7ef3826d5bc66c6b7c5dbc7ee7746adc790880cf721b1dcbd4939bf9aac74bdf",
+  "new_source_sha256": "d863d6aa3c85750b0d2af6e7dd1e20325f669f10bb50e256ac46d15fb40d7413",
+  "components": [
+    {
+      "name": "_T",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "dc8bc6c3e53a9926915fb3999abcc4462a9aa29a749a8b8ee9cce9b886f857fa"
+    },
+    {
+      "name": "S1u",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "c4d46ff8cd89e68a6790b006fd6d770dd1416192920e9edde8b65509887b9849"
+    },
+    {
+      "name": "S2u",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "0aee08b482e616a972661dd2d448fa52c6cbd15a3808fb93e929dbdf627c8311"
+    },
+    {
+      "name": "C2u",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "e8d13b3e31544e08453480433bf891a2e6e4dd5800854f08b4114b8270975cc2"
+    },
+    {
+      "name": "reduce_large_acc",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "71222317b1f4e2f705a4cb985ba854997fb711b0c6d885d47a5f7c2900f23635"
+    },
+    {
+      "name": "u128_tod",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "ae5a461645af58b6086418dc56303a6d721b66030e1fa84d8f3b81ae17877bd4"
+    },
+    {
+      "name": "mhUU",
+      "full_definition_identical_after_comment_removal_and_whitespace_collapse": true,
+      "definition_sha256": "a0021b18acb95b8ceed6dad20094e23c160d73e0af6ed58a89b6c5cb60089a31"
+    },
+    {
+      "name": "u128-selection",
+      "supporting_definition_identical": true,
+      "definition_sha256": "3594d8637d4575d4b58fa7d18dc009f98cc4bc4920709621386d23c47e8e9ca9"
+    },
+    {
+      "name": "u64",
+      "supporting_definition_identical": true,
+      "definition_sha256": "b3c1a976b421cd5f2e9d186bdd41beec87ebb25545aa46229f84526a5663bfa0"
+    },
+    {
+      "name": "f64_u",
+      "supporting_definition_identical": true,
+      "definition_sha256": "9812a846916aca71e12deb42a3a353e6aae454802c3b2e28c94590591354c88e"
+    },
+    {
+      "name": "b64u64_u",
+      "supporting_definition_identical": true,
+      "definition_sha256": "35a2ca784249bc8f517397ec069c5b9c895474f416bad611a3ca4e3f93cba769"
+    },
+    {
+      "name": "U128",
+      "supporting_definition_identical": true,
+      "definition_sha256": "13b5344f020a903decbdbb0fb74cc26935afc5775cf7fed895727d77d4a59246"
+    }
+  ],
+  "declaration_and_operator_controls_pass": true,
+  "new_kernel_bound_below_previous_30_units": true,
+  "reuse": "October8 reducer/table/distance and conversion-range arguments; historical all-input hardness completeness not regenerated"
+}

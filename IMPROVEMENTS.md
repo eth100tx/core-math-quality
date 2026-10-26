@@ -25,13 +25,18 @@ calling an item open, adopted, superseded or withdrawn. Do not keep applying an
 old patch after its source has changed. Adoption describes matching source and
 tests, not a claim about who originated a change.
 
+## Paused work
+
+**Exp work (former P1) is paused from October 26 to avoid duplicate effort.**
+The [previous card](weekly/2026-10-26/PAUSED-EXP.json) and all historical adoption/candidate evidence are retained. Do not select further exp work until the pause is lifted. Routine coverage remains paused too.
+
 ## Current ranked improvement proposals
 
 | Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
 |---|---|---|---|
-| 1 | **Bind a changed proof to the code it describes.** Passing corpus tests cannot establish that a proof models the executed operations. | A small exp proof-to-`exp_proof` source map, one checked directed-rounding obligation, and a disposition for the existing model candidate. | A checked correspondence/certificate under explicit hypotheses, a reviewed minimal correction, or a precisely isolated unresolved premise. Full exp correctness is not promised. Sine follows only after checking source stability and choosing one obligation. |
-| 2 | **Resolve asin cast and integer-range portability.** Its current Clang corpus pass does not settle signed arithmetic or 32-bit `long` behavior. | A source-range analysis of the changed casts/subtraction, supported by bounded LP64 and, if available, LLP64 checks and negative controls. | Either a minimized reachable failure with a tested remedy, or a justified defined-behavior/equivalence argument for the stated domain/ABI. Tests alone cannot prove absence of UB. Unsupported ABI execution remains explicitly untested. |
-| 3 | **Turn bivariate hard cases into reusable, independently checkable regressions.** Two-input functions add a much larger input space than the unary suite. | The [restricted verifier and Linux adapter are qualified](docs/HYPOT-QUALIFICATION.md). Next: one bounded candidate-construction task and pinned-corpus deduplication; import prior archives when available. | Qualification covers 18 fixtures, four modes, GCC/Clang and specific negative controls. Values/flags/errno remain separate. This is not a search, imported-result validation or completeness census. |
+| 1 | **Check the changed sine accurate kernel (P4).** | [Exact approximation certificates, 13 Gappa goals, source binding and full normal/forced GCC/Clang corpus runs](weekly/2026-10-26/REPORT.md) are complete. | Tested/certified within the stated scope. Read new changes before another task; historical hard-case completeness remains separate. |
+| 2 | **Resolve asin portability (P2).** | [Optional unsigned-gap candidate](candidates/asin-unsigned-gap/README.md), full corpus and original-source sanitizer checks pass. | Conditional ABI equivalence is established; next close a named phi/ph range premise or reconcile pickup. Windows/32-bit execution remains unqualified. |
+| 3 | **Build useful bivariate regressions (P3).** | [Restricted hypot domain cost and certificate/runner evidence](weekly/2026-10-26/REPORT.md). | Literal enumeration is infeasible. Next construct a bounded near-midpoint family, verify certificates and deduplicate against the pinned corpus; no completeness claim. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three

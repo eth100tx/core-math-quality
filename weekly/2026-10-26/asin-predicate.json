@@ -1,0 +1,10 @@
+{
+  "tested_pairs": 23923,
+  "lp64_equivalent": true,
+  "no_modulo32_false_negative_in_test": true,
+  "synthetic_extra_lookup": {
+    "tn": "0x3b30000000000000",
+    "tl": "0x3b2fffff00000000"
+  },
+  "scope": "Arithmetic encodings, not asserted reachable from cr_asin. LLP64 behavior is modeled with modulo conversion; no Windows qualification."
+}

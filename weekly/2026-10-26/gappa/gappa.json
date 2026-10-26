@@ -1,0 +1,100 @@
+{
+  "source_sha256": "137156e26f26b242b386621e2ef35d1857388c4b66c58227f40b56f1e2b19c3f",
+  "tool_version": "Gappa 1.8.2",
+  "results": [
+    {
+      "name": "s5 in ?",
+      "goal": "{ r in [0,1b-14] -> s5 in ? } # [2^(-8.649415),2^(-8.649398)]",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  s5 in [847437355944817824447481640696510005b-128 {0.00249039, 2^(-8.649415)}, 847437358912232030688405925538657845b-128 {0.0024904, 2^(-8.649398)}]\n",
+      "model_sha256": "e2cf0127c86dc15f2f29219c2df58d0179b63397ea46646185a2750e076505ff"
+    },
+    {
+      "name": "s1 in ?",
+      "goal": "{ r in [0,1b-14] -> s1 in ? } # [0.785398,0.785399]",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  s1 in [133628569732693739763741780418511459815b-127 {0.785398, 2^(-0.348506)}, 2087946453251888179413438228831778779b-121 {0.785399, 2^(-0.348503)}]\n",
+      "model_sha256": "560784c5ccdc70b37ecf85a0475668479d37aba81ad1f8ac3a845b232a21afbc"
+    },
+    {
+      "name": "s2 in ?",
+      "goal": "{ r in [0,1b-14] -> s2 in ? } # [0.785398,0.785399]",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  s2 in [133628569732693739763741780418511459815b-127 {0.785398, 2^(-0.348506)}, 267257146016241735136156844235368968773b-128 {0.785399, 2^(-0.348503)}]\n",
+      "model_sha256": "234c7637e3142635723dd73e219470385fb42e7f1e13328c00d498c68f99a3c4"
+    },
+    {
+      "name": "|sr-Sr|",
+      "goal": "{ r in [0,1b-14] -> |sr-Sr| in ? } # 2^(-126.414306)",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  |sr - Sr| in [0, 602896738512883189535833681303562839778156955101434184146425b-325 {8.82053e-39, 2^(-126.414306)}]\n",
+      "model_sha256": "16a470abeacf703727e27eeeea1a866b99db67ded147ffe5977257a59fd30db1"
+    },
+    {
+      "name": "|sr-SR|",
+      "goal": "{ r in [0,1b-14] /\\ eps5 in [-2694b-140,2694b-140] -> |sr-SR| in ? } # 2^(-126.128417) [Lemma evalPS]",
+      "returncode": 0,
+      "output": "Warning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  |sr - SR| in [0, 735010114099849736237190061820136693879561217346638160535033b-325 {1.07534e-38, 2^(-126.128417)}]\n",
+      "model_sha256": "3e8e31f55c26271fd93895c141d3bbfbcd8e814dff140eb6ebfdaaa1dedbd47d"
+    },
+    {
+      "name": "c6 in ?",
+      "goal": "{ r in [0,1b-14] -> c6 in ? } # [2^(-11.582886),2^(-11.582870)]",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  c6 in [110929290589347378350933948021570625b-128 {0.000325991, 2^(-11.582886)}, 110929290880670488151803631238872129b-128 {0.000325992, 2^(-11.582870)}]\n",
+      "model_sha256": "16f86fbda2deecc74f0f84f1add37a8a4d1cd7a5665f60fef669d7e7a064a101"
+    },
+    {
+      "name": "c4 in ?",
+      "goal": "{ r in [0,1b-14] -> c4 in ? } # [2^(-5.978982),2^(-5.978973)]",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  c4 in [2697476879408645506047628046028996901b-127 {0.0158543, 2^(-5.978982)}, 5394953785264894924608628549515448301b-128 {0.0158544, 2^(-5.978973)}]\n",
+      "model_sha256": "137eefcb9ff3d284505aabf1576bb6e16d8945c32bfd2285edd306c4c4080ad0"
+    },
+    {
+      "name": "c0 >=",
+      "goal": "{ r in [0,1b-14] -> c0 >= 0 /\\ c0 <= 0xffffffffffffffffffffffffffffffffp-128 }",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\n",
+      "model_sha256": "a0412c3b5b7d9a6b7b77079534c390a58e679c2606c6966f889a4d815343a3d5"
+    },
+    {
+      "name": "cr >=",
+      "goal": "{ r in [0,1b-14] -> cr >= 0.999999 /\\ cr <= 0xffffffffffffffffffffffffffffffffp-128 }",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\n",
+      "model_sha256": "67ee647574f23c7b32ef1a246fd190a5a1e965f4c7db317437a4134c05418b87"
+    },
+    {
+      "name": "|cr-Cr|",
+      "goal": "{ r in [0,1b-14] -> |cr-Cr| in ? } # 2^(-126.369995)",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  |cr - Cr| in [0, 4631865480785951397918229281507975261882484290002225b-298 {9.09531e-39, 2^(-126.369995)}]\n",
+      "model_sha256": "743bee8cd647028f567c1f8819bc0caa82f1cf1a662bc4208ec0b65d8928fbd9"
+    },
+    {
+      "name": "|cr-CR|",
+      "goal": "{ r in [0,1b-14] /\\ eps4 in [-1b-128,1b-128] -> |cr-CR| in ? } # 2^(-125.966064) [Lemma evalPC]",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  |cr - CR| in [0, 6128443157412795986158802550209449074010159214009649b-298 {1.20341e-38, 2^(-125.966064)}]\n",
+      "model_sha256": "7336663b496c880f4bbc34f92d28d182b3dc22ca4b550942f5369c9ca426d5c2"
+    },
+    {
+      "name": "|w1-W1|",
+      "goal": "{ r in [0,1b-14] /\\ sz in [0,1] /\\ eps2 in [-20298b-140,20298b-140] /\\ eps4 in [-1b-128,1b-128] -> |w1-W1| in ? } # 2^(-124.414550)",
+      "returncode": 0,
+      "output": "Warning: eps5 is a variable without definition, yet it is unbound.\nWarning: cz is a variable without definition, yet it is unbound.\nWarning: eps3 is a variable without definition, yet it is unbound.\nResults:\n  |w1 - W1| in [0, 602758963270987491374865668841333874229255989197637870918087b-323 {3.52741e-38, 2^(-124.414550)}]\n",
+      "model_sha256": "10c38d37ce58268582368d57f959500989806a171ca3d47024ed053be92416f6"
+    },
+    {
+      "name": "|w2-W2|",
+      "goal": "{ r in [0,1b-14] /\\ cz in [0,1] /\\ eps3 in [-20298b-140,20298b-140] /\\ eps5 in [-2694b-140,2694b-140] -> |w2-W2| in ? } # 2^(-125.264160)",
+      "returncode": 0,
+      "output": "Warning: eps4 is a variable without definition, yet it is unbound.\nWarning: sz is a variable without definition, yet it is unbound.\nWarning: eps2 is a variable without definition, yet it is unbound.\nResults:\n  |w2 - W2| in [0, 1337993616043546305218893945916202771515159474999688367519553b-325 {1.95752e-38, 2^(-125.264160)}]\n",
+      "model_sha256": "137156e26f26b242b386621e2ef35d1857388c4b66c58227f40b56f1e2b19c3f"
+    }
+  ],
+  "complete": true,
+  "child_cpu_seconds": 45.114918,
+  "wall_seconds": 45.88939116299997
+}

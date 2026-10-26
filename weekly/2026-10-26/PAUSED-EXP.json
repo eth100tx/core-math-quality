@@ -1,0 +1,27 @@
+{
+  "status": "paused from October26; retain historical evidence; no new work",
+  "previous_card": {
+    "id": "P1",
+    "rank": 1,
+    "title": "Bind an exp proof obligation to its exact implementation branch",
+    "status": "planned",
+    "owner": "workbench agent",
+    "reason": "Current tests do not establish correspondence between the proof generator and the operations actually executed.",
+    "next_action": "Pin exp_proof separately, map one directed FastTwoSum obligation, and record whether the historical candidate is applicable, superseded, withdrawn or still open with conditions.",
+    "deliverable": "A source-to-model map, conditional certificate or precise unresolved premise, with an optional reviewed minimal patch.",
+    "acceptance": "Independent review and exact source/operation binding; no claim of complete exp correctness. Gate later sine work on source stability and a named obligation.",
+    "budget": {
+      "cpu_hours": 1,
+      "wall_minutes": 30
+    },
+    "stop": "Checkpoint on source change, missing premise, failed certificate or cap; preserve the old proposal without repeatedly requesting maintainer action.",
+    "dependency": "Current implementation/proof source and certificate tools; the WIP branch is not assumed to match master.",
+    "last_substantive_change": "2026-10-25",
+    "change": "October 25 source review is the last scientific checkpoint. The next deliverable was defined October 26; no new scientific progress on this obligation yet.",
+    "next_checkpoint": "2026-11-01",
+    "evidence": [
+      "weekly/2026-10-25/SOURCE-REVIEW.json",
+      "candidates/exp-fasttwosum-model/README.md"
+    ]
+  }
+}

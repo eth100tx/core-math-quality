@@ -1,0 +1,14 @@
+{
+  "N": 4503599627370496,
+  "ordered_pairs_lower": 13890474264137233239365855961379,
+  "ordered_pairs_upper": 13890474264137242246565110702370,
+  "unordered_pairs_lower": 6945237132068617938756719088299,
+  "unordered_pairs_upper": 6945237132068622442356346458794,
+  "diagonal_pairs": 2638147582215219,
+  "area": "sqrt(3)-pi/3",
+  "result_upper": "2*sqrt(2) < 4",
+  "count_status": "rigorous enclosure; exact cardinality not enumerated",
+  "idealized_single_core_years_at_1e9_four_mode_pairs_per_second_lower": "13890474264137233239365855961379/31557600000000000",
+  "idealized_years_display": 440162568260489.8,
+  "scope": "positive binary64 x,y in [1,2), exact real hypot >=2. All four rounded results are in [2,4). Inputs with exact norm below2 that round up to2 are excluded."
+}

@@ -1,0 +1,19 @@
+{
+  "cpu_seconds": 1589.3006882,
+  "cpu_hours": 0.4414724133888889,
+  "breakdown_seconds": {
+    "sine_replay_children": 359.03321,
+    "sine_replay_parent": 7.3078297,
+    "asin_and_hypot_children": 98.752311,
+    "gappa_children": 45.114918,
+    "certificate_first_run": 28.7269941,
+    "certificate_recheck": 28.120428399999998,
+    "control_children": 2.2449969999999997,
+    "failed_initial_wrapper_attempt_conservative": 120.0,
+    "other_operations_tests_review_clients_validation_publication_allowance": 900.0
+  },
+  "policy": "Measured science CPU plus conservative allowances for the failed wrapper and operations/review clients; external model inference excluded. No legacy campaign counts incremented.",
+  "science_complete": true,
+  "weekly_cpu_budget_hours": 4,
+  "scope": "Focused requested sine/asin review and bounded hypot timing, not a full weekly census"
+}

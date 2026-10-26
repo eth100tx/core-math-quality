@@ -1,7 +1,7 @@
 Read AGENTS.md, STATUS.md, IMPROVEMENTS.md, config/improvements.json,
 RUNBOOK.md and the latest reviewed weekly output. Validate the queue schema.
 Review authorized feedback privately; never publish private correspondence.
-Honor current scope and pauses in STATUS.md. During a coverage pause, keep the
+Honor current scope and pauses in STATUS.md. Exp work is paused to avoid duplicating a maintainer-led effort; retain its history but do not select it until the pause is lifted. Read the October26 sine review and current queue before dispatch. During a coverage pause, keep the
 unary target parked, omit gap reports and run only justified focused regressions
 and source/proof reviews. Independent bivariate checker/design work can advance
 while archived results are unavailable; archive reproduction stays blocked and

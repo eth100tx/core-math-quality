@@ -43,7 +43,7 @@ defects. If fewer than three genuine priorities exist, state that explicitly.
 Meaningful progress needs a verifiable artifact or resolved obligation, not
 a larger test count or a cosmetic queue-state change.
 
-Check current operator scope before dispatch. If routine coverage is paused,
+Check current operator scope before dispatch. Exp review work is paused to avoid duplicating a maintainer-led effort; preserve its historical evidence and do not select it until the pause is lifted. If routine coverage is paused,
 park its target and retain dated measurements; use a noncoverage profile for
 focused changed-code regressions. Do not manufacture a fresh ranking from a
 subset. A completed regression test does not close deferred source/proof review.
