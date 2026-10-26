@@ -1,12 +1,16 @@
 Read AGENTS.md, STATUS.md, RUNBOOK.md and the latest reviewed weekly output.
 Review authorized feedback privately; never publish private correspondence.
+Honor current scope and pauses in STATUS.md. During a coverage pause, keep the
+unary target parked, omit gap reports and run only justified focused regressions
+and source/proof reviews. Bivariate work is gated on reviewed import and separate
+runner qualification; once enabled select one bounded task in the overall budget.
 Resolve and pin the authoritative upstream revision. Compare from the last
-reviewed baseline, choose the changed functions and active coverage target,
+reviewed baseline, choose the changed functions and, when enabled, coverage target,
 qualify this machine and run bounded checks. Refresh a comparable census when
 needed; retain dated unchanged evidence explicitly. Investigate failures and
-the smallest remaining gaps without claiming no-hit means unreachable.
+when coverage is active, the smallest remaining gaps without claiming no-hit means unreachable.
 Prepare one short weekly summary: scoped health, new correct-rounding/.wc
-failures, compiler/patch issues, one coverage target. Full evidence stays in
+failures, compiler/patch issues, and one coverage target only when active. Full evidence stays in
 weekly/. Seek an independent review; verify load-bearing claims. Propose tested
 patch candidates for optional pickup. Validate/privacy-check the publication.
 Only publish or send mail if this operator has explicitly authorized it.

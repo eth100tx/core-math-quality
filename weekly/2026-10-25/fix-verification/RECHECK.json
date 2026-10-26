@@ -1,0 +1,73 @@
+{
+  "checked_utc": "2026-10-26T04:21:30.842013+00:00",
+  "cells": [
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-before",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "41bb81542241c7805d6fd169f25d177bd5b2addb4a5d5b69cf666418dbc82ad4",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "recorded in receipt; equals retained current runner"
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "b2e3008ba88b465c245c72ba788476b2a7ffecde62bb3aa6cd3d535feca12bfe",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "recorded in receipt; equals retained current runner"
+    },
+    {
+      "cell": "gcc-linux-x86_64-exp-before",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "5e6e7d995cd5c1bc52836c9f4f4e873a77c5ff2424c2704f92a8f0275a6de3e1",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "recorded in receipt; equals retained current runner"
+    },
+    {
+      "cell": "gcc-linux-x86_64-exp-after",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "efa17e63540ca15e58921fd542529e61963cd3a2bc96ada75061b2a21e73bdbc",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash"
+    },
+    {
+      "cell": "clang-linux-x86_64-rsqrt-before",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "97706a6030cff4e1ed68f68b155f5c9436194653c49ba7d10015069df11f08d4",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash"
+    },
+    {
+      "cell": "clang-linux-x86_64-rsqrt-after",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "bf41b423b53b8ddeb14b4e701ebaa4d8acd3b1be7df877f26de70bef441461b2",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash"
+    },
+    {
+      "cell": "clang-linux-x86_64-exp-before",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "38ebf87e576814cb0f5743df43a0bf94f93d73b358d69c94f3267b0ca6a83561",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash"
+    },
+    {
+      "cell": "clang-linux-x86_64-exp-after",
+      "input_and_corpus_hashes_match": true,
+      "receipt_matches_retained_original": true,
+      "binary_sha256_observed_now": "dda9cdbddbb513468b4a151496fd64b1dedd3a2babb3059002397d252b8a30c4",
+      "matches_prior_binary_hash": true,
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash"
+    }
+  ],
+  "original_receipt_sha256": "7b38c183b2a6e9f7099b8aa6853aabcead117da8bd8d7d23c1260cb78c5d497b",
+  "original_provenance_sha256": "4e733f7cfbfa383e4e0a2db331a7c1194c6218ad9d686cf6e847d9cdd53c08ed",
+  "no_new_exp_rsqrt_science": true,
+  "scope": "Input, corpus, receipt, binary hash and old/new output reconciliation, not a proof or rerun."
+}

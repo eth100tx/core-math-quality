@@ -1,0 +1,1574 @@
+{
+  "child_cpu_seconds": 43.237502,
+  "results": [
+    {
+      "checks": [
+        {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "rsqrt.c",
+            "rsqrt_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.573
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+          "output_bytes": 86,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+          "output_bytes": 86,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1p-511)\n",
+          "output_bytes": 72,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+          "output_bytes": 86,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "rsqrt.c",
+            "probe.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "probe"
+          ],
+          "label": "probe-build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.921
+        },
+        {
+          "command": [
+            "./probe"
+          ],
+          "label": "flags-probe",
+          "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=12\n",
+          "output_bytes": 4457,
+          "output_truncated": false,
+          "returncode": 1,
+          "wall_seconds": 0.01
+        }
+      ],
+      "era": "before",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "rsqrt",
+      "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "profile": "gcc-linux-x86_64",
+      "runner_sha256": "26b9605ecbb6cb5e30d24190ae37c09c06247d5c181679bd56a1a4c798711113",
+      "source_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+      "status": "EXPECTED_OLD_FAILURES_REPRODUCED"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "rsqrt.c",
+            "rsqrt_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.122
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndn",
+          "mode": "rndn",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.037
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndz",
+          "mode": "rndz",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.037
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndu",
+          "mode": "rndu",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.037
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndd",
+          "mode": "rndd",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.037
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndn",
+          "mode": "rndn",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndz",
+          "mode": "rndz",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndu",
+          "mode": "rndu",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndd",
+          "mode": "rndd",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.013
+        },
+        {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "rsqrt.c",
+            "probe.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "probe"
+          ],
+          "label": "probe-build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.871
+        },
+        {
+          "command": [
+            "./probe"
+          ],
+          "label": "flags-probe",
+          "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+          "output_bytes": 4456,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.011
+        }
+      ],
+      "era": "after",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "rsqrt",
+      "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+      "profile": "gcc-linux-x86_64",
+      "runner_sha256": "26b9605ecbb6cb5e30d24190ae37c09c06247d5c181679bd56a1a4c798711113",
+      "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "exp.c",
+            "exp_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.222
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "FAIL x=0x1.5a3a157335f3bp+9 ref=0x1.ffdebdc4e28abp+998 z=0x1.ffdebdc4e28acp+998\n",
+          "output_bytes": 80,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        }
+      ],
+      "era": "before",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "exp",
+      "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "profile": "gcc-linux-x86_64",
+      "runner_sha256": "26b9605ecbb6cb5e30d24190ae37c09c06247d5c181679bd56a1a4c798711113",
+      "source_sha256": "55ad39a6610e0f46794be6b70a1ee4d76b10dd4f64d47b61c4e918d711e3041d",
+      "status": "EXPECTED_OLD_FAILURES_REPRODUCED"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "gcc",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-fsignaling-nans",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "exp.c",
+            "exp_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.724
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndn",
+          "mode": "rndn",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 5.334
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndz",
+          "mode": "rndz",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 4.683
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndu",
+          "mode": "rndu",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 4.634
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndd",
+          "mode": "rndd",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 4.583
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndn",
+          "mode": "rndn",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndz",
+          "mode": "rndz",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndu",
+          "mode": "rndu",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndd",
+          "mode": "rndd",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        }
+      ],
+      "era": "after",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "exp",
+      "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+      "profile": "gcc-linux-x86_64",
+      "source_sha256": "65af7f572ce97327b63700dd76bd6bf753c087fe326c83c7dbbd674ab168a84d",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "rsqrt.c",
+            "rsqrt_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 1.172
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+          "output_bytes": 86,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+          "output_bytes": 86,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1p-511)\n",
+          "output_bytes": 72,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "Spurious underflow exception for x=0x1.0000000000001p+1022 (y=0x1.fffffffffffffp-512)\n",
+          "output_bytes": 86,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "rsqrt.c",
+            "probe.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "probe"
+          ],
+          "label": "probe-build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.721
+        },
+        {
+          "command": [
+            "./probe"
+          ],
+          "label": "flags-probe",
+          "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=1 inexact=1 expected_inexact=1 errno=0 bad=1\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=12\n",
+          "output_bytes": 4457,
+          "output_truncated": false,
+          "returncode": 1,
+          "wall_seconds": 0.011
+        }
+      ],
+      "era": "before",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "rsqrt",
+      "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "profile": "clang-linux-x86_64",
+      "source_sha256": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+      "status": "EXPECTED_OLD_FAILURES_REPRODUCED"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "rsqrt.c",
+            "rsqrt_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.871
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a",
+          "expected_tests": 2,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "2 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndn",
+          "mode": "rndn",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.038
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndz",
+          "mode": "rndz",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.038
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndu",
+          "mode": "rndu",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.038
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899",
+          "expected_tests": 19846,
+          "label": "rsqrt-rndd",
+          "mode": "rndd",
+          "output": "19846 tests passed, 0 failure(s)\n",
+          "output_bytes": 33,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 9923,
+          "wall_seconds": 0.038
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndn",
+          "mode": "rndn",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndz",
+          "mode": "rndz",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndu",
+          "mode": "rndu",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f",
+          "expected_tests": 1026,
+          "label": "neighbors-rndd",
+          "mode": "rndd",
+          "output": "1026 tests passed, 0 failure(s)\n",
+          "output_bytes": 32,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "rsqrt.c",
+            "probe.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "probe"
+          ],
+          "label": "probe-build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.721
+        },
+        {
+          "command": [
+            "./probe"
+          ],
+          "label": "flags-probe",
+          "output": "mode=rndn x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndn x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndz x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1021 actual=0x1.0000000000001p-511 expected=0x1.0000000000001p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.8p+1022 actual=0x1.a20bd700c2c3ep-512 expected=0x1.a20bd700c2c3ep-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1p+1023 actual=0x1.6a09e667f3bcdp-512 expected=0x1.6a09e667f3bcdp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndu x=0x1.fffffffffffffp+1023 actual=0x1.0000000000001p-512 expected=0x1.0000000000001p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1021 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1022 actual=0x1p-511 expected=0x1p-511 underflow=0 inexact=0 expected_inexact=0 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1022 actual=0x1.fffffffffffffp-512 expected=0x1.fffffffffffffp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.8p+1022 actual=0x1.a20bd700c2c3dp-512 expected=0x1.a20bd700c2c3dp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1022 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1p+1023 actual=0x1.6a09e667f3bccp-512 expected=0x1.6a09e667f3bccp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.0000000000001p+1023 actual=0x1.6a09e667f3bcbp-512 expected=0x1.6a09e667f3bcbp-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nmode=rndd x=0x1.fffffffffffffp+1023 actual=0x1p-512 expected=0x1p-512 underflow=0 inexact=1 expected_inexact=1 errno=0 bad=0\nSUMMARY cases=32 failures=0\n",
+          "output_bytes": 4456,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.011
+        }
+      ],
+      "era": "after",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "rsqrt",
+      "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+      "profile": "clang-linux-x86_64",
+      "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+      "status": "PASS"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "exp.c",
+            "exp_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.871
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "FAIL x=0x1.5a3a157335f3bp+9 ref=0x1.ffdebdc4e28abp+998 z=0x1.ffdebdc4e28acp+998\n",
+          "output_bytes": 80,
+          "output_truncated": false,
+          "returncode": 1,
+          "rows": 1,
+          "wall_seconds": 0.007
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        }
+      ],
+      "era": "before",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "exp",
+      "pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "profile": "clang-linux-x86_64",
+      "source_sha256": "55ad39a6610e0f46794be6b70a1ee4d76b10dd4f64d47b61c4e918d711e3041d",
+      "status": "EXPECTED_OLD_FAILURES_REPRODUCED"
+    },
+    {
+      "checks": [
+        {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "check_worst_uni.c",
+            "exp.c",
+            "exp_mpfr.c",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "check"
+          ],
+          "label": "build",
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.871
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndn",
+          "mode": "rndn",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndz",
+          "mode": "rndz",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndu",
+          "mode": "rndu",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e",
+          "expected_tests": 1,
+          "label": "witness-rndd",
+          "mode": "rndd",
+          "output": "1 tests passed, 0 failure(s)\n",
+          "output_bytes": 29,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1,
+          "wall_seconds": 0.008
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndn",
+          "mode": "rndn",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 5.385
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndz",
+          "mode": "rndz",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 4.532
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndu",
+          "mode": "rndu",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 4.532
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b",
+          "expected_tests": 1129433,
+          "label": "exp-rndd",
+          "mode": "rndd",
+          "output": "1129433 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 1129433,
+          "wall_seconds": 4.583
+        },
+        {
+          "command": [
+            "./check",
+            "--rndn"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndn",
+          "mode": "rndn",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndz"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndz",
+          "mode": "rndz",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndu"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndu",
+          "mode": "rndu",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        },
+        {
+          "command": [
+            "./check",
+            "--rndd"
+          ],
+          "corpus_sha256": "c7166e2a4198d0317c3322d2e128bfb7e7f1b8cef1088630585330890ab96278",
+          "expected_tests": 513,
+          "label": "neighbors-rndd",
+          "mode": "rndd",
+          "output": "513 tests passed, 0 failure(s)\n",
+          "output_bytes": 31,
+          "output_truncated": false,
+          "returncode": 0,
+          "rows": 513,
+          "wall_seconds": 0.012
+        }
+      ],
+      "era": "after",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "exp",
+      "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+      "profile": "clang-linux-x86_64",
+      "source_sha256": "65af7f572ce97327b63700dd76bd6bf753c087fe326c83c7dbbd674ab168a84d",
+      "status": "PASS"
+    }
+  ]
+}

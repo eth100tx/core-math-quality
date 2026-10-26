@@ -1,0 +1,383 @@
+{
+  "checked_utc": "2026-10-25T13:18:39.106849+00:00",
+  "cells": [
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-before",
+      "inputs_sha256": {
+        "src/binary64/rsqrt/check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/rsqrt/function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+        "src/binary64/rsqrt/Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/rsqrt/rsqrt.c": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+        "src/binary64/rsqrt/rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+      },
+      "runner_sha256": "26b9605ecbb6cb5e30d24190ae37c09c06247d5c181679bd56a1a4c798711113",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "41bb81542241c7805d6fd169f25d177bd5b2addb4a5d5b69cf666418dbc82ad4",
+      "runner_hash_basis": "recorded in receipt; equals retained current runner",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "probe",
+        "probe.c",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "inputs_sha256": {
+        "src/binary64/rsqrt/check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/rsqrt/function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+        "src/binary64/rsqrt/Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/rsqrt/rsqrt.c": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+        "src/binary64/rsqrt/rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+      },
+      "runner_sha256": "26b9605ecbb6cb5e30d24190ae37c09c06247d5c181679bd56a1a4c798711113",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "b2e3008ba88b465c245c72ba788476b2a7ffecde62bb3aa6cd3d535feca12bfe",
+      "runner_hash_basis": "recorded in receipt; equals retained current runner",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "neighbors.wc",
+        "probe",
+        "probe.c",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "gcc-linux-x86_64-exp-before",
+      "inputs_sha256": {
+        "src/binary64/exp/check_special.c": "ae767500ec542ca7535f3e28374ec7986a53c6ef8c685152265b0da6af0a299f",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/exp/exp.c": "55ad39a6610e0f46794be6b70a1ee4d76b10dd4f64d47b61c4e918d711e3041d",
+        "src/binary64/exp/exp.sage": "4157567550b90a3afece224d8b8bf5bc3ecced314aecaa58337d62bf6de3e98c",
+        "src/binary64/exp/exp_mpfr.c": "38e9719ad94816ae788e2381be0c5445bbcd97c80c498fe2b90d03773e54492f",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/exp/function_under_test.h": "4c5b39fa9e3e5424e398e4c4195434ea283a14f609ed3e58c8cde8e74e8ebf1d",
+        "src/binary64/exp/Makefile": "0e0532c5b29360d7b9d90eb97e859116cdc02a9dd66741ce36955b77737e6dab",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4"
+      },
+      "runner_sha256": "26b9605ecbb6cb5e30d24190ae37c09c06247d5c181679bd56a1a4c798711113",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "5e6e7d995cd5c1bc52836c9f4f4e873a77c5ff2424c2704f92a8f0275a6de3e1",
+      "runner_hash_basis": "recorded in receipt; equals retained current runner",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "gcc-linux-x86_64-exp-after",
+      "inputs_sha256": {
+        "src/binary64/exp/check_special.c": "ae767500ec542ca7535f3e28374ec7986a53c6ef8c685152265b0da6af0a299f",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/exp/exp.c": "65af7f572ce97327b63700dd76bd6bf753c087fe326c83c7dbbd674ab168a84d",
+        "src/binary64/exp/exp.sage": "4157567550b90a3afece224d8b8bf5bc3ecced314aecaa58337d62bf6de3e98c",
+        "src/binary64/exp/exp_mpfr.c": "38e9719ad94816ae788e2381be0c5445bbcd97c80c498fe2b90d03773e54492f",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/exp/function_under_test.h": "4c5b39fa9e3e5424e398e4c4195434ea283a14f609ed3e58c8cde8e74e8ebf1d",
+        "src/binary64/exp/Makefile": "0e0532c5b29360d7b9d90eb97e859116cdc02a9dd66741ce36955b77737e6dab",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4"
+      },
+      "runner_sha256": "6d260f45da6229da0b4dbf9bd2f32afac5c280320471b2d590b452b328a238e2",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "efa17e63540ca15e58921fd542529e61963cd3a2bc96ada75061b2a21e73bdbc",
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "neighbors.wc",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "clang-linux-x86_64-rsqrt-before",
+      "inputs_sha256": {
+        "src/binary64/rsqrt/check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/rsqrt/function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+        "src/binary64/rsqrt/Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/rsqrt/rsqrt.c": "2fe0cdca1e1a746437e83d522324343aa2996749d86594c856ef1d1ebbbe94ec",
+        "src/binary64/rsqrt/rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+      },
+      "runner_sha256": "6d260f45da6229da0b4dbf9bd2f32afac5c280320471b2d590b452b328a238e2",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "97706a6030cff4e1ed68f68b155f5c9436194653c49ba7d10015069df11f08d4",
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "probe",
+        "probe.c",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "clang-linux-x86_64-rsqrt-after",
+      "inputs_sha256": {
+        "src/binary64/rsqrt/check_special.c": "034acd8f9fe1aa06a83f02330d2c50322da4c098be169ba26e77fe7400cb630a",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/rsqrt/function_under_test.h": "25bd722986dceaf98e81780402a4284022f419a811c117f12e2343eac9075247",
+        "src/binary64/rsqrt/Makefile": "2634d0e043e9225e344758c66377c958116225346a95ac50dde187f8cb7d112b",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/rsqrt/rsqrt.c": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+        "src/binary64/rsqrt/rsqrt_mpfr.c": "0e48df185fe51a085084fe899795d447277ad8537324937c3d7d70ce6d0a29ef"
+      },
+      "runner_sha256": "6d260f45da6229da0b4dbf9bd2f32afac5c280320471b2d590b452b328a238e2",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "bf41b423b53b8ddeb14b4e701ebaa4d8acd3b1be7df877f26de70bef441461b2",
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "neighbors.wc",
+        "probe",
+        "probe.c",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "clang-linux-x86_64-exp-before",
+      "inputs_sha256": {
+        "src/binary64/exp/check_special.c": "ae767500ec542ca7535f3e28374ec7986a53c6ef8c685152265b0da6af0a299f",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/exp/exp.c": "55ad39a6610e0f46794be6b70a1ee4d76b10dd4f64d47b61c4e918d711e3041d",
+        "src/binary64/exp/exp.sage": "4157567550b90a3afece224d8b8bf5bc3ecced314aecaa58337d62bf6de3e98c",
+        "src/binary64/exp/exp_mpfr.c": "38e9719ad94816ae788e2381be0c5445bbcd97c80c498fe2b90d03773e54492f",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/exp/function_under_test.h": "4c5b39fa9e3e5424e398e4c4195434ea283a14f609ed3e58c8cde8e74e8ebf1d",
+        "src/binary64/exp/Makefile": "0e0532c5b29360d7b9d90eb97e859116cdc02a9dd66741ce36955b77737e6dab",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4"
+      },
+      "runner_sha256": "6d260f45da6229da0b4dbf9bd2f32afac5c280320471b2d590b452b328a238e2",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "38ebf87e576814cb0f5743df43a0bf94f93d73b358d69c94f3267b0ca6a83561",
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    },
+    {
+      "cell": "clang-linux-x86_64-exp-after",
+      "inputs_sha256": {
+        "src/binary64/exp/check_special.c": "ae767500ec542ca7535f3e28374ec7986a53c6ef8c685152265b0da6af0a299f",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/exp/exp.c": "65af7f572ce97327b63700dd76bd6bf753c087fe326c83c7dbbd674ab168a84d",
+        "src/binary64/exp/exp.sage": "4157567550b90a3afece224d8b8bf5bc3ecced314aecaa58337d62bf6de3e98c",
+        "src/binary64/exp/exp_mpfr.c": "38e9719ad94816ae788e2381be0c5445bbcd97c80c498fe2b90d03773e54492f",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/exp/function_under_test.h": "4c5b39fa9e3e5424e398e4c4195434ea283a14f609ed3e58c8cde8e74e8ebf1d",
+        "src/binary64/exp/Makefile": "0e0532c5b29360d7b9d90eb97e859116cdc02a9dd66741ce36955b77737e6dab",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4"
+      },
+      "runner_sha256": "6d260f45da6229da0b4dbf9bd2f32afac5c280320471b2d590b452b328a238e2",
+      "corpora_match_immutable_cache_or_retained_local_inputs": true,
+      "binary_sha256_at_reconciliation": "dda9cdbddbb513468b4a151496fd64b1dedd3a2babb3059002397d252b8a30c4",
+      "runner_hash_basis": "inferred from retained resumed-v1 file; receipt does not embed runner hash",
+      "files_outside_upstream_input_manifest": [
+        "check",
+        "neighbors.wc",
+        "receipt.json",
+        "witness.wc"
+      ],
+      "corpus_validation_basis": "True only after all receipt corpus-hash assertions passed; binary hash is at reconciliation, not run time."
+    }
+  ],
+  "superseded_pre_interruption_corpora": [
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "corpus_hash_matches_cache": true,
+      "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "corpus_hash_matches_cache": true,
+      "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "corpus_hash_matches_cache": true,
+      "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "corpus_hash_matches_cache": true,
+      "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+    }
+  ],
+  "original_runner_sha256": "Unavailable: uncommitted original script was truncated by disk-full during edit. Three original cells were archived and rerun with retained source and recorded runner hash; no original cell is relied on as final evidence.",
+  "atomicity": "JSON files parsed and validated after restart; no assumption of atomic writes.",
+  "cleanup": "PowerShell removed only exp.wc or rsqrt.wc under .work/candidates/20261025-fix-verification after checking resolved paths stay within that exact directory. Four then-existing copies: gcc rsqrt before/after, gcc exp before/after (last partial). Sources and receipts retained.",
+  "archived_pre_interruption_receipts": [
+    {
+      "cell": "gcc-linux-x86_64-exp-before",
+      "archived_receipt_sha256": "f9c6290e76ab2cbdc3b96c307349a8468dc09295360d72d82726c3b0f7ac401c",
+      "checks": [
+        {
+          "label": "witness-rndn",
+          "hash_matches_retained_corpus": true,
+          "sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e"
+        },
+        {
+          "label": "witness-rndz",
+          "hash_matches_retained_corpus": true,
+          "sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e"
+        },
+        {
+          "label": "witness-rndu",
+          "hash_matches_retained_corpus": true,
+          "sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e"
+        },
+        {
+          "label": "witness-rndd",
+          "hash_matches_retained_corpus": true,
+          "sha256": "02afeb83f09efdf51b17ddb853fa3edb42929fb3318b050e5b95bd053b405b8e"
+        }
+      ]
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-after",
+      "archived_receipt_sha256": "7026578eedfdb5addb349ee042f09dded7b9275392170dee7a8a0fb2368bf2c1",
+      "checks": [
+        {
+          "label": "witness-rndn",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "witness-rndz",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "witness-rndu",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "witness-rndd",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "rsqrt-rndn",
+          "hash_matches_retained_corpus": true,
+          "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+        },
+        {
+          "label": "rsqrt-rndz",
+          "hash_matches_retained_corpus": true,
+          "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+        },
+        {
+          "label": "rsqrt-rndu",
+          "hash_matches_retained_corpus": true,
+          "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+        },
+        {
+          "label": "rsqrt-rndd",
+          "hash_matches_retained_corpus": true,
+          "sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+        },
+        {
+          "label": "neighbors-rndn",
+          "hash_matches_retained_corpus": true,
+          "sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f"
+        },
+        {
+          "label": "neighbors-rndz",
+          "hash_matches_retained_corpus": true,
+          "sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f"
+        },
+        {
+          "label": "neighbors-rndu",
+          "hash_matches_retained_corpus": true,
+          "sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f"
+        },
+        {
+          "label": "neighbors-rndd",
+          "hash_matches_retained_corpus": true,
+          "sha256": "0211b193fe712882fa46c01b49a30f115a54df0c17154dda15a3f86d2eca506f"
+        }
+      ]
+    },
+    {
+      "cell": "gcc-linux-x86_64-rsqrt-before",
+      "archived_receipt_sha256": "553b31f346d3c4760840da0f8dae42efe0ee5456248574ad78ad0b5ab7dcdf18",
+      "checks": [
+        {
+          "label": "witness-rndn",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "witness-rndz",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "witness-rndu",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        },
+        {
+          "label": "witness-rndd",
+          "hash_matches_retained_corpus": true,
+          "sha256": "b1cdbd0595f76d512a569c052a274e8101bf75e7cd5e745d63b50d2db5b6201a"
+        }
+      ]
+    }
+  ],
+  "public_export_note": "Private job-log references omitted; numerical receipts and their original hashes are unchanged. Three runner hashes are contemporaneous; five are inferred. Binary hashes reobserved on publication, not at execution."
+}

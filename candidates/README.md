@@ -2,8 +2,8 @@
 
 | Candidate | Type | State |
 |---|---|---|
-| [rsqrt reciprocal range](rsqrt-underflow-range/README.md) | Spurious-underflow regression | Confirmed; GCC/Clang candidate tested, not merged |
-| [exp fast allowance](exp-fast-allowance/README.md) | Historical wrong-value failure | Reproduced; GCC/Clang candidate tested, not merged |
+| [rsqrt reciprocal range](rsqrt-underflow-range/README.md) | Spurious-underflow regression | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |
+| [exp fast allowance](exp-fast-allowance/README.md) | Historical wrong-value failure | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |
 | [exp FastTwoSum model](exp-fasttwosum-model/README.md) | Directed-rounding model correction | Four corrected Gappa certificates; conditional, not full correctness |
 | [log2 sign step](log2-sign-step/README.md) | Source equivalence | Semantic correction accepted upstream; October 18 verified |
 | [sinh mask width](sinh-mask-width/README.md) | Restore int64_t | Accepted upstream; October 18 verified |

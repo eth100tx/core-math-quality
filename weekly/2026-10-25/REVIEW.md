@@ -1,0 +1,19 @@
+# Independent review record
+
+Planning review: actual Claude Opus 5.5 CLI, separate invocation, October 25 local date. Advisory review of the bounded scope, not independent execution. It requested current-pin and input-hash checks for reused evidence, explicit inferred-runner provenance, qualification from the canonical checkout, privacy checks and review before publishing/sending. These requirements were applied.
+
+Two suggestions were corrected independently: numerical receipts do not need a proof pin to establish an implementation test; proof pins are inventoried separately. There is one existing automation, updated in place; no second old-path job exists to retire. The unchanged schedule is preserved.
+
+Publication verification rechecked all eight old/new fix cells against their retained receipts, source/corpus hashes, binaries and expected outputs. The five inferred runner identities remain explicitly inferred; a new observation cannot repair missing historical provenance. Asin received a separate bounded current-pin regression run, without a source-portability closure claim.
+
+Final text-only review: actual Claude Opus 5.5, separate invocation. It checked the supplied report, email, inventory, per-file dispositions, eight retained fix receipts/provenance and asin receipt. It did not execute code or initially see qualification, probe source, status/index, automation, historical README or full public diff.
+
+Blocking dispositions: B1 independently inspected the probe: its failure predicate includes all five standard exception flags and errno; linked the source and explained the narrower printed fields. B2 the fresh replay embeds qualification in every cell. B3 corrected the singular corpus wording. B4 recorded review limits and dispositions here. B5 publication and public-link verification precede sending.
+
+Recommendations: clarified the three replayed cells versus five inferred historical identities and the two runner hashes; independently matched the asin runner hash to workbench 8fdc27d; confirmed corpus locations are physical file lines including comments. The historical repeated corpus-hash entries represent separate modes. The exp allowance is the literal value in the pinned manuscript, without endorsing its derivation. The collapsed exp.tex diff remains inventoried with full review deferred.
+
+Because the reviewer raised historical provenance/timing questions, a new bounded self-contained replay was run. All eight cells now embed runner/source/input/checker-binary hashes, qualification and timestamps, with old failures and new passes independently checked. This fresh evidence supports the published conclusions; original records remain intact.
+
+Final addendum: actual Claude Opus 5.5 reviewed the fresh replay, driver, probe, qualification, report/email, status/index, historical candidate context, workflow edits and private automation readback as text. No code was executed by the reviewer. It found no remaining scientific blocker within this finite scope. Conditions before release: independently verify published driver/public-runner hashes against the receipts, complete this review record, inspect the staged public file set for private data, and verify links before email. These are publication checks, not mathematical proof claims.
+
+Additional dispositions: the fresh replay export is byte-identical to its generated receipt; checker binary and probe-source hashes are distinguished from the unrecorded probe-binary hash. The reproduction command explicitly enables assertions, and repeat-run cleanup requires preserving evidence and checking liveness. The executed driver is retained unchanged so its receipt hash stays valid; explicit runtime guards are a future harness-hardening item. No historical evidence is rewritten. Coverage-pause wording is applied consistently. New child CPU is accounted separately from the reused historical records.

@@ -1,0 +1,307 @@
+{
+  "cutoff_utc": "2026-10-26T04:14:51.092345+00:00",
+  "repositories": {
+    "implementation": {
+      "project": 35719,
+      "branch": "master",
+      "base": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+      "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+      "commits": [
+        {
+          "id": "304b681add2ad392274005b5f423a1609afcd4c6",
+          "title": "[rsqrt] fixed spurious underflow"
+        },
+        {
+          "id": "84fef47b7c7759ef389d370cb1f20d645062f7b4",
+          "title": "[exp] increase fast path threshold"
+        },
+        {
+          "id": "6fc21797cd0fa54af39fbc983b63c1ddcc78be17",
+          "title": "[log] added comments"
+        },
+        {
+          "id": "7ebab73913c5a33a25402ee51c96ec06b3a18095",
+          "title": "[check.sh] remove -fno-finite-math-only for gcc since it is the default"
+        },
+        {
+          "id": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+          "title": "[asin] fix compiler warnings"
+        }
+      ],
+      "files": [
+        {
+          "old_path": "check.sh",
+          "new_path": "check.sh",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/asin/asin.c",
+          "new_path": "src/binary64/asin/asin.c",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/exp/exp.c",
+          "new_path": "src/binary64/exp/exp.c",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/exp/exp.wc",
+          "new_path": "src/binary64/exp/exp.wc",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/log/log.c",
+          "new_path": "src/binary64/log/log.c",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/log/logfast.sollya",
+          "new_path": "src/binary64/log/logfast.sollya",
+          "new_file": true,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/log/lognearzero.g",
+          "new_path": "src/binary64/log/lognearzero.g",
+          "new_file": true,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/log/lognearzero.sh",
+          "new_path": "src/binary64/log/lognearzero.sh",
+          "new_file": true,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/rsqrt/rsqrt.c",
+          "new_path": "src/binary64/rsqrt/rsqrt.c",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "src/binary64/rsqrt/rsqrt.wc",
+          "new_path": "src/binary64/rsqrt/rsqrt.wc",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        }
+      ]
+    },
+    "proof": {
+      "project": 67027,
+      "branch": "master",
+      "base": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a",
+      "pin": "3ec3c827eb3b0c4849ad2f47da20ec68dadf8482",
+      "commits": [
+        {
+          "id": "aa2a6cfd2b21aa6f24133d0ca6302e1a3ea94c31",
+          "title": "[exp] added Hyeonjung as author + minor edits"
+        },
+        {
+          "id": "459ec69f260afadb3f769bc47a0c8630ad909c35",
+          "title": "[exp] deal with FMA contraction in Lemma 3"
+        },
+        {
+          "id": "78b05945d2dd3f6f8023ff9b6dd9aa90b3e38167",
+          "title": "[exp] added a sentence in the proof of Theorem 3"
+        },
+        {
+          "id": "a7311b161a62b344462d31cfef24e3a500562bed",
+          "title": "[exp] address comments from Laurent Th\u00e9ry"
+        },
+        {
+          "id": "a8288527e194a11fe9678ef51a21ac13588cf8fe",
+          "title": "[exp] simplify the exactness proof for x - l_2h"
+        },
+        {
+          "id": "0bed48c502453e8946289b0cda3aece20ab97e09",
+          "title": "[exp] work in progress"
+        },
+        {
+          "id": "b7e06ee62d50125ce1a7ac81e667d623914ee8d0",
+          "title": "[exp] improve Gappa bound for accurate path"
+        },
+        {
+          "id": "1dd288cfa004a5833e424be0e786eec0a09779d9",
+          "title": "[exp] taken into account typos reported by Laurent Th\u00e9ry (using AI)"
+        },
+        {
+          "id": "577f46fddf415d478a18227f90d1b817fb913ce7",
+          "title": "[exp] minor edits"
+        },
+        {
+          "id": "3cb5cbffc49b74c3c723899270a1739f07e1d0b7",
+          "title": "[exp] remove remark about possible improvement in fastsum"
+        },
+        {
+          "id": "612092bfae38dd86323beea8435217c4b70bfa32",
+          "title": "[exp] added lemma with reduced error bound for the fastsum call"
+        },
+        {
+          "id": "8e3a413498b5a3a5d74663a1eacf09d77a046ca3",
+          "title": "[exp] added lemma for subnormal case of fast path (work in progress)"
+        },
+        {
+          "id": "adfbbfef1da42f4b123e2663574a068e4f9bd8e4",
+          "title": "[exp] work in progress on proof of fast path in the subnormal case"
+        },
+        {
+          "id": "12a1df1a66d19325e23ce37147c18d8299b821aa",
+          "title": "[exp] more work in progress"
+        },
+        {
+          "id": "4bcb5dff9e2214efc90630a789db1b1a246b1907",
+          "title": "[exp] new proof for subnormal case (fast path)"
+        },
+        {
+          "id": "810f4a6c6bee6003d0bb6d71f930009c84ea4133",
+          "title": "[exp.sage] get rid of my private routines"
+        },
+        {
+          "id": "dd5417907f27ee341fbfe3097c8ab84a5d632087",
+          "title": "[exp] completed the proof of the subnormal fast path"
+        },
+        {
+          "id": "ef54051dc5ba001debd489644242e9c739d5568b",
+          "title": "[exp] added sentence about db[], as suggested by Wonyeol"
+        },
+        {
+          "id": "7fbf3cbdc6f8fbb94fbb7c26ced9f9276328e4cc",
+          "title": "[exp.sage] load ../cm.sage"
+        },
+        {
+          "id": "a794034e3302ab49219980f853a5d7a01d2b7cf7",
+          "title": "Remove the multiplication by 2pi/8 in the accurate phase."
+        },
+        {
+          "id": "b246a2c91fd0eea786b46bde1e32f0800aab7c3d",
+          "title": "[sin] new polynomial for evalPC"
+        },
+        {
+          "id": "3ec3c827eb3b0c4849ad2f47da20ec68dadf8482",
+          "title": "[sin] restore previous instruction for pf"
+        }
+      ],
+      "files": [
+        {
+          "old_path": "exp/exp.sage",
+          "new_path": "exp/exp.sage",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "exp/exp.tex",
+          "new_path": "exp/exp.tex",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": true,
+          "too_large": false
+        },
+        {
+          "old_path": "exp/generate.py",
+          "new_path": "exp/generate.py",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "exp/lemma4bis.g",
+          "new_path": "exp/lemma4bis.g",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "exp/prove_lemma4bis.sh",
+          "new_path": "exp/lemma4bis.sh",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": true,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "sin/acclarge.g",
+          "new_path": "sin/acclarge.g",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "sin/coslarge_acc.sollya",
+          "new_path": "sin/coslarge_acc.sollya",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "sin/sin.tex",
+          "new_path": "sin/sin.tex",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        },
+        {
+          "old_path": "sin/sinlarge_acc.sollya",
+          "new_path": "sin/sinlarge_acc.sollya",
+          "new_file": false,
+          "deleted_file": false,
+          "renamed_file": false,
+          "collapsed": false,
+          "too_large": false
+        }
+      ]
+    }
+  },
+  "exp_proof_pin": "d7a619c5de08abd5c89460cd2f472c7d8ea767b7",
+  "proof_ci": "unavailable (HTTP 403)",
+  "implementation_pipeline": "success at acquisition; not independently reproduced CI"
+}

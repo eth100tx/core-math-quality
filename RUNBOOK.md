@@ -28,6 +28,15 @@ timeout. Do not use an unbounded retry loop or treat acquisition failure as PASS
 
 ## Weekly or ad hoc
 
+Check current operator scope before dispatch. If routine coverage is paused,
+park its target and retain dated measurements; use a noncoverage profile for
+focused changed-code regressions. Do not manufacture a fresh ranking from a
+subset. A completed regression test does not close deferred source/proof review.
+The bivariate pilot remains a proposal until reviewed certificates are imported
+and a separate exact-input, four-mode runner is qualified. An authorized future
+pilot gets one bounded task within the same overall budget, not an additional
+open-ended campaign. Do not treat historical native runs as Linux qualification.
+
 1. Read `STATUS.md` and the previous weekly report. If the operator has authorized
    correspondence access, read new requests privately and record only neutral
    public requirements. Anyone can run the tests without email access.
@@ -57,7 +66,7 @@ python3 quality.py run --pin FULL_CURRENT_SHA --functions all \
    INCOMPLETE is not a clean result. Reuse the identical command to resume
    completed functions; use a new ID after any input/tool change. Each function
    restarts its interrupted modes as one unit to avoid mixing counters.
-6. Inspect the smallest nonzero gaps using `docs/COVERAGE.md`. Reproduce a
+6. When coverage is active, inspect the smallest nonzero gaps using `docs/COVERAGE.md`. Reproduce a
    new value failure without instrumentation before labeling it a defect.
 7. Export to a new weekly directory:
 

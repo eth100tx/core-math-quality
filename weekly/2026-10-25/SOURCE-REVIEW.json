@@ -1,0 +1,48 @@
+{
+  "rsqrt": {
+    "source_patch_exact_match": true,
+    "witness": "0x1.0000000000001p+1022",
+    "upstream_lines": [
+      9957
+    ],
+    "source_sha256": "43285112a21b924a33ea8b2ec43fb8b1a93805affe5a3c1236c2561ba18b5ade",
+    "wc_sha256": "31a4483d80e708f05f536b88ecb434c790d904604d065b3b4c7f62ab03e13899"
+  },
+  "exp": {
+    "source_patch_exact_match": true,
+    "witness": "0x1.5a3a157335f3bp+9",
+    "upstream_lines": [
+      1129479
+    ],
+    "source_sha256": "65af7f572ce97327b63700dd76bd6bf753c087fe326c83c7dbbd674ab168a84d",
+    "wc_sha256": "8c62a01572eb5c66d0303f287ca528fffbb69f3d3935ca29f852f656553b128b"
+  },
+  "implementation_pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+  "proof_pin": "3ec3c827eb3b0c4849ad2f47da20ec68dadf8482",
+  "exp_proof_pin": "d7a619c5de08abd5c89460cd2f472c7d8ea767b7",
+  "implementation_dispositions": {
+    "check.sh": "Source-reviewed: explicit GCC finite-math-only disable removed from defaults. Our explicit strict flags remain unchanged; upstream default script not executed.",
+    "src/binary64/asin/asin.c": "Warning/cast changes inventoried. New Clang18.1.3 baseline complete .wc regression passes four modes. Cast/range/signed-subtraction/LLP64 portability analysis remains deferred; test agreement is not an equivalence proof.",
+    "src/binary64/exp/exp.c": "Exact match to S34 tested epsilon candidate; current-master verification in FIX-VERIFICATION.json.",
+    "src/binary64/exp/exp.wc": "Exact F01 witness added; current corpus verification in FIX-VERIFICATION.json.",
+    "src/binary64/rsqrt/rsqrt.c": "Exact match to S34 tested high-binade candidate; current-master value/flag verification in FIX-VERIFICATION.json.",
+    "src/binary64/rsqrt/rsqrt.wc": "Exact spurious-underflow witness added; current corpus verification in FIX-VERIFICATION.json.",
+    "src/binary64/log/log.c": "Source-reviewed: comments only; no arithmetic change.",
+    "src/binary64/log/logfast.sollya": "Source-inspected only; uses dirtyinfnorm, which is not a rigorous approximation certificate. Not executed.",
+    "src/binary64/log/lognearzero.g": "New conditional near-zero model inventoried; source binding and replay deferred.",
+    "src/binary64/log/lognearzero.sh": "Source-inspected: four modes, two intervals around 1. Eight Gappa invocations not executed."
+  },
+  "proof_dispositions": {
+    "exp/exp.sage": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed.",
+    "exp/exp.tex": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed.",
+    "exp/generate.py": "Source-inspected: historical FastTwoSum low-part model remains -rnd(h-(a+b)); S34 expression-and-hint candidate not adopted. Changed domain/table assumptions require WIP branch binding; no new public-function failure claimed.",
+    "exp/lemma4bis.g": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed.",
+    "exp/lemma4bis.sh": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed.",
+    "sin/acclarge.g": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed. New accurate-phase scaling/coefficient model differs from unchanged master implementation; no inherited certificate closes this change.",
+    "sin/coslarge_acc.sollya": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed. New accurate-phase scaling/coefficient model differs from unchanged master implementation; no inherited certificate closes this change.",
+    "sin/sin.tex": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed. New accurate-phase scaling/coefficient model differs from unchanged master implementation; no inherited certificate closes this change.",
+    "sin/sinlarge_acc.sollya": "Inventoried; changed mathematical argument/certificate not fully reviewed or replayed. New accurate-phase scaling/coefficient model differs from unchanged master implementation; no inherited certificate closes this change."
+  },
+  "coverage": "No new census or ranking. October18 measurements retained dated. exp-family missing-arc follow-up parked; cos/tan and hypot deferred.",
+  "watermarks": "Do not advance global implementation/proof review or measurement watermarks. Focused fix verification only."
+}

@@ -1,0 +1,17 @@
+{
+  "doctor.json": "7f6c3584210044ed61a40bc112b7fa8e6e59c3ce40c5cd26eb8a8546d8e1b150",
+  "fix-replay.json": "f1404c8ca98d9e1c62b7fc6afa85a86a242ced5a2ac66b6dc97c69021045690e",
+  "INVENTORY.json": "bd6717aaad96dd0fd693f3165239136dd1c0d604e09731a27044824ed282c4e2",
+  "REPORT.md": "2090a67a046b28335e72fc5eab614c6638c43a5a33dfc36974be020c222f3fc0",
+  "reproduce_fixes.py": "3b1fa62655e1b1066880383eb7d1f7a77490675ec32dd7ed513cdc0f65e56b7e",
+  "REVIEW.md": "ddabe9b32ec3719f06ea3f486c9cb8ae5bdd3b2ce632b6b54497d5233380793c",
+  "rsqrt_probe.c": "1e81480df7391dd61d3c51c15bf5237a2e21e3045653866fa43aa440937f9a97",
+  "selftests.log": "39a7df826c46cdf89c1e00ce68c95a42e6d27baa8ed98bfe79487e188bb79711",
+  "SOURCE-REVIEW.json": "6d15ddb75a227819bc7b39590a70e60acd4f4999cdcc7a4f5cb87220d4e83585",
+  "fix-verification/FIX-VERIFICATION.json": "7b38c183b2a6e9f7099b8aa6853aabcead117da8bd8d7d23c1260cb78c5d497b",
+  "fix-verification/PROVENANCE.json": "c964a7eadecfecc413a433a223158c1591260cc038ace13aef737f0bacf2e956",
+  "fix-verification/QUALIFICATION.json": "c309985331a604e885176f362b70cc96e92b918b1a0126a669f484dc1c656ed2",
+  "fix-verification/RECHECK.json": "edbd912238230ab000c80e1de40b0b541d19bc303441715f02dcae18e5eb5d24",
+  "runs/20261025-asin-clang/result.json": "c3df4988fd81d6ccccac4bf2fa567f775c92d22f6665dc206ef3ad57a23de07c",
+  "runs/20261025-asin-clang/SHA256SUMS.json": "8b548c890c83d1fb8dcd41a995b30a5db718fb05e21b5fa62513396f035fea11"
+}

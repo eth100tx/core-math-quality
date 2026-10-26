@@ -1,0 +1,312 @@
+{
+  "created_utc": "2026-10-26T04:20:39.231010+00:00",
+  "identity": {
+    "config_hashes": {
+      "profiles.json": "58b532226130eccb781f8c8d45fd159f708772e82484c44f04a364e61ac9edcb",
+      "source.json": "397afac4985ff937caf7fe695e483e5b96d3c3e1e4782f5ecdfbfc5b113fb372",
+      "targets.json": "db0d1cafc8a553eb7a5027f3b77b7458a890a79cb489cb104bf67c4b32f343ce"
+    },
+    "environment": {
+      "architecture": "x86_64",
+      "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+      "experimental": false,
+      "libc": [
+        "glibc",
+        "2.39"
+      ],
+      "platform": "Linux",
+      "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+      "profile": "clang-linux-x86_64",
+      "status": "PASS"
+    },
+    "errno": 1,
+    "functions": [
+      "asin"
+    ],
+    "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+    "profile": "clang-linux-x86_64",
+    "resolved_profile": {
+      "cc": "clang-18",
+      "coverage": false,
+      "flags": [
+        "-march=x86-64"
+      ],
+      "machine": "x86_64",
+      "system": "Linux"
+    },
+    "runner_sha256": "dd122d7b1defa62af28087f859c0f799dbe0cec058ea116e1df5777533b05565",
+    "source_manifest": {
+      "archives": {},
+      "files": {
+        "src/binary64/asin/Makefile": "8b8b01b82957c32e90e81f115ba6ef6b57f8dd78928298a733592b31a7eebc48",
+        "src/binary64/asin/asin.c": "471e22c2769db115b715a7747f234bdde7b96da8a665b5705e7268d24967f095",
+        "src/binary64/asin/asin.wc": "c7869311e52f598490c4d67f57f1fd6b25737da7672cd3b266704426a9970830",
+        "src/binary64/asin/asin_mpfr.c": "9b0c6f21dab980e99ddbed7f2b2d11a1c2ca77eeddd93a11195aa5eb667c96a5",
+        "src/binary64/asin/check_special.c": "c0c2af67484928c1dd25224cfa9c046d34103f725a36343d633a915825207c3e",
+        "src/binary64/asin/function_under_test.h": "8647239c0fcea8722d6168203e8dae7ddf03bffc3819a7776865437465b99bf8",
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c"
+      },
+      "git_blobs": {
+        "src/binary64/asin/Makefile": "87215e6b5d356003b2012bf8a061eca2d4d56825",
+        "src/binary64/asin/asin.c": "fbb6052df9e7a007419c19028223f698164ed082",
+        "src/binary64/asin/asin.wc": "93fbcf8c5af82c64c6d4eaeb674b2e0931397f3e",
+        "src/binary64/asin/asin_mpfr.c": "40314872a90c9113005a0922570a9a74f88d7ff0",
+        "src/binary64/asin/check_special.c": "4384a8dcee9e348ebe9229c9d14ae4b1c2d5e32d",
+        "src/binary64/asin/function_under_test.h": "e8e3a6eb35c8fe1b729725069ec954b87b3a6365",
+        "src/binary64/support/Makefile.bivariate": "5d9ce773ae93244b42b3c0c1183673046ff08ffe",
+        "src/binary64/support/Makefile.sincos": "a88b4c50991473e7780bc01fe1dd3bb5c26ccd8f",
+        "src/binary64/support/Makefile.univariate": "0b57d3f0911a5f286ce4e7969e3c5fe265eed3d6",
+        "src/binary64/support/check_worst.c": "f45a4d41e9631c6b24bb9b8c336a90d43b4d4f47",
+        "src/binary64/support/check_worst_sincos.c": "f4f2836057482c117ac1cfa76f88b99a42bd06ea",
+        "src/binary64/support/check_worst_uni.c": "c51dcd4b9249f913073c17a2fffd657cfe637a53",
+        "src/binary64/support/fenv_mpfr.h": "64d73ca5cc0c6d25ce6e476dce579895ac6fa376"
+      },
+      "pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a"
+    }
+  },
+  "ranking": {
+    "candidates": [],
+    "complete_population": false,
+    "measured": 0,
+    "policy": "exclude zero/zero; ascending missing lines, then missing arcs, then name; zero-line branch gaps remain eligible",
+    "population": [
+      "asin"
+    ],
+    "recommendation": null
+  },
+  "results": [
+    {
+      "checker_sha256": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+      "copied_files": {
+        "Makefile": "8b8b01b82957c32e90e81f115ba6ef6b57f8dd78928298a733592b31a7eebc48",
+        "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "asin.c": "471e22c2769db115b715a7747f234bdde7b96da8a665b5705e7268d24967f095",
+        "asin.wc": "c7869311e52f598490c4d67f57f1fd6b25737da7672cd3b266704426a9970830",
+        "asin_mpfr.c": "9b0c6f21dab980e99ddbed7f2b2d11a1c2ca77eeddd93a11195aa5eb667c96a5",
+        "check_special.c": "c0c2af67484928c1dd25224cfa9c046d34103f725a36343d633a915825207c3e",
+        "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "check_worst_uni.c": "c41c8775736917fe02f476d4db7cbf2f2710e2d1ea9afed3df5954ff733a1e12",
+        "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "function_under_test.h": "8647239c0fcea8722d6168203e8dae7ddf03bffc3819a7776865437465b99bf8"
+      },
+      "corpus_rows": 249134,
+      "corpus_sha256": "c7869311e52f598490c4d67f57f1fd6b25737da7672cd3b266704426a9970830",
+      "coverage_flags": null,
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "errno": 1,
+      "expected_tests_per_mode": 498268,
+      "finished_utc": "2026-10-26T04:20:39.215056+00:00",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "asin",
+      "logs": {
+        "checker-build": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "check_worst_uni.c",
+            "-o",
+            "checker.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.22
+        },
+        "plain-build": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "asin.c",
+            "-o",
+            "plain.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.871
+        },
+        "plain-link": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "checker.o",
+            "plain.o",
+            "ref.o",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "plain"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.32
+        },
+        "plain-rndd": {
+          "command": [
+            "./plain",
+            "--rndd"
+          ],
+          "output": "498268 tests passed, 0 failure(s)\n",
+          "output_bytes": 34,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 5.436
+        },
+        "plain-rndn": {
+          "command": [
+            "./plain",
+            "--rndn"
+          ],
+          "output": "498268 tests passed, 0 failure(s)\n",
+          "output_bytes": 34,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 5.285
+        },
+        "plain-rndu": {
+          "command": [
+            "./plain",
+            "--rndu"
+          ],
+          "output": "498268 tests passed, 0 failure(s)\n",
+          "output_bytes": 34,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 5.636
+        },
+        "plain-rndz": {
+          "command": [
+            "./plain",
+            "--rndz"
+          ],
+          "output": "498268 tests passed, 0 failure(s)\n",
+          "output_bytes": 34,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 5.636
+        },
+        "reference-build": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "asin_mpfr.c",
+            "-o",
+            "ref.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.119
+        }
+      },
+      "macros_referenced": {
+        "CORE_MATH_CHECK_INEXACT": true,
+        "CORE_MATH_NO_OPENMP": true,
+        "CORE_MATH_SUPPORT_ERRNO": true
+      },
+      "modes": [
+        {
+          "accepted_tests": 498268,
+          "mode": "rndn",
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 498268,
+          "mode": "rndz",
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 498268,
+          "mode": "rndu",
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 498268,
+          "mode": "rndd",
+          "plain": "PASS"
+        }
+      ],
+      "profile": "clang-linux-x86_64",
+      "source_sha256": "471e22c2769db115b715a7747f234bdde7b96da8a665b5705e7268d24967f095",
+      "started_utc": "2026-10-26T04:20:15.455352+00:00",
+      "status": "PASS"
+    }
+  ],
+  "run_id": "20261025-asin-clang",
+  "schema_version": 1,
+  "scope": "upstream full .wc + unchanged checker built-in checks; four rounding modes; target .c coverage only; tested, not proven",
+  "status": "PASS",
+  "this_invocation_child_cpu_seconds": 22.118834,
+  "wall_seconds": 31.82578739599998
+}

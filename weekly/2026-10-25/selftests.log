@@ -1,0 +1,27 @@
+test_missing_receipt_fields_rejected (test_publication.PublicationTests.test_missing_receipt_fields_rejected) ... ok
+test_raw_discovery_preserves_linux_case_and_recursion (test_publication.PublicationTests.test_raw_discovery_preserves_linux_case_and_recursion) ... ok
+test_raw_unknown_fields_still_rejected (test_publication.PublicationTests.test_raw_unknown_fields_still_rejected) ... ok
+test_summary_does_not_count_as_fifth_mode (test_publication.PublicationTests.test_summary_does_not_count_as_fifth_mode) ... ok
+test_unknown_fields_rejected (test_publication.PublicationTests.test_unknown_fields_rejected) ... ok
+test_unknown_schema_rejected (test_publication.PublicationTests.test_unknown_schema_rejected) ... ok
+test_checker_requires_success_count_and_exit (test_quality.MeasurementTests.test_checker_requires_success_count_and_exit) ... ok
+test_child_preserves_callers_signal_mask (test_quality.MeasurementTests.test_child_preserves_callers_signal_mask) ... ok
+test_coverage_duplicate_identity_rejected (test_quality.MeasurementTests.test_coverage_duplicate_identity_rejected) ... ok
+test_expected_symmetry_and_comments (test_quality.MeasurementTests.test_expected_symmetry_and_comments) ... ok
+test_lock_excludes_second_process (test_quality.MeasurementTests.test_lock_excludes_second_process) ... ok
+test_ranking_zero_line_branch_gaps_and_partial (test_quality.MeasurementTests.test_ranking_zero_line_branch_gaps_and_partial) ... ok
+test_retry_clears_stale_coverage_and_keeps_failure_modes (test_quality.MeasurementTests.test_retry_clears_stale_coverage_and_keeps_failure_modes) ... rsqrt-toy-errno1 rndn
+rsqrt-toy-errno1 rndz
+rsqrt-toy-errno1 rndu
+rsqrt-toy-errno1 rndd
+ok
+test_sha_pins_and_selection (test_quality.MeasurementTests.test_sha_pins_and_selection) ... ok
+test_termination_reaps_detached_child (test_quality.MeasurementTests.test_termination_reaps_detached_child) ... ok
+test_timeout_reaps_child (test_quality.MeasurementTests.test_timeout_reaps_child) ... ok
+test_union_distinct_branch_identity (test_quality.MeasurementTests.test_union_distinct_branch_identity) ... ok
+test_union_rejects_changed_denominator (test_quality.MeasurementTests.test_union_rejects_changed_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.015s
+
+OK

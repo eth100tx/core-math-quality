@@ -1,0 +1,14 @@
+{
+  "profile": "gcc-linux-x86_64",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "platform": "Linux",
+  "architecture": "x86_64",
+  "libc": [
+    "glibc",
+    "2.39"
+  ],
+  "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+  "status": "PASS",
+  "experimental": false,
+  "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+}

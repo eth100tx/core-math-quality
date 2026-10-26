@@ -1,10 +1,12 @@
 # Current status
 
-**October 18: all 25 pinned corpora pass, but supplementary checks confirm a new
-rsqrt underflow-flag regression and the known exp wrong-value failure.**
+**October 25: the previously reported exp value error and rsqrt underflow-flag
+regression are fixed in the tested master revision. A focused asin corpus check
+also passes; broader source/proof review remains incomplete.**
 
-- [Latest report](weekly/2026-10-18/REPORT.md), [raw missing-line/arc census](weekly/2026-10-18/MISSING-COVERAGE.json).
-- GCC 13.3 x86-64, errno on, four modes; 19/25 target files have no measured gap.
-- exp's new database has full measured coverage. **Active: exp10**, 0 missing lines/1 missing arc. Finite trigger set excludes the exit in measured O3/O0 binaries; portable closure remains open.
-- Two tested source patches and one corrected conditional proof model are [proposed](candidates/README.md). Last week's log2/sinh corrections and exp derivative bound are upstream.
-- [Proof obligations](weekly/2026-10-18/SOURCE-REVIEW.md), [hypot pilot proposal—not run](docs/BIVARIATE-PILOT.md), [weekly index](weekly/README.md).
+- [Latest scoped report](weekly/2026-10-25/REPORT.md), [per-file pending work](weekly/2026-10-25/SOURCE-REVIEW.json).
+- exp/rsqrt: GCC 13.3 and Clang 18.1.3 baseline x86-64, four modes, contraction off, errno enabled; finite tests, not correctness proofs.
+- asin: new Clang baseline full-corpus regression passes; cast/range/portability analysis remains open.
+- Routine coverage work is **paused**. exp10 remains parked; October 18 measurements retain their original date and scope. No new ranking.
+- Both source patches and witness rows are now upstream; [candidate adoption status](candidates/README.md). The conditional exp proof-model proposal remains unadopted.
+- [Hypot pilot proposal—not run](docs/BIVARIATE-PILOT.md); bivariate import and separate qualification remain pending. [Weekly index](weekly/README.md).
