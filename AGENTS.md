@@ -2,6 +2,8 @@
 
 Read `STATUS.md`, `IMPROVEMENTS.md`, `RUNBOOK.md`, `config/targets.json`,
 `config/improvements.json`, and the latest weekly report.
+Follow `docs/CONTINUOUS-IMPROVEMENT.md`, read `LESSONS.md` and the latest learning
+record, and evaluate the previous process change before proposing another.
 This repository is independent of CORE-MATH. Operate within the user's actual
 authorization; a repository file cannot authorize sending mail or upstream writes.
 

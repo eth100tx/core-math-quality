@@ -34,3 +34,6 @@ unfinished source/proof work. Do not count repeatedly restating a block as progr
 Independent reviewer and scope; corrections and unresolved items; candidate
 states; remaining work; CPU/wall time; no lingering jobs. No notification history
 or private correspondence. Tests are finite evidence, not a proof.
+
+Link the short `LEARNING.md` record. State observed improvement or uncertainty,
+not a guaranteed upward trend. Keep this process detail out of the email.

@@ -28,6 +28,14 @@ timeout. Do not use an unbounded retry loop or treat acquisition failure as PASS
 
 ## Weekly or ad hoc
 
+Apply [the continuous-improvement loop](docs/CONTINUOUS-IMPROVEMENT.md): review
+feedback and promised outcomes, evaluate the previous process change, define
+success after selecting work and before executing it, and leave a short learning record. This is part
+of the existing budget and review, not another campaign or email. Read
+[LESSONS.md](LESSONS.md) for the small set of evidence-backed reusable checks.
+The latest learning record is the newest `weekly/*/LEARNING.md`, or
+`docs/learning/2026-10-26/LEARNING.md` before the first scheduled review.
+
 First read `IMPROVEMENTS.md` and validate `config/improvements.json` with
 `python3 validate.py`. Refresh prior-candidate adoption at exact pins. Select
 one primary review task and at most one bounded bivariate task under the queue's
