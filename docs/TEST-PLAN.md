@@ -5,15 +5,18 @@
 - Inventory implementation and proof changes since the last completed baseline.
   Triage every file: tested, source-reviewed, deferred, outside focus.
 - Qualify the machine; pin toolchain, source, checker, corpora and exact flags.
-- Run the complete `.wc` files for changed priority functions and the active
-  coverage target in four modes. Include shared changes' affected functions.
-- Run uninstrumented regression plus GCC coverage. Compare raw gaps only where
-  identities match. Refresh the full 25-function census when the source/profile/
+- Run the complete `.wc` files for changed priority functions and, only when
+  enabled, the active coverage target in four modes. Include shared dependencies.
+- Run uninstrumented regression; add GCC coverage only when in scope. Compare raw gaps only where
+  identities match. When coverage is enabled, refresh the full 25-function census when the source/profile/
   corpus changes enough to invalidate the ranking; otherwise retain dated results
   and mark freshness explicitly. Do not relabel old results as this week's run.
 - Review changes that affect proofs separately; a passing test cannot close a
   proof obligation. Record limitations and avoid recycling unchanged allegations.
-- Publish one target and at most three new high-priority actionable issues.
+- Reconcile earlier patch/witness adoption. Maintain the three ranked proposals
+  in `config/improvements.json`, with status, progress and next artifact. Select
+  one primary task plus at most one bounded bivariate task within its envelope.
+  Do not require three new findings; say when there are fewer eligible items.
 
 ## Widen when the change warrants it
 

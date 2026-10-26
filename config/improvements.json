@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-26",
+  "implementation_pin": "0ce0cbc15935e24c656280e5a46c34e89f301b7a",
+  "proof_pin": "3ec3c827eb3b0c4849ad2f47da20ec68dadf8482",
+  "weekly_budget": {
+    "cpu_hours": 4,
+    "wall_minutes": 120
+  },
+  "execution_policy": "One primary review task and at most one bivariate task, serially under existing locks. Remaining budget is reserve, not permission for automatic expansion.",
+  "priorities": [
+    {
+      "id": "P1",
+      "rank": 1,
+      "title": "Bind an exp proof obligation to its exact implementation branch",
+      "status": "planned",
+      "owner": "workbench agent",
+      "reason": "Current tests do not establish correspondence between the proof generator and the operations actually executed.",
+      "next_action": "Pin exp_proof separately, map one directed FastTwoSum obligation, and record whether the historical candidate is applicable, superseded, withdrawn or still open with conditions.",
+      "deliverable": "A source-to-model map, conditional certificate or precise unresolved premise, with an optional reviewed minimal patch.",
+      "acceptance": "Independent review and exact source/operation binding; no claim of complete exp correctness. Gate later sine work on source stability and a named obligation.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Checkpoint on source change, missing premise, failed certificate or cap; preserve the old proposal without repeatedly requesting maintainer action.",
+      "dependency": "Current implementation/proof source and certificate tools; the WIP branch is not assumed to match master.",
+      "last_substantive_change": "2026-10-25",
+      "change": "October 25 source review is the last scientific checkpoint. The next deliverable was defined October 26; no new scientific progress on this obligation yet.",
+      "next_checkpoint": "2026-11-01",
+      "evidence": [
+        "weekly/2026-10-25/SOURCE-REVIEW.json",
+        "candidates/exp-fasttwosum-model/README.md"
+      ]
+    },
+    {
+      "id": "P2",
+      "rank": 2,
+      "title": "Resolve asin cast and integer-range portability",
+      "status": "planned",
+      "owner": "workbench agent",
+      "reason": "The passing Clang corpus does not establish signed-subtraction safety or equivalence on LP64 and LLP64.",
+      "next_action": "Analyze reachable integer ranges for the changed casts/subtraction; add bounded sanitizer and ABI checks where the compiler configuration is qualified.",
+      "deliverable": "A range/ABI note with tests and either a minimized reachable failure and tested remedy, or a justified defined-behavior/equivalence result for the stated domain.",
+      "acceptance": "Tests alone do not prove absence of UB. Explicitly distinguish source undefined behavior, compiler miscompilation and unsupported ABI execution.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Checkpoint on an unqualified ABI, unresolved range premise, source change or cap; do not label unsupported execution a failure.",
+      "dependency": "Pinned asin source; qualified toolchains and a small reproducible test harness.",
+      "last_substantive_change": "2026-10-25",
+      "change": "Four-mode Clang full-corpus regression passed; portability analysis remains open.",
+      "next_checkpoint": "2026-11-01",
+      "evidence": [
+        "weekly/2026-10-25/runs/20261025-asin-clang/result.json",
+        "weekly/2026-10-25/REPORT.md"
+      ]
+    },
+    {
+      "id": "P3",
+      "rank": 3,
+      "title": "Build independently checkable bivariate regression evidence, hypot first",
+      "status": "planned",
+      "owner": "workbench agent",
+      "reason": "The unary suite does not cover the much larger two-input space; small exact certificates can separate generating difficult cases from verifying them.",
+      "next_action": "P3a: implement the published restricted hypot checker and negative controls, then qualify a separate Linux runner. P3b: import and independently reproduce archived research once available.",
+      "deliverable": "A standalone exact checker, explicit certificate format and separately qualified four-mode runner; later a hashed archive-import/reproduction receipt.",
+      "acceptance": "Exact input decoding, positive/negative controls and bounds; values, flags and errno separate. Table verification does not regenerate a completeness census. No new bug or novelty claim from a hard-but-correct case.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Stop on a failed control or cap. Recheck archive availability at the next checkpoint, report the blocker once and continue independent infrastructure work; do not silently drop the requested import.",
+      "dependency": "P3a has a reviewed design and can proceed independently. P3b is blocked: the transfer archives are unavailable in this checkout; their reported results remain unverified here.",
+      "last_substantive_change": "2026-10-26",
+      "change": "Published a restricted exact-integer certificate specification and worked arithmetic example; no bivariate runner or imported research has been validated.",
+      "next_checkpoint": "2026-11-01",
+      "evidence": [
+        "docs/HYPOT-CERTIFICATE-SPEC.md",
+        "docs/BIVARIATE-PILOT.md"
+      ]
+    }
+  ]
+}

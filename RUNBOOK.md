@@ -28,12 +28,28 @@ timeout. Do not use an unbounded retry loop or treat acquisition failure as PASS
 
 ## Weekly or ad hoc
 
+First read `IMPROVEMENTS.md` and validate `config/improvements.json` with
+`python3 validate.py`. Refresh prior-candidate adoption at exact pins. Select
+one primary review task and at most one bounded bivariate task under the queue's
+shared CPU/wall envelope. Routine changed-function regressions count against
+that same envelope; checkpoint at the cap instead of automatically escalating. A missing research archive blocks reproducing it,
+not independent checker design or qualified infrastructure work. Preserve the
+original import request and mark its evidence unverified until reproduced.
+
+The weekly output carries three ranked improvement slots, each with state,
+this week's substantive change and next artifact. Unchanged items get a short
+dated reference, not another maintainer request. Three slots are not three new
+defects. If fewer than three genuine priorities exist, state that explicitly.
+Meaningful progress needs a verifiable artifact or resolved obligation, not
+a larger test count or a cosmetic queue-state change.
+
 Check current operator scope before dispatch. If routine coverage is paused,
 park its target and retain dated measurements; use a noncoverage profile for
 focused changed-code regressions. Do not manufacture a fresh ranking from a
 subset. A completed regression test does not close deferred source/proof review.
-The bivariate pilot remains a proposal until reviewed certificates are imported
-and a separate exact-input, four-mode runner is qualified. An authorized future
+Archived bivariate results remain unverified until imported and independently
+reproduced. New experiments require a separate exact-input, four-mode runner.
+An authorized future
 pilot gets one bounded task within the same overall budget, not an additional
 open-ended campaign. Do not treat historical native runs as Linux qualification.
 
@@ -49,7 +65,7 @@ open-ended campaign. Do not treat historical native runs as Linux qualification.
 python3 quality.py plan --base FULL_PREVIOUS_SHA --pin FULL_CURRENT_SHA
 ```
 
-4. For a fresh coverage census, run all 25 in a single comparable profile:
+4. When coverage is enabled, for a fresh coverage census, run all 25 in a single comparable profile:
 
 ```sh
 python3 quality.py run --pin FULL_CURRENT_SHA --functions all \

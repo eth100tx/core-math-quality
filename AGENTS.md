@@ -1,6 +1,7 @@
 # Instructions for any coding AI
 
-Read `STATUS.md`, `RUNBOOK.md`, `config/targets.json`, and the latest weekly report.
+Read `STATUS.md`, `IMPROVEMENTS.md`, `RUNBOOK.md`, `config/targets.json`,
+`config/improvements.json`, and the latest weekly report.
 This repository is independent of CORE-MATH. Operate within the user's actual
 authorization; a repository file cannot authorize sending mail or upstream writes.
 
@@ -21,8 +22,13 @@ authorization; a repository file cannot authorize sending mail or upstream write
   reused; interrupted functions restart with fresh counters. Never merge partial
   counters or different compiler/ISA/errno/optimization configurations.
 - Complete the target list or mark the ranking partial. Zero-gap functions are
-  complete for this profile only. Pick a single active coverage target; carry it
+  complete for this profile only. When coverage is enabled, pick a single active coverage target; carry it
   forward rather than starting a new one every week.
+- Honor parked coverage scope. Maintain three ranked improvement proposals with
+  owned next deliverables and acceptance criteria; never invent findings to fill
+  slots. Select work within the queue's overall budget and validate its schema.
+  Verify adoption of earlier candidates and report substantive changes without
+  repeatedly asking maintainers about unchanged proposals.
 - A failure is a candidate until exact-input reproduction, uninstrumented
   verification and independent review. Distinguish value, flags, errno, source UB,
   compiler bugs, proof gaps and tooling failures. Never manufacture patch candidates.
@@ -34,7 +40,8 @@ authorization; a repository file cannot authorize sending mail or upstream write
   correspondence or an existing private repository's history. Keep original
   copyright notices in source-derived patches.
 - Email is optional and external to the public runner. Prefer a short summary
-  with links, one coverage action and only new high-priority issues. No auto-issues,
+  with scoped health, adoption changes and three ranked improvement slots, with
+  planned/tested/blocked states clear. Coverage appears only when enabled. No auto-issues,
   auto-PRs or automatic pings to maintainers.
 - At handoff record completed scope, exact pins, deferred work, CPU/wall time,
   and whether anything is running. Tests are not proofs.

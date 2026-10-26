@@ -94,7 +94,7 @@ def verify_coverage(cell, folder):
         raise ValueError('PASS needs four raw coverage files')
     ul, ua = {}, {}
     for mode in cell['modes']:
-        raw = json.loads((folder / (mode['mode'] + '-coverage.json')).read_text())
+        raw = json.loads((folder / (mode['mode'] + '-coverage.json')).read_text(encoding='utf-8'))
         ls, ar = coverage_maps(raw)
         if coverage_summary(ls,ar) != mode['coverage']:
             raise ValueError('Coverage summary disagrees with raw counts')
@@ -106,7 +106,7 @@ def verify_coverage(cell, folder):
 def main():
     count = 0
     for path in (ROOT/'weekly').rglob('result.json'):
-        d = json.loads(path.read_text())
+        d = json.loads(path.read_text(encoding='utf-8'))
         receipt(d)
         if d['identity']['resolved_profile']['coverage']:
             for cell in d['results']:
@@ -116,7 +116,7 @@ def main():
                 verify_coverage(cell, folder)
         count += 1
     for path in (ROOT/'candidates').rglob('checks.json'):
-        d=json.loads(path.read_text())
+        d=json.loads(path.read_text(encoding='utf-8'))
         keys(d, {'status','pin','witness','scope','runner_sha256','reproduce_sha256','results','child_cpu_seconds','wall_seconds'}, 'candidate checks')
         if d['status'] != 'PASS' or set(d['results']) != {'before','after'}:
             raise ValueError('Incomplete candidate comparison')
@@ -131,7 +131,7 @@ def main():
         if before['source_sha256']!=after['source_sha256'] or after['corpus_rows']!=before['corpus_rows']+1:
             raise ValueError('Unexpected candidate source/corpus change')
     for path in raw_coverage_paths(ROOT/'weekly') + raw_coverage_paths(ROOT/'candidates'):
-        d = json.loads(path.read_text())
+        d = json.loads(path.read_text(encoding='utf-8'))
         keys(d, {'file','functions','lines'}, 'gcov file')
         if not re.fullmatch(r'src/binary64/[a-z0-9]+/[a-z0-9]+\.c',d['file']):
             raise ValueError('Unsafe gcov source path')
@@ -144,7 +144,7 @@ def main():
             for branch in line.get('branches',[]):
                 keys(branch,{'count','fallthrough','throw','source_block_id','destination_block_id'},'gcov branch')
     for sums in list((ROOT/'weekly').rglob('SHA256SUMS.json'))+list((ROOT/'candidates').rglob('SHA256SUMS.json')):
-        manifest = json.loads(sums.read_text())
+        manifest = json.loads(sums.read_text(encoding='utf-8'))
         actual = {p.relative_to(sums.parent).as_posix() for p in sums.parent.rglob('*') if p.is_file() and p != sums}
         if actual != set(manifest):
             raise ValueError('Unlisted or missing evidence files')
@@ -152,18 +152,20 @@ def main():
             path = (sums.parent/rel).resolve()
             if not path.is_relative_to(sums.parent.resolve()) or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
                 raise ValueError('Manifest mismatch: ' + rel)
+    from validate_queue import validate_queue
+    validate_queue(json.loads((ROOT/'config/improvements.json').read_text(encoding='utf-8')), ROOT)
     # Additional leak screen. Structural allowlists above are the first boundary;
     # free-text evidence must still receive a human/AI privacy review.
     forbidden = [r'[A-Za-z]:\\Users\\', r'/mnt/[a-z]/Users/', r'/home/[^\s/]+', r'/Users/[^\s/]+',
                  r'(?i)authorization:\s*bearer', r'gh[pousr]_[A-Za-z0-9]{20,}',
                  r'(?m)^(?:Received|Delivered-To|Message-Id|From|To|Subject):',
                  r'[\w.+-]+@(?!users\.noreply\.github\.com)[\w.-]+\.[a-zA-Z]{2,}']
-    for parent in ['weekly', 'candidates', 'docs', 'prompts', 'templates', 'examples']:
+    for parent in ['weekly', 'candidates', 'docs', 'prompts', 'templates', 'examples', 'config']:
         for path in (ROOT/parent).rglob('*'):
-            if path.is_file() and any(re.search(p, path.read_text()) for p in forbidden):
+            if path.is_file() and any(re.search(p, path.read_text(encoding='utf-8')) for p in forbidden):
                 raise ValueError('Private material in ' + str(path.relative_to(ROOT)))
     for path in ROOT.glob('*.md'):
-        if any(re.search(p, path.read_text()) for p in forbidden):
+        if any(re.search(p, path.read_text(encoding='utf-8')) for p in forbidden):
             raise ValueError('Private material in ' + path.name)
     import subprocess
     if (ROOT/'.git').exists():

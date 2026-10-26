@@ -1,5 +1,11 @@
 # A bounded bivariate hard-to-round pilot
 
+**October 26 status:** this historical proposal is not an enabled search.
+The current [queue](../IMPROVEMENTS.md) and [certificate specification](HYPOT-CERTIFICATE-SPEC.md)
+come first. The four-CPU-hour/two-wall-hour cap below is a ceiling within the
+shared weekly budget, not an extra allocation; the current P3 task has a smaller
+cap. Coverage remains parked. No October 18 pilot execution is claimed.
+
 **Proposal, October 18, 2026. No bivariate search has been run under this plan.**
 Keep this research separate from the reproducible 25-function unary weekly
 regression and its single coverage target. Report only independently verified

@@ -1,17 +1,19 @@
 # CORE-MATH Quality
 
 **An independent, reproducible quality workbench for 25 binary64 functions.**
-Run regression checks, measure source coverage, and work through one small
-coverage target at a time. A person or any coding AI can run one function or
+Run regression checks, resolve proof/code and portability questions, and deliver
+reviewed improvements through a [three-priority queue](IMPROVEMENTS.md).
+A person or any coding AI can run one function or
 the complete target list. No AI subscription is needed to execute the tests.
 
 **Start with [current status](STATUS.md), [weekly results](weekly/README.md),
 or the [runbook](RUNBOOK.md).** This project is not an official CORE-MATH
 repository and does not certify the library's correctness.
 
-The [bounded bivariate research proposal](docs/BIVARIATE-PILOT.md) describes a
-separate hypot pilot and possible follow-ons. It is a plan, not an executed
-search or an extension of the 25-function coverage ranking.
+The [hypot certificate specification](docs/HYPOT-CERTIFICATE-SPEC.md) is the first
+concrete design artifact for a separate bivariate track. Implementation,
+qualification and prior-archive reproduction remain open. It does not extend
+the unary coverage ranking or claim an executed search.
 
 ## The weekly flow
 
@@ -19,16 +21,17 @@ search or an extension of the 25-function coverage ranking.
    requests. Pin the implementation; track proof changes separately.
 2. **Check regressions.** Replay unchanged upstream worst-case files in all
    four rounding modes using the upstream MPFR checker and strict builds.
-3. **Measure gaps.** Collect GCC coverage separately by build configuration;
-   retain raw uncovered lines and branch outcomes.
-4. **Pick one target.** Prefer the function closest to measured coverage closure.
-   Keep it assigned until closed or deliberately deferred. Review newly changed
-   functions alongside this list: urgent regression investigation takes
-   precedence, while coverage cleanup retains one explicit target.
+3. **Close earlier proposals.** Check whether prior patches/witnesses were adopted,
+   superseded, withdrawn or remain open, at exact source and proof pins.
+4. **Choose an improvement.** Read the ranked queue and select one primary task
+   plus at most one bounded bivariate task within its shared budget. Routine
+   coverage is currently parked; retain historical measurements without reruns.
 5. **Improve and review.** Reproduce failures, prepare minimal `.wc` or patch
    candidates, test before/after, and obtain an independent review.
-6. **Publish a short result.** Lead with scoped health, new failures, compiler
-   issues, and one coverage action. Link the evidence; do not repeat old backlogs.
+6. **Publish a short result.** Lead with scoped health and adoption changes, then
+   three ranked improvement slots with status, progress and next deliverable.
+   These are priorities, not a quota of new defects. Link evidence and avoid
+   repeated requests on unchanged items.
 
 ## Run now
 
@@ -62,6 +65,7 @@ To direct an AI, copy this:
 | Location | Purpose |
 |---|---|
 | `config/targets.json` | The ordered 25-function focus list |
+| `IMPROVEMENTS.md`, `config/improvements.json` | Goals, adoption follow-through and three bounded improvement priorities |
 | `config/profiles.json` | Reproducible platform/compiler profiles |
 | `quality.py` | Download, qualify, plan, run, resume, export |
 | `docs/TEST-PLAN.md` | What runs weekly, when to widen, what results mean |
