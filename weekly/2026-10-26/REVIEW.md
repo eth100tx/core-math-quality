@@ -53,5 +53,6 @@ tool access, executed nothing, and did not verify file presence, hashes or links
 4. The orchestrator checks the delivered hashes, files and linked public paths
    before sending. These checks are distinct from the model's advisory review.
 
-The mathematical review is therefore conditionally cleared as specified by
-the reviewer; publication/link validation is an additional delivery gate.
+All required corrections are closed, satisfying the reviewer's stated PASS
+conditions. The orchestrator also verified the public links and exact Git blob
+hashes after publication; this delivery check is separate from model review.

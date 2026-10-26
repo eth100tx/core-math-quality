@@ -37,8 +37,8 @@ is too broad and should say `|x|>=2^-16`; it does not change the dispatcher.
 
 | Claim | Independent evidence |
 |---|---|
-| `|PS(X)-sin(pi*X/4)| < 2^-128.605`, `|X|<=2^-11` | Exact rational Taylor/Bernstein certificate, 306 cells |
-| `|PC(X)-cos(pi*X/4)| <= 2^-128`, same domain | Exact certificate, one cell; equality at zero retained |
+| `abs(PS(X)-sin(pi*X/4)) < 2^-128.605`, `abs(X)<=2^-11` | Exact rational Taylor/Bernstein certificate, 306 cells |
+| `abs(PC(X)-cos(pi*X/4)) <= 2^-128`, same domain | Exact certificate, one cell; equality at zero retained |
 | Fixed-point evaluation and intermediate ranges | 13 Gappa 1.8.2 goals, including no-underflow/no-wrap ranges |
 | C/model/TeX correspondence | Nine coefficient integers/scales match; ideal reference signs, powers and `U=8R` match; certificate bounds fit Gappa hypotheses |
 | Conditional combined absolute error | Exact bound below `2^-123.358`; six reported numerical bounds checked against exact dyadic Gappa endpoints |
