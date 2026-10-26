@@ -1,5 +1,7 @@
 # Instructions for any coding AI
 
+Start every invocation with `BOOTSTRAP.md` and reconstruct the role from `ROLE.md`.
+
 Read `STATUS.md`, `IMPROVEMENTS.md`, `RUNBOOK.md`, `config/targets.json`,
 `config/improvements.json`, and the latest weekly report.
 Follow `docs/CONTINUOUS-IMPROVEMENT.md`, read `LESSONS.md` and the latest learning

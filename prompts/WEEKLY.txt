@@ -1,4 +1,4 @@
-Read AGENTS.md, STATUS.md, IMPROVEMENTS.md, config/improvements.json,
+Follow BOOTSTRAP.md and ROLE.md first, then read AGENTS.md, STATUS.md, IMPROVEMENTS.md, config/improvements.json,
 RUNBOOK.md and the latest reviewed weekly output. Validate the queue schema.
 Follow the versioned contract in docs/CONTINUOUS-IMPROVEMENT.md; read LESSONS.md
 and the latest LEARNING.md, and use its feedback/evaluation loop within this run.
@@ -9,6 +9,9 @@ and source/proof reviews. Independent bivariate checker/design work can advance
 while archived results are unavailable; archive reproduction stays blocked and
 unverified. Execution/search requires a separately qualified runner. Select one
 primary task and at most one bounded bivariate task within the shared budget.
+Subtract daily work already spent in the same Monday-through-Sunday cycle;
+Sunday is not a second independent allowance. Apply docs/DAILY.md correspondence
+alignment in this same invocation, without a duplicate inbox job or email.
 Resolve and pin the authoritative upstream revision. Compare from the last
 reviewed baseline, choose the changed functions and, when enabled, coverage target,
 qualify this machine and run bounded checks. When coverage is enabled, refresh a comparable census when
@@ -20,8 +23,13 @@ then three ranked improvement slots with state, substantive progress and next
 deliverable. Include new confirmed failures/patches first. Unchanged proposals
 get one dated reference, not repeated requests. Never manufacture three findings;
 state if fewer than three genuine priorities remain. Explain new research's
-practical value and exact maturity, not just its function names. Full evidence
-stays in weekly/. Seek an independent review; verify load-bearing claims. Propose tested
+practical value and exact maturity, not just its function names. The next bounded
+action must stay aligned with current feedback and known
+maintainer activity; explain material plan changes without implying acceptance.
+Full evidence stays in weekly/. Seek an independent review; verify load-bearing claims. Propose tested
 patch candidates for optional pickup. Validate/privacy-check the publication.
+Publish the reviewed weekly result to weekly/ even in a quiet week. Send the
+weekly email only for a substantive change in health, adoption, priorities or
+results; an unchanged week sends no email and records that decision privately.
 Only publish or send mail if this operator has explicitly authorized it.
 Leave a clear checkpoint, time accounting and no running child processes.

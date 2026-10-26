@@ -1,0 +1,11 @@
+Follow BOOTSTRAP.md first: synchronize and review the canonical repository,
+record one coherent workbench revision, then read ROLE.md and the entry files.
+Follow docs/DAILY.md using the operator's authorized private correspondence,
+preferences, request map, budget and verified delivery records. Reconcile new
+feedback against previous promises, current queue and relevant upstream activity.
+No new numerical campaign in this lane. Queue larger work with a concrete next
+artifact; preserve pauses and avoid overlap with maintainer work. Reply only to
+substantive questions or necessary clarifications after the required review,
+verification and deduplication. Explain the next bounded step and any requested
+action. Persist reviewed public technical changes and private correspondence
+state separately. Stay quiet when nothing actionable changes.

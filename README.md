@@ -6,8 +6,9 @@ reviewed improvements through a [three-priority queue](IMPROVEMENTS.md).
 A person or any coding AI can run one function or
 the complete target list. No AI subscription is needed to execute the tests.
 
-**Start with [current status](STATUS.md), [weekly results](weekly/README.md),
-or the [runbook](RUNBOOK.md).** This project is not an official CORE-MATH
+**AI entry point: [bootstrap](BOOTSTRAP.md) and [role](ROLE.md).**
+For results, read [current status](STATUS.md), [weekly results](weekly/README.md),
+or the [runbook](RUNBOOK.md). This project is not an official CORE-MATH
 repository and does not certify the library's correctness.
 
 The [hypot certificate specification](docs/HYPOT-CERTIFICATE-SPEC.md) is the first
@@ -17,6 +18,12 @@ Prior-archive reproduction remains open. This does not extend the unary coverage
 ranking or claim an executed search.
 
 ## The weekly flow
+
+The initial operator uses one daily activation: light
+[correspondence and alignment](docs/DAILY.md), plus the longer Sunday review.
+The versioned role, instructions, queue and evidence live here; each invocation
+fetches and reviews current main before work. Private mail and authorization stay
+outside GitHub. A daily check does not imply a daily email or numerical campaign.
 
 1. **Choose a revision.** Review upstream changes and any newly authorized
    requests. Pin the implementation; track proof changes separately.
@@ -55,7 +62,7 @@ before choosing another compiler, machine or ISA.
 
 To direct an AI, copy this:
 
-> Read AGENTS.md, STATUS.md and RUNBOOK.md. Qualify this machine. Run the
+> Follow BOOTSTRAP.md, ROLE.md, AGENTS.md, STATUS.md and RUNBOOK.md. Qualify this machine. Run the
 > requested functions at an immutable upstream revision. Keep raw coverage
 > and proof claims separate. Review the results and prepare a short weekly
 > report plus reproducible evidence. Do not publish or contact maintainers
