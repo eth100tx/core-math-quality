@@ -1,0 +1,10 @@
+{
+  "qualification.json": "477903825afb885ed10e9a720e7dc7e28e37944b1b29e706e4ba96d33e3c906c",
+  "tools/hypot_run.py": "463f5c546afc9f2b7a5888ebac53f6c60bb6f09258065643478b7e442bd87093",
+  "tools/hypot_verify.py": "aef5d2b6bd8b2d9dc4679b4a2ebbacccdbb8a37a9b62d9a0c9d6d4a870d60586",
+  "tools/quality.py": "dd122d7b1defa62af28087f859c0f799dbe0cec058ea116e1df5777533b05565",
+  "tools/bivariate/hypot-fixtures.json": "cd581f739ab9f3ce37a959ec444e41747cf8438581c6f2db7b985755147a7a9d",
+  "tools/bivariate/hypot_probe.c": "6246ba605c703dc12aa152e6420745dbb2c822622ed2d976905282bda1ad6587",
+  "tools/bivariate/make_fixtures.py": "49721aff446c4a750e690f845fe8f9d70b0f8d119abe8b00612be97a0ca9b8f7",
+  "tools/config/targets.json": "db0d1cafc8a553eb7a5027f3b77b7458a890a79cb489cb104bf67c4b32f343ce"
+}

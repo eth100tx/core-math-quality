@@ -61,10 +61,10 @@
       "id": "P3",
       "rank": 3,
       "title": "Build independently checkable bivariate regression evidence, hypot first",
-      "status": "planned",
+      "status": "in_progress",
       "owner": "workbench agent",
       "reason": "The unary suite does not cover the much larger two-input space; small exact certificates can separate generating difficult cases from verifying them.",
-      "next_action": "P3a: implement the published restricted hypot checker and negative controls, then qualify a separate Linux runner. P3b: import and independently reproduce archived research once available.",
+      "next_action": "P3a qualification complete for the restricted fixtures. Next assess one bounded candidate-construction task and pinned-corpus deduplication; requalify after tool/source/profile changes. P3b archive import/reproduction stays blocked until the package is supplied.",
       "deliverable": "A standalone exact checker, explicit certificate format and separately qualified four-mode runner; later a hashed archive-import/reproduction receipt.",
       "acceptance": "Exact input decoding, positive/negative controls and bounds; values, flags and errno separate. Table verification does not regenerate a completeness census. No new bug or novelty claim from a hard-but-correct case.",
       "budget": {
@@ -72,13 +72,14 @@
         "wall_minutes": 30
       },
       "stop": "Stop on a failed control or cap. Recheck archive availability at the next checkpoint, report the blocker once and continue independent infrastructure work; do not silently drop the requested import.",
-      "dependency": "P3a has a reviewed design and can proceed independently. P3b is blocked: the transfer archives are unavailable in this checkout; their reported results remain unverified here.",
+      "dependency": "Independent verifier and Linux adapter qualified for listed GCC/Clang profiles only. Prior archives are still unavailable; their results remain unverified here.",
       "last_substantive_change": "2026-10-26",
-      "change": "Published a restricted exact-integer certificate specification and worked arithmetic example; no bivariate runner or imported research has been validated.",
+      "change": "October26: implemented exact-integer verifier; 18 fixtures in four modes pass GCC/Clang and two MPFR paths, with specific negative controls. No search, completeness census or archive import.",
       "next_checkpoint": "2026-11-01",
       "evidence": [
-        "docs/HYPOT-CERTIFICATE-SPEC.md",
-        "docs/BIVARIATE-PILOT.md"
+        "docs/HYPOT-QUALIFICATION.md",
+        "bivariate/results/2026-10-26/qualification.json",
+        "docs/HYPOT-CERTIFICATE-SPEC.md"
       ]
     }
   ]

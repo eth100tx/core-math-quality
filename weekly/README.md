@@ -6,6 +6,7 @@ edition, not a claim that a scheduled weekly review already ran.
 
 | Date | Kind | Report |
 |---|---|---|
+| 2026-10-26 | Requested restricted hypot verifier / Linux qualification; separate from Sunday review | [Report](../docs/HYPOT-QUALIFICATION.md) |
 | 2026-10-25 | Focused exp/rsqrt fix verification and asin regression; proof work explicitly incomplete | [Report](2026-10-25/REPORT.md) |
 | 2026-10-18 | Sunday review; new rsqrt flag regression, known exp recheck, proof models and full census | [Report](2026-10-18/REPORT.md) |
 | 2026-10-11 | Sunday review; full census, finite exception checks and source/proof candidates | [Report](2026-10-11/REPORT.md) |

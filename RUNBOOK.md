@@ -100,6 +100,11 @@ python3 quality.py export --run-id YYYYMMDD-baseline --week YYYY-MM-DD
 
 ## Resume and bounded operation
 
+For the separate restricted hypot verifier and Linux qualification, follow
+[HYPOT-QUALIFICATION.md](docs/HYPOT-QUALIFICATION.md). Keep its receipts and target
+population separate from the unary runner. Do not repeat unchanged qualification
+as new scientific progress; requalify after source/tool/profile changes.
+
 The lock is kernel-managed, shared by clones using the same OS user account:
 it is released when the process exits, without
 deleting stale lock files. A remaining file alone does not mean a live run.

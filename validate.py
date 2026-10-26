@@ -154,14 +154,31 @@ def main():
                 raise ValueError('Manifest mismatch: ' + rel)
     from validate_queue import validate_queue
     validate_queue(json.loads((ROOT/'config/improvements.json').read_text(encoding='utf-8')), ROOT)
+    from validate_hypot import validate as validate_hypot
+    hypot_count = 0
+    for folder in sorted((ROOT/'bivariate/results').glob('*')):
+        if folder.is_dir():
+            validate_hypot(folder)
+            hypot_count += 1
     # Additional leak screen. Structural allowlists above are the first boundary;
     # free-text evidence must still receive a human/AI privacy review.
     forbidden = [r'[A-Za-z]:\\Users\\', r'/mnt/[a-z]/Users/', r'/home/[^\s/]+', r'/Users/[^\s/]+',
                  r'(?i)authorization:\s*bearer', r'gh[pousr]_[A-Za-z0-9]{20,}',
                  r'(?m)^(?:Received|Delivered-To|Message-Id|From|To|Subject):',
                  r'[\w.+-]+@(?!users\.noreply\.github\.com)[\w.-]+\.[a-zA-Z]{2,}']
-    for parent in ['weekly', 'candidates', 'docs', 'prompts', 'templates', 'examples', 'config']:
+    for parent in ['weekly', 'candidates', 'docs', 'prompts', 'templates', 'examples', 'config', 'bivariate']:
         for path in (ROOT/parent).rglob('*'):
+            if parent == 'bivariate' and '__pycache__' in path.relative_to(ROOT/parent).parts:
+                # Python creates these ignored local binaries when selftests import
+                # fixture code. They are not publication content; forbid tracking them.
+                import subprocess
+                if path.is_file() and (ROOT/'.git').exists():
+                    tracked = subprocess.run(['git','ls-files','--error-unmatch','--',str(path.relative_to(ROOT))],cwd=ROOT,capture_output=True)
+                    if tracked.returncode == 0:
+                        raise ValueError('Generated Python cache must not be published')
+                    if tracked.returncode != 1:
+                        raise ValueError('Cannot verify generated cache is untracked')
+                continue
             if path.is_file() and any(re.search(p, path.read_text(encoding='utf-8')) for p in forbidden):
                 raise ValueError('Private material in ' + str(path.relative_to(ROOT)))
     for path in ROOT.glob('*.md'):
@@ -170,9 +187,11 @@ def main():
     import subprocess
     if (ROOT/'.git').exists():
         p = subprocess.run(['git', 'log', '--format=%ae%n%ce'], cwd=ROOT, capture_output=True, text=True)
-        if p.returncode == 0 and any(not email.endswith('@users.noreply.github.com') for email in p.stdout.splitlines()):
+        if p.returncode != 0:
+            raise ValueError('Cannot verify public Git identities')
+        if any(not email.endswith('@users.noreply.github.com') for email in p.stdout.splitlines()):
             raise ValueError('Use public-safe noreply commit identity')
-    print(f'Validated {count} receipts, evidence checksums and publication privacy screen')
+    print(f'Validated {count} unary receipts and {hypot_count} restricted hypot bundles, evidence checksums and publication privacy screen')
 
 
 if __name__ == '__main__':

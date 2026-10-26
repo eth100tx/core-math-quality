@@ -1,3 +1,4 @@
 # Evidence checksums refer to exact Git blob bytes on every platform.
 weekly/** -text
 candidates/** -text
+bivariate/** -text

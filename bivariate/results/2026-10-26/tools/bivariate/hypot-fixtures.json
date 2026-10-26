@@ -1,0 +1,254 @@
+[
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff0000000000000",
+    "y_bits": "3ffbb67ae8584cab",
+    "lower_bits": "4000000000000000",
+    "upper_bits": "4000000000000001",
+    "expected_bits": {
+      "rndn": "4000000000000000",
+      "rndz": "4000000000000000",
+      "rndu": "4000000000000001",
+      "rndd": "4000000000000000"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff7fffffffffff6",
+    "y_bits": "3ffffffffffffff4",
+    "lower_bits": "4003fffffffffff8",
+    "upper_bits": "4003fffffffffff9",
+    "expected_bits": {
+      "rndn": "4003fffffffffff8",
+      "rndz": "4003fffffffffff8",
+      "rndu": "4003fffffffffff9",
+      "rndd": "4003fffffffffff8"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff7fffffffffff7",
+    "y_bits": "3ffffffffffffff4",
+    "lower_bits": "4003fffffffffff8",
+    "upper_bits": "4003fffffffffff9",
+    "expected_bits": {
+      "rndn": "4003fffffffffff8",
+      "rndz": "4003fffffffffff8",
+      "rndu": "4003fffffffffff9",
+      "rndd": "4003fffffffffff8"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff7fffffffffff8",
+    "y_bits": "3ffffffffffffff4",
+    "lower_bits": "4003fffffffffff8",
+    "upper_bits": "4003fffffffffff9",
+    "expected_bits": {
+      "rndn": "4003fffffffffff9",
+      "rndz": "4003fffffffffff8",
+      "rndu": "4003fffffffffff9",
+      "rndd": "4003fffffffffff8"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff7fffffffffffc",
+    "y_bits": "3ffffffffffffffc",
+    "lower_bits": "4003fffffffffffd",
+    "upper_bits": "4003fffffffffffe",
+    "expected_bits": {
+      "rndn": "4003fffffffffffd",
+      "rndz": "4003fffffffffffd",
+      "rndu": "4003fffffffffffe",
+      "rndd": "4003fffffffffffd"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff7fffffffffffd",
+    "y_bits": "3ffffffffffffffc",
+    "lower_bits": "4003fffffffffffd",
+    "upper_bits": "4003fffffffffffe",
+    "expected_bits": {
+      "rndn": "4003fffffffffffe",
+      "rndz": "4003fffffffffffd",
+      "rndu": "4003fffffffffffe",
+      "rndd": "4003fffffffffffd"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff7fffffffffffe",
+    "y_bits": "3ffffffffffffffc",
+    "lower_bits": "4003fffffffffffd",
+    "upper_bits": "4003fffffffffffe",
+    "expected_bits": {
+      "rndn": "4003fffffffffffe",
+      "rndz": "4003fffffffffffd",
+      "rndu": "4003fffffffffffe",
+      "rndd": "4003fffffffffffd"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff8000000000000",
+    "y_bits": "3ff8000000000000",
+    "lower_bits": "4000f876ccdf6cd9",
+    "upper_bits": "4000f876ccdf6cda",
+    "expected_bits": {
+      "rndn": "4000f876ccdf6cd9",
+      "rndz": "4000f876ccdf6cd9",
+      "rndu": "4000f876ccdf6cda",
+      "rndd": "4000f876ccdf6cd9"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ff8000000000000",
+    "y_bits": "3ffb800000000000",
+    "lower_bits": "4002400000000000",
+    "upper_bits": "4002400000000001",
+    "expected_bits": {
+      "rndn": "4002400000000000",
+      "rndz": "4002400000000000",
+      "rndu": "4002400000000000",
+      "rndd": "4002400000000000"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffb800000000000",
+    "y_bits": "3ff8000000000000",
+    "lower_bits": "4002400000000000",
+    "upper_bits": "4002400000000001",
+    "expected_bits": {
+      "rndn": "4002400000000000",
+      "rndz": "4002400000000000",
+      "rndu": "4002400000000000",
+      "rndd": "4002400000000000"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffbb67ae8584cab",
+    "y_bits": "3ff0000000000000",
+    "lower_bits": "4000000000000000",
+    "upper_bits": "4000000000000001",
+    "expected_bits": {
+      "rndn": "4000000000000000",
+      "rndz": "4000000000000000",
+      "rndu": "4000000000000001",
+      "rndd": "4000000000000000"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffffffffffffff4",
+    "y_bits": "3ff7fffffffffff6",
+    "lower_bits": "4003fffffffffff8",
+    "upper_bits": "4003fffffffffff9",
+    "expected_bits": {
+      "rndn": "4003fffffffffff8",
+      "rndz": "4003fffffffffff8",
+      "rndu": "4003fffffffffff9",
+      "rndd": "4003fffffffffff8"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffffffffffffff4",
+    "y_bits": "3ff7fffffffffff7",
+    "lower_bits": "4003fffffffffff8",
+    "upper_bits": "4003fffffffffff9",
+    "expected_bits": {
+      "rndn": "4003fffffffffff8",
+      "rndz": "4003fffffffffff8",
+      "rndu": "4003fffffffffff9",
+      "rndd": "4003fffffffffff8"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffffffffffffff4",
+    "y_bits": "3ff7fffffffffff8",
+    "lower_bits": "4003fffffffffff8",
+    "upper_bits": "4003fffffffffff9",
+    "expected_bits": {
+      "rndn": "4003fffffffffff9",
+      "rndz": "4003fffffffffff8",
+      "rndu": "4003fffffffffff9",
+      "rndd": "4003fffffffffff8"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffffffffffffffc",
+    "y_bits": "3ff7fffffffffffc",
+    "lower_bits": "4003fffffffffffd",
+    "upper_bits": "4003fffffffffffe",
+    "expected_bits": {
+      "rndn": "4003fffffffffffd",
+      "rndz": "4003fffffffffffd",
+      "rndu": "4003fffffffffffe",
+      "rndd": "4003fffffffffffd"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffffffffffffffc",
+    "y_bits": "3ff7fffffffffffd",
+    "lower_bits": "4003fffffffffffd",
+    "upper_bits": "4003fffffffffffe",
+    "expected_bits": {
+      "rndn": "4003fffffffffffe",
+      "rndz": "4003fffffffffffd",
+      "rndu": "4003fffffffffffe",
+      "rndd": "4003fffffffffffd"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3ffffffffffffffc",
+    "y_bits": "3ff7fffffffffffe",
+    "lower_bits": "4003fffffffffffd",
+    "upper_bits": "4003fffffffffffe",
+    "expected_bits": {
+      "rndn": "4003fffffffffffe",
+      "rndz": "4003fffffffffffd",
+      "rndu": "4003fffffffffffe",
+      "rndd": "4003fffffffffffd"
+    }
+  },
+  {
+    "schema_version": 1,
+    "domain": "positive-unit-binade-normal-result-v1",
+    "x_bits": "3fffffffffffffff",
+    "y_bits": "3fffffffffffffff",
+    "lower_bits": "4006a09e667f3bcb",
+    "upper_bits": "4006a09e667f3bcc",
+    "expected_bits": {
+      "rndn": "4006a09e667f3bcc",
+      "rndz": "4006a09e667f3bcb",
+      "rndu": "4006a09e667f3bcc",
+      "rndd": "4006a09e667f3bcb"
+    }
+  }
+]

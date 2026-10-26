@@ -31,7 +31,7 @@ tests, not a claim about who originated a change.
 |---|---|---|---|
 | 1 | **Bind a changed proof to the code it describes.** Passing corpus tests cannot establish that a proof models the executed operations. | A small exp proof-to-`exp_proof` source map, one checked directed-rounding obligation, and a disposition for the existing model candidate. | A checked correspondence/certificate under explicit hypotheses, a reviewed minimal correction, or a precisely isolated unresolved premise. Full exp correctness is not promised. Sine follows only after checking source stability and choosing one obligation. |
 | 2 | **Resolve asin cast and integer-range portability.** Its current Clang corpus pass does not settle signed arithmetic or 32-bit `long` behavior. | A source-range analysis of the changed casts/subtraction, supported by bounded LP64 and, if available, LLP64 checks and negative controls. | Either a minimized reachable failure with a tested remedy, or a justified defined-behavior/equivalence argument for the stated domain/ABI. Tests alone cannot prove absence of UB. Unsupported ABI execution remains explicitly untested. |
-| 3 | **Turn bivariate hard cases into reusable, independently checkable regressions.** Two-input functions add a much larger input space than the unary suite. | First implement the [hypot certificate specification](docs/HYPOT-CERTIFICATE-SPEC.md), then qualify a separate Linux runner. Import and reproduce the prior archives when available. | Exact-input checking, four modes and negative controls; values/flags/errno reported separately. Supplied-table verification is distinct from regenerating a completeness census. No bivariate execution or imported-result validation is claimed yet. |
+| 3 | **Turn bivariate hard cases into reusable, independently checkable regressions.** Two-input functions add a much larger input space than the unary suite. | The [restricted verifier and Linux adapter are qualified](docs/HYPOT-QUALIFICATION.md). Next: one bounded candidate-construction task and pinned-corpus deduplication; import prior archives when available. | Qualification covers 18 fixtures, four modes, GCC/Clang and specific negative controls. Values/flags/errno remain separate. This is not a search, imported-result validation or completeness census. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three
@@ -67,11 +67,12 @@ are useful, say so; never fill a slot with an invented finding.
 
 Hypot goes first because, in a restricted normal positive domain, exact integer
 comparisons can decide its rounding without trusting the candidate generator.
-The first [specification and worked example](docs/HYPOT-CERTIFICATE-SPEC.md) are
-available now. They are a design artifact, not proof of a complete family or a
-qualified CORE-MATH test run.
+The [specification](docs/HYPOT-CERTIFICATE-SPEC.md) and [implemented verifier with
+Linux qualification](docs/HYPOT-QUALIFICATION.md) are available now. The listed
+fixtures qualify the setup; they do not prove a complete family or discover new
+hard cases.
 
-After qualification, import angular and pow certificates and refresh corpus
+When available, import angular and pow certificates and refresh corpus
 membership at the selected pin. Compare atan2/atan2pi stage behavior with the full
 pinned corpus before claiming added stage coverage. Preserve mixed/negative
 search results and choose a different pow hypothesis instead of enlarging an

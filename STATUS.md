@@ -1,5 +1,10 @@
 # Current status
 
+**October 26: the restricted hypot certificate verifier and Linux adapter are
+implemented and qualified on 18 fixtures in four modes under GCC/Clang.**
+[Qualification and limits](docs/HYPOT-QUALIFICATION.md). No full-corpus/search,
+completeness or imported-archive claim; the missing transfer package remains open.
+
 **October 25: the previously reported exp value error and rsqrt underflow-flag
 regression are fixed in the tested master revision. A focused asin corpus check
 also passes; broader source/proof review remains incomplete.**

@@ -1,0 +1,6 @@
+[
+  "exp", "log", "exp2", "log2", "exp10", "log10", "rsqrt",
+  "sin", "cos", "tan", "asin", "acos", "atan",
+  "sinpi", "cospi", "tanpi", "asinpi", "acospi", "atanpi",
+  "sinh", "cosh", "tanh", "asinh", "acosh", "atanh"
+]

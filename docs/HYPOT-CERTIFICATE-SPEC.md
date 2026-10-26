@@ -4,6 +4,9 @@
 certificate validation or completeness proof.** This is a first implementation
 target that does not depend on receiving any earlier research archive.
 
+**Implementation follow-up:** see the [October 26 verifier and Linux qualification](HYPOT-QUALIFICATION.md).
+This specification remains the mathematical design, separate from execution evidence.
+
 ## Domain and exact representation
 
 Accept only positive finite binary64 x,y in [1,2), with x²+y² in [4,8).
@@ -94,7 +97,7 @@ The independently integer-checked encodings are:
 | U | `4003fffffffffffe` |
 
 This is a worked arithmetic fixture, not a new search result or a corpus-novelty
-claim. The executable checker and C runner still need implementation/qualification.
+claim. Executable checker and C runner status is recorded in the qualification report.
 
 ## Required implementation tests and receipts
 

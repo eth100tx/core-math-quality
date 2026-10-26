@@ -119,24 +119,32 @@ class MeasurementTests(unittest.TestCase):
             self.assertFalse((cell/'rndd-coverage.json').exists())
 
     def test_termination_reaps_detached_child(self):
-        import sys, subprocess, os, signal
+        import sys, subprocess, os, signal, socket
         with tempfile.TemporaryDirectory() as d:
-            pidfile = Path(d)/'pid'
-            child = 'import os,time,pathlib,sys; pathlib.Path(sys.argv[1]).write_text(str(os.getpid())); time.sleep(20)'
+            address = str(Path(d)/'ready.sock')
+            listener=socket.socket(socket.AF_UNIX,socket.SOCK_STREAM)
+            listener.bind(address);listener.listen(1);listener.settimeout(10)
+            child = 'import os,time,socket,sys; s=socket.socket(socket.AF_UNIX,socket.SOCK_STREAM); s.connect(sys.argv[1]); s.sendall(str(os.getpid()).encode()); s.close(); time.sleep(20)'
             parent = 'import quality,sys; quality.command([sys.executable,"-c",sys.argv[1],sys.argv[2]],timeout=15)'
-            proc = subprocess.Popen([sys.executable,'-c',parent,child,str(pidfile)],cwd=ROOT,
+            proc = subprocess.Popen([sys.executable,'-c',parent,child,address],cwd=ROOT,
                                     stdout=subprocess.PIPE,stderr=subprocess.PIPE)
             try:
-                with self.assertRaises(subprocess.TimeoutExpired):
-                    proc.communicate(timeout=0.7)
-                pid = int(pidfile.read_text())
+                connection,_=listener.accept()
+                with connection:
+                    connection.settimeout(3)
+                    with connection.makefile('rb') as ready:
+                        pid=int(ready.read(64))
                 proc.send_signal(signal.SIGTERM)
                 proc.communicate(timeout=3)
                 with self.assertRaises(ProcessLookupError):
                     os.kill(pid,0)
             finally:
+                listener.close()
                 if proc.poll() is None:
-                    proc.kill(); proc.communicate()
+                    proc.send_signal(signal.SIGTERM)
+                    try: proc.communicate(timeout=3)
+                    except subprocess.TimeoutExpired:
+                        proc.kill(); proc.communicate()
 
     def test_lock_excludes_second_process(self):
         import sys

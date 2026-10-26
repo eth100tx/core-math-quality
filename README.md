@@ -11,9 +11,10 @@ or the [runbook](RUNBOOK.md).** This project is not an official CORE-MATH
 repository and does not certify the library's correctness.
 
 The [hypot certificate specification](docs/HYPOT-CERTIFICATE-SPEC.md) is the first
-concrete design artifact for a separate bivariate track. Implementation,
-qualification and prior-archive reproduction remain open. It does not extend
-the unary coverage ranking or claim an executed search.
+concrete design artifact for a separate bivariate track. The [restricted verifier
+and Linux adapter now pass qualification](docs/HYPOT-QUALIFICATION.md).
+Prior-archive reproduction remains open. This does not extend the unary coverage
+ranking or claim an executed search.
 
 ## The weekly flow
 
