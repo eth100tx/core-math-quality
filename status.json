@@ -1,20 +1,29 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-10-18T13:49:56.479077+00:00",
+  "updated_utc": "2026-10-29T21:51:28.866769+00:00",
   "baseline_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
   "baseline_profile": "gcc-linux-x86_64-errno1",
   "proof_pin": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a",
   "active_coverage_target": {
     "function": "exp10",
     "missing_arcs": 1,
-    "missing_lines": 0
+    "missing_lines": 0,
+    "state": "parked under routine coverage pause"
   },
-  "target_state": "49-key/four-mode necessary trigger set checked in unchanged O3/O0 binaries; portable closure deliberately deferred",
-  "latest_report": "weekly/2026-10-18/REPORT.md",
+  "target_state": "Routine exp10 coverage parked; specific requested cosine review completed within its published limits.",
+  "latest_report": "weekly/2026-10-29/REPORT.md",
   "pending": [
-    "Track rsqrt range, exp allowance and exp proof-model candidates",
-    "exp10 portable caller-residue certificate",
-    "Historical completeness and remaining source/proof obligations",
-    "Hypot pilot proposal requires separate reviewed runner/schema; no search started"
-  ]
+    "Cosine proof candidate reconciliation and hardness completeness evidence",
+    "Cosine exception fallback: public-entry witness or exact path argument, no unreachability claim",
+    "Remaining asin range/ABI premise; unsigned cleanup adopted",
+    "Existing bounded hypot construction checkpoint; unavailable historical archives remain unreproduced"
+  ],
+  "latest_focused_review": {
+    "implementation_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
+    "proof_pin": "df593398ddd877cdc00fd1684d9dea814928f28b",
+    "function": "cos",
+    "missing_lines": 1,
+    "missing_arcs": 1,
+    "baseline_watermarks_advanced": false
+  }
 }

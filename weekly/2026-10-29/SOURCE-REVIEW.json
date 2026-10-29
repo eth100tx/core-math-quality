@@ -1,0 +1,51 @@
+{
+  "comparison_base_implementation": "336752ca18e1204321225ec90c1f43fcb90ada1b",
+  "comparison_base_proof": "d0fc1625fd88f9987bc89c83e271b39b8201b7f7",
+  "implementation_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
+  "proof_pin": "df593398ddd877cdc00fd1684d9dea814928f28b",
+  "changed_implementation_paths": [
+    "ci.sh",
+    "src/binary64/asin/asin.c",
+    "src/binary64/cos/Makefile",
+    "src/binary64/cos/check_special.c",
+    "src/binary64/cos/cos.c",
+    "src/binary64/cos/cos.wc",
+    "src/binary64/log/dint.h",
+    "src/binary64/log/log.c",
+    "src/binary64/log/log.wc",
+    "src/binary64/log/logtiny.g",
+    "src/binary64/log/logtiny.sh",
+    "src/binary64/log/logtiny.sollya",
+    "src/binary64/sin/sin.c",
+    "src/binary64/tan/tan.wc",
+    "src/generic/cos/random_under_test.h",
+    "src/generic/tan/random_under_test.h"
+  ],
+  "changed_proof_paths": [
+    "cm.bib",
+    "cos/acclarge.g",
+    "cos/check_k0.c",
+    "cos/cos.sage",
+    "cos/cos.tex",
+    "cos/graph1.pdf",
+    "cos/perf1.txt",
+    "cos/perf2.txt",
+    "cos/perf3.txt",
+    "exp/exp.tex",
+    "sin/acclarge.g",
+    "sin/sin.sage",
+    "sin/sin.tex",
+    "tan/graph1.pdf",
+    "tan/perf1.txt",
+    "tan/perf2.txt",
+    "tan/perf3.txt",
+    "tan/tan.sage",
+    "tan/tan.tex"
+  ],
+  "reviewed_scope": [
+    "cos.c and cos proof, full pinned cos corpus and coverage",
+    "shared accurate reducer/tables/polynomials bound against prior sine definitions",
+    "asin unsigned-gap adoption source comparison"
+  ],
+  "deferred": "Other changed log/tan/CI/generic paths inventoried, not newly executed or fully reviewed; previous open tasks retained. Collapsed API diffs are not accepted as full review. Raw pinned cos source acquired and compared separately. No whole-repository clean claim."
+}

@@ -1,0 +1,6 @@
+{
+  "applies_to_exact_proof_base": true,
+  "candidate_sha256": "4188896b72c9f6b2eafe1207641771ab423f2523bca871e708d4acbc3ef56dc6",
+  "patch_sha256": "44189a82624c26ae90a54deae4e3febb2642ec9bd5ea28d0c4c47d5c62653271",
+  "latex_compilation": false
+}

@@ -1,11 +1,32 @@
-Follow BOOTSTRAP.md first: synchronize and review the canonical repository,
-record one coherent workbench revision, then read ROLE.md and the entry files.
-Follow docs/DAILY.md using the operator's authorized private correspondence,
-preferences, request map, budget and verified delivery records. Reconcile new
-feedback against previous promises, current queue and relevant upstream activity.
-No new numerical campaign in this lane. Queue larger work with a concrete next
-artifact; preserve pauses and avoid overlap with maintainer work. Reply only to
-substantive questions or necessary clarifications after the required review,
-verification and deduplication. Explain the next bounded step and any requested
-action. Persist reviewed public technical changes and private correspondence
-state separately. Stay quiet when nothing actionable changes.
+Follow BOOTSTRAP.md first and record one coherent reviewed workbench revision.
+Read ROLE.md, docs/DAILY.md and the authorized private correspondence, preferences,
+request map, accounting and verified delivery records. Reconcile new feedback
+against previous promises, current queue and overlapping maintainer activity.
+For each substantive in-scope request, start the necessary investigation when
+the message is read. Complete the requested code/proof review, bounded numerical
+checks and useful artifacts; do not defer work merely because it is not Sunday.
+Use independent adversarial planning and final review, and verify load-bearing
+claims independently before sending the substantive response. Follow RUNBOOK.md
+for execution safeguards. Keep a per-request scope, budget, job monitor and
+checkpoint; resume unfinished authorized requests at the next activation.
+Sunday remains the periodic weekly repository review, without repeating completed
+unchanged work or replies. Preserve pauses outside the specific authorized request.
+Publish only reviewed neutral technical outputs; keep mail and delivery records
+private. Recheck correspondence/Sent, verify delivery, and state genuine limits
+and the next bounded step. No actionable change means no routine email.
+
+Before dispatch, record a finite request CPU and wall budget and its scope.
+The initial operator's default planning ceiling is four CPU-hours and four wall
+hours per substantive request, unless a tighter applicable cap or explicit owner
+budget applies. This is a planning limit, not a quotation of the owner. Each
+numerical child is at most ten minutes; each monitored outer job at most four
+wall hours and no longer than the remaining request budget. At exhaustion,
+checkpoint and notify the operator; do not silently extend it. A null campaign
+cap does not remove these finite request and job limits.
+
+Charge inbox reading, triage and reconciliation to the light-check reserve;
+charge dispatched request investigation, review and delivery to its request
+account. On Sunday let an active request reach its next bounded checkpoint,
+then perform the weekly scan before resuming further request work. Use one
+science runner throughout; preserve the scan's separate budget and record an
+actual missed scan if necessary rather than overlapping jobs or inventing results.

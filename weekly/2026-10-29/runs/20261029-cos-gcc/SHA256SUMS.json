@@ -1,0 +1,7 @@
+{
+  "cos-gcc-linux-x86_64-errno1/rndd-coverage.json": "55ea612f4cb92b03a6afeaeb875ecc9759cf26b9de7599a505ebcb6e34470b71",
+  "cos-gcc-linux-x86_64-errno1/rndn-coverage.json": "f5353d14cfd7be646ca9d2905cdf0a4aeeb73bb95d1eb3e777aa25d6e4c730bc",
+  "cos-gcc-linux-x86_64-errno1/rndu-coverage.json": "0e47ee54e3117d3f27d4e6af2c133acf6a38beb54892cc97890146e8de882be3",
+  "cos-gcc-linux-x86_64-errno1/rndz-coverage.json": "71a9e875f9b97643fe94ec7bee72f3babe1d9f11aed00dbf8696cae9e0441e94",
+  "result.json": "9317abd5d65233dd489c54476560618482e2175099f41f84593b4f6de9535a45"
+}

@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "name": "census-section",
+      "returncode": 0,
+      "output": "rows=17222 small_cos=16778 small_cos_near_boundary=16778 min_witness=0x1.6477e472c5074p+715\nminimum_distance=0xc.3553d3630f97724c06bc676f6ff35171167ffc9cdp-124 log2=-120.39020836477577470094\nexample=0x1.6ac5b262ca1ffp+849 cos=-0x8.a5739735d1177a30443ae209bc758290f0d77d517c56802baa930bc1e8716d1p-64 distance=0x5.cfbbc51df6438a7d6f0f2882ae83a97fd4556cf43e178e92fp-120 log2=-117.46109962071108723715\nexample=0x1.6ac5b262ca1ffp+850 cos=-0xf.fffffffffffffffffffffffffffff6a7bb0af0cb6ab6ccf98b795f1c31309d4p-4 distance=0x9.5844f50f34954933067486a0e3cecf62cp-124 log2=-120.77583587234264387522\n"
+    },
+    {
+      "name": "build-exceptions",
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "name": "exceptions",
+      "returncode": 0,
+      "output": "x=0x1.8000000000009p-23 mode=0 low=fffffffffffffffb guard=1 result=0x1.fffffffffff7p-1 reference=0x1.fffffffffff7p-1\nx=0x1.8000000000009p-23 mode=1 low=fffffffffffffffb guard=1 result=0x1.fffffffffff7p-1 reference=0x1.fffffffffff7p-1\nx=0x1.8000000000009p-23 mode=2 low=fffffffffffffffb guard=1 result=0x1.fffffffffff71p-1 reference=0x1.fffffffffff71p-1\nx=0x1.8000000000009p-23 mode=3 low=fffffffffffffffb guard=1 result=0x1.fffffffffff7p-1 reference=0x1.fffffffffff7p-1\nx=0x1.8000000000024p-22 mode=0 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdcp-1 reference=0x1.ffffffffffdcp-1\nx=0x1.8000000000024p-22 mode=1 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdcp-1 reference=0x1.ffffffffffdcp-1\nx=0x1.8000000000024p-22 mode=2 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdc1p-1 reference=0x1.ffffffffffdc1p-1\nx=0x1.8000000000024p-22 mode=3 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdcp-1 reference=0x1.ffffffffffdcp-1\nx=0x1.800000000009p-21 mode=0 low=fffffffffffffffd guard=1 result=0x1.ffffffffff7p-1 reference=0x1.ffffffffff7p-1\nx=0x1.800000000009p-21 mode=1 low=fffffffffffffffd guard=1 result=0x1.ffffffffff7p-1 reference=0x1.ffffffffff7p-1\nx=0x1.800000000009p-21 mode=2 low=fffffffffffffffd guard=1 result=0x1.ffffffffff701p-1 reference=0x1.ffffffffff701p-1\nx=0x1.800000000009p-21 mode=3 low=fffffffffffffffd guard=1 result=0x1.ffffffffff7p-1 reference=0x1.ffffffffff7p-1\nx=0x1.20000000000f3p-20 mode=0 low=fffffffffffffffe guard=1 result=0x1.fffffffffebcp-1 reference=0x1.fffffffffebcp-1\nx=0x1.20000000000f3p-20 mode=1 low=fffffffffffffffe guard=1 result=0x1.fffffffffebcp-1 reference=0x1.fffffffffebcp-1\nx=0x1.20000000000f3p-20 mode=2 low=fffffffffffffffe guard=1 result=0x1.fffffffffebc1p-1 reference=0x1.fffffffffebc1p-1\nx=0x1.20000000000f3p-20 mode=3 low=fffffffffffffffe guard=1 result=0x1.fffffffffebcp-1 reference=0x1.fffffffffebcp-1\n"
+    }
+  ],
+  "census_rows": 17222,
+  "corpus_sha256": "40660955c77576109f3f804f67a7ea099f96a4998b5dd1f9cd07ac9114944639",
+  "census_section_sha256": "f0fe938906a875e207c77f4e968f47e314431a1ad456ec3a2a2923fb78539f6a",
+  "compiled_source_sha256": "4d1ceeaa026b6a2b7c93115b9d43b974c0fa8466afb900ad6816072cb181a651",
+  "driver_sha256": "64669f9e1673cfcd769e33c8c97bc976c7d746b4b0e61aaedb77005c48a1ca46",
+  "child_cpu_seconds": 0.406264,
+  "wall_seconds": 2.2755352
+}

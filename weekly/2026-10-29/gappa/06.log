@@ -1,0 +1,8 @@
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: eps4 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps2 is a variable without definition, yet it is unbound.
+Warning: sz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  c4 in [2697476879408645506047628046028996901b-127 {0.0158543, 2^(-5.978982)}, 5394953785264894924608628549515448301b-128 {0.0158544, 2^(-5.978973)}]

@@ -1,0 +1,8 @@
+Warning: eps5 is a variable without definition, yet it is unbound.
+Warning: eps4 is a variable without definition, yet it is unbound.
+Warning: cz is a variable without definition, yet it is unbound.
+Warning: eps2 is a variable without definition, yet it is unbound.
+Warning: sz is a variable without definition, yet it is unbound.
+Warning: eps3 is a variable without definition, yet it is unbound.
+Results:
+  |sr - Sr| in [0, 602896738512883189535833681303562839778156955101434184146425b-325 {8.82053e-39, 2^(-126.414306)}]

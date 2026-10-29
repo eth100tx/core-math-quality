@@ -1,5 +1,7 @@
 # CORE-MATH Quality
 
+Latest focused result: [October 29 cosine proof and coverage review](weekly/2026-10-29/REPORT.md), including proposed proof corrections and remaining census/fallback obligations.
+
 **An independent, reproducible quality workbench for 25 binary64 functions.**
 Run regression checks, resolve proof/code and portability questions, and deliver
 reviewed improvements through a [three-priority queue](IMPROVEMENTS.md).
@@ -19,11 +21,13 @@ ranking or claim an executed search.
 
 ## The weekly flow
 
-The initial operator uses one daily activation: light
+The initial operator uses one daily activation:
 [correspondence and alignment](docs/DAILY.md), plus the longer Sunday review.
 The versioned role, instructions, queue and evidence live here; each invocation
 fetches and reviews current main before work. Private mail and authorization stay
-outside GitHub. A daily check does not imply a daily email or numerical campaign.
+outside GitHub. Substantive authorized requests are investigated and answered when read, including
+necessary bounded numerical checks; Sunday remains the periodic scan. No routine
+daily email or unchanged campaign is implied.
 
 1. **Choose a revision.** Review upstream changes and any newly authorized
    requests. Pin the implementation; track proof changes separately.

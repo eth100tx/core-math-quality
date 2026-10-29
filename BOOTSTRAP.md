@@ -47,7 +47,7 @@ is resolved; notify the operator once when this blocks useful work.
 Read `ROLE.md`, `AGENTS.md`, `STATUS.md`, `IMPROVEMENTS.md`,
 `config/targets.json`, `config/improvements.json`, `RUNBOOK.md`, `LESSONS.md`,
 `docs/CONTINUOUS-IMPROVEMENT.md`, the latest reviewed report and learning record.
-Read `prompts/DAILY.txt` for light correspondence work, or `prompts/WEEKLY.txt`
+Read `prompts/DAILY.txt` for correspondence and requested investigations, or `prompts/WEEKLY.txt`
 for the longer review. The latest learning record is the newest
 `weekly/*/LEARNING.md`, falling back to `docs/learning/2026-10-26/LEARNING.md`.
 

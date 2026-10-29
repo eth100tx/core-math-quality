@@ -1,0 +1,12 @@
+{
+  "checked_implementation_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
+  "adoption_commit": "e168ea1a4bbd01b0678a7d83f46a5134fb14e561",
+  "source_sha256": "75b6c144edfb405e916c84931d37e718470948b28c2475b95a2d2459965b2b4d",
+  "git_blob": "231df360f61400f94810aea63a4e711233628963",
+  "matching_executable_statements": [
+    "uint64_t gap = tn.u - tl.u;",
+    "int hard = (gap <= 2) || ((gap >> 52) > 47);"
+  ],
+  "status": "adopted in source; no new numerical regression claimed",
+  "prior_test_evidence": "weekly/2026-10-26/ASIN-HYPOT-REPLAY.json"
+}

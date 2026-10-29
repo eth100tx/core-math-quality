@@ -28,6 +28,11 @@ timeout. Do not use an unbounded retry loop or treat acquisition failure as PASS
 
 ## Weekly or ad hoc
 
+Substantive authorized correspondence requests follow [DAILY.md](docs/DAILY.md)
+when read, using these same execution safeguards. They do not wait for Sunday.
+The following queue envelope governs the periodic scan; keep separately
+authorized request scope and accounting distinct, and reuse its reviewed results.
+
 Apply [the continuous-improvement loop](docs/CONTINUOUS-IMPROVEMENT.md): review
 feedback and promised outcomes, evaluate the previous process change, define
 success after selecting work and before executing it, and leave a short learning record. This is part
@@ -52,7 +57,8 @@ Meaningful progress needs a verifiable artifact or resolved obligation, not
 a larger test count or a cosmetic queue-state change.
 
 Check current operator scope before dispatch. Exp review work is paused to avoid duplicating a maintainer-led effort; preserve its historical evidence and do not select it until the pause is lifted. If routine coverage is paused,
-park its target and retain dated measurements; use a noncoverage profile for
+park its target and retain dated measurements; a specific authorized coverage
+request is an exception for that target only. Otherwise use a noncoverage profile for
 focused changed-code regressions. Do not manufacture a fresh ranking from a
 subset. A completed regression test does not close deferred source/proof review.
 Archived bivariate results remain unverified until imported and independently

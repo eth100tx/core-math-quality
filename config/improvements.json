@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-26",
-  "implementation_pin": "336752ca18e1204321225ec90c1f43fcb90ada1b",
-  "proof_pin": "d0fc1625fd88f9987bc89c83e271b39b8201b7f7",
+  "updated": "2026-10-29",
+  "implementation_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
+  "proof_pin": "df593398ddd877cdc00fd1684d9dea814928f28b",
   "weekly_budget": {
     "cpu_hours": 4,
     "wall_minutes": 120
@@ -10,28 +10,27 @@
   "execution_policy": "One primary review task and at most one bivariate task, serially under existing locks. Remaining budget is reserve, not permission for automatic expansion.",
   "priorities": [
     {
-      "id": "P4",
+      "id": "P5",
       "rank": 1,
-      "title": "Bind the changed sine accurate kernel to reproducible certificates",
-      "status": "tested",
+      "title": "Reconcile cosine proof corrections and census evidence",
+      "status": "in_progress",
       "owner": "workbench agent",
-      "reason": "The scaled polynomial update needs exact source/proof correspondence and independent bounds.",
-      "next_action": "Read new correspondence/source changes before selecting another sine obligation. Reuse unchanged October26 results; historical full-domain hard-case completeness remains a separate dependency.",
-      "deliverable": "Exact polynomial certificates, changed Gappa obligations, source binding and scoped regression receipts.",
-      "acceptance": "No whole-function correctness claim from corpus tests or conditional kernel bounds; distinguish historical hard-case completeness.",
+      "reason": "Focused requested review found proof-document inconsistencies while finite tests and kernel bounds passed.",
+      "next_action": "Reconcile the proposed proof errata and any supplied generation/completeness artifacts; investigate the exception fallback only with a justified public-entry witness or exact path argument. Reuse unchanged completed checks.",
+      "deliverable": "Reviewed proof-only patch, source-bound certificates, exact scoped coverage and honest completeness checkpoint.",
+      "acceptance": "No whole-function proof or unreachability claim from corpus tests; keep supplied-data verification separate from exhaustive regeneration.",
       "budget": {
         "cpu_hours": 1,
         "wall_minutes": 30
       },
       "stop": "Checkpoint on changed source or missing premise; do not repeat unchanged campaigns.",
-      "dependency": "Pinned sine implementation and separate proof revision; exp is paused to avoid duplicate work.",
-      "last_substantive_change": "2026-10-26",
-      "change": "New PS/PC polynomial bounds rigorously certified; 13 Gappa obligations and full normal/forced four-mode GCC/Clang corpus checks pass.",
+      "dependency": "Pinned cosine source/proof and subsequent maintainer feedback; no broad coverage or exp campaign.",
+      "last_substantive_change": "2026-10-29",
+      "change": "Full GCC/Clang and forced-accurate corpus checks pass; proof errata candidate prepared, small-domain reducer extension supported, 171/172 lines and 43/44 arcs hit.",
       "next_checkpoint": "2026-11-01",
       "evidence": [
-        "weekly/2026-10-26/REPORT.md",
-        "weekly/2026-10-26/polynomials.json",
-        "weekly/2026-10-26/SINE-REPLAY.json"
+        "weekly/2026-10-29/REPORT.md",
+        "candidates/cos-proof-errata/README.md"
       ]
     },
     {
@@ -41,7 +40,7 @@
       "status": "in_progress",
       "owner": "workbench agent",
       "reason": "The passing Clang corpus does not establish signed-subtraction safety or equivalence on LP64 and LLP64.",
-      "next_action": "Reconcile candidate pickup and close a specific remaining phi/ph range premise if useful; do not repeat unchanged corpus runs.",
+      "next_action": "Only pursue a named remaining phi/ph range premise when useful and aligned; do not reapply the adopted cleanup or rerun unchanged corpus checks.",
       "deliverable": "Tested optional unsigned predicate and explicit range/ABI note; next a coarse all-input range lemma under stated floating-point assumptions.",
       "acceptance": "Tests alone do not prove absence of UB. Explicitly distinguish source undefined behavior, compiler miscompilation and unsupported ABI execution.",
       "budget": {
@@ -50,12 +49,13 @@
       },
       "stop": "Checkpoint on an unqualified ABI, unresolved range premise, source change or cap; do not label unsupported execution a failure.",
       "dependency": "Pinned asin source; qualified toolchains and a small reproducible test harness.",
-      "last_substantive_change": "2026-10-26",
-      "change": "Unsigned-gap portability candidate passes full GCC/Clang corpus; original code passes bounded sanitizers with active rejection controls. Conditional ABI equivalence established; whole-function range premises remain open.",
+      "last_substantive_change": "2026-10-29",
+      "change": "Unsigned-gap candidate adopted upstream at e168ea1a; prior tests retained. Whole-function phi/ph range premise and unsupported ABI execution remain open.",
       "next_checkpoint": "2026-11-01",
       "evidence": [
         "candidates/asin-unsigned-gap/README.md",
-        "weekly/2026-10-26/ASIN-HYPOT-REPLAY.json"
+        "weekly/2026-10-26/ASIN-HYPOT-REPLAY.json",
+        "weekly/2026-10-29/ASIN-ADOPTION.json"
       ]
     },
     {

@@ -1,0 +1,16 @@
+x=0x1.8000000000009p-23 mode=0 low=fffffffffffffffb guard=1 result=0x1.fffffffffff7p-1 reference=0x1.fffffffffff7p-1
+x=0x1.8000000000009p-23 mode=1 low=fffffffffffffffb guard=1 result=0x1.fffffffffff7p-1 reference=0x1.fffffffffff7p-1
+x=0x1.8000000000009p-23 mode=2 low=fffffffffffffffb guard=1 result=0x1.fffffffffff71p-1 reference=0x1.fffffffffff71p-1
+x=0x1.8000000000009p-23 mode=3 low=fffffffffffffffb guard=1 result=0x1.fffffffffff7p-1 reference=0x1.fffffffffff7p-1
+x=0x1.8000000000024p-22 mode=0 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdcp-1 reference=0x1.ffffffffffdcp-1
+x=0x1.8000000000024p-22 mode=1 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdcp-1 reference=0x1.ffffffffffdcp-1
+x=0x1.8000000000024p-22 mode=2 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdc1p-1 reference=0x1.ffffffffffdc1p-1
+x=0x1.8000000000024p-22 mode=3 low=fffffffffffffffb guard=1 result=0x1.ffffffffffdcp-1 reference=0x1.ffffffffffdcp-1
+x=0x1.800000000009p-21 mode=0 low=fffffffffffffffd guard=1 result=0x1.ffffffffff7p-1 reference=0x1.ffffffffff7p-1
+x=0x1.800000000009p-21 mode=1 low=fffffffffffffffd guard=1 result=0x1.ffffffffff7p-1 reference=0x1.ffffffffff7p-1
+x=0x1.800000000009p-21 mode=2 low=fffffffffffffffd guard=1 result=0x1.ffffffffff701p-1 reference=0x1.ffffffffff701p-1
+x=0x1.800000000009p-21 mode=3 low=fffffffffffffffd guard=1 result=0x1.ffffffffff7p-1 reference=0x1.ffffffffff7p-1
+x=0x1.20000000000f3p-20 mode=0 low=fffffffffffffffe guard=1 result=0x1.fffffffffebcp-1 reference=0x1.fffffffffebcp-1
+x=0x1.20000000000f3p-20 mode=1 low=fffffffffffffffe guard=1 result=0x1.fffffffffebcp-1 reference=0x1.fffffffffebcp-1
+x=0x1.20000000000f3p-20 mode=2 low=fffffffffffffffe guard=1 result=0x1.fffffffffebc1p-1 reference=0x1.fffffffffebc1p-1
+x=0x1.20000000000f3p-20 mode=3 low=fffffffffffffffe guard=1 result=0x1.fffffffffebcp-1 reference=0x1.fffffffffebcp-1

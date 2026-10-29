@@ -1,0 +1,8 @@
+{
+  "proof_base_pin": "df593398ddd877cdc00fd1684d9dea814928f28b",
+  "original_sha256": "6875bbe63a51318f0b6e8f7e1970b16e85f3b8c9ea523b500b0bda280cf21887",
+  "candidate_sha256": "4188896b72c9f6b2eafe1207641771ab423f2523bca871e708d4acbc3ef56dc6",
+  "patch_sha256": "44189a82624c26ae90a54deae4e3febb2642ec9bd5ea28d0c4c47d5c62653271",
+  "classification": "Proposed proof-document corrections; no implementation patch or claim of a complete new correctness proof",
+  "status": "Independently reviewed proposed document patch; conditions verified; not applied upstream"
+}

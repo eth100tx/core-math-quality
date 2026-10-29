@@ -1,0 +1,9 @@
+# Learning - October 29, 2026
+
+Ad hoc requested review; not counted as a completed scheduled review.
+
+- **Selection and outcome:** The focused cosine proof and coverage request took priority. A proof-document candidate, bound certificates and full pinned-corpus regression/coverage evidence were delivered. Exhaustive hardness generation and fallback unreachability remain open; tests do not close them. The earlier asin cleanup is adopted at the recorded upstream pin.
+- **Prior change:** The October 26 learning contract has not yet reached its first scheduled evaluation. Do not count this requested review as a Sunday run or infer recipient usefulness before feedback.
+- **One workflow improvement:** A substantive request had been queued solely for Sunday. The authorized workflow now starts requested work when read, with bounded jobs, independent planning/final review and verified delivery. Sunday remains the periodic scan and reuses completed request evidence. The operator owns the change. Prediction: the next request has a completed answer or a real technical/resource blocker, rather than a calendar-only deferral. Check the next request disposition and November 1 review. Narrow routing if it starves the weekly scan; retain scientific safeguards.
+- **Clarity and reliability:** The independent review exposed ambiguous sign prose and a stale classification log; explicit sign cases, exact checks and matching precision logs resolved them. The four-case sign algebra was checked independently rather than accepting a review suggestion as authority. The census-control oracle also needed to accept any return at least N as no hit. Retain failed attempts and distinguish an oracle problem from an implementation bug.
+- **Next checkpoint:** Reconcile proof edits and generation evidence; only pursue the fallback with a valid public-entry witness or exact path argument. Keep the existing hypot construction checkpoint and routine-coverage/exp pauses.

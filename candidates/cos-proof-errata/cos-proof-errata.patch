@@ -1,0 +1,201 @@
+--- a/cos/cos.tex
++++ b/cos/cos.tex
+@@ -268,8 +268,9 @@
+     |c_h - (\cos(y)-1)| &<& 2^{-78.316}.
+   \end{eqnarray*}
+   
+-  Let $x' = |x| \bmod \pi$.
+-  Then $x' = z + y \bmod \pi$:
++  Let $x' = z+y$, where $z=t_1+t_2$. The argument reduction gives
++  $\cos|x|=(-1)^t\cos(x')$, including when $z+y$ crosses a multiple of $\pi$.
++  We first bound the un-signed approximation:
+   \begin{align*}
+     &|C_h + C_\ell + C_h c_h - S_h s_h - \cos(x')| \\
+     &\le |C_h + C_\ell - \cos(z)| + |C_h c_h - \cos(z) (\cos(y)-1)|\\
+@@ -392,7 +393,7 @@
+ \State $r_2 \leftarrow \circ(r \cdot r)$
+ \State $s_h \leftarrow r \cdot (s_1 + s_3 \cdot r_2)$ \label{l10}
+ \State $c_h \leftarrow r_2 \cdot (c_2 + c_4 \cdot r_2)$ \label{l11}
+-\State $f_h \leftarrow S_h$, \quad $f_\ell \leftarrow C_\ell + C_h c_h - S_h s_h$ \label{l12}
++\State $f_h \leftarrow C_h$, \quad $f_\ell \leftarrow C_\ell + C_h c_h - S_h s_h$ \label{l12}
+ \State $f_h \leftarrow (-1)^t \cdot f_h$, \quad $f_\ell \leftarrow (-1)^t \cdot f_\ell$ \label{l13}
+ \State $\epsilon \leftarrow \texttt{0x1.01p-63}$
+ \State $\ell_b \leftarrow f_h + \circ(f_\ell - \epsilon)$, \quad
+@@ -409,9 +410,9 @@
+   From Lemma~\ref{lemma5a}, we have
+   \[ \frac{x}{2\pi} = \frac{k}{2^{15}} + r + s \bmod 1, \]
+   with $|r| \le 2^{-16}$ and $|s| < 2^{-68.988}$.
+-  Let $x' = (-1)^t |x|$, with $t$ defined in line~\ref{l2}.
+-  We deduce since $k = 2^{14} t + 2^7 i_1 + i_2$:
+-  \[ \cos(x') = \cos(z + y), \]
++  Let $x'=z+y$, with $t$ defined in line~\ref{l2}.
++  Since $k = 2^{14} t + 2^7 i_1 + i_2$,
++  \[ \cos(x)=(-1)^t\cos(x'), \]
+   with $z = t_1 + t_2$, $t_1 = \pi i_1/2^7$, $t_2 = \pi i_2/2^{14}$,
+   and $y = 2\pi (r+s)$.
+ 
+@@ -523,7 +524,7 @@
+ \end{algorithm}
+ 
+ \begin{lemma}[Lemma 2 from \cite{sin_proof}] \label{lemma5_acc}
+-  Let $x$ be a binary64 number, $x \ge 2^{-16}$. Let $k, \sigma, r$ be the values
++  Let $x$ be a binary64 number, $x \ge 2^{-27}$. Let $k, \sigma, r$ be the values
+   returned by Algorithm ReduceAccLarge, and denote
+   $R = r/2^{128}$, then:
+   \begin{equation} \label{eq5_acc}
+@@ -533,8 +534,14 @@
+ \end{lemma}
+ Since Algorithm ReduceAccLarge is almost identical to \cite{sin_proof},
+ we refer to the proof of Lemma 2 in~\cite{sin_proof}.
+-(When $2^{-27} \le x < 2^{-16}$, we have $-79 \le i \le -69$, thus $i = -1$,
++(When $2^{-27} \le x < 2^{-16}$, we have $-79 \le e \le -69$, thus $i = -1$,
+ and we take $T_{-1}=0$.)
++For this extension the shift is $49\le f\le59$. The three-word extraction
++still truncates the fractional part of $2^e/(2\pi)$ downward at 192 bits.
++Multiplication by $m<2^{53}$ discards less than $2^{-139}$; dropping the low
++product adds less than $2^{-128}$. Thus
++$0\le s<2^{-128}+2^{-139}<2^{-127.999}$ also on the extended domain.
++The subsequent exact grid recentering preserves this error and $|R|\le2^{-14}$.
+ 
+ Algorithm AccurateLarge uses auxiliary algorithms mhUU, evalPS and evalPC
+ described below.
+@@ -564,8 +571,7 @@
+ \State if ($i_1 \ge 32$ and $\sigma_r = 0$) or ($i_1 < 32$ and $\sigma_r = 1$)  then $c \leftarrow w_1 + w_2$ \label{accline18}
+ \State elif $w_1 \le w_2$ then $c \leftarrow w_2 - w_1$, $\sigma \leftarrow 1-\sigma$
+ \State else $c \leftarrow w_1 - w_2$
+-\State if $c \bmod 2^{64} \ge 2^{64} - 5$ then return hard-coded correct rounding of
+-       $\cos(x)$ \label{accline24}
++\State if $2^{64}-5 \le c \bmod 2^{64} \le 2^{64}-2$ and $|x|$ is one of the four listed exceptional inputs then return its hard-coded correct rounding \label{accline24}
+ \State return ${\rm u128tod}(c,\sigma)$ \label{accline25}
+ \end{algorithmic}
+ \end{algorithm}
+@@ -605,6 +611,11 @@
+   correctly rounded. There are only four such cases:
+   $\texttt{0x1.8000000000009p-23}$, $\texttt{0x1.8000000000024p-22}$,
+   $\texttt{0x1.800000000009p-21}$ and $\texttt{0x1.20000000000f3p-20}$.
++  Their low limbs are respectively $2^{64}-5$, $2^{64}-5$, $2^{64}-3$
++  and $2^{64}-2$, inside the guard used by C. This guard excludes $2^{64}-1$.
++  Matching the guard is not a completeness proof: the hard-case analysis must
++  exclude any additional input needing correction, including that low limb.
++  Other inputs may correctly take the ordinary conversion fallback.
+ \end{itemize}
+ 
+ Algorithm mhUU is identical to \cite{sin_proof}.
+@@ -699,18 +710,17 @@
+   At the end, $W_1$ approximates $|{\cos}(2\pi z) \cos(2\pi R)|$ and
+   $W_2$ approximates $|\sin(2\pi z) \sin(2\pi R)|$.
+   If $i_1 < 32$ and $\sigma_r = 0$, then both $z$ and $R$ are in
+-  the first quadrant, thus all terms are positive: we add $w_1 + w_2$.
++  the first quadrant, so the cosine addition formula requires $w_1-w_2$, with a sign adjustment if this difference is negative.
+   It works similarly for the
+-  other cases. The routine $\rm u128tod$ first applies the sign bit to $S$,
++  other cases. The routine $\rm u128tod$ first applies the sign bit to $C$,
+   then rounds it according to the rounding mode.
+ 
+-  Now assume for simplicity $k < 2^{12}$, $i_1 < 32$ and $\sigma_r = 0$,
+-  so that $z$ is in the first quadrant and $\sigma = 0$.
+-  We know from Lemma~\ref{lemma5_acc} that
+-  \[ \frac{x}{2\pi} = z + R + s \bmod 1, \]
++  Write $b=[k\ge2^{12}]$, $z=(k\bmod2^{12})/2^{13}$ and
++  $R'=(-1)^{\sigma_r}R$. Lemma~\ref{lemma5_acc} gives
++  \[ \frac{x}{2\pi}=b/2+z+R'+s\bmod1, \]
+   with $|s| < 2^{-127.999}$. Since $\cos x$ is contracting, it yields:
+   \begin{equation} \label{eq2}
+-    |{\cos}(2\pi(z + R)) - \cos(x)| < 2^{-125.347}.
++    |(-1)^b{\cos}(2\pi(z + R')) - \cos(x)| < 2^{-125.347}.
+   \end{equation}
+ 
+   Since the computation of $s_z$ and $c_z$ at lines~\ref{accline12}-\ref{accline14}
+@@ -728,18 +738,21 @@
+     |W_1 - |\cos(2\pi z) \cos(2\pi R)|| &<& 2^{-124.414}, \\ % goal |w1-W1| in ?
+     |W_2 - \sin(2\pi z) \sin(2\pi R)| &<& 2^{-125.264}. % goal |w2-W2| in ?
+   \end{eqnarray*}
+-  If $i_1 < 32$ and $\sigma_r = 0$, then $\cos(2\pi z), \sin(2\pi R) \ge 0$, thus
+-  $W_1$ approximates $\cos(2\pi z) \cos(2\pi R)$ and $w_1 - w_2$ approximates
+-  $2^{128} \cos(2\pi(z+R))$;
+-  if $i_1 \ge 32$ and $\sigma_r = 1$, then $\cos(2\pi z), \sin(2\pi R') \le 0$
+-  with $R' = (-1)^{\sigma_r}R$,
+-  thus $W_1$ approximates $-\cos(2\pi z) \cos(2\pi R')$ too,
+-  $W_2$ approximates $-\sin(2\pi z) \sin(2\pi R')$, and
+-  $w_1 - w_2$ approximates $2^{128} \sin(2\pi(z+R'))$ (up to sign).
+-  Otherwise, $\cos(2\pi z) \sin(2\pi R') \le 0$, thus we have to subtract $w_2$ from $w_1$,
+-  and adjust the sign, which is what the algorithm does.
++  Let $q=0$ for $i_1<32$ and $q=1$ otherwise, and let
++  $R'=(-1)^{\sigma_r}R$. Before the half-turn sign, the signed
++  approximation is $D=(-1)^q W_1-(-1)^{\sigma_r}W_2$.
++  For $(q,\sigma_r)=(0,0),(0,1),(1,0),(1,1)$ respectively this is
++  $W_1-W_2$, $W_1+W_2$, $-(W_1+W_2)$, $-(W_1-W_2)$.
++  Thus magnitudes are added exactly when $q\mathbin{\mathrm{xor}}\sigma_r=1$;
++  otherwise the magnitude of the difference is used and its sign is adjusted
++  according to the comparison of $w_1$ and $w_2$. The final sign also includes
++  the half-turn bit $b=[k\ge2^{12}]$. Define
++  $d=[q\mathbin{\mathrm{xor}}\sigma_r=0\ \text{and}\ w_1\le w_2]$.
++  Algorithm line~\ref{accline17a} supplies the quadrant bit $q$, hence
++  $\sigma=b\mathbin{\mathrm{xor}}q\mathbin{\mathrm{xor}}d$ and
++  $(-1)^\sigma C=(-1)^bD$.
+   In all cases, the total error is bounded as follows:
+-  \[ |C - \cos(2\pi(z+R'))| < 2^{-124.414} + 2^{-125.264} < 2^{-123.777}. \]
++  \[ |D - \cos(2\pi(z+R'))| < 2^{-124.414} + 2^{-125.264} < 2^{-123.777}. \]
+   Combined with the bound from Eq.~(\ref{eq2}), we obtain, taking into
+   account the sign bit $\sigma$:
+   \begin{equation} \label{eq3}
+@@ -747,7 +760,7 @@
+   \end{equation}
+ 
+   We have to check that the computation of $w_1+w_2$ does not overflow at
+-  line~\ref{accline18}, since then the result would be near $0$
++  line~\ref{accline18} (only in the addition cases), since then the result would be near $0$
+   instead of near $1$ (up to sign). We know from \cite{muller:hal-01766584}
+   that the distance from a binary64 number to a multiple of
+   $\pi/2$ is larger than $2^{-60.888}$, where the minimum distance is attained
+@@ -755,8 +768,8 @@
+   Hence, the smallest distance from a binary64 number to a multiple of $\pi$ is
+   also larger than $2^{-60.888}$:
+   \[ |{\cos} x| \le |\cos(2^{-60.888})| \le 1 - 2^{-122.78}. \]
+-  Since $W_1+W_2$ approximates $|\cos(2\pi(z+R))|$ with error bounded by
+-  $2^{-123.777}$, and $|\cos(2\pi(z+R)) - \cos(x)| < 2^{-125.347}$ from
++  Since $W_1+W_2$ approximates $|\cos(2\pi(z+R'))|$ with error bounded by
++  $2^{-123.777}$, and $|(-1)^b\cos(2\pi(z+R')) - \cos(x)| < 2^{-125.347}$ from
+   Eq.~(\ref{eq2}), we obtain:
+   \[ W_1 + W_2 < 1 - 2^{-122.78} + 2^{-123.777} + 2^{-125.347} < 1. \]
+ 
+@@ -775,8 +788,10 @@
+   It remains to prove correct rounding when $|{\cos x}| < 2^{-27}$.
+   In this case, necessarily $k=2^{11}$ or $k=2^{12}+2^{11}$ in Algorithm ReduceAccLarge,
+   i.e., $x$ is near an odd multiple of $\pi/2$,
+-  since otherwise from Eq.~(\ref{eq5_acc}), with $z = k/2^{13}$,
+-  $|z+R-1/4| \ge 2^{-14} - 2^{-127.999}$ and $|z+R-3/2| \ge 2^{-14} - 2^{-127.999}$,
++  since otherwise from Eq.~(\ref{eq5_acc}),
++  the circular distance from $k/2^{13}+(-1)^{\sigma_r}R$ to either
++  $1/4$ or $3/4$ is at least $2^{-14}$. The corresponding distance for
++  $x/(2\pi)\bmod1$ is therefore at least $2^{-14}-2^{-127.999}$,
+   which from Eq.~(\ref{eq2})
+   is incompatible with $|{\cos x}| < 2^{-27}$.
+   If $2^{-27} \le x < 1$, this cannot happen,
+@@ -790,16 +805,20 @@
+   distance less than $2^{-106}$ from a rounding boundary
+   (the bound $2^{-123}$ would have been enough, but we wanted to find
+   a non-empty set).
+-  We added these 17222 inputs to \texttt{cos.wc}, and checked they are correctly
++  The supplied 17222-row additional section of \texttt{cos.wc} contains
++  16778 inputs satisfying $|\cos x|<2^{-27}$, 412 with $|\cos x|>1-2^{-53}$,
++  and 32 others outside the small-cosine condition. We checked these inputs are correctly
+   rounded for all rounding modes, with and without FMA contraction.
+   For example, in the binade $[2^{1023}, 2^{1024})$, we found
+   11 such inputs, from \texttt{0x1.5140b9e068a61p+1023} to
+   \texttt{0x1.ffa528720daedp+1023}. % ./check_k0 1024 with check_k0.c
+-  Among these inputs,
+-  we found $\cos x$ is closest to a rounding boundary
+-  for $x = \texttt{0x1.6ac5b262ca1ffp+850}$, with $\cos x$ at distance
+-  about $2^{-120.78}$ from a rounding boundary, which leaves more than 2 guard bits
+-  with respect to the bound $2^{-123.358}$.
++  Among the supplied additional inputs with $|\cos x|<2^{-27}$,
++  the smallest measured boundary distance occurs at
++  $x=\texttt{0x1.6477e472c5074p+715}$ and is about $2^{-120.3902}$.
++  The input $\texttt{0x1.6ac5b262ca1ffp+850}$ instead has cosine near $-1$,
++  at distance about $2^{-120.7758}$ from that representable boundary.
++  These are measurements of the supplied corpus; completeness remains a
++  separate requirement on the exhaustive generation described above.
+ \end{proof}
+ 
+ \section{Efficiency}

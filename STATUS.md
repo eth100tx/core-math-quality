@@ -1,5 +1,14 @@
 # Current status
 
+**October 29: requested cosine tests pass; the proof needs corrections.**
+[Review and proposed proof patch](weekly/2026-10-29/REPORT.md). Full pinned
+GCC coverage is 171/172 lines and 43/44 arcs; no fallback unreachability claim.
+Asin unsigned-gap cleanup is now adopted upstream. Specific cosine coverage
+was requested; routine all-function coverage and exp work remain paused.
+Substantive requests are worked when read under [the revised daily flow](docs/DAILY.md);
+Sunday remains the periodic repository scan.
+
+
 **October 26 follow-up: the scaled sine kernel passes exact polynomial/Gappa checks and full normal/forced GCC/Clang corpus runs; an optional asin portability patch passes; the restricted hypot domain cost is quantified.**
 [Focused report and limits](weekly/2026-10-26/REPORT.md). Exp and routine coverage are paused.
 
@@ -13,7 +22,7 @@ regression are fixed in the tested master revision. A focused asin corpus check
 also passes; broader source/proof review remains incomplete.**
 
 - [October 25 fix report](weekly/2026-10-25/REPORT.md), [prior per-file pending work](weekly/2026-10-25/SOURCE-REVIEW.json); [October 26 scoped follow-up](weekly/2026-10-26/REPORT.md).
-- [Next three improvements](IMPROVEMENTS.md): sine proof/code binding, asin portability, and bounded hypot certificates. Exp work is paused from October 26. The [first certificate specification](docs/HYPOT-CERTIFICATE-SPEC.md) is a design artifact, not an executed bivariate campaign.
+- [Next three improvements](IMPROVEMENTS.md): cosine proof/census reconciliation, remaining asin range premises, and bounded hypot certificates. Exp work is paused from October 26. The [first certificate specification](docs/HYPOT-CERTIFICATE-SPEC.md) is a design artifact, not an executed bivariate campaign.
 - exp/rsqrt: GCC 13.3 and Clang 18.1.3 baseline x86-64, four modes, contraction off, errno enabled; finite tests, not correctness proofs.
 - asin: the new unsigned-gap candidate and original-source sanitizer corpus checks pass GCC/Clang; whole-function range preconditions and Windows/32-bit qualification remain open.
 - Routine coverage work is **paused**. exp10 remains parked; October 18 measurements retain their original date and scope. No new ranking.

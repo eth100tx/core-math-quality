@@ -1,0 +1,25 @@
+{
+  "id": "P4",
+  "rank": 1,
+  "title": "Bind the changed sine accurate kernel to reproducible certificates",
+  "status": "tested",
+  "owner": "workbench agent",
+  "reason": "The scaled polynomial update needs exact source/proof correspondence and independent bounds.",
+  "next_action": "Read new correspondence/source changes before selecting another sine obligation. Reuse unchanged October26 results; historical full-domain hard-case completeness remains a separate dependency.",
+  "deliverable": "Exact polynomial certificates, changed Gappa obligations, source binding and scoped regression receipts.",
+  "acceptance": "No whole-function correctness claim from corpus tests or conditional kernel bounds; distinguish historical hard-case completeness.",
+  "budget": {
+    "cpu_hours": 1,
+    "wall_minutes": 30
+  },
+  "stop": "Checkpoint on changed source or missing premise; do not repeat unchanged campaigns.",
+  "dependency": "Pinned sine implementation and separate proof revision; exp is paused to avoid duplicate work.",
+  "last_substantive_change": "2026-10-26",
+  "change": "New PS/PC polynomial bounds rigorously certified; 13 Gappa obligations and full normal/forced four-mode GCC/Clang corpus checks pass.",
+  "next_checkpoint": "2026-11-01",
+  "evidence": [
+    "weekly/2026-10-26/REPORT.md",
+    "weekly/2026-10-26/polynomials.json",
+    "weekly/2026-10-26/SINE-REPLAY.json"
+  ]
+}

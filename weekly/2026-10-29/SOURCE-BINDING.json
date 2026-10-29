@@ -1,0 +1,20 @@
+{
+  "implementation_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
+  "proof_pin": "df593398ddd877cdc00fd1684d9dea814928f28b",
+  "proof_named_implementation": "8b6390c0d4182c49adec044746a6810dc842c6f3",
+  "cos_source_differs_only_in_comments": true,
+  "reference_sine_pin": "336752ca18e1204321225ec90c1f43fcb90ada1b",
+  "full_declarations_and_bodies_identical_after_comments_and_whitespace_normalization": {
+    "_T": "a4baee8c6cca2b0d375ff06fb9f98d50000f002df336f54a41d68981eb0e4494",
+    "S1u": "804ce1debd0ac20f2abf077262c60481a33a589b1032e47b516431406bf88d63",
+    "S2u": "a4afa440cf83afaa2d679add2452bbd0e0db81ea3d08982d9c8be0c62b39775b",
+    "C2u": "be4fc179a48f1ac8a8d9094236bc110b3428c3d4cdec9df7abb3c37c2db466e6",
+    "PS": "633f9cb504d4f17f53035260379e8e21576f3e0827a38997dea70b0adc7aae22",
+    "PC": "ccbe6727407f052cac822a525e51bbcff5a0f73ba6063db03b8d3e0e1c33a595",
+    "mhUU": "a0021b18acb95b8ceed6dad20094e23c160d73e0af6ed58a89b6c5cb60089a31",
+    "evalPS": "cb97ab6acdb8cee3dcf8695d3c6752c1ac747fb2cbe779be6c82120a8b079e91",
+    "evalPC": "94c5096ab92206523ca09f31238d7fd4fe91a856a83935f36a7ea318d42113d3"
+  },
+  "reducer_difference": "Only exponent sign mask removed: cosine dispatcher/forced wrapper passes nonnegative finite x, so t.u>>52 equals (t.u>>52)&0x7ff. Extended exponent domain checked separately.",
+  "limits": "Not a whole-function equivalence assertion; cosine sign/exception assembly is separately reviewed. Prior source/proof global watermarks remain unchanged."
+}

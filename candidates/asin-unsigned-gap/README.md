@@ -1,6 +1,10 @@
 # asin: optional unsigned hard-case predicate
 
-**Tested portability cleanup, not a demonstrated numerical or compiler bug.**
+**Adopted upstream as a portability cleanup; no demonstrated numerical or compiler bug.**
+
+Present in `e168ea1a4bbd01b0678a7d83f46a5134fb14e561` and the October 29
+review pin; [source verification](../../weekly/2026-10-29/ASIN-ADOPTION.json).
+Do not apply this historical patch again to that source.
 Base: `336752ca18e1204321225ec90c1f43fcb90ada1b`.
 [Patch](asin-unsigned-gap.patch), [metadata](METADATA.json),
 [full test receipts](../../weekly/2026-10-26/ASIN-HYPOT-REPLAY.json).

@@ -1,0 +1,21 @@
+{
+  "measured_cpu_seconds": {
+    "gcc_regression_coverage": 95.58094799999999,
+    "gcc_clang_replay_children": 173.56858199999996,
+    "replay_controller": 3.2321328,
+    "initial_gappa14_attempt": 11.313661,
+    "gappa18_tables_polynomials_attempt": 66.53363799999998,
+    "reducer_and_corrected_controls": 5.713868000000001,
+    "exception_diagnostics": 0.406264,
+    "classification": 0.7382579999999999,
+    "exact_fast_sums": 0.03125
+  },
+  "measured_total_cpu_seconds": 357.11860179999996,
+  "conservative_additional_cpu_seconds": 600,
+  "accounted_total_cpu_seconds": 957.1186018,
+  "scope": "Request account, not Sunday scan. Extra conservative allowance covers acquisition, failed wrappers, Opus CLI clients, validation, git/mail/archival and monitoring; remote model inference excluded. Individual wall times remain in receipts; overlapping controller wall durations are not added as elapsed session time.",
+  "request_planning_limits": {
+    "cpu_seconds": 14400,
+    "wall_seconds": 14400
+  }
+}
