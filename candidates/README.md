@@ -2,7 +2,8 @@
 
 | Candidate | Type | State |
 |---|---|---|
-| [cosine proof errata](cos-proof-errata/README.md) | Algorithm/sign/domain and supplied-corpus clarifications | Proposed proof-only patch; scoped tests and certificates, no new whole-function proof. |
+| [cosine sign bookkeeping](cos-sign-bookkeeping/README.md) | Swap-bit definition and total-sign identity | Proposed proof-only follow-up to October 30 revision; exact algebra checked. |
+| [cosine proof errata](cos-proof-errata/README.md) | Algorithm/sign/domain and supplied-corpus clarifications | Partially adopted October 30; preserve original patch, use focused reconciliation rather than reapplying it. |
 | [asin unsigned gap](asin-unsigned-gap/README.md) | Optional portability cleanup | Adopted at the October 29 pin; [source verification](../weekly/2026-10-29/ASIN-ADOPTION.json). Historical GCC/Clang tests retained. |
 | [rsqrt reciprocal range](rsqrt-underflow-range/README.md) | Spurious-underflow regression | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |
 | [exp fast allowance](exp-fast-allowance/README.md) | Historical wrong-value failure | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |

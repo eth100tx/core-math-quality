@@ -1,0 +1,9 @@
+{
+  "proof_base_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
+  "base_sha256": "d71a522222641fd36418afa6aa17e2f85108a896a021dca8f4192dd68bdf2adf",
+  "patch_sha256": "f0b66fb5397de9e4379524e1545ee0176bce27f788ef29f068ebfe940195370f",
+  "result_sha256": "8045af75037133976e6be3e7e9e84315847e342f556e325f1de278533b351ffd",
+  "applies_cleanly": true,
+  "classification": "Proof sign bookkeeping only; no implementation defect or binary64 failing input claimed",
+  "review_status": "Actual Claude Opus5.5 final PASS; delivery/link/metadata conditions independently closed"
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "Bounded continuation of requested cosine review, separate from scheduled daily inbox reserve",
+  "local_cpu_seconds_conservative": 240,
+  "exact_sign_check_cpu_seconds": 0.0,
+  "sign_check_included_in_conservative_total": true,
+  "planning_limit_cpu_seconds": 3600,
+  "planning_limit_wall_seconds": 1800,
+  "remote_model_inference_excluded": true,
+  "fresh_numerical_campaigns": 0
+}

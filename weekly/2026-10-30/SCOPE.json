@@ -1,0 +1,37 @@
+{
+  "changed_paths": {
+    "implementation": [
+      {
+        "path": "README.md",
+        "disposition": "inventoried, deferred outside cosine follow-through"
+      },
+      {
+        "path": "compiler_issues",
+        "disposition": "inventoried, deferred outside cosine follow-through"
+      }
+    ],
+    "proof": [
+      {
+        "path": "cos/cos.tex",
+        "disposition": "focused review"
+      },
+      {
+        "path": "tan/tan.sage",
+        "disposition": "inventoried, deferred outside cosine follow-through"
+      },
+      {
+        "path": "tan/tan.tex",
+        "disposition": "inventoried, deferred outside cosine follow-through"
+      }
+    ]
+  },
+  "global_review_or_measurement_watermarks_advanced": false,
+  "proof_dependency_note": "Comparison changes only cos/cos.tex and tan/tan.{tex,sage}; sine proof/shared proof assets unchanged in this delta.",
+  "mutable_pdf": {
+    "cos_tex_sha256": "d71a522222641fd36418afa6aa17e2f85108a896a021dca8f4192dd68bdf2adf",
+    "cos_tex_git_blob": "cf2f1df89a87c0e0a059e561762e9929d668f0b9",
+    "pdf_sha256": "1103b90f67b601b258ff476002b38f5b4c6f6b0b1c6ed30079a3e1a8a1cf25eb",
+    "pdf_identity_note": "Mutable deployment downloaded; exact review anchor is pinned TeX, PDF not assumed byte-bound to that commit."
+  },
+  "scope": "Review exact pinned TeX. Mutable PDF downloaded separately; no deployment-to-commit binding or PDF layout check claimed."
+}

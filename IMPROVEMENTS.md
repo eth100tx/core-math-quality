@@ -34,7 +34,7 @@ The [previous card](weekly/2026-10-26/PAUSED-EXP.json) and all historical adopti
 
 | Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
 |---|---|---|---|
-| 1 | **Reconcile cosine proof and census evidence (P5).** | [Focused review, proof errata candidate and scoped coverage](weekly/2026-10-29/REPORT.md). | Tests and conditional bounds pass; reconcile corrections and completeness evidence. One fallback line/arc remains unhit, not proved unreachable. |
+| 1 | **Reconcile cosine proof and census evidence (P5).** | [Adoption reconciliation and small sign follow-up](weekly/2026-10-30/REPORT.md). | Most proof corrections adopted; small sign definition and completeness evidence remain. Prior tests and bounds retain their date. One fallback line/arc remains unhit, not proved unreachable. |
 | 2 | **Close a useful remaining asin range premise (P2).** | [Unsigned-gap cleanup is adopted](weekly/2026-10-29/ASIN-ADOPTION.json); preserve prior tests. | No reapplication or duplicate regression. Full range proof and Windows/32-bit execution remain unclaimed. |
 | 3 | **Build useful bivariate regressions (P3).** | [Restricted hypot domain cost and certificate/runner evidence](weekly/2026-10-26/REPORT.md). | Literal enumeration is infeasible. Next construct a bounded near-midpoint family, verify certificates and deduplicate against the pinned corpus; no completeness claim. |
 

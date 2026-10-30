@@ -6,6 +6,7 @@ edition, not a claim that a scheduled weekly review already ran.
 
 | Date | Kind | Report |
 |---|---|---|
+| 2026-10-30 | Cosine proof adoption follow-through; exact sign check, no new regression campaign | [Report](2026-10-30/REPORT.md) |
 | 2026-10-29 | Requested cosine proof, full corpus and focused coverage review | [Report](2026-10-29/REPORT.md) |
 | 2026-10-26 | Requested sine accurate-kernel review, asin portability and hypot feasibility | [Report](2026-10-26/REPORT.md) |
 | 2026-10-26 | Requested restricted hypot verifier / Linux qualification; separate from Sunday review | [Report](../docs/HYPOT-QUALIFICATION.md) |

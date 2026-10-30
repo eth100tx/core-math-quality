@@ -1,5 +1,11 @@
 # Current status
 
+**October 30: most cosine proof corrections are adopted; one new sign-definition typo has a focused follow-up.**
+[Reconciliation and exact check](weekly/2026-10-30/REPORT.md). Source, build, harness
+and corpus identities match the prior tested inputs; October 29 measurements are
+retained without rerunning. Commented proposals and completeness remain open.
+
+
 **October 29: requested cosine tests pass; the proof needs corrections.**
 [Review and proposed proof patch](weekly/2026-10-29/REPORT.md). Full pinned
 GCC coverage is 171/172 lines and 43/44 arcs; no fallback unreachability claim.

@@ -1,0 +1,22 @@
+{
+  "cases": 24,
+  "corrected_identity_passes": true,
+  "printed_definition_counterexamples": [
+    {
+      "b": 0,
+      "q": 1,
+      "sigma_r": 1,
+      "w1": 1,
+      "w2": 2
+    },
+    {
+      "b": 1,
+      "q": 1,
+      "sigma_r": 1,
+      "w1": 1,
+      "w2": 2
+    }
+  ],
+  "cpu_seconds": 0.0,
+  "scope": "Algebraic cases only; w1/w2 are abstract nonnegative magnitudes, not claimed cr_cos input witnesses."
+}

@@ -1,5 +1,11 @@
 # Cosine proof errata candidate
 
+**October 30: partially adopted at proof `d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b`.**
+Keep the original patch as dated evidence; do not reapply it wholesale to current
+upstream. [Reconciliation](../../weekly/2026-10-30/REPORT.md) distinguishes active
+text from commented proposals. A [small sign-bookkeeping follow-up](../cos-sign-bookkeeping/README.md)
+addresses the revised paragraph; completeness and fallback obligations remain open.
+
 This is a proposed document patch against proof commit
 `df593398ddd877cdc00fd1684d9dea814928f28b`, not a change to `cos.c`.
 [Patch](cos-proof-errata.patch), [metadata](METADATA.json),

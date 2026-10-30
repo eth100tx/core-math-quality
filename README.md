@@ -1,6 +1,6 @@
 # CORE-MATH Quality
 
-Latest focused result: [October 29 cosine proof and coverage review](weekly/2026-10-29/REPORT.md), including proposed proof corrections and remaining census/fallback obligations.
+Latest focused result: [October 30 cosine proof adoption and sign-bookkeeping follow-up](weekly/2026-10-30/REPORT.md). [October 29 tests and bounds](weekly/2026-10-29/REPORT.md) retain their original scope and date.
 
 **An independent, reproducible quality workbench for 25 binary64 functions.**
 Run regression checks, resolve proof/code and portability questions, and deliver

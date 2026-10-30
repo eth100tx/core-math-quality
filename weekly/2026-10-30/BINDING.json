@@ -1,0 +1,24 @@
+{
+  "historically_tested_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
+  "current_implementation_pin": "b5a3f7ffb9315afae57a309623c3c5c226ec8bec",
+  "current_proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
+  "proof_named_implementation": "9b821fc62e4758013e200408b7b1da51fdd8464c",
+  "unchanged_tested_input_blobs": {
+    "src/binary64/cos/Makefile": "b8c8bfda3e79dc53d58bf1ed900fbd27cd14eba4",
+    "src/binary64/cos/check_special.c": "903f592a9cab14c9b9f580c827244539124a960d",
+    "src/binary64/cos/cos.c": "c521b3fa5e0202cb02a0401315133f661c1e836f",
+    "src/binary64/cos/cos.wc": "16cc8b02adcc4b94fb8497fb591bb6c9eea53185",
+    "src/binary64/cos/cos_mpfr.c": "f580f991318ba108aaa10ffa86cb4bafafbe4e0f",
+    "src/binary64/cos/function_under_test.h": "527aabd35d20d154b130dd23c80b9025de362b17",
+    "src/binary64/support/Makefile.bivariate": "5d9ce773ae93244b42b3c0c1183673046ff08ffe",
+    "src/binary64/support/Makefile.sincos": "a88b4c50991473e7780bc01fe1dd3bb5c26ccd8f",
+    "src/binary64/support/Makefile.univariate": "0b57d3f0911a5f286ce4e7969e3c5fe265eed3d6",
+    "src/binary64/support/check_worst.c": "f45a4d41e9631c6b24bb9b8c336a90d43b4d4f47",
+    "src/binary64/support/check_worst_sincos.c": "f4f2836057482c117ac1cfa76f88b99a42bd06ea",
+    "src/binary64/support/check_worst_uni.c": "c51dcd4b9249f913073c17a2fffd657cfe637a53",
+    "src/binary64/support/fenv_mpfr.h": "64d73ca5cc0c6d25ce6e476dce579895ac6fa376"
+  },
+  "proof_named_cos_blob_matches": true,
+  "fresh_regressions_run": false,
+  "note": "All13 source/build/harness/corpus manifest blobs match. Prior receipts keep original dates, pins, flags and host qualification; no new execution at current pin is claimed."
+}

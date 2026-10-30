@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-29",
-  "implementation_pin": "42b48ae76610f5baaf9773308f2424459f8c9309",
-  "proof_pin": "df593398ddd877cdc00fd1684d9dea814928f28b",
+  "updated": "2026-10-30",
+  "implementation_pin": "b5a3f7ffb9315afae57a309623c3c5c226ec8bec",
+  "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
   "weekly_budget": {
     "cpu_hours": 4,
     "wall_minutes": 120
@@ -16,7 +16,7 @@
       "status": "in_progress",
       "owner": "workbench agent",
       "reason": "Focused requested review found proof-document inconsistencies while finite tests and kernel bounds passed.",
-      "next_action": "Reconcile the proposed proof errata and any supplied generation/completeness artifacts; investigate the exception fallback only with a justified public-entry witness or exact path argument. Reuse unchanged completed checks.",
+      "next_action": "Reconcile the small sign-bookkeeping candidate and any new completeness evidence; do not reapply broad original patch or repeat unchanged tests. Tangent proof changes inventoried/deferred without a readiness claim.",
       "deliverable": "Reviewed proof-only patch, source-bound certificates, exact scoped coverage and honest completeness checkpoint.",
       "acceptance": "No whole-function proof or unreachability claim from corpus tests; keep supplied-data verification separate from exhaustive regeneration.",
       "budget": {
@@ -25,12 +25,13 @@
       },
       "stop": "Checkpoint on changed source or missing premise; do not repeat unchanged campaigns.",
       "dependency": "Pinned cosine source/proof and subsequent maintainer feedback; no broad coverage or exp campaign.",
-      "last_substantive_change": "2026-10-29",
-      "change": "Full GCC/Clang and forced-accurate corpus checks pass; proof errata candidate prepared, small-domain reducer extension supported, 171/172 lines and 43/44 arcs hit.",
+      "last_substantive_change": "2026-10-30",
+      "change": "Most proof corrections adopted; extension/completeness commentary retained only as comments. New swap-bit typo has a focused proof candidate and exact algebra check; all13 prior tested input blobs match, no rerun.",
       "next_checkpoint": "2026-11-01",
       "evidence": [
-        "weekly/2026-10-29/REPORT.md",
-        "candidates/cos-proof-errata/README.md"
+        "weekly/2026-10-30/REPORT.md",
+        "candidates/cos-sign-bookkeeping/README.md",
+        "weekly/2026-10-29/REPORT.md"
       ]
     },
     {

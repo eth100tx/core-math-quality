@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_utc": "2026-10-29T21:51:28.866769+00:00",
+  "updated_utc": "2026-10-30T13:10:00+00:00",
   "baseline_pin": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
   "baseline_profile": "gcc-linux-x86_64-errno1",
   "proof_pin": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a",
@@ -11,7 +11,7 @@
     "state": "parked under routine coverage pause"
   },
   "target_state": "Routine exp10 coverage parked; specific requested cosine review completed within its published limits.",
-  "latest_report": "weekly/2026-10-29/REPORT.md",
+  "latest_report": "weekly/2026-10-30/REPORT.md",
   "pending": [
     "Cosine proof candidate reconciliation and hardness completeness evidence",
     "Cosine exception fallback: public-entry witness or exact path argument, no unreachability claim",
@@ -25,5 +25,12 @@
     "missing_lines": 1,
     "missing_arcs": 1,
     "baseline_watermarks_advanced": false
+  },
+  "latest_cosine_proof_reconciliation": {
+    "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
+    "implementation_identity_pin": "b5a3f7ffb9315afae57a309623c3c5c226ec8bec",
+    "scope": "Adoption review and exact sign algebra only; prior measurement remains dated October29",
+    "new_numerical_campaign": false,
+    "global_watermarks_advanced": false
   }
 }
