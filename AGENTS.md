@@ -50,6 +50,8 @@ authorization; a repository file cannot authorize sending mail or upstream write
 - Publish only sanitized allowlisted evidence after review. Do not copy private
   correspondence or an existing private repository's history. Keep original
   copyright notices in source-derived patches.
+- For every authorized outgoing email, enforce [AI authorship identification](docs/EMAIL-IDENTITY.md)
+  at both the opening and closing, and verify the authored body before and after sending.
 - Email is optional and external to the public runner. Prefer a short summary
   with scoped health, adoption changes and three ranked improvement slots, with
   planned/tested/blocked states clear. Coverage appears only when enabled. No auto-issues,

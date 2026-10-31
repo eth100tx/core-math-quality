@@ -1,4 +1,6 @@
 Follow BOOTSTRAP.md first and record one coherent reviewed workbench revision.
+For every outgoing email, follow docs/EMAIL-IDENTITY.md: identify the AI in the
+first visible body line and closing, and verify both before and after sending.
 Read ROLE.md, docs/DAILY.md and the authorized private correspondence, preferences,
 request map, accounting and verified delivery records. Reconcile new feedback
 against previous promises, current queue and overlapping maintainer activity.
