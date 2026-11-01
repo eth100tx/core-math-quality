@@ -1,0 +1,5206 @@
+{
+  "certificates_sha256": "8aa6f2d21a1d8db6f407bc5a90f7088fbee031d33db71042989448619a12d6ce",
+  "cost": {
+    "child_cpu_seconds": 4.443061,
+    "parent_cpu_seconds": 0.8692785999999999,
+    "wall_seconds": 27.889164520999998
+  },
+  "files": {
+    "bivariate/hypot_probe.c": "6246ba605c703dc12aa152e6420745dbb2c822622ed2d976905282bda1ad6587",
+    "bivariate/make_fixtures.py": "49721aff446c4a750e690f845fe8f9d70b0f8d119abe8b00612be97a0ca9b8f7",
+    "config/profiles.json": "58b532226130eccb781f8c8d45fd159f708772e82484c44f04a364e61ac9edcb",
+    "config/source.json": "397afac4985ff937caf7fe695e483e5b96d3c3e1e4782f5ecdfbfc5b113fb372",
+    "hypot_run.py": "463f5c546afc9f2b7a5888ebac53f6c60bb6f09258065643478b7e442bd87093",
+    "hypot_verify.py": "aef5d2b6bd8b2d9dc4679b4a2ebbacccdbb8a37a9b62d9a0c9d6d4a870d60586",
+    "quality.py": "dd122d7b1defa62af28087f859c0f799dbe0cec058ea116e1df5777533b05565",
+    "weekly/2026-11-01/hypot_family.py": "9186f2965aa71aeea60e0215160a0d39df99ec4cab90ddcd14be4d39b8248673",
+    "weekly/2026-11-01/run_hypot_family.py": "dfe742e746c7ccecbd39f6159558c28eebcb447602ca6d7d2f8496da9edbdebc"
+  },
+  "kind": "restricted-hypot-family-execution",
+  "pin": "5f65574e2b3631fb31e9b88dd27782a936c68095",
+  "profiles": [
+    {
+      "adapter_flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fno-lto"
+      ],
+      "binaries": {
+        "control1": "a408e4d1b0ef770bcf2cdb513cc613200dfa5fba30f2dfa3b835fbc73b92ba82",
+        "control2": "f8aa96012363748ca8ea82799f434a9b08149f424598234c5b6d06646ee0eea5",
+        "control3": "dc0320cae7af2c60fbfdfc834e441c0fe7bbc9beba08540275d6119e5a3a928f",
+        "control4": "7cdcb45c6dc4b72d7b8d86072aec9e969aa963d6b333da95b26d3d3adc12d8d9",
+        "control5": "769f11697285a535dac98d77c2a37bfbf03d4c632fbf31877b3c9dd2e9a3430a",
+        "control6": "095a0d6532be3ee91ae83e89c63c76aefb6b745946672708f7b1f3bfa47340bb",
+        "normal": "c3878ffe5d23d399ed51c5ed2a31965ceff8f8b4542084b9ea91d85180116539",
+        "oracle": "4e1d4ac402c78022b46a411d73e4489691b69bb8b20761bccb9f8af0b2d091ae"
+      },
+      "compiler_driver_sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+      "controls": [
+        {
+          "expected": "VALUE",
+          "fault": 1,
+          "observed": "VALUE"
+        },
+        {
+          "expected": "MODE",
+          "fault": 2,
+          "observed": "MODE"
+        },
+        {
+          "expected": "INPUT",
+          "fault": 3,
+          "observed": "INPUT"
+        },
+        {
+          "expected": "FLAGS",
+          "fault": 4,
+          "observed": "FLAGS"
+        },
+        {
+          "expected": "ERRNO",
+          "fault": 5,
+          "observed": "ERRNO"
+        },
+        {
+          "expected": "TIMEOUT",
+          "fault": 6,
+          "observed": "TIMEOUT"
+        }
+      ],
+      "doctor": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64",
+        "status": "PASS"
+      },
+      "library_flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fno-lto"
+      ],
+      "observations": [
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        }
+      ],
+      "oracle_libraries": {
+        "libgmp.so.10": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804",
+        "libmpfr.so.6": "2156351fa3dedd04a7381c6ac7a8a26efa2d6fb08b80f8a2d644ccdd653710ae"
+      },
+      "profile": "gcc-linux-x86_64",
+      "status": "PASS",
+      "symbol_check": "local hypot.o defines cr_hypot"
+    },
+    {
+      "adapter_flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fno-lto",
+        "-ffp-exception-behavior=strict"
+      ],
+      "binaries": {
+        "control1": "0994b2efde1458114bb37f7bf94906ca9c00d302ce4e8c1a21852d41458705d7",
+        "control2": "4275b6222170b2ef06892f5fc547cdab4576a8b2a98afdf5f1911a66d6236282",
+        "control3": "8f4a0c2b1706d2f76c83d944020729b609f704ede9fda9ca56c1150dbc1c152b",
+        "control4": "04ef526d784a7caf0f52241658bfbc4825942c6b1c14d80c1653f920b7837c32",
+        "control5": "d8315de2f0d51d320cce2a54e766edaafae49320b95fbe012cfa13ff5afe89c2",
+        "control6": "e3254562292fb957827765fcce5ee1021ba17785c0837a59459f143daf908c21",
+        "normal": "904a17df4ccc810261b90b1a641b9850c4ea75f436ad67f50ad5f56b87398c58",
+        "oracle": "ca1bb1bece698a77e1252d7ccbd7a98d19e9a90f0339d5a53764e1b4aa5aa59f"
+      },
+      "compiler_driver_sha256": "8ef402d453d1ba4902e4ee0f0f847f6cfa01400c95aa43c24e97818b9c0e3f45",
+      "controls": [
+        {
+          "expected": "VALUE",
+          "fault": 1,
+          "observed": "VALUE"
+        },
+        {
+          "expected": "MODE",
+          "fault": 2,
+          "observed": "MODE"
+        },
+        {
+          "expected": "INPUT",
+          "fault": 3,
+          "observed": "INPUT"
+        },
+        {
+          "expected": "FLAGS",
+          "fault": 4,
+          "observed": "FLAGS"
+        },
+        {
+          "expected": "ERRNO",
+          "fault": 5,
+          "observed": "ERRNO"
+        },
+        {
+          "expected": "TIMEOUT",
+          "fault": 6,
+          "observed": "TIMEOUT"
+        }
+      ],
+      "doctor": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "library_flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fno-lto"
+      ],
+      "observations": [
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ff7ffffffffffff",
+            "y_bits": "3ffffffffffffffd"
+          },
+          "record": 0,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffff",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffff",
+            "bound_lo": "4003fffffffffffe",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffe",
+            "x_bits": "3ffffffffffffffd",
+            "y_bits": "3ff7ffffffffffff"
+          },
+          "record": 1,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ff7fffffffffff9",
+            "y_bits": "3ffffffffffffff5"
+          },
+          "record": 2,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffffa",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffffa",
+            "bound_lo": "4003fffffffffff9",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff9",
+            "x_bits": "3ffffffffffffff5",
+            "y_bits": "3ff7fffffffffff9"
+          },
+          "record": 3,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3ff7fffffffffff3",
+            "y_bits": "3fffffffffffffed"
+          },
+          "record": 4,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff5",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff5",
+            "bound_lo": "4003fffffffffff4",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff4",
+            "x_bits": "3fffffffffffffed",
+            "y_bits": "3ff7fffffffffff3"
+          },
+          "record": 5,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3ff7ffffffffffed",
+            "y_bits": "3fffffffffffffe5"
+          },
+          "record": 6,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003fffffffffff0",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "oracle": {
+            "bound_hi": "4003fffffffffff0",
+            "bound_lo": "4003ffffffffffef",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffef",
+            "x_bits": "3fffffffffffffe5",
+            "y_bits": "3ff7ffffffffffed"
+          },
+          "record": 7,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3ff7ffffffffffe7",
+            "y_bits": "3fffffffffffffdd"
+          },
+          "record": 8,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffeb",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffeb",
+            "bound_lo": "4003ffffffffffea",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffea",
+            "x_bits": "3fffffffffffffdd",
+            "y_bits": "3ff7ffffffffffe7"
+          },
+          "record": 9,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3ff7ffffffffffe1",
+            "y_bits": "3fffffffffffffd5"
+          },
+          "record": 10,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe6",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe6",
+            "bound_lo": "4003ffffffffffe5",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe5",
+            "x_bits": "3fffffffffffffd5",
+            "y_bits": "3ff7ffffffffffe1"
+          },
+          "record": 11,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3ff7ffffffffffdb",
+            "y_bits": "3fffffffffffffcd"
+          },
+          "record": 12,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe1",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffe1",
+            "bound_lo": "4003ffffffffffe0",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffe0",
+            "x_bits": "3fffffffffffffcd",
+            "y_bits": "3ff7ffffffffffdb"
+          },
+          "record": 13,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3ff7ffffffffffd5",
+            "y_bits": "3fffffffffffffc5"
+          },
+          "record": 14,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndn",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 0,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndz",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 1,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndu",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 2,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdc",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        },
+        {
+          "mode": "rndd",
+          "observation": {
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "oracle": {
+            "bound_hi": "4003ffffffffffdc",
+            "bound_lo": "4003ffffffffffdb",
+            "errno": 0,
+            "flags": {
+              "divbyzero": 0,
+              "inexact": 1,
+              "invalid": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "mode_index": 3,
+            "mode_preserved": 1,
+            "raw_flags": 32,
+            "value": "4003ffffffffffdb",
+            "x_bits": "3fffffffffffffc5",
+            "y_bits": "3ff7ffffffffffd5"
+          },
+          "record": 15,
+          "status": "PASS"
+        }
+      ],
+      "oracle_libraries": {
+        "libgmp.so.10": "0ccdfb6d6f5c039465f6d002cf7e4c072d48ac6a2cffc8dd6c748dec31592804",
+        "libmpfr.so.6": "2156351fa3dedd04a7381c6ac7a8a26efa2d6fb08b80f8a2d644ccdd653710ae"
+      },
+      "profile": "clang-linux-x86_64",
+      "status": "PASS",
+      "symbol_check": "local hypot.o defines cr_hypot"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "16 ordered family rows only; no full-corpus execution or census",
+  "source": {
+    "errno_macro_referenced": true,
+    "git_blob": "fda865a895e9badc48a8b9a42d5a54c3327cafb3",
+    "path": "src/binary64/hypot/hypot.c",
+    "sha256": "71d47330651a699e1b2791d7654cd4683f55b203bcc425b5b48f2fa2a5b379d0"
+  },
+  "status": "PASS"
+}

@@ -1,5 +1,12 @@
 # Current status
 
+**November 1: a sine build regression has a tested one-space patch; changed log/tanpi checks and eight exact hypot regression pairs pass.**
+[Weekly report and precise limits](weekly/2026-11-01/REPORT.md).
+The cosine sign candidate remains open; no duplicate numerical campaign.
+Next primary proof task is log's new near-one path. Asin's remaining range/ABI
+premise is explicitly deferred, not closed. Exp/routine coverage remain paused.
+
+
 **October 30: most cosine proof corrections are adopted; one new sign-definition typo has a focused follow-up.**
 [Reconciliation and exact check](weekly/2026-10-30/REPORT.md). Source, build, harness
 and corpus identities match the prior tested inputs; October 29 measurements are

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-30",
-  "implementation_pin": "b5a3f7ffb9315afae57a309623c3c5c226ec8bec",
+  "updated": "2026-11-01",
+  "implementation_pin": "5f65574e2b3631fb31e9b88dd27782a936c68095",
   "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
   "weekly_budget": {
     "cpu_hours": 4,
@@ -10,14 +10,38 @@
   "execution_policy": "One primary review task and at most one bivariate task, serially under existing locks. Remaining budget is reserve, not permission for automatic expansion.",
   "priorities": [
     {
-      "id": "P5",
+      "id": "P6",
       "rank": 1,
-      "title": "Reconcile cosine proof corrections and census evidence",
+      "title": "Bind the changed log near-one path to rigorous error evidence",
       "status": "in_progress",
       "owner": "workbench agent",
-      "reason": "Focused requested review found proof-document inconsistencies while finite tests and kernel bounds passed.",
-      "next_action": "Reconcile the small sign-bookkeeping candidate and any new completeness evidence; do not reapply broad original patch or repeat unchanged tests. Tangent proof changes inventoried/deferred without a readiness claim.",
-      "deliverable": "Reviewed proof-only patch, source-bound certificates, exact scoped coverage and honest completeness checkpoint.",
+      "reason": "New cr_log_tiny code passes finite tests but approximation/model binding is not yet closed.",
+      "next_action": "Review exact cr_log_tiny coefficients, operation ordering and stopping allowance against logtiny.g; independently certify the approximation or state a precise remaining premise.",
+      "deliverable": "Pinned source-to-model binding and rigorous bounded certificate replay, with unresolved premises explicit.",
+      "acceptance": "Passing corpora and dirtyinfnorm are not proofs; separate approximation, operation error and rounding-test allowance.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Checkpoint at missing dependency, changed source or cap; never promote an exploratory norm to a certificate.",
+      "dependency": "Pinned log.c/logtiny.g/logtiny.sollya and qualified proof tools; no paused exp work.",
+      "last_substantive_change": "2026-11-01",
+      "change": "Full current Clang corpus passes four modes; changed source/model inventoried and proof binding remains open.",
+      "next_checkpoint": "2026-11-08",
+      "evidence": [
+        "weekly/2026-11-01/REPORT.md",
+        "weekly/2026-11-01/SOURCE-REVIEW.json"
+      ]
+    },
+    {
+      "id": "P5",
+      "rank": 2,
+      "title": "Close sine build and cosine proof follow-through",
+      "status": "in_progress",
+      "owner": "workbench agent",
+      "reason": "A newly changed sine preprocessor directive blocks compilation; prior cosine proof obligations remain distinct.",
+      "next_action": "Check adoption of the tested sine preprocessor patch and the prior cosine sign correction; preserve full census/fallback obligations without repeating unchanged tests.",
+      "deliverable": "Minimal tested sine build patch and pinned cosine adoption/completeness checkpoint.",
       "acceptance": "No whole-function proof or unreachability claim from corpus tests; keep supplied-data verification separate from exhaustive regeneration.",
       "budget": {
         "cpu_hours": 1,
@@ -25,38 +49,13 @@
       },
       "stop": "Checkpoint on changed source or missing premise; do not repeat unchanged campaigns.",
       "dependency": "Pinned cosine source/proof and subsequent maintainer feedback; no broad coverage or exp campaign.",
-      "last_substantive_change": "2026-10-30",
-      "change": "Most proof corrections adopted; extension/completeness commentary retained only as comments. New swap-bit typo has a focused proof candidate and exact algebra check; all13 prior tested input blobs match, no rerun.",
-      "next_checkpoint": "2026-11-01",
+      "last_substantive_change": "2026-11-01",
+      "change": "Current sine fails GCC/Clang compilation; one-character correction restores both builds. Cosine proof/input identities unchanged, sign candidate still open.",
+      "next_checkpoint": "2026-11-08",
       "evidence": [
-        "weekly/2026-10-30/REPORT.md",
-        "candidates/cos-sign-bookkeeping/README.md",
-        "weekly/2026-10-29/REPORT.md"
-      ]
-    },
-    {
-      "id": "P2",
-      "rank": 2,
-      "title": "Resolve asin cast and integer-range portability",
-      "status": "in_progress",
-      "owner": "workbench agent",
-      "reason": "The passing Clang corpus does not establish signed-subtraction safety or equivalence on LP64 and LLP64.",
-      "next_action": "Only pursue a named remaining phi/ph range premise when useful and aligned; do not reapply the adopted cleanup or rerun unchanged corpus checks.",
-      "deliverable": "Tested optional unsigned predicate and explicit range/ABI note; next a coarse all-input range lemma under stated floating-point assumptions.",
-      "acceptance": "Tests alone do not prove absence of UB. Explicitly distinguish source undefined behavior, compiler miscompilation and unsupported ABI execution.",
-      "budget": {
-        "cpu_hours": 1,
-        "wall_minutes": 30
-      },
-      "stop": "Checkpoint on an unqualified ABI, unresolved range premise, source change or cap; do not label unsupported execution a failure.",
-      "dependency": "Pinned asin source; qualified toolchains and a small reproducible test harness.",
-      "last_substantive_change": "2026-10-29",
-      "change": "Unsigned-gap candidate adopted upstream at e168ea1a; prior tests retained. Whole-function phi/ph range premise and unsupported ABI execution remain open.",
-      "next_checkpoint": "2026-11-01",
-      "evidence": [
-        "candidates/asin-unsigned-gap/README.md",
-        "weekly/2026-10-26/ASIN-HYPOT-REPLAY.json",
-        "weekly/2026-10-29/ASIN-ADOPTION.json"
+        "weekly/2026-11-01/REPORT.md",
+        "candidates/sin-preprocessor-space/README.md",
+        "weekly/2026-11-01/COS-RECONCILIATION.json"
       ]
     },
     {
@@ -66,7 +65,7 @@
       "status": "in_progress",
       "owner": "workbench agent",
       "reason": "The unary suite does not cover the much larger two-input space; small exact certificates can separate generating difficult cases from verifying them.",
-      "next_action": "Construct one bounded near-midpoint family, independently verify exact certificates and compare numeric pair membership against the full pinned hypot corpus. No full Cartesian scan; archive import remains blocked.",
+      "next_action": "Check adoption of the eight certified midpoint-plus-one pairs; next construct a complementary below-midpoint or near-representable family in a bounded unit, not a larger unchanged sweep.",
       "deliverable": "A standalone exact checker, explicit certificate format and separately qualified four-mode runner; later a hashed archive-import/reproduction receipt.",
       "acceptance": "Exact input decoding, positive/negative controls and bounds; values, flags and errno separate. Table verification does not regenerate a completeness census. No new bug or novelty claim from a hard-but-correct case.",
       "budget": {
@@ -75,12 +74,12 @@
       },
       "stop": "Stop on a failed control or cap. Recheck archive availability at the next checkpoint, report the blocker once and continue independent infrastructure work; do not silently drop the requested import.",
       "dependency": "Independent verifier and Linux adapter qualified for listed GCC/Clang profiles only. Prior archives are still unavailable; their results remain unverified here.",
-      "last_substantive_change": "2026-10-26",
-      "change": "Rigorous restricted-domain count enclosure and bounded checking-throughput observation show literal pair enumeration infeasible. Earlier certificate/adapter qualification retained.",
-      "next_checkpoint": "2026-11-01",
+      "last_substantive_change": "2026-11-01",
+      "change": "Eight exact unordered pairs plus swaps certified, absent under sign/swap/power2 membership at the full pinned corpus, and pass 128 GCC/Clang four-mode observations with controls. No census or novelty claim.",
+      "next_checkpoint": "2026-11-08",
       "evidence": [
-        "weekly/2026-10-26/REPORT.md",
-        "weekly/2026-10-26/hypot-domain.json",
+        "weekly/2026-11-01/REPORT.md",
+        "candidates/hypot-midpoint-plus-one/README.md",
         "docs/HYPOT-QUALIFICATION.md"
       ]
     }

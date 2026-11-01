@@ -1,0 +1,30 @@
+{
+  "scope": "Scheduled Sunday review; shared with light inbox checks in the same cycle",
+  "measured_runs": {
+    "sine_build": {
+      "child_cpu_seconds": 4.841288999999999,
+      "parent_cpu_seconds": 0.13002529999999998,
+      "wall_seconds": 12.3440033
+    },
+    "log_tanpi": {
+      "child_cpu_seconds": 8.052749,
+      "wall_seconds": 84.888804872
+    },
+    "hypot_family": {
+      "child_cpu_seconds": 4.443061,
+      "parent_cpu_seconds": 0.8692785999999999,
+      "wall_seconds": 27.889164520999998
+    },
+    "hypot_first_parse_failure": {
+      "child_cpu_seconds": -4.336808689942018e-19,
+      "parent_cpu_seconds": 0.10249200000000003,
+      "wall_seconds": 8.289810337000006
+    }
+  },
+  "measured_run_cpu_seconds": 18.438894899999998,
+  "additional_cpu_seconds_conservative": 600,
+  "cpu_total_seconds": 618.4388949,
+  "wall_note": "Per-run wall times overlap orchestration/review and must not be summed as invocation elapsed. Final actual invocation wall is recorded privately; remaining envelope at entry was 6017.509974 seconds.",
+  "remote_model_inference": "Not local campaign CPU; actual Claude Opus 5.5 planning and final review recorded separately.",
+  "bounded_limits": "Numerical children <=600 seconds; outer jobs <=900 seconds; no full enumeration or open-ended search."
+}

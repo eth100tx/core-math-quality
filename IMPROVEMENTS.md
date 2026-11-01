@@ -34,15 +34,17 @@ The [previous card](weekly/2026-10-26/PAUSED-EXP.json) and all historical adopti
 
 | Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
 |---|---|---|---|
-| 1 | **Reconcile cosine proof and census evidence (P5).** | [Adoption reconciliation and small sign follow-up](weekly/2026-10-30/REPORT.md). | Most proof corrections adopted; small sign definition and completeness evidence remain. Prior tests and bounds retain their date. One fallback line/arc remains unhit, not proved unreachable. |
-| 2 | **Close a useful remaining asin range premise (P2).** | [Unsigned-gap cleanup is adopted](weekly/2026-10-29/ASIN-ADOPTION.json); preserve prior tests. | No reapplication or duplicate regression. Full range proof and Windows/32-bit execution remain unclaimed. |
-| 3 | **Build useful bivariate regressions (P3).** | [Restricted hypot domain cost and certificate/runner evidence](weekly/2026-10-26/REPORT.md). | Literal enumeration is infeasible. Next construct a bounded near-midpoint family, verify certificates and deduplicate against the pinned corpus; no completeness claim. |
+| 1 | **Bind log's changed near-one proof (P6).** | Pin coefficients, operation order and stopping allowance to rigorous certificates. | Current Clang full-corpus checks pass; approximation and model binding are still open. |
+| 2 | **Restore sine build and reconcile cosine follow-through (P5).** | [Tested sine patch and current cosine status](weekly/2026-11-01/REPORT.md). | One-space patch restores GCC/Clang compilation; cosine sign/census obligations remain separate. Check adoption before repeating work. |
+| 3 | **Build useful bivariate regressions (P3).** | [Eight exact hypot pairs plus swaps](candidates/hypot-midpoint-plus-one/README.md). | Certificates, full-file membership and 128 four-mode observations pass; next complementary family, no completeness/novelty claim. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three
 new bugs or patches every week**. Reprioritize when evidence or upstream changes
 justify it. Replace closed cards with the next eligible task. If fewer than three
 are useful, say so; never fill a slot with an invented finding.
+
+The unchanged asin range/ABI card is [explicitly deferred](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) behind the new log path, not closed. Its adopted cleanup and prior evidence are retained.
 
 ## Weekly acceptance and limits
 

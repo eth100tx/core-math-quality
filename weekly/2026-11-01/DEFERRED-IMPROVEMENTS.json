@@ -1,0 +1,46 @@
+{
+  "deferred_on": "2026-11-01",
+  "reason": "Changed log near-one numerical path and the sine build regression outrank the unchanged asin premise this week. No premise is closed by moving its card.",
+  "cards": [
+    {
+      "id": "P2",
+      "rank": 2,
+      "title": "Resolve asin cast and integer-range portability",
+      "status": "in_progress",
+      "owner": "workbench agent",
+      "reason": "The passing Clang corpus does not establish signed-subtraction safety or equivalence on LP64 and LLP64.",
+      "next_action": "Only pursue a named remaining phi/ph range premise when useful and aligned; do not reapply the adopted cleanup or rerun unchanged corpus checks.",
+      "deliverable": "Tested optional unsigned predicate and explicit range/ABI note; next a coarse all-input range lemma under stated floating-point assumptions.",
+      "acceptance": "Tests alone do not prove absence of UB. Explicitly distinguish source undefined behavior, compiler miscompilation and unsupported ABI execution.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Checkpoint on an unqualified ABI, unresolved range premise, source change or cap; do not label unsupported execution a failure.",
+      "dependency": "Pinned asin source; qualified toolchains and a small reproducible test harness.",
+      "last_substantive_change": "2026-10-29",
+      "change": "Unsigned-gap candidate adopted upstream at e168ea1a; prior tests retained. Whole-function phi/ph range premise and unsupported ABI execution remain open.",
+      "next_checkpoint": "2026-11-01",
+      "evidence": [
+        "candidates/asin-unsigned-gap/README.md",
+        "weekly/2026-10-26/ASIN-HYPOT-REPLAY.json",
+        "weekly/2026-10-29/ASIN-ADOPTION.json"
+      ]
+    }
+  ],
+  "next_checkpoint": "2026-11-08",
+  "other_retained": [
+    "Cosine full hardness/fallback completeness and unadopted sign candidate",
+    "Missing bivariate transfer archives, angular/pow import and atan2 stage comparison",
+    "Exp and routine coverage paused",
+    "Tangent work deferred pending a concrete review request or readiness evidence"
+  ],
+  "cards_are_prior_queue_snapshots": true,
+  "current_disposition": {
+    "P2": {
+      "status": "deferred",
+      "next_checkpoint": "2026-11-08",
+      "current_rank": null
+    }
+  }
+}

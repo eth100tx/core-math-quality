@@ -1,0 +1,226 @@
+[
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003fffffffffffe",
+      "rndn": "4003ffffffffffff",
+      "rndu": "4003ffffffffffff",
+      "rndz": "4003fffffffffffe"
+    },
+    "lower_bits": "4003fffffffffffe",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffff",
+    "x_bits": "3ff7ffffffffffff",
+    "y_bits": "3ffffffffffffffd"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003fffffffffffe",
+      "rndn": "4003ffffffffffff",
+      "rndu": "4003ffffffffffff",
+      "rndz": "4003fffffffffffe"
+    },
+    "lower_bits": "4003fffffffffffe",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffff",
+    "x_bits": "3ffffffffffffffd",
+    "y_bits": "3ff7ffffffffffff"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003fffffffffff9",
+      "rndn": "4003fffffffffffa",
+      "rndu": "4003fffffffffffa",
+      "rndz": "4003fffffffffff9"
+    },
+    "lower_bits": "4003fffffffffff9",
+    "schema_version": 1,
+    "upper_bits": "4003fffffffffffa",
+    "x_bits": "3ff7fffffffffff9",
+    "y_bits": "3ffffffffffffff5"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003fffffffffff9",
+      "rndn": "4003fffffffffffa",
+      "rndu": "4003fffffffffffa",
+      "rndz": "4003fffffffffff9"
+    },
+    "lower_bits": "4003fffffffffff9",
+    "schema_version": 1,
+    "upper_bits": "4003fffffffffffa",
+    "x_bits": "3ffffffffffffff5",
+    "y_bits": "3ff7fffffffffff9"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003fffffffffff4",
+      "rndn": "4003fffffffffff5",
+      "rndu": "4003fffffffffff5",
+      "rndz": "4003fffffffffff4"
+    },
+    "lower_bits": "4003fffffffffff4",
+    "schema_version": 1,
+    "upper_bits": "4003fffffffffff5",
+    "x_bits": "3ff7fffffffffff3",
+    "y_bits": "3fffffffffffffed"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003fffffffffff4",
+      "rndn": "4003fffffffffff5",
+      "rndu": "4003fffffffffff5",
+      "rndz": "4003fffffffffff4"
+    },
+    "lower_bits": "4003fffffffffff4",
+    "schema_version": 1,
+    "upper_bits": "4003fffffffffff5",
+    "x_bits": "3fffffffffffffed",
+    "y_bits": "3ff7fffffffffff3"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffef",
+      "rndn": "4003fffffffffff0",
+      "rndu": "4003fffffffffff0",
+      "rndz": "4003ffffffffffef"
+    },
+    "lower_bits": "4003ffffffffffef",
+    "schema_version": 1,
+    "upper_bits": "4003fffffffffff0",
+    "x_bits": "3ff7ffffffffffed",
+    "y_bits": "3fffffffffffffe5"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffef",
+      "rndn": "4003fffffffffff0",
+      "rndu": "4003fffffffffff0",
+      "rndz": "4003ffffffffffef"
+    },
+    "lower_bits": "4003ffffffffffef",
+    "schema_version": 1,
+    "upper_bits": "4003fffffffffff0",
+    "x_bits": "3fffffffffffffe5",
+    "y_bits": "3ff7ffffffffffed"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffea",
+      "rndn": "4003ffffffffffeb",
+      "rndu": "4003ffffffffffeb",
+      "rndz": "4003ffffffffffea"
+    },
+    "lower_bits": "4003ffffffffffea",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffeb",
+    "x_bits": "3ff7ffffffffffe7",
+    "y_bits": "3fffffffffffffdd"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffea",
+      "rndn": "4003ffffffffffeb",
+      "rndu": "4003ffffffffffeb",
+      "rndz": "4003ffffffffffea"
+    },
+    "lower_bits": "4003ffffffffffea",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffeb",
+    "x_bits": "3fffffffffffffdd",
+    "y_bits": "3ff7ffffffffffe7"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffe5",
+      "rndn": "4003ffffffffffe6",
+      "rndu": "4003ffffffffffe6",
+      "rndz": "4003ffffffffffe5"
+    },
+    "lower_bits": "4003ffffffffffe5",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffe6",
+    "x_bits": "3ff7ffffffffffe1",
+    "y_bits": "3fffffffffffffd5"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffe5",
+      "rndn": "4003ffffffffffe6",
+      "rndu": "4003ffffffffffe6",
+      "rndz": "4003ffffffffffe5"
+    },
+    "lower_bits": "4003ffffffffffe5",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffe6",
+    "x_bits": "3fffffffffffffd5",
+    "y_bits": "3ff7ffffffffffe1"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffe0",
+      "rndn": "4003ffffffffffe1",
+      "rndu": "4003ffffffffffe1",
+      "rndz": "4003ffffffffffe0"
+    },
+    "lower_bits": "4003ffffffffffe0",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffe1",
+    "x_bits": "3ff7ffffffffffdb",
+    "y_bits": "3fffffffffffffcd"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffe0",
+      "rndn": "4003ffffffffffe1",
+      "rndu": "4003ffffffffffe1",
+      "rndz": "4003ffffffffffe0"
+    },
+    "lower_bits": "4003ffffffffffe0",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffe1",
+    "x_bits": "3fffffffffffffcd",
+    "y_bits": "3ff7ffffffffffdb"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffdb",
+      "rndn": "4003ffffffffffdc",
+      "rndu": "4003ffffffffffdc",
+      "rndz": "4003ffffffffffdb"
+    },
+    "lower_bits": "4003ffffffffffdb",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffdc",
+    "x_bits": "3ff7ffffffffffd5",
+    "y_bits": "3fffffffffffffc5"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4003ffffffffffdb",
+      "rndn": "4003ffffffffffdc",
+      "rndu": "4003ffffffffffdc",
+      "rndz": "4003ffffffffffdb"
+    },
+    "lower_bits": "4003ffffffffffdb",
+    "schema_version": 1,
+    "upper_bits": "4003ffffffffffdc",
+    "x_bits": "3fffffffffffffc5",
+    "y_bits": "3ff7ffffffffffd5"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "base": "b5a3f7ffb9315afae57a309623c3c5c226ec8bec",
+  "cost": {
+    "child_cpu_seconds": 4.841288999999999,
+    "parent_cpu_seconds": 0.13002529999999998,
+    "wall_seconds": 12.3440033
+  },
+  "driver_sha256": "575fce7e9ec68f1fd29776d398629ab4786c19b00107449bdc05e814225f5127",
+  "kind": "sine-build-regression",
+  "pin": "5f65574e2b3631fb31e9b88dd27782a936c68095",
+  "profiles": [
+    {
+      "checks": {
+        "current": {
+          "output": "current.c: In function \u2018muldd\u2019:\ncurrent.c:278:2: error: invalid preprocessing directive #if1; did you mean #if?\n  278 | #if1\n      |  ^~~\n      |  if\ncurrent.c:280:2: error: #else without #if\n  280 | #else\n      |  ^~~~\ncurrent.c:286:2: error: #endif without #if\n  286 | #endif\n      |  ^~~~~\n",
+          "output_truncated": false,
+          "returncode": 1
+        },
+        "fixed": {
+          "output": "",
+          "output_truncated": false,
+          "returncode": 0
+        },
+        "previous": {
+          "output": "",
+          "output_truncated": false,
+          "returncode": 0
+        }
+      },
+      "doctor": {
+        "architecture": "x86_64",
+        "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "experimental": false,
+        "gcov": "gcov (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "gcc-linux-x86_64",
+        "status": "PASS"
+      },
+      "fixed_previous_preprocessed_tokens_identical": true,
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-fsignaling-nans",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fno-lto"
+      ],
+      "profile": "gcc-linux-x86_64"
+    },
+    {
+      "checks": {
+        "current": {
+          "output": "current.c:278:2: error: invalid preprocessing directive\n  278 | #if1\n      |  ^\ncurrent.c:280:2: error: #else without #if\n  280 | #else\n      |  ^\ncurrent.c:286:2: error: #endif without #if\n  286 | #endif\n      |  ^\n3 errors generated.\n",
+          "output_truncated": false,
+          "returncode": 1
+        },
+        "fixed": {
+          "output": "",
+          "output_truncated": false,
+          "returncode": 0
+        },
+        "previous": {
+          "output": "",
+          "output_truncated": false,
+          "returncode": 0
+        }
+      },
+      "doctor": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "fixed_previous_preprocessed_tokens_identical": true,
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO",
+        "-fno-lto"
+      ],
+      "profile": "clang-linux-x86_64"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Standalone strict compilation and preprocessed token equivalence, not numerical tests",
+  "sources": {
+    "current": {
+      "git_blob": "6f87b841d3ceaeb37016c5618c9fc2c9a9c5ff5e",
+      "sha256": "60405839e675c6ecf4975ffc3c708e3e35914ae0a51ad943e32d94367f9a94ed"
+    },
+    "fixed": {
+      "sha256": "c8a94aff114e7c2fa314b4f74575a0c2dfcdb8fb116c48a6244ab914304fb905"
+    },
+    "previous": {
+      "git_blob": "2ef21d95c515b55c49fe9077ed2a083894dfc836",
+      "sha256": "0ea153861fe383298129ba53a1d733399180aec04aac4114673bb2ace536cb8a"
+    }
+  },
+  "status": "PASS"
+}

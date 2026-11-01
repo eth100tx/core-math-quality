@@ -1,0 +1,8 @@
+{
+  "git_apply_check": true,
+  "git_apply": true,
+  "original_sha256": "60405839e675c6ecf4975ffc3c708e3e35914ae0a51ad943e32d94367f9a94ed",
+  "patch_sha256": "d55056a557feb9d1c59cd4ca3140a0ff6b12f10ade2a276df017fa2c0ee5a759",
+  "applied_sha256": "c8a94aff114e7c2fa314b4f74575a0c2dfcdb8fb116c48a6244ab914304fb905",
+  "matches_compiled_fixed_source": true
+}

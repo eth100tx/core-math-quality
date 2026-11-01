@@ -1,0 +1,17 @@
+# Eight unordered pairs plus swaps; exact residual +1; not failure witnesses.
+0x1.7ffffffffffffp+0,0x1.ffffffffffffdp+0
+0x1.ffffffffffffdp+0,0x1.7ffffffffffffp+0
+0x1.7fffffffffff9p+0,0x1.ffffffffffff5p+0
+0x1.ffffffffffff5p+0,0x1.7fffffffffff9p+0
+0x1.7fffffffffff3p+0,0x1.fffffffffffedp+0
+0x1.fffffffffffedp+0,0x1.7fffffffffff3p+0
+0x1.7ffffffffffedp+0,0x1.fffffffffffe5p+0
+0x1.fffffffffffe5p+0,0x1.7ffffffffffedp+0
+0x1.7ffffffffffe7p+0,0x1.fffffffffffddp+0
+0x1.fffffffffffddp+0,0x1.7ffffffffffe7p+0
+0x1.7ffffffffffe1p+0,0x1.fffffffffffd5p+0
+0x1.fffffffffffd5p+0,0x1.7ffffffffffe1p+0
+0x1.7ffffffffffdbp+0,0x1.fffffffffffcdp+0
+0x1.fffffffffffcdp+0,0x1.7ffffffffffdbp+0
+0x1.7ffffffffffd5p+0,0x1.fffffffffffc5p+0
+0x1.fffffffffffc5p+0,0x1.7ffffffffffd5p+0

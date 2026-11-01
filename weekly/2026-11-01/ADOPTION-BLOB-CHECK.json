@@ -1,0 +1,12 @@
+{
+  "implementation_pin": "5f65574e2b3631fb31e9b88dd27782a936c68095",
+  "all_same": {
+    "src/binary64/exp/exp.c": true,
+    "src/binary64/exp/exp.wc": true,
+    "src/binary64/rsqrt/rsqrt.c": true,
+    "src/binary64/rsqrt/rsqrt.wc": true,
+    "src/binary64/asin/asin.c": true
+  },
+  "exp_rsqrt_retained_test_date": "2026-10-25",
+  "asin_adoption_check_date": "2026-10-29"
+}
