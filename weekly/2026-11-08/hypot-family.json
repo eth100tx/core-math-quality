@@ -1,0 +1,209 @@
+{
+  "all_certificates_verified": true,
+  "certificates_sha256": "221796d716b13cb110c0b9dc62425ecfef51b8a960d2fbe1a1c22d94ad0f2c98",
+  "completeness_census_regenerated": false,
+  "controls": "PASS: sign/swap/power2, adjacent mismatch, zero/nonfinite exclusion, incorrect nearest certificate rejected",
+  "corpus": {
+    "finite_nonzero": 32890,
+    "git_blob": "48833dfcf72196bdbe1d1f62e4e71f9a83a1c1d9",
+    "path": "src/binary64/hypot/hypot.wc",
+    "rows": 33174,
+    "sha256": "a7f24bd5b59d371aa1e1a2385dd9d526e21c6b4f751f735471f72d505103fac7",
+    "zero_or_nonfinite": 284
+  },
+  "details": [
+    {
+      "k": 73000000,
+      "midpoint_scaled": "10658000000000001",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632000000000004",
+      "ulp_distance_strict_upper": "1/42632000000000002",
+      "x_significand": "6394799883200000",
+      "y_significand": "8526400087600000"
+    },
+    {
+      "k": 73000005,
+      "midpoint_scaled": "10658001460000051",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632005840000204",
+      "ulp_distance_strict_upper": "1/42632005840000202",
+      "x_significand": "6394800759200022",
+      "y_significand": "8526401255600046"
+    },
+    {
+      "k": 73000010,
+      "midpoint_scaled": "10658002920000201",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632011680000804",
+      "ulp_distance_strict_upper": "1/42632011680000802",
+      "x_significand": "6394801635200104",
+      "y_significand": "8526402423600172"
+    },
+    {
+      "k": 73000015,
+      "midpoint_scaled": "10658004380000451",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632017520001804",
+      "ulp_distance_strict_upper": "1/42632017520001802",
+      "x_significand": "6394802511200246",
+      "y_significand": "8526403591600378"
+    },
+    {
+      "k": 73000020,
+      "midpoint_scaled": "10658005840000801",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632023360003204",
+      "ulp_distance_strict_upper": "1/42632023360003202",
+      "x_significand": "6394803387200448",
+      "y_significand": "8526404759600664"
+    },
+    {
+      "k": 73000025,
+      "midpoint_scaled": "10658007300001251",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632029200005004",
+      "ulp_distance_strict_upper": "1/42632029200005002",
+      "x_significand": "6394804263200710",
+      "y_significand": "8526405927601030"
+    },
+    {
+      "k": 73000030,
+      "midpoint_scaled": "10658008760001801",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632035040007204",
+      "ulp_distance_strict_upper": "1/42632035040007202",
+      "x_significand": "6394805139201032",
+      "y_significand": "8526407095601476"
+    },
+    {
+      "k": 73000035,
+      "midpoint_scaled": "10658010220002451",
+      "squared_residual": -1,
+      "ulp_distance_strict_lower": "1/42632040880009804",
+      "ulp_distance_strict_upper": "1/42632040880009802",
+      "x_significand": "6394806015201414",
+      "y_significand": "8526408263602002"
+    }
+  ],
+  "family": "x=(6k\u00b2-8k)/5,y=(8k\u00b2+6k)/5,z=2k\u00b2+1,k=73000000+5j,j=0..7",
+  "generator_sha256": "d3caf11db35eb4796de8d8a2dd86059e716aa2ae023475c59153f27d49a86a4c",
+  "kind": "restricted-hypot-family-membership",
+  "membership": [
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 0,
+      "x": "0x1.6b8095f72a600p+0",
+      "y": "0x1.e4ab7386f2b80p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 1,
+      "x": "0x1.e4ab7386f2b80p+0",
+      "y": "0x1.6b8095f72a600p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 2,
+      "x": "0x1.6b80993a95916p+0",
+      "y": "0x1.e4ab77e0d6faep+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 3,
+      "x": "0x1.e4ab77e0d6faep+0",
+      "y": "0x1.6b80993a95916p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 4,
+      "x": "0x1.6b809c7e00c68p+0",
+      "y": "0x1.e4ab7c3abb42cp+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 5,
+      "x": "0x1.e4ab7c3abb42cp+0",
+      "y": "0x1.6b809c7e00c68p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 6,
+      "x": "0x1.6b809fc16bff6p+0",
+      "y": "0x1.e4ab80949f8fap+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 7,
+      "x": "0x1.e4ab80949f8fap+0",
+      "y": "0x1.6b809fc16bff6p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 8,
+      "x": "0x1.6b80a304d73c0p+0",
+      "y": "0x1.e4ab84ee83e18p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 9,
+      "x": "0x1.e4ab84ee83e18p+0",
+      "y": "0x1.6b80a304d73c0p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 10,
+      "x": "0x1.6b80a648427c6p+0",
+      "y": "0x1.e4ab894868386p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 11,
+      "x": "0x1.e4ab894868386p+0",
+      "y": "0x1.6b80a648427c6p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 12,
+      "x": "0x1.6b80a98badc08p+0",
+      "y": "0x1.e4ab8da24c944p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 13,
+      "x": "0x1.e4ab8da24c944p+0",
+      "y": "0x1.6b80a98badc08p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 14,
+      "x": "0x1.6b80accf19086p+0",
+      "y": "0x1.e4ab91fc30f52p+0"
+    },
+    {
+      "absolute_swap_power2_lines": [],
+      "direct_lines": [],
+      "record": 15,
+      "x": "0x1.e4ab91fc30f52p+0",
+      "y": "0x1.6b80accf19086p+0"
+    }
+  ],
+  "pin": "660067dfd3e751c8f07acc31c899ff410aa7206e",
+  "schema_version": 1,
+  "scope": "16 ordered rows, 8 unordered pairs; no exhaustive census or novelty claim",
+  "verifier_sha256": "aef5d2b6bd8b2d9dc4679b4a2ebbacccdbb8a37a9b62d9a0c9d6d4a870d60586"
+}

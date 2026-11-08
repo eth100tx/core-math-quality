@@ -32,11 +32,13 @@ The [previous card](weekly/2026-10-26/PAUSED-EXP.json) and all historical adopti
 
 ## Current ranked improvement proposals
 
+[November 8 results](weekly/2026-11-08/REPORT.md): P6 closes for the three stated log evaluation orders; other compilation patterns and the accurate fallback are not certified.
+
 | Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
 |---|---|---|---|
-| 1 | **Bind log's changed near-one proof (P6).** | Pin coefficients, operation order and stopping allowance to rigorous certificates. | Current Clang full-corpus checks pass; approximation and model binding are still open. |
-| 2 | **Restore sine build and reconcile cosine follow-through (P5).** | [Tested sine patch and current cosine status](weekly/2026-11-01/REPORT.md). | One-space patch restores GCC/Clang compilation; cosine sign/census obligations remain separate. Check adoption before repeating work. |
-| 3 | **Build useful bivariate regressions (P3).** | [Eight exact hypot pairs plus swaps](candidates/hypot-midpoint-plus-one/README.md). | Certificates, full-file membership and 128 four-mode observations pass; next complementary family, no completeness/novelty claim. |
+| 1 | **Asin range premise (P2).** | Bind phi/ph to the adopted gap predicate. | Earlier cleanup adopted; outstanding range/ABI claims remain distinct. |
+| 2 | **Cosine follow-through (P5).** | Recheck on new proof/census evidence. | Sine build fix adopted; the unchanged cosine sign candidate remains open. |
+| 3 | **Bivariate inputs (P3).** | Design an exact positive-normal pow(x,3/2) comparator. | Both sides of the hypot midpoint now have certified regressions; archive and stage coverage work remain open. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three

@@ -1,0 +1,388 @@
+[
+  {
+    "cc": "gcc",
+    "version": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "flags": [
+      "-O3",
+      "-frounding-math",
+      "-fno-finite-math-only",
+      "-ffp-contract=fast",
+      "-march=x86-64-v3",
+      "-DCORE_MATH_SUPPORT_ERRNO",
+      "-DCORE_MATH_NO_OPENMP",
+      "-DCORE_MATH_CHECK_INEXACT",
+      "-fsignaling-nans"
+    ],
+    "source_blobs": {
+      "log.c": "7b57c0c8ac9a59ed1df1020bb304bab93385f2cb",
+      "dint.h": "31bfbbc07cf95548bf82ce020e2d687b091d06fd"
+    },
+    "rows": [
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "vmovsd xmm2,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "vucomisd xmm1,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "jp     4b3a <cr_log+0x6a>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "je     4db0 <cr_log+0x2e0>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 664,
+        "instruction": "vsubsd xmm2,xmm1,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 665,
+        "instruction": "vmovsd xmm3,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 666,
+        "instruction": "vmovsd xmm5,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 665,
+        "instruction": "vfmadd213sd xmm3,xmm2,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 667,
+        "instruction": "vmovsd xmm4,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 666,
+        "instruction": "vfmadd213sd xmm5,xmm2,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 667,
+        "instruction": "vfmadd213sd xmm4,xmm2,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 664,
+        "instruction": "vmulsd xmm0,xmm2,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 668,
+        "instruction": "vfmadd132sd xmm3,xmm5,xmm0"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 669,
+        "instruction": "vfmadd132sd xmm3,xmm4,xmm0"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 50,
+        "instruction": "vmovsd xmm4,xmm0,xmm0"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 50,
+        "instruction": "vfmadd132sd xmm4,xmm2,xmm3"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 51,
+        "instruction": "vsubsd xmm5,xmm4,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 52,
+        "instruction": "vfmsub132sd xmm3,xmm5,xmm0"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vmovsd xmm5,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vmovsd xmm0,xmm2,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vfnmadd132sd xmm0,xmm3,xmm5"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vfmadd132sd xmm2,xmm3,xmm5"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vaddsd xmm0,xmm4,xmm0"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vaddsd xmm4,xmm4,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 695,
+        "instruction": "vucomisd xmm0,xmm4"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 695,
+        "instruction": "jp     4bbb <cr_log+0xeb>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 695,
+        "instruction": "je     4ced <cr_log+0x21d>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 696,
+        "instruction": "vmovsd xmm0,xmm1,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 696,
+        "instruction": "jmp    0 <cr_log_accurate>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 696,
+        "instruction": "nop    DWORD PTR [rax+rax*1+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 50,
+        "instruction": "vaddsd xmm6,xmm0,xmm5"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 51,
+        "instruction": "vsubsd xmm5,xmm6,xmm5"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 52,
+        "instruction": "vsubsd xmm0,xmm0,xmm5"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 695,
+        "instruction": "jne    4bbb <cr_log+0xeb>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "vxorpd xmm0,xmm0,xmm0"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "jmp    4ced <cr_log+0x21d>"
+      }
+    ]
+  },
+  {
+    "cc": "clang-18",
+    "version": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+    "flags": [
+      "-O3",
+      "-frounding-math",
+      "-fno-finite-math-only",
+      "-ffp-contract=fast",
+      "-march=x86-64-v3",
+      "-DCORE_MATH_SUPPORT_ERRNO",
+      "-DCORE_MATH_NO_OPENMP",
+      "-DCORE_MATH_CHECK_INEXACT"
+    ],
+    "source_blobs": {
+      "log.c": "7b57c0c8ac9a59ed1df1020bb304bab93385f2cb",
+      "dint.h": "31bfbbc07cf95548bf82ce020e2d687b091d06fd"
+    },
+    "rows": [
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "vcvtsi2sd xmm1,xmm2,eax"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "vucomisd xmm0,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "setp   cl"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "setne  dl"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "or     dl,cl"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "je     28c <cr_log+0x28c>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 664,
+        "instruction": "vcvtsi2sd xmm1,xmm2,eax"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 664,
+        "instruction": "vsubsd xmm1,xmm0,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 664,
+        "instruction": "vmulsd xmm2,xmm1,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 665,
+        "instruction": "vmulsd xmm3,xmm1,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 665,
+        "instruction": "vaddsd xmm3,xmm3,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 666,
+        "instruction": "vmulsd xmm4,xmm1,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 666,
+        "instruction": "vaddsd xmm4,xmm4,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 667,
+        "instruction": "vmulsd xmm5,xmm1,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 667,
+        "instruction": "vaddsd xmm5,xmm5,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 668,
+        "instruction": "vmulsd xmm3,xmm2,xmm3"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 668,
+        "instruction": "vaddsd xmm3,xmm4,xmm3"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 669,
+        "instruction": "vmulsd xmm3,xmm2,xmm3"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 669,
+        "instruction": "vaddsd xmm3,xmm5,xmm3"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 672,
+        "instruction": "vmulsd xmm2,xmm2,xmm3"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 50,
+        "instruction": "vaddsd xmm3,xmm1,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 51,
+        "instruction": "vsubsd xmm4,xmm3,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 52,
+        "instruction": "vsubsd xmm2,xmm2,xmm4"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vmulsd xmm4,xmm1,QWORD PTR [rip+0x0]"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vsubsd xmm1,xmm2,xmm4"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vaddsd xmm1,xmm3,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vaddsd xmm2,xmm2,xmm4"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "vaddsd xmm2,xmm3,xmm2"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 694,
+        "instruction": "jmp    20f <cr_log+0x20f>"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 50,
+        "instruction": "vaddsd xmm5,xmm4,xmm1"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 51,
+        "instruction": "vsubsd xmm4,xmm5,xmm4"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 52,
+        "instruction": "vsubsd xmm1,xmm1,xmm4"
+      },
+      {
+        "function": "cr_log",
+        "source_line": 657,
+        "instruction": "vcvtsi2sd xmm0,xmm2,eax"
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "binary64_observations": 128,
+  "four_mode_oracle_checks": 128,
+  "correctly_rejected_faults": 12,
+  "exact_membership_rows": 33174,
+  "ordered_input_matches": 0,
+  "pickup_rows_verified": 16
+}

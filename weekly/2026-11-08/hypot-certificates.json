@@ -1,0 +1,226 @@
+[
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb280021000",
+      "rndn": "4002eeb280021000",
+      "rndu": "4002eeb280021001",
+      "rndz": "4002eeb280021000"
+    },
+    "lower_bits": "4002eeb280021000",
+    "schema_version": 1,
+    "upper_bits": "4002eeb280021001",
+    "x_bits": "3ff6b8095f72a600",
+    "y_bits": "3ffe4ab7386f2b80"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb280021000",
+      "rndn": "4002eeb280021000",
+      "rndu": "4002eeb280021001",
+      "rndz": "4002eeb280021000"
+    },
+    "lower_bits": "4002eeb280021000",
+    "schema_version": 1,
+    "upper_bits": "4002eeb280021001",
+    "x_bits": "3ffe4ab7386f2b80",
+    "y_bits": "3ff6b8095f72a600"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb2ab84fa99",
+      "rndn": "4002eeb2ab84fa99",
+      "rndu": "4002eeb2ab84fa9a",
+      "rndz": "4002eeb2ab84fa99"
+    },
+    "lower_bits": "4002eeb2ab84fa99",
+    "schema_version": 1,
+    "upper_bits": "4002eeb2ab84fa9a",
+    "x_bits": "3ff6b80993a95916",
+    "y_bits": "3ffe4ab77e0d6fae"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb2ab84fa99",
+      "rndn": "4002eeb2ab84fa99",
+      "rndu": "4002eeb2ab84fa9a",
+      "rndz": "4002eeb2ab84fa99"
+    },
+    "lower_bits": "4002eeb2ab84fa99",
+    "schema_version": 1,
+    "upper_bits": "4002eeb2ab84fa9a",
+    "x_bits": "3ffe4ab77e0d6fae",
+    "y_bits": "3ff6b80993a95916"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb2d707e564",
+      "rndn": "4002eeb2d707e564",
+      "rndu": "4002eeb2d707e565",
+      "rndz": "4002eeb2d707e564"
+    },
+    "lower_bits": "4002eeb2d707e564",
+    "schema_version": 1,
+    "upper_bits": "4002eeb2d707e565",
+    "x_bits": "3ff6b809c7e00c68",
+    "y_bits": "3ffe4ab7c3abb42c"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb2d707e564",
+      "rndn": "4002eeb2d707e564",
+      "rndu": "4002eeb2d707e565",
+      "rndz": "4002eeb2d707e564"
+    },
+    "lower_bits": "4002eeb2d707e564",
+    "schema_version": 1,
+    "upper_bits": "4002eeb2d707e565",
+    "x_bits": "3ffe4ab7c3abb42c",
+    "y_bits": "3ff6b809c7e00c68"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb3028ad061",
+      "rndn": "4002eeb3028ad061",
+      "rndu": "4002eeb3028ad062",
+      "rndz": "4002eeb3028ad061"
+    },
+    "lower_bits": "4002eeb3028ad061",
+    "schema_version": 1,
+    "upper_bits": "4002eeb3028ad062",
+    "x_bits": "3ff6b809fc16bff6",
+    "y_bits": "3ffe4ab80949f8fa"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb3028ad061",
+      "rndn": "4002eeb3028ad061",
+      "rndu": "4002eeb3028ad062",
+      "rndz": "4002eeb3028ad061"
+    },
+    "lower_bits": "4002eeb3028ad061",
+    "schema_version": 1,
+    "upper_bits": "4002eeb3028ad062",
+    "x_bits": "3ffe4ab80949f8fa",
+    "y_bits": "3ff6b809fc16bff6"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb32e0dbb90",
+      "rndn": "4002eeb32e0dbb90",
+      "rndu": "4002eeb32e0dbb91",
+      "rndz": "4002eeb32e0dbb90"
+    },
+    "lower_bits": "4002eeb32e0dbb90",
+    "schema_version": 1,
+    "upper_bits": "4002eeb32e0dbb91",
+    "x_bits": "3ff6b80a304d73c0",
+    "y_bits": "3ffe4ab84ee83e18"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb32e0dbb90",
+      "rndn": "4002eeb32e0dbb90",
+      "rndu": "4002eeb32e0dbb91",
+      "rndz": "4002eeb32e0dbb90"
+    },
+    "lower_bits": "4002eeb32e0dbb90",
+    "schema_version": 1,
+    "upper_bits": "4002eeb32e0dbb91",
+    "x_bits": "3ffe4ab84ee83e18",
+    "y_bits": "3ff6b80a304d73c0"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb35990a6f1",
+      "rndn": "4002eeb35990a6f1",
+      "rndu": "4002eeb35990a6f2",
+      "rndz": "4002eeb35990a6f1"
+    },
+    "lower_bits": "4002eeb35990a6f1",
+    "schema_version": 1,
+    "upper_bits": "4002eeb35990a6f2",
+    "x_bits": "3ff6b80a648427c6",
+    "y_bits": "3ffe4ab894868386"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb35990a6f1",
+      "rndn": "4002eeb35990a6f1",
+      "rndu": "4002eeb35990a6f2",
+      "rndz": "4002eeb35990a6f1"
+    },
+    "lower_bits": "4002eeb35990a6f1",
+    "schema_version": 1,
+    "upper_bits": "4002eeb35990a6f2",
+    "x_bits": "3ffe4ab894868386",
+    "y_bits": "3ff6b80a648427c6"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb385139284",
+      "rndn": "4002eeb385139284",
+      "rndu": "4002eeb385139285",
+      "rndz": "4002eeb385139284"
+    },
+    "lower_bits": "4002eeb385139284",
+    "schema_version": 1,
+    "upper_bits": "4002eeb385139285",
+    "x_bits": "3ff6b80a98badc08",
+    "y_bits": "3ffe4ab8da24c944"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb385139284",
+      "rndn": "4002eeb385139284",
+      "rndu": "4002eeb385139285",
+      "rndz": "4002eeb385139284"
+    },
+    "lower_bits": "4002eeb385139284",
+    "schema_version": 1,
+    "upper_bits": "4002eeb385139285",
+    "x_bits": "3ffe4ab8da24c944",
+    "y_bits": "3ff6b80a98badc08"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb3b0967e49",
+      "rndn": "4002eeb3b0967e49",
+      "rndu": "4002eeb3b0967e4a",
+      "rndz": "4002eeb3b0967e49"
+    },
+    "lower_bits": "4002eeb3b0967e49",
+    "schema_version": 1,
+    "upper_bits": "4002eeb3b0967e4a",
+    "x_bits": "3ff6b80accf19086",
+    "y_bits": "3ffe4ab91fc30f52"
+  },
+  {
+    "domain": "positive-unit-binade-normal-result-v1",
+    "expected_bits": {
+      "rndd": "4002eeb3b0967e49",
+      "rndn": "4002eeb3b0967e49",
+      "rndu": "4002eeb3b0967e4a",
+      "rndz": "4002eeb3b0967e49"
+    },
+    "lower_bits": "4002eeb3b0967e49",
+    "schema_version": 1,
+    "upper_bits": "4002eeb3b0967e4a",
+    "x_bits": "3ffe4ab91fc30f52",
+    "y_bits": "3ff6b80accf19086"
+  }
+]

@@ -1,0 +1,7 @@
+# Independent review and replay
+
+Claude Opus 5.5, via the CLI model `claude-opus-5-5`, independently reviewed the plan, the evidence packet and the revised substantive summary. Its final clearance was **PASS**. The reviewer inspected source excerpts, the three Gappa models and results, rational calculations, compiler listings, the eight-pair construction, corpus membership, checker and observation logic, and the stated scope. It did not execute our scripts, independently download the sources or verify remote file bytes.
+
+We verified the arithmetic locally: the actual EPS minus the evaluation allowance is 2^-69, and both rational constructions plus endpoint error fit inside it. We inspected the compiled high and residual data dependencies, and replayed all 39 generated Gappa obligations with individual time limits: 37 required goals succeeded; the two stronger toward-zero diagnostics did not. The separate hypot receipt verifier checked all 16 input rows, all 128 observations, both control sets, and membership with an exact parser. The unary receipt was validated and all 32 repository selftests passed.
+
+Review edits corrected the term for the rounded inner polynomial value, tightened the scope of the fast-return claim, and removed ambiguous adoption attribution and an encoding error. The checked data did not change. Planning advice to expand computational limits was not adopted. Tests and proof results apply only to their named configurations and domains.

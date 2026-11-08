@@ -1,0 +1,7 @@
+# What changed in the review · November 8
+
+Scheduled review ordinal 2. Last week's useful checkpoint was the distinction between a passing log corpus and a proof of the stopping allowance. This week the exact margin made it possible to use two independent rational polynomial bounds and a weaker toward-zero endpoint goal without passing a failed proof off as successful. L2 (put every contribution in the same units) was exercised directly. L1 and L4 preserved the identity of the repaired sine file and the unchanged/deferred evidence; L3 kept the new hypot regression cases separate from a completeness claim.
+
+The baseline and fast-contraction listings exposed a change across the *two* operations in the high/low split. We added [L5](../../LESSONS.md): compare the emitted high and residual operations before attributing a source-level proof to a compiled configuration. At the next compiler-sensitive review, check whether this catches a material mismatch or simply confirms the existing model. No observation of maintainer time saved or adoption of these new files is claimed.
+
+The initial sine launch failed at the shell boundary before testing. A second acquisition was stopped before numerical execution when an identical previously cached corpus blob was identified. The final run rechecked those bytes against the selected Git tree before testing; only that completed run supplies the result. No change to the upstream runner or machine defaults was needed. Next learning evaluation: the next completed Sunday scan; pruning remains due at ordinal 4.

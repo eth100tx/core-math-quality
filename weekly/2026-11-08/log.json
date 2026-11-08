@@ -1,0 +1,323 @@
+{
+  "polynomial_error_over_abs_r_upper": "237220575559609627432934631390367703243/629910262449523668075859644271619304231968196798688285163520",
+  "strict_target": "2^-70",
+  "coefficient_fault_detected": true,
+  "bernstein_upper": "32436419731971657246983587/86158796024117596420384033366905438856984657920",
+  "gappa_version": "Gappa 1.4.1",
+  "runs": [
+    {
+      "style": "contracted",
+      "mode": "ne",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "c12c9e52750228e33a82c42eb8712b4109dae70386035cc8cf073a063952ae31"
+    },
+    {
+      "style": "contracted",
+      "mode": "ne",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "777f32aabd3d91f31e9e2d0bb6f31021882291f039af91bb0a11ae0446941e41"
+    },
+    {
+      "style": "contracted",
+      "mode": "ne",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "8843bf3ff847764936e1da55ae05f0346e79507818b0476e941591d3cb09f3c9"
+    },
+    {
+      "style": "contracted",
+      "mode": "zr",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\n",
+      "input_sha256": "9b2f0cde4178ac822971210d53890ed44a49b18131a0aa9e275a168c48e4e6f0"
+    },
+    {
+      "style": "contracted",
+      "mode": "zr",
+      "goal": "endpoints",
+      "rc": 1,
+      "diagnostic": "ns reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nError: some properties were not satisfied:\n  BND(|err_l / r|), best: [-inf, inf]\n  BND(|err_h / r|), best: [-inf, inf]\n",
+      "input_sha256": "450c74a6f6c09593edf9a9a65f1e1f0c8daed130b31efc64b3fa11e63f383a15"
+    },
+    {
+      "style": "contracted",
+      "mode": "zr",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "4b5fec7019976a9a710617b78ab65c12a78a2ba07098b534cd29d3ef68d06ad9"
+    },
+    {
+      "style": "contracted",
+      "mode": "zr",
+      "goal": "budget_endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "ea5d8f7ba09e820749bc0305d4bbfa3ee829f0e91a78e13256a2a8f4497bccaa"
+    },
+    {
+      "style": "contracted",
+      "mode": "up",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "10200feb3ceff90862a53936e4b9b6806023c56a790a41481eea88b3420a0907"
+    },
+    {
+      "style": "contracted",
+      "mode": "up",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "4cafb49f4bda6f9bf562a32f39d286f8ee2ac514e3735190d3d4616edabc9057"
+    },
+    {
+      "style": "contracted",
+      "mode": "up",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "35785d3c5ff45995cbc7b8d8aaec6d24cac8a1bcd44c83bddbd65e179b04c239"
+    },
+    {
+      "style": "contracted",
+      "mode": "dn",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "a34de552e4094021cd9d33fee1a3d90dac5d7e8cb9274ad58cff69d8451d3334"
+    },
+    {
+      "style": "contracted",
+      "mode": "dn",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "f1382e214b3dde338fdf075c9b33a4d9395a6faa03ccdad9be6bc60decc9a3fd"
+    },
+    {
+      "style": "contracted",
+      "mode": "dn",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "19748228eed11104457b49f77e71818d45de96263f2c80817e9cfbdb6a0284a0"
+    },
+    {
+      "style": "separate",
+      "mode": "ne",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "bdc9fd44d2646568bb431a972c2d9b1cb20dbbfb4909c2555caa4d3a9a7f5fc3"
+    },
+    {
+      "style": "separate",
+      "mode": "ne",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "bdb3ecbca52e5422f73576783f3397b10428ce51eaccc33218a9f36f237521b9"
+    },
+    {
+      "style": "separate",
+      "mode": "ne",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "461e4f94b39f0aa34a781b64bc4a178537b11268e19130e21aa1318f01e13ea2"
+    },
+    {
+      "style": "separate",
+      "mode": "zr",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\n",
+      "input_sha256": "13907c08bbd4458c767d651646a949d27c8b806fd34ca4370c51d29830a419c2"
+    },
+    {
+      "style": "separate",
+      "mode": "zr",
+      "goal": "endpoints",
+      "rc": 1,
+      "diagnostic": "ns reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nError: some properties were not satisfied:\n  BND(|err_l / r|), best: [-inf, inf]\n  BND(|err_h / r|), best: [-inf, inf]\n",
+      "input_sha256": "144ee13cd350f7118c8ad5e41b125acf2efcd6dee5b7c5f9d66e92f6f5a56fee"
+    },
+    {
+      "style": "separate",
+      "mode": "zr",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "18cc13a906843eb891b7b26820fa52dd694e72531b03304b810bf517b1244311"
+    },
+    {
+      "style": "separate",
+      "mode": "zr",
+      "goal": "budget_endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "3e9d39d9699dd6a3df42b40cdc50515c2f16172dc12bcf951153176b51168e83"
+    },
+    {
+      "style": "separate",
+      "mode": "up",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "0d7a390a6a4d42d908beb70ae008fe039c62a83e7476eefd92baf5c630b30421"
+    },
+    {
+      "style": "separate",
+      "mode": "up",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "898dcdfedb2f15b4282fdb77d388c885238890148a40ef4f83d1602774bcfabb"
+    },
+    {
+      "style": "separate",
+      "mode": "up",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "2786fcf592653b2b389aadff2475ec49901bc2cf09ae00978b0ee3e05215c3e4"
+    },
+    {
+      "style": "separate",
+      "mode": "dn",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "14c8e28323a6eda52aa20ded28f2947c78e795a874e016397982c06f5aff66e9"
+    },
+    {
+      "style": "separate",
+      "mode": "dn",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "55cfe63127ccd85037370cb7dfe2e01149c371556484de4a9e1695d1ed10d278"
+    },
+    {
+      "style": "separate",
+      "mode": "dn",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "d7895b6c33135456ebe58b48b6793c1c7d873f060647a5b6267a99254117a666"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "ne",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "663e583bd15c7e07d950b5fa763547453c2996133bd385e64466345889aedebf"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "ne",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "ef06e45d5f84d158834f7699479705a074d3efbad6c41443c8020e56067904b7"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "ne",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "ff2c1abc475dfcf4a6328120a65e1c27db5af3cf69c5ef59702d984d9a617579"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "zr",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\n",
+      "input_sha256": "a158de61c9b6b4d4ede62e032958f2fc089a7bd5ec4e4c3a0f1101599dfd3ef2"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "zr",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "fde05adb7afcae8b4e722da64abf9bc0ca4d6b4512802121607f18ab11999d54"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "zr",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "a92fc9be20f63488f38ca3d999e34658b99ae6def1adb5d933037c0406ab2742"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "zr",
+      "goal": "budget_endpoints",
+      "rc": 0,
+      "diagnostic": "aximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "88c55867733c75c2558aba1517b0de357c6b76a8d7660f719dbd4f757014dad9"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "up",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "74aef0a7fa4a9b4e25a98eda71b98c5b77f58ae20871794e6681dc36a486955d"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "up",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "6ab4c740a9eb2d301c808918b73191b40a3c6bcef396b231cfa5256f24179f46"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "up",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "d9347d5ae25e062e59c6e30c48442d3f164aa2000efa4f18acd603547b5c46bb"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "dn",
+      "goal": "sum",
+      "rc": 0,
+      "diagnostic": "Warning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\nWarning: maximum number of iterations reached.\n",
+      "input_sha256": "5ab2c8229e802334d10c3e7b1a3de0b1acf9e2d6f3d0ce7f56d100c2ec5efd58"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "dn",
+      "goal": "endpoints",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "6182340e252b90f306f55a760e1a49b0cd6fedd9e49001a5c4d47f367ef68376"
+    },
+    {
+      "style": "gcc-v3-fused-residual",
+      "mode": "dn",
+      "goal": "sterbenz",
+      "rc": 0,
+      "diagnostic": "",
+      "input_sha256": "dc3fe531aac9c4f5868dfb412fd85617bf435c6bc27e467f78cd2ef503014fcf"
+    }
+  ],
+  "required_goals": 37,
+  "required_pass": true
+}
