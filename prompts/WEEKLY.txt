@@ -40,3 +40,5 @@ Only publish or send mail if this operator has explicitly authorized it.
 For every outgoing email, follow docs/EMAIL-IDENTITY.md: identify the AI in the
 first visible body line and closing, and verify both before and after sending.
 Leave a clear checkpoint, time accounting and no running child processes.
+
+Apply the weekly improvement-candidate section of RUNBOOK.md. Put up to three independently usable proposals in priority order and verify the disposition of earlier ones. Continue to publish candidates only in the authorized workbench.

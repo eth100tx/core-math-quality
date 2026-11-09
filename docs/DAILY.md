@@ -75,3 +75,7 @@ or resend their unchanged conclusions. If the scan is missed, preserve its pins
 and pending scope until the next Sunday; inbox requests still proceed when read.
 Never fabricate backdated reports or catch-up bursts. Follow private stop-mail
 and cadence rules; no actionable change means no routine mail or notification.
+
+## Closing each question and action
+
+For each incoming message, record every question and requested action, including requests phrased as statements. Reconcile later messages in the thread first. Answer each question and complete every feasible authorized action within the request CPU and wall limits recorded before dispatch under “Accounting and bounds” above. Send a reviewed reply that says what was completed, links the evidence, and identifies the specific dependency for anything still open. Verify the Sent copy before marking delivery complete. A shared closeout names the items from each related thread and goes only to the authorized recipient. If threads have different authorized audiences, preserve each audience and its scope. Use Sent history to avoid repeating an answer. Reserve unsolicited improvement proposals for the weekly review unless they directly affect the request.

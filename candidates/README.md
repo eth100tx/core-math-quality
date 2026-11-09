@@ -2,6 +2,7 @@
 
 | Candidate | Type | State |
 |---|---|---|
+| [asin signed-index comments](../weekly/2026-11-09-asin/asin-signed-index.patch) | Two comment corrections | Signed index can be −24. [Range certificate and checks](../weekly/2026-11-09-asin/REPORT.md). |
 | [sine preprocessor space](sin-preprocessor-space/README.md) | One-character build fix | Adopted upstream; [November 8 byte comparison and Clang corpus](../weekly/2026-11-08/REPORT.md). |
 | [Near-one log proof](../weekly/2026-11-08/LOG.md) | Polynomial and stopping-test certificates | Three arithmetic graphs; fallback excluded. |
 | [hypot midpoint minus one](../weekly/2026-11-08/HYPOT.md) | [16 optional regression rows](../weekly/2026-11-08/hypot-below.wc) | [Added to the upstream corpus](../weekly/2026-11-09/REPORT.md), including swaps. |

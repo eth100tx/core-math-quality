@@ -1,0 +1,5 @@
+{
+  "source_hash_control": "rejected",
+  "doubled_index_scale": "rejected by range gate",
+  "diagnostic": "refinement index 33 at [0x1.6e00000000000p-1, 0x1.7000000000000p-1]"
+}

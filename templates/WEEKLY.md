@@ -6,7 +6,7 @@
 link changed dispositions. Do not call supplied patches upstream PRs.]
 
 1. **[Queue ID, priority, planned/tested/blocked]:** [Why useful; this week's
-   substantive change; next artifact and acceptance criterion.]
+   substantive change; link to the pickup artifact, adoption state, and what a maintainer can do next. For a planned item give its deliverable and acceptance check.]
 2. **[Queue ID, priority, state]:** [Same; unchanged items get a brief dated link.]
 3. **[Queue ID, priority, state]:** [Same; if fewer than three genuine priorities
    remain, say so instead of inventing an item.]

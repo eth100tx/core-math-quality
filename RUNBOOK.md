@@ -146,3 +146,7 @@ unchanged for up to the recorded ten-minute limit; it names the bounded operatio
 After preserving reviewed exports, unused `.work/runs/RUN_ID` directories may be
 removed by the operator. Do not remove an active run or its source cache. This
 workbench deliberately does not install an automatic cleanup service.
+
+## Weekly improvement candidates
+
+Aim to offer three improvements the maintainers can pick up independently. Rank by the maintainer problem solved, strength of evidence and effort to adopt. Count a completed daily item as a weekly update when its disposition changes. Prefer a small tested patch, exact regression input or replayable proof change. Give each proposal a link to the artifact when ready, the problem it solves, its adoption status and the check that establishes its scope. For an idea still under investigation, name the next deliverable. Report fewer when fewer have evidence. Check the previous proposals against upstream before selecting the next ones. Use observed adoption, closed premises and maintainer corrections to decide which work to continue or retire, and record what that decision changes next week.

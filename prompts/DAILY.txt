@@ -32,3 +32,5 @@ account. On Sunday let an active request reach its next bounded checkpoint,
 then perform the weekly scan before resuming further request work. Use one
 science runner throughout; preserve the scan's separate budget and record an
 actual missed scan if necessary rather than overlapping jobs or inventing results.
+
+Use the question-by-question and action-by-action closeout in docs/DAILY.md. Treat a requested action as requiring completion feedback even when the message contains no question mark.

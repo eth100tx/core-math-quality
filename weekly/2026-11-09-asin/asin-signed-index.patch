@@ -1,0 +1,16 @@
+--- a/src/binary64/asin/asin.c
++++ b/src/binary64/asin/asin.c
+@@ -308,5 +308,5 @@
+   v = fasttwosum(v,dv,&dv);
+   double sgn = __builtin_copysign(1.0, x), jt = jf*sgn;
+-  // 0 <= jt <= 64
++  // jt is the signed table index: -32 <= jt <= 32
+   static const double c[][2] = { // same table as in acos.c
+     {0x1p+0, -0x1.fc2c76456515bp-108}, {0x1.5555555555555p-3, 0x1.5555555623513p-57},
+@@ -322,5 +322,5 @@
+   double ph = jt * 0x1.921fb54442dp-5, pl = 0x1.8469898cc518p-53*jt, ps = -0x1.fc8f8cbb5bf6cp-102*jt;
+ 
+-  // since 0 <= jt <= 64, ph and pl are exact
++  // For every such integer jt, these initial ph and pl products are exact.
+   pl = fastsum(fh,fl, pl,ps, &ps);
+   ph = fasttwosum(ph,pl, &pl);

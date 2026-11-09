@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated": "2026-11-09",
-  "implementation_pin": "660067dfd3e751c8f07acc31c899ff410aa7206e",
+  "implementation_pin": "d5d309237132fec40a98cb866dbce43c04b98010",
   "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
   "weekly_budget": {
     "cpu_hours": 4,
@@ -10,56 +10,50 @@
   "execution_policy": "One primary review task and at most one bivariate task, serially under existing locks. Remaining budget is reserve, not permission for automatic expansion.",
   "priorities": [
     {
-      "id": "P2",
+      "id": "P7",
       "rank": 1,
-      "title": "Resolve asin cast and integer-range portability",
+      "title": "Check binary64 hypot special-test input selection",
       "status": "planned",
       "owner": "workbench agent",
-      "reason": "The passing Clang corpus does not establish signed-subtraction safety or equivalence on LP64 and LLP64.",
-      "next_action": "Trace the caller invariants bounding phi/ph for the adopted binary64 asin gap predicate; prove one named range or isolate the exact missing premise. No unchanged corpus replay.",
-      "deliverable": "Tested optional unsigned predicate and explicit range/ABI note; next a coarse all-input range lemma under stated floating-point assumptions.",
-      "acceptance": "Tests alone do not prove absence of UB. Explicitly distinguish source undefined behavior, compiler miscompilation and unsupported ABI execution.",
+      "reason": "Upstream 2b22bd62 reduced the default count and changed the seed/iteration structure.",
+      "next_action": "Compare deterministic case classes and streams at equal budgets. Propose a compact deterministic input or fixture only if a meaningful difference is demonstrated.",
+      "deliverable": "Before/after input-selection receipt and a conditional regression candidate.",
+      "acceptance": "Separate a measured change in selected cases from loss of mathematical coverage.",
       "budget": {
         "cpu_hours": 1,
         "wall_minutes": 30
       },
-      "stop": "Checkpoint on an unqualified ABI, unresolved range premise, source change or cap; do not label unsupported execution a failure.",
-      "dependency": "Pinned asin source; qualified toolchains and a small reproducible test harness.",
-      "last_substantive_change": "2026-11-08",
-      "change": "Restored after scoped near-one log stopping certificate; no new asin proof claimed.",
+      "stop": "Stop at the card budget, missing comparable baseline, or a superseding change.",
+      "dependency": "Pinned binary64 hypot check_special source and one available bivariate slot.",
+      "last_substantive_change": "2026-11-09",
+      "change": "New source change inventoried. No regression or lost case claimed.",
       "next_checkpoint": "2026-11-15",
       "evidence": [
-        "candidates/asin-unsigned-gap/README.md",
-        "weekly/2026-10-26/ASIN-HYPOT-REPLAY.json",
-        "weekly/2026-10-29/ASIN-ADOPTION.json",
-        "weekly/2026-11-08/REPORT.md"
+        "weekly/2026-11-09-asin/REPORT.md"
       ]
     },
     {
-      "id": "P5",
+      "id": "P8",
       "rank": 2,
-      "title": "Track cosine proof or census changes",
-      "status": "blocked",
+      "title": "Bind contracted asin operations to the range proof",
+      "status": "planned",
       "owner": "workbench agent",
-      "reason": "Published cosine PDF sign correction verified. Source synchronization and generation evidence remain open.",
-      "next_action": "Recheck only on changed TeX or new generation evidence.",
-      "deliverable": "Identify the matching public TeX revision when available, or reconcile new census evidence.",
-      "acceptance": "No whole-function proof or unreachability claim from corpus tests; keep supplied-data verification separate from exhaustive regeneration.",
+      "reason": "Strict graph is certified. Fast-contraction probes are finite.",
+      "next_action": "Inspect one pinned v3 compiler graph for fusions that change high/low residual identities. Extend the enclosure or name the first unsupported sequence.",
+      "deliverable": "One compiler-graph binding and a replayable range bound or explicit gap.",
+      "acceptance": "Bind emitted operations and rounding model before extending the proof scope.",
       "budget": {
         "cpu_hours": 1,
         "wall_minutes": 30
       },
-      "stop": "Checkpoint on changed source or missing premise; do not repeat unchanged campaigns.",
-      "dependency": "Pinned cosine source/proof and subsequent maintainer feedback; no broad coverage or exp campaign.",
+      "stop": "Stop at the card budget, unbound operation, or a changed source.",
+      "dependency": "Pinned asin.c, documented strict certificate and a concrete v3 toolchain.",
       "last_substantive_change": "2026-11-09",
-      "change": "Sign bookkeeping is present in the published PDF. Public proof master still returns the earlier TeX. See November 9 receipt for exact artifact identities.",
+      "change": "The original P2 range premises closed under strict semantics. A reachable negative signed index has a comment-only candidate.",
       "next_checkpoint": "2026-11-15",
       "evidence": [
-        "weekly/2026-11-01/REPORT.md",
-        "candidates/sin-preprocessor-space/README.md",
-        "weekly/2026-11-01/COS-RECONCILIATION.json",
-        "weekly/2026-11-08/REPORT.md",
-        "weekly/2026-11-09/REPORT.md"
+        "weekly/2026-11-09-asin/REPORT.md",
+        "weekly/2026-11-09-asin/probes.json"
       ]
     },
     {

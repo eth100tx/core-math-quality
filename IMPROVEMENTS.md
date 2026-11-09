@@ -32,13 +32,15 @@ The [previous card](weekly/2026-10-26/PAUSED-EXP.json) and all historical adopti
 
 ## Current ranked improvement proposals
 
+P2 closed for the strict operation graph on November 9. [Range proof, two-line comment patch and compiler checks](weekly/2026-11-09-asin/REPORT.md). Cosine source synchronization and census evidence remain on watch until the underlying material changes.
+
 [November 8 results](weekly/2026-11-08/REPORT.md): P6 closes for the three stated log evaluation orders; other compilation patterns and the accurate fallback are not certified.
 
 | Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
 |---|---|---|---|
-| 1 | **Asin range premise (P2).** | Bind phi/ph to the adopted gap predicate. | Earlier cleanup adopted; outstanding range/ABI claims remain distinct. |
-| 2 | **Cosine follow-through (P5).** | Recheck on new proof/census evidence. | Sine build fix upstream. Cosine sign correction verified in the published PDF. Watch for TeX synchronization and separate census evidence. |
-| 3 | **Bivariate inputs (P3).** | Design an exact positive-normal pow(x,3/2) comparator. | Both certified hypot families are now in the upstream corpus. Archive and stage coverage work remain open. |
+| 1 | Check the reduced binary64 hypot special test (P7). | Map the input selection before and after the change, including seeding across exponent gaps. Offer a small deterministic regression if a concrete loss is found. | Compare the same cases and budget. A shorter randomized run alone establishes no lost case. |
+| 2 | Bind contracted asin evaluation to the range certificate (P8). | Trace the high/low operations a v3 compiler actually fuses and enclose the resulting graph. | Strict premises are closed. Fast-contraction evidence is currently finite testing. |
+| 3 | Exact bivariate pow references (P3). | Design a small dyadic midpoint comparator for positive normal pow(x,3/2). | Run when the single bivariate slot is free. Retain the missing-archive and angular-stage checkpoints. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three

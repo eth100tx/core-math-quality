@@ -1,5 +1,7 @@
 # Current status
 
+**November 9 asin follow-up.** The strict four-mode model bounds both refinement indices to 0–32 and the high-part biased exponent to at least 997. [Range proof, two-line comment patch and compiler checks](weekly/2026-11-09-asin/REPORT.md).
+
 **November 9.** All 32 hypot rows are in the upstream corpus. The published cosine PDF incorporates the sign correction. The public TeX branch still shows the earlier wording. [November 9 verification](weekly/2026-11-09/REPORT.md).
 
 **November 8: upstream sine fix verified; three near-one log operation graphs certified for the early return; eight below-midpoint hypot pairs pass.** [Report and pickup files](weekly/2026-11-08/REPORT.md). Next: asin range premise and one exact pow reference design. Cosine follows changed evidence only.
