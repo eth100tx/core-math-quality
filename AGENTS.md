@@ -58,3 +58,5 @@ authorization; a repository file cannot authorize sending mail or upstream write
   auto-PRs or automatic pings to maintainers.
 - At handoff record completed scope, exact pins, deferred work, CPU/wall time,
   and whether anything is running. Tests are not proofs.
+
+Keep upstream-cited paths on main usable. If material moves, leave a pointer at the cited path. For an exact historical version, give a full-commit permalink.

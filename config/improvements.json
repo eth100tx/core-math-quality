@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "implementation_pin": "660067dfd3e751c8f07acc31c899ff410aa7206e",
   "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
   "weekly_budget": {
@@ -41,9 +41,9 @@
       "title": "Track cosine proof or census changes",
       "status": "blocked",
       "owner": "workbench agent",
-      "reason": "Sign candidate and completeness obligations remain at unchanged proof pin; sine build repair is adopted.",
-      "next_action": "Reconcile new proof text or supplied generation evidence when it changes; otherwise retain the dated review.",
-      "deliverable": "Minimal tested sine build patch and pinned cosine adoption/completeness checkpoint.",
+      "reason": "Published cosine PDF sign correction verified. Source synchronization and generation evidence remain open.",
+      "next_action": "Recheck only on changed TeX or new generation evidence.",
+      "deliverable": "Identify the matching public TeX revision when available, or reconcile new census evidence.",
       "acceptance": "No whole-function proof or unreachability claim from corpus tests; keep supplied-data verification separate from exhaustive regeneration.",
       "budget": {
         "cpu_hours": 1,
@@ -51,14 +51,15 @@
       },
       "stop": "Checkpoint on changed source or missing premise; do not repeat unchanged campaigns.",
       "dependency": "Pinned cosine source/proof and subsequent maintainer feedback; no broad coverage or exp campaign.",
-      "last_substantive_change": "2026-11-08",
-      "change": "Sine fix adopted byte-for-byte and repaired full Clang corpus passes; unchanged cosine evidence retained.",
+      "last_substantive_change": "2026-11-09",
+      "change": "Sign bookkeeping is present in the published PDF. Public proof master still returns the earlier TeX. See November 9 receipt for exact artifact identities.",
       "next_checkpoint": "2026-11-15",
       "evidence": [
         "weekly/2026-11-01/REPORT.md",
         "candidates/sin-preprocessor-space/README.md",
         "weekly/2026-11-01/COS-RECONCILIATION.json",
-        "weekly/2026-11-08/REPORT.md"
+        "weekly/2026-11-08/REPORT.md",
+        "weekly/2026-11-09/REPORT.md"
       ]
     },
     {
@@ -77,14 +78,15 @@
       },
       "stop": "Stop on a failed control or cap. Recheck archive availability at the next checkpoint, report the blocker once and continue independent infrastructure work; do not silently drop the requested import.",
       "dependency": "Exact rational input decoding and integer comparisons; separately qualify any future pow library adapter. Archived research unavailable.",
-      "last_substantive_change": "2026-11-08",
-      "change": "Eight below-midpoint pairs plus swaps certified, compared against the full corpus and executed on two compilers.",
+      "last_substantive_change": "2026-11-09",
+      "change": "Both exact midpoint families now appear in upstream hypot.wc at 185b7dec. All 32 ordered pickup rows match. Preserve earlier numerical runs with their dates.",
       "next_checkpoint": "2026-11-15",
       "evidence": [
         "weekly/2026-11-01/REPORT.md",
         "candidates/hypot-midpoint-plus-one/README.md",
         "docs/HYPOT-QUALIFICATION.md",
-        "weekly/2026-11-08/REPORT.md"
+        "weekly/2026-11-08/REPORT.md",
+        "weekly/2026-11-09/REPORT.md"
       ]
     }
   ]

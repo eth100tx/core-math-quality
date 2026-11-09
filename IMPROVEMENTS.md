@@ -37,8 +37,8 @@ The [previous card](weekly/2026-10-26/PAUSED-EXP.json) and all historical adopti
 | Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
 |---|---|---|---|
 | 1 | **Asin range premise (P2).** | Bind phi/ph to the adopted gap predicate. | Earlier cleanup adopted; outstanding range/ABI claims remain distinct. |
-| 2 | **Cosine follow-through (P5).** | Recheck on new proof/census evidence. | Sine build fix adopted; the unchanged cosine sign candidate remains open. |
-| 3 | **Bivariate inputs (P3).** | Design an exact positive-normal pow(x,3/2) comparator. | Both sides of the hypot midpoint now have certified regressions; archive and stage coverage work remain open. |
+| 2 | **Cosine follow-through (P5).** | Recheck on new proof/census evidence. | Sine build fix upstream. Cosine sign correction verified in the published PDF. Watch for TeX synchronization and separate census evidence. |
+| 3 | **Bivariate inputs (P3).** | Design an exact positive-normal pow(x,3/2) comparator. | Both certified hypot families are now in the upstream corpus. Archive and stage coverage work remain open. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three

@@ -4,9 +4,9 @@
 |---|---|---|
 | [sine preprocessor space](sin-preprocessor-space/README.md) | One-character build fix | Adopted upstream; [November 8 byte comparison and Clang corpus](../weekly/2026-11-08/REPORT.md). |
 | [Near-one log proof](../weekly/2026-11-08/LOG.md) | Polynomial and stopping-test certificates | Three arithmetic graphs; fallback excluded. |
-| [hypot midpoint minus one](../weekly/2026-11-08/HYPOT.md) | [16 optional regression rows](../weekly/2026-11-08/hypot-below.wc) | Exact pairs below midpoints, GCC/Clang tested; no bug claimed. |
-| [hypot midpoint plus one](hypot-midpoint-plus-one/README.md) | Exact near-midpoint regression inputs | Eight passing pairs plus swaps; absent from pinned corpus under sign/swap/power2 normalization. |
-| [cosine sign bookkeeping](cos-sign-bookkeeping/README.md) | Swap-bit definition and total-sign identity | Proposed proof-only follow-up to October 30 revision; exact algebra checked. |
+| [hypot midpoint minus one](../weekly/2026-11-08/HYPOT.md) | [16 optional regression rows](../weekly/2026-11-08/hypot-below.wc) | [Added to the upstream corpus](../weekly/2026-11-09/REPORT.md), including swaps. |
+| [hypot midpoint plus one](hypot-midpoint-plus-one/README.md) | Exact near-midpoint regression inputs | [Added to the upstream corpus](../weekly/2026-11-09/REPORT.md), including swaps. |
+| [cosine sign bookkeeping](cos-sign-bookkeeping/README.md) | Swap-bit definition and total-sign identity | [Incorporated in the published PDF](../weekly/2026-11-09/REPORT.md). Public TeX at the recorded pin still has the earlier definition. |
 | [cosine proof errata](cos-proof-errata/README.md) | Algorithm/sign/domain and supplied-corpus clarifications | Partially adopted October 30; preserve original patch, use focused reconciliation rather than reapplying it. |
 | [asin unsigned gap](asin-unsigned-gap/README.md) | Optional portability cleanup | Adopted at the October 29 pin; [source verification](../weekly/2026-10-29/ASIN-ADOPTION.json). Historical GCC/Clang tests retained. |
 | [rsqrt reciprocal range](rsqrt-underflow-range/README.md) | Spurious-underflow regression | Adopted upstream; [October 25 verification](../weekly/2026-10-25/REPORT.md). Candidate directory preserves historical evidence. |

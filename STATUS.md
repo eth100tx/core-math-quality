@@ -1,5 +1,7 @@
 # Current status
 
+**November 9.** All 32 hypot rows are in the upstream corpus. The published cosine PDF incorporates the sign correction. The public TeX branch still shows the earlier wording. [November 9 verification](weekly/2026-11-09/REPORT.md).
+
 **November 8: upstream sine fix verified; three near-one log operation graphs certified for the early return; eight below-midpoint hypot pairs pass.** [Report and pickup files](weekly/2026-11-08/REPORT.md). Next: asin range premise and one exact pow reference design. Cosine follows changed evidence only.
 
 **November 1: a sine build regression has a tested one-space patch; changed log/tanpi checks and eight exact hypot regression pairs pass.**

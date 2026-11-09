@@ -1,0 +1,27 @@
+{
+  "implementation": "185b7dec645407a4ded6ee01d6af14a784a17514",
+  "proof_repository": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
+  "published_pdf": "https://core-math.gitlabpages.inria.fr/cos.pdf",
+  "pdf_sha256": "4fac541e7372737b18f7a663957676d8df46e95b4a4848c599e2cc3abcd90de4",
+  "tex_sha256": "d71a522222641fd36418afa6aa17e2f85108a896a021dca8f4192dd68bdf2adf",
+  "corpus_sha256": "0ccf8be8b70eac41c87749928a1e2d8bf74b714812a4cb2dcdcd3e4f11b5dfec",
+  "groups": {
+    "above": {
+      "first_line": 33242,
+      "last_line": 33257,
+      "exact_ordered_rows": 16,
+      "citation_line": 33240,
+      "citation": "https://github.com/eth100tx/core-math-quality/blob/main/candidates/hypot-midpoint-plus-one/README.md",
+      "pickup_sha256": "c7f808be2a79472f41cfc33ed1b91dc0f0cf1d083e9a2fcae97151a499ad871f"
+    },
+    "below": {
+      "first_line": 33261,
+      "last_line": 33276,
+      "exact_ordered_rows": 16,
+      "citation_line": 33260,
+      "citation": "https://github.com/eth100tx/core-math-quality/blob/main/weekly/2026-11-08/REPORT.md",
+      "pickup_sha256": "7b28a2db15397d72d54638a3496dc92234deca753f232b08113cfafd9a39efe9"
+    }
+  },
+  "representative_sign_cases": 24
+}

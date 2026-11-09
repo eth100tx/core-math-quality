@@ -6,6 +6,7 @@ edition, not a claim that a scheduled weekly review already ran.
 
 | Date | Kind | Report |
 |---|---|---|
+| 2026-11-09 | Focused follow-up on hypot adoption and the published cosine theorem | [Report](2026-11-09/REPORT.md) |
 | 2026-11-08 | Sunday review: sine fix adopted, near-one log stopping certificate, below-midpoint hypot inputs | [Report](2026-11-08/REPORT.md) |
 | 2026-11-01 | Sunday review: sine build fix, log/tanpi regressions and exact hypot candidates | [Report](2026-11-01/REPORT.md) |
 | 2026-10-30 | Cosine proof adoption follow-through; exact sign check, no new regression campaign | [Report](2026-10-30/REPORT.md) |

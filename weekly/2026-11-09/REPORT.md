@@ -1,0 +1,15 @@
+# November 9 follow-up on hypot and cosine
+
+The binary64 hypot corpus now contains both midpoint families, and the published cosine PDF includes the corrected sign argument for Theorem 3.
+
+**Hypot.** At implementation `185b7dec645407a4ded6ee01d6af14a784a17514`, each of the 16 above-midpoint rows and 16 below-midpoint rows appears exactly once as written, including both argument orders. Lines 33242–33257 and 33261–33276 match the respective pickup files in order. The comments above the two groups cite their construction and report. This check establishes upstream corpus membership. The four-mode execution receipts retain their November 1 and November 8 dates. [Upstream rows](https://gitlab.inria.fr/core-math/core-math/-/blob/185b7dec645407a4ded6ee01d6af14a784a17514/src/binary64/hypot/hypot.wc#L33238)
+
+The cited paths on `main` are maintained as entry points. To cite the exact bytes reviewed, use the commit links. [Above-midpoint construction](https://github.com/eth100tx/core-math-quality/blob/55fd73158523b6bb4ec2f5e803ecf8d8143b7d62/candidates/hypot-midpoint-plus-one/README.md) · [Below-midpoint report](https://github.com/eth100tx/core-math-quality/blob/55fd73158523b6bb4ec2f5e803ecf8d8143b7d62/weekly/2026-11-08/REPORT.md)
+
+**Cosine.** The published PDF defines the swap bit for equal quadrant and remainder-sign bits, uses the half-turn factor `(−1)^b`, and identifies the signed magnitude `(−1)^σ C = (−1)^b D` before Eq. (6). The PDF SHA-256 is `4fac541e7372737b18f7a663957676d8df46e95b4a4848c599e2cc3abcd90de4`. At this check, the public proof branch still pointed to `d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b`, whose TeX contains the earlier definition. The PDF and TeX dispositions are recorded separately. [Published PDF](https://core-math.gitlabpages.inria.fr/cos.pdf) · [Pinned TeX](https://gitlab.inria.fr/zimmerma/core-math-proofs/-/blob/d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b/cos/cos.tex)
+
+The auxiliary name `d` is optional. Before the half-turn, factor the signed sum as `D = (−1)^q [W₁ − (−1)^(q+σᵣ) W₂]`. When the bits differ, the bracket is a sum. When they agree, it is a difference, and swapping the operands flips its sign. Equality gives zero in the signed-real identity. Starting from σ = b, these adjustments yield the identity above. Keeping that identity makes the step from the bound on D to Eq. (6) explicit. The algorithm applies the sign before the final rounding. The current PDF already gives a sufficient explanation for this sign step. The wider census and fallback obligations keep their prior status.
+
+[Verification receipt](ADOPTION.json) · [Reproducer](verify.py). Supply the pinned corpus, pinned TeX, and matching PDF to `python3 verify.py hypot.wc cos.tex cos.pdf`; the PDF text check used Poppler’s UTF-8 layout extraction. The 24 branch representatives exercise the sign algebra. The next scheduled primary task remains the asin range premise.
+
+Claude Opus 5.5 independently reviewed the branch argument, reference links and adoption evidence. We checked the bytes, ordered rows and sign cases locally. The final wording makes the initial sign σ = b explicit.
