@@ -1,5 +1,7 @@
 # Current status
 
+**November 10.** Upstream documented the signed index range −32 ≤ jt ≤ 32 in a comment and named the three constants used to approximate π/64. The November 9 certificate remains bound to its recorded source hash. [Upstream change](https://gitlab.inria.fr/core-math/core-math/-/commit/7f0987882e2412620af1da1f9dc9b909fdc88aed) · [Certificate and scope](weekly/2026-11-09-asin/REPORT.md).
+
 **November 9 asin follow-up.** The strict four-mode model bounds both refinement indices to 0–32 and the high-part biased exponent to at least 997. [Range proof, two-line comment patch and compiler checks](weekly/2026-11-09-asin/REPORT.md).
 
 **November 9.** All 32 hypot rows are in the upstream corpus. The published cosine PDF incorporates the sign correction. The public TeX branch still shows the earlier wording. [November 9 verification](weekly/2026-11-09/REPORT.md).
