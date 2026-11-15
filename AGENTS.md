@@ -1,6 +1,6 @@
 # Instructions for any coding AI
 
-Start every invocation with `BOOTSTRAP.md` and reconstruct the role from `ROLE.md`.
+Start every invocation with `BOOTSTRAP.md` and reconstruct the role from `ROLE.md`. Apply any registered private operator instructions locally.
 
 Read `STATUS.md`, `IMPROVEMENTS.md`, `RUNBOOK.md`, `config/targets.json`,
 `config/improvements.json`, and the latest weekly report.

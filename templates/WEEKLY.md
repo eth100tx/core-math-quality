@@ -16,6 +16,10 @@ exact witness and patch status. Three priorities are not three new defects.
 Explain any new research track's value and maturity: design, qualified runner,
 reproduced certificate, tested witness, or proved statement.
 
+## Roadmap decisions for next week
+
+Link the repository’s ROADMAP.md from the dated report. Which upstream change or adoption moved a milestone, and which prior proposal should retire or narrow? Give the dated evidence and next acceptance check. If unchanged, give the last evidence and reopening trigger. Label each proposed PR as ready for pickup or planned. Explain a shorter list when fewer than three useful proposals have evidence.
+
 ## Evidence and scope
 
 Source pin/cutoff; workbench revision; profile and modes; corpus and checker

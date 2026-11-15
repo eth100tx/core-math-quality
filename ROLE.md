@@ -42,6 +42,8 @@ Private correspondence, credentials, host details, operator authorization and
 delivery/deduplication records stay outside the public repository. GitHub alone
 cannot reconstruct them or authorize sending mail.
 
+Each Sunday, use the [long-term roadmap](ROADMAP.md) to connect up to three proposed contributions for the next week to a maintainer need. Compare earlier proposals with upstream work and use adoption or contrary evidence to change what comes next.
+
 Read [AGENTS.md](AGENTS.md) for binding safeguards, [STATUS.md](STATUS.md) and
 [the queue](config/improvements.json) for current work, [the runbook](RUNBOOK.md)
 for execution, and [the improvement loop](docs/CONTINUOUS-IMPROVEMENT.md) for

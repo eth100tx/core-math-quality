@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-09",
+  "updated": "2026-11-14",
   "implementation_pin": "d5d309237132fec40a98cb866dbce43c04b98010",
   "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
   "weekly_budget": {
@@ -62,7 +62,7 @@
       "title": "Exact bivariate regressions: move beyond the two hypot midpoint families",
       "status": "in_progress",
       "owner": "workbench agent",
-      "reason": "Both sides of the restricted hypot midpoint now have small certified examples. Preserve the missing archive work and try a different pow hypothesis.",
+      "reason": "Both sides of the restricted hypot midpoint now have small certified examples. Preserve the separate archive replay work and try a different pow hypothesis.",
       "next_action": "Design an exact comparator for positive normal pow(x,3/2) by comparing x cubed with squared dyadic rounding boundaries. First certify a bounded sample and controls; no general pow runner qualification or altered exponent sweep.",
       "deliverable": "One bounded exact pow reference sample, or a precise feasibility limit. Keep angular/import checkpoints separate.",
       "acceptance": "Exact input decoding, positive/negative controls and bounds; values, flags and errno separate. Table verification does not regenerate a completeness census. No new bug or novelty claim from a hard-but-correct case.",
@@ -70,17 +70,18 @@
         "cpu_hours": 1,
         "wall_minutes": 30
       },
-      "stop": "Stop on a failed control or cap. Recheck archive availability at the next checkpoint, report the blocker once and continue independent infrastructure work; do not silently drop the requested import.",
-      "dependency": "Exact rational input decoding and integer comparisons; separately qualify any future pow library adapter. Archived research unavailable.",
-      "last_substantive_change": "2026-11-09",
-      "change": "Both exact midpoint families now appear in upstream hypot.wc at 185b7dec. All 32 ordered pickup rows match. Preserve earlier numerical runs with their dates.",
+      "stop": "Stop at the card budget or on a failed control. Keep archive replay and full-corpus angular comparison as separate milestones.",
+      "dependency": "Exact rational input decoding and integer comparisons. P7 has first use of the bivariate slot. Qualify any future pow library adapter separately.",
+      "last_substantive_change": "2026-11-14",
+      "change": "Both midpoint families entered upstream. October transfer digests verified November 14; independent archive replay remains pending.",
       "next_checkpoint": "2026-11-15",
       "evidence": [
         "weekly/2026-11-01/REPORT.md",
         "candidates/hypot-midpoint-plus-one/README.md",
         "docs/HYPOT-QUALIFICATION.md",
         "weekly/2026-11-08/REPORT.md",
-        "weekly/2026-11-09/REPORT.md"
+        "weekly/2026-11-09/REPORT.md",
+        "weekly/2026-11-14-planning/PLANNING.md"
       ]
     }
   ]

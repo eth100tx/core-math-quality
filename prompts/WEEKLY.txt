@@ -5,9 +5,7 @@ and the latest LEARNING.md, and use its feedback/evaluation loop within this run
 Review authorized feedback privately; never publish private correspondence.
 Honor current scope and pauses in STATUS.md. Exp work is paused to avoid duplicating a maintainer-led effort; retain its history but do not select it until the pause is lifted. Read the October26 sine review and current queue before dispatch. During a coverage pause, keep the
 unary target parked, omit gap reports and run only justified focused regressions
-and source/proof reviews. Independent bivariate checker/design work can advance
-while archived results are unavailable; archive reproduction stays blocked and
-unverified. Execution/search requires a separately qualified runner. Select one
+and source/proof reviews. Verify the received archive manifest before importing selected components. Track historical replay separately from current qualification, and distinguish checking supplied certificates from regenerating their census. Inspect archived code before use and reproduce claims under a qualified runner. Execution/search requires a separately qualified runner. Select one
 primary task and at most one bounded bivariate task within the shared budget.
 Subtract light inbox-check work charged to the same Monday-through-Sunday cycle;
 Sunday is not a second independent allowance. Apply docs/DAILY.md correspondence
@@ -22,6 +20,7 @@ qualify this machine and run bounded checks. When coverage is enabled, refresh a
 needed; retain dated unchanged evidence explicitly. Investigate failures and
 when coverage is active, the smallest remaining gaps without claiming no-hit means unreachable.
 Reconcile adoption of previous patches and witnesses at exact upstream pins.
+Review ROADMAP.md every Sunday. Compare earlier proposals with pinned upstream code, corpus and proof changes. Update the roadmap and queue for adoption, overlap and remaining gaps. Link the dated weekly decision and next milestone even in a quiet week. Distinguish ready artifacts from next-week proposals awaiting checks.
 Prepare a short weekly summary: scoped health and material adoption changes,
 then three ranked improvement slots with state, substantive progress and next
 deliverable. Include new confirmed failures/patches first. Unchanged proposals

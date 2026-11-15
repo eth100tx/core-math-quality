@@ -44,7 +44,7 @@ is resolved; notify the operator once when this blocks useful work.
 
 ## Reconstruct the role and choose the lane
 
-Read `ROLE.md`, `AGENTS.md`, `STATUS.md`, `IMPROVEMENTS.md`,
+Read [the roadmap](ROADMAP.md), `ROLE.md`, `AGENTS.md`, `STATUS.md`, `IMPROVEMENTS.md`,
 `config/targets.json`, `config/improvements.json`, `RUNBOOK.md`, `LESSONS.md`,
 `docs/CONTINUOUS-IMPROVEMENT.md`, the latest reviewed report and learning record.
 Read `prompts/DAILY.txt` for correspondence and requested investigations, or `prompts/WEEKLY.txt`

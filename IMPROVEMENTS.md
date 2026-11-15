@@ -6,7 +6,7 @@ team can act on.** Passing tests alone is useful maintenance, but it is not the
 whole weekly output. A review should also say what improvement comes next and
 what would count as finishing it.
 
-[Independent strategy/design review and dispositions](docs/IMPROVEMENT-REVIEW.md).
+[Longer-term outcomes and next-week proposals](ROADMAP.md) · [Independent strategy/design review and dispositions](docs/IMPROVEMENT-REVIEW.md).
 
 ## Close the loop on earlier proposals
 
@@ -40,7 +40,7 @@ P2 closed for the strict operation graph on November 9. [Range proof, two-line c
 |---|---|---|---|
 | 1 | Check the reduced binary64 hypot special test (P7). | Map the input selection before and after the change, including seeding across exponent gaps. Offer a small deterministic regression if a concrete loss is found. | Compare the same cases and budget. A shorter randomized run alone establishes no lost case. |
 | 2 | Bind contracted asin evaluation to the range certificate (P8). | Trace the high/low operations a v3 compiler actually fuses and enclose the resulting graph. | Strict premises are closed. Fast-contraction evidence is currently finite testing. |
-| 3 | Exact bivariate pow references (P3). | Design a small dyadic midpoint comparator for positive normal pow(x,3/2). | Run when the single bivariate slot is free. Retain the missing-archive and angular-stage checkpoints. |
+| 3 | Exact bivariate pow references (P3). | Design a small dyadic midpoint comparator for positive normal pow(x,3/2). | Run when the single bivariate slot is free. Retain the archive-replay and angular-stage checkpoints. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three
@@ -48,7 +48,7 @@ new bugs or patches every week**. Reprioritize when evidence or upstream changes
 justify it. Replace closed cards with the next eligible task. If fewer than three
 are useful, say so; never fill a slot with an invented finding.
 
-The unchanged asin range/ABI card is [explicitly deferred](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) behind the new log path, not closed. Its adopted cleanup and prior evidence are retained.
+The [November 1 deferral](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) predates the strict asin result. Other ABIs remain deferred. P8 covers one contracted graph.
 
 ## Weekly acceptance and limits
 
@@ -83,11 +83,11 @@ Linux qualification](docs/HYPOT-QUALIFICATION.md) are available now. The listed
 fixtures qualify the setup; they do not prove a complete family or discover new
 hard cases.
 
-When available, import angular and pow certificates and refresh corpus
+The October transfer passed manifest verification on November 14. Review and import angular and pow certificates and refresh corpus
 membership at the selected pin. Compare atan2/atan2pi stage behavior with the full
 pinned corpus before claiming added stage coverage. Preserve mixed/negative
 search results and choose a different pow hypothesis instead of enlarging an
-unchanged search. Until source archives are received and checked, their reported
+unchanged search. Until the archived calculations are independently reproduced, their reported
 results remain unverified by this workbench and are not used as evidence.
 
 Any team member or AI can select a queue ID, read the linked acceptance criterion,

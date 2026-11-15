@@ -41,7 +41,7 @@ of the existing budget and review, not another campaign or email. Read
 The latest learning record is the newest `weekly/*/LEARNING.md`, or
 `docs/learning/2026-10-26/LEARNING.md` before the first scheduled review.
 
-First read `IMPROVEMENTS.md` and validate `config/improvements.json` with
+First read [the longer-term roadmap](ROADMAP.md) and `IMPROVEMENTS.md` and validate `config/improvements.json` with
 `python3 validate.py`. Refresh prior-candidate adoption at exact pins. Select
 one primary review task and at most one bounded bivariate task under the queue's
 shared CPU/wall envelope. Routine changed-function regressions count against
@@ -148,5 +148,7 @@ removed by the operator. Do not remove an active run or its source cache. This
 workbench deliberately does not install an automatic cleanup service.
 
 ## Weekly improvement candidates
+
+Each Sunday update [ROADMAP.md](ROADMAP.md) against the pinned upstream changes, including work led by maintainers. For each previous proposal, verify what actually landed, record the evidence and its effect on the next milestone. When partial adoption leaves a useful gap, narrow the proposal to that gap. Refresh the queue and write the dated decision in the weekly report, including a review date and a reason to reopen anything parked. Link the report from the roadmap. Keep historical reports intact.
 
 Aim to offer three improvements the maintainers can pick up independently. Rank by the maintainer problem solved, strength of evidence and effort to adopt. Count a completed daily item as a weekly update when its disposition changes. Prefer a small tested patch, exact regression input or replayable proof change. Give each proposal a link to the artifact when ready, the problem it solves, its adoption status and the check that establishes its scope. For an idea still under investigation, name the next deliverable. Report fewer when fewer have evidence. Check the previous proposals against upstream before selecting the next ones. Use observed adoption, closed premises and maintainer corrections to decide which work to continue or retire, and record what that decision changes next week.

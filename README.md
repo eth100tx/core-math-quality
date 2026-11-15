@@ -1,6 +1,6 @@
 # CORE-MATH Quality
 
-Latest focused result: [October 30 cosine proof adoption and sign-bookkeeping follow-up](weekly/2026-10-30/REPORT.md). [October 29 tests and bounds](weekly/2026-10-29/REPORT.md) retain their original scope and date.
+Start with the [roadmap and next week’s proposals](ROADMAP.md). The [candidate index](candidates/README.md) shows what maintainers can pick up and what upstream already incorporated. [November 8 weekly review](weekly/2026-11-08/REPORT.md) · [Subsequent asin result](weekly/2026-11-09-asin/REPORT.md).
 
 **An independent, reproducible quality workbench for 25 binary64 functions.**
 Run regression checks, resolve proof/code and portability questions, and deliver

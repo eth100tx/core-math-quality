@@ -1,5 +1,7 @@
 # Current status
 
+**November 14 planning.** See the [roadmap](ROADMAP.md) for the next three proposals, the upstream cosine TeX update and the received bivariate transfer. Independent archive replay remains open.
+
 **November 10.** Upstream documented the signed index range −32 ≤ jt ≤ 32 in a comment and named the three constants used to approximate π/64. The November 9 certificate remains bound to its recorded source hash. [Upstream change](https://gitlab.inria.fr/core-math/core-math/-/commit/7f0987882e2412620af1da1f9dc9b909fdc88aed) · [Certificate and scope](weekly/2026-11-09-asin/REPORT.md).
 
 **November 9 asin follow-up.** The strict four-mode model bounds both refinement indices to 0–32 and the high-part biased exponent to at least 997. [Range proof, two-line comment patch and compiler checks](weekly/2026-11-09-asin/REPORT.md).
