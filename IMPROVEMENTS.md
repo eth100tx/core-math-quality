@@ -36,11 +36,11 @@ P2 closed for the strict operation graph on November 9. [Range proof, two-line c
 
 [November 8 results](weekly/2026-11-08/REPORT.md): P6 closes for the three stated log evaluation orders; other compilation patterns and the accurate fallback are not certified.
 
-| Rank | Improvement and why it matters | Next concrete deliverable | Completion criterion / present limit |
-|---|---|---|---|
-| 1 | Check the reduced binary64 hypot special test (P7). | Map the input selection before and after the change, including seeding across exponent gaps. Offer a small deterministic regression if a concrete loss is found. | Compare the same cases and budget. A shorter randomized run alone establishes no lost case. |
-| 2 | Bind contracted asin evaluation to the range certificate (P8). | Trace the high/low operations a v3 compiler actually fuses and enclose the resulting graph. | Strict premises are closed. Fast-contraction evidence is currently finite testing. |
-| 3 | Exact bivariate pow references (P3). | Design a small dyadic midpoint comparator for positive normal pow(x,3/2). | Run when the single bivariate slot is free. Retain the archive-replay and angular-stage checkpoints. |
+| Next pickup | Deliverable and decision |
+|---|---|
+| 1 · Compact hypot verifier | Replay the supplied table from a clean Linux directory, include its dependencies and one deliberately invalid row. Publish the missing dependency if it blocks reproduction. Regenerating the family census is a separate task. |
+| 2 · Clang asin range binding | Compare the Clang v3 fast-contraction listing with the two established models. Map any different high/residual pair, then replay the bounds or identify the first unbound operation. |
+| 3 · Exact pow(x, 3/2) reference | Compare exact x³ with squared dyadic rounding boundaries on a bounded positive-normal sample. Include a wrong-neighbor control. It follows the compact table replay in the single bivariate slot. |
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three
@@ -48,7 +48,7 @@ new bugs or patches every week**. Reprioritize when evidence or upstream changes
 justify it. Replace closed cards with the next eligible task. If fewer than three
 are useful, say so; never fill a slot with an invented finding.
 
-The [November 1 deferral](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) predates the strict asin result. Other ABIs remain deferred. P8 covers one contracted graph.
+The [November 1 deferral](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) predates the strict asin result. Other ABIs remain deferred. P8 closed for one GCC graph. P9 checks Clang.
 
 ## Weekly acceptance and limits
 

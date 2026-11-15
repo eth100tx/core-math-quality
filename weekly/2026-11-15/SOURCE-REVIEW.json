@@ -1,0 +1,850 @@
+{
+  "implementation_pin": "a44b8b08c3e3feae8b51a9684b50464f9f24fb15",
+  "proof_pin": "08b804138d9e39b507522762c5b0df5e1b0b1478",
+  "bases": {
+    "implementation": "dae5dd8c0d5bd2691b45de28c9edbe12f067c3d3",
+    "proof": "5a42d3fb72533077c8b745b9fcd39b84ad3ee92a"
+  },
+  "trees": {
+    "implementation": {
+      "base_files": 1248,
+      "current_files": 1268
+    },
+    "proof": {
+      "base_files": 266,
+      "current_files": 282
+    }
+  },
+  "changed": {
+    "implementation": [
+      {
+        "path": ".gitignore",
+        "old_blob": "b2a18d5daf18f7a9bf97b3107acb5018a4ddd0bc",
+        "new_blob": "afe8761ffe80cc1ce8f7d4673ddd11d0f19100ff",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "README.md",
+        "old_blob": "fe9588f08fc38e00e8298551c9b8ce1b18195ab6",
+        "new_blob": "0a98a3ddd1bbaf4f1c6f8d4bc1da644c32ca61b7",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "check.sh",
+        "old_blob": "f20336b387452f89af0abea755a67fa969cbc4a4",
+        "new_blob": "14ab8a31eee692e881acba7299ff25aa56aac413",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "ci.sh",
+        "old_blob": "24de3dda5c4b5b3ef7a71393c8f5de520d1dd711",
+        "new_blob": "8883c52c83c1ee9ee9d567bfaab323cf102930ac",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "compiler_issues",
+        "old_blob": null,
+        "new_blob": "05a04247ddf085a7171f0551704b3d72f8928dc6",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "prof.sh",
+        "old_blob": "0b4cba093d31ff29e6336c95519c916947e5e199",
+        "new_blob": "c3c89ddcfc30fd2d9d0f5f3e07a4b6aedc6b5bdf",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/acos/Makefile",
+        "old_blob": "475e0574c90984747f9977349119ff639bc7042e",
+        "new_blob": "95423db7efd635fd618d4fd6ff56637b6a034121",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/acos/acosq.c",
+        "old_blob": "872de4cf808013cf518073de4d0d7f81c40e1d6b",
+        "new_blob": "a19e11b3350ca97954e1544837ddf3de21816c92",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/asin/Makefile",
+        "old_blob": "7839ac1ac306ce52d4e3a17c72c56daeafe6975d",
+        "new_blob": "77ea3647d2d36303c5246fa87a6caca6ffae59ed",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/asin/asinq.c",
+        "old_blob": "2c80264fd55c9504dd2c83d39fca5c5e852964cd",
+        "new_blob": "a63712792f82b064cd7b4fb253fee17faa396bd2",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/atan/Makefile",
+        "old_blob": "d732638317281f96887a9377868b3f1295f15975",
+        "new_blob": "24d69238b227a14d3f9623e8882c400e376cf1ff",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/atan/atanq.c",
+        "old_blob": "b0a9b69f1c8d21eabbe6655ce10c15d90c56003a",
+        "new_blob": "24c828df177b6d985dbc683829dc49be3f9e9e71",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/atan2/Makefile",
+        "old_blob": "0aa4a7035dd8b99d0f573cd1214e170b685ff4a8",
+        "new_blob": "426397335067e79e9b4ce641ac514439f0d6b1bf",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/atan2/atan2q.c",
+        "old_blob": "6467de643bf2799ded423f66b2518a247061ca86",
+        "new_blob": "3be47c59f8de8b5cd420b036075dcb09d43c37d5",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/cbrt/Makefile",
+        "old_blob": "be326ec174fc3636ad2297f5c04050b8792b1412",
+        "new_blob": "af8ec073790637aa9206e3435f486ce6a0e36e50",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/cbrt/cbrtq.c",
+        "old_blob": "36f47b332d30985b9de833893c642b8dfd71adc8",
+        "new_blob": "1aa5157cfab7e315f10f1cb6e3d495c14b8bd0f5",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/exp/Makefile",
+        "old_blob": "b6d216ed75014551184010466f9e3a687a0d5a7d",
+        "new_blob": "9003815622935eb3a71e1335c00dd8708efb00b7",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/exp/expq.c",
+        "old_blob": "ca9b4193d80c64d41d25fc7b87225266ffd98fe4",
+        "new_blob": "a14ce365f847f30ebfdbb68c71f6bc2ddc168b82",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/exp10/Makefile",
+        "old_blob": "67e68819319e94ab6de9ede0c9e243696963c636",
+        "new_blob": "15a719a52d5526b61e4ea2a847579c01c7f59bdd",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/exp10/exp10q.c",
+        "old_blob": "10a9196fe72f2ca31d362b29fbaafaae5166d4fd",
+        "new_blob": "6e15633373e0b64634f1288852faa163699bd389",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/exp2/Makefile",
+        "old_blob": "e10f051962b4dd9e37d3610f754b7f1af24c8362",
+        "new_blob": "1ad041d364d14c9b53e86ac73a27f6de3797839e",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/exp2/exp2q.c",
+        "old_blob": "9d837933628aa5e918b4d8f9784afda088b175f3",
+        "new_blob": "fa688c08ebbdae9695bee5c369998d1c3b223b21",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/expm1/Makefile",
+        "old_blob": "7f5ca85d259fd76ada409900a3f2ee6dba7912e0",
+        "new_blob": "fbb2456e3b089fb94a073b3cb7cf362ebc6395d6",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/expm1/expm1q.c",
+        "old_blob": "77595516730ca85f273d86dfa2c95cb18038385d",
+        "new_blob": "55ef0f76b1b2fdf9e93a8b5ac5d69d6a72c512e8",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/hypot/hypotq.c",
+        "old_blob": "a71768400fc2e5f61ad4cbd600869e5b72a6bfcd",
+        "new_blob": "b88c72ff6e842de8a7bbad0619b2d6399aa00f76",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/log/Makefile",
+        "old_blob": "3eba51d7e3d33ceacf5f7d428f9ddfffd7659698",
+        "new_blob": "ce81f54a8523ae04da2355a65f5ad4749d23e7a1",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/log/logq.c",
+        "old_blob": "e576091cdc3dd91121022467e80d658fc5412669",
+        "new_blob": "d3e10f644ad0aad41b2e75823e72728e7b5e2977",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/rsqrt/rsqrtq.c",
+        "old_blob": "0cec2de74bd01b9077dfbb83658e04e6d4969f3a",
+        "new_blob": "a9e9f5bb11ef3139ec9b809ceaf851c620111c97",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/sqrt/Makefile",
+        "old_blob": "ebdcb490ee446025f514e27dc070dbdcec53394f",
+        "new_blob": "2efb90afb3d4658b9546dc5ce52d22805f8813b4",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/sqrt/sqrtq.c",
+        "old_blob": "5f7f4daeaa01603d415e5082ec770d165d32d744",
+        "new_blob": "f65c2de2f817c0031573fb419c9ff82a71418296",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/Makefile",
+        "old_blob": null,
+        "new_blob": "107194f4faa444e8fba753b7ab980d26457bef04",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/bench_compare.py",
+        "old_blob": null,
+        "new_blob": "eae7a9c402daafdd384c6f5ef2777f85121ed9d7",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/check_internal.c",
+        "old_blob": null,
+        "new_blob": "c081fc323599a822e1f8df10b7c204bc33b02ea9",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/check_special.c",
+        "old_blob": null,
+        "new_blob": "d8c15bcaadd6664911da9904d1584e0393c0d14a",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/compiler_review.md",
+        "old_blob": null,
+        "new_blob": "33ba7410e3c5846d573d05bf64ec18b8495621b9",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/function_under_test.h",
+        "old_blob": null,
+        "new_blob": "29d5fe07b240098f57fac53abafd26dc09f29d54",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/tanq.c",
+        "old_blob": null,
+        "new_blob": "a90c5b38ac930ff924488ac0970523fc5ca84d42",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/tanq.wc",
+        "old_blob": null,
+        "new_blob": "f0e824721a6e15fe78823213cbea3d2ef318cc51",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/tanq_cases.py",
+        "old_blob": null,
+        "new_blob": "53c3d1667b2fbd2fb073c5d9daa6f60855a42c6a",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/tanq_error.md",
+        "old_blob": null,
+        "new_blob": "0b843c0ccc9bc2e9a126203b36a9803a366abff3",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/tanq_error.py",
+        "old_blob": null,
+        "new_blob": "6dec59e14d35778e1c4c5c15e62610381904d584",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary128/tan/tanq_mpfr.c",
+        "old_blob": null,
+        "new_blob": "9cdd7ade9ad250a963104ff1755f3b542838f437",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/asin/asin.c",
+        "old_blob": "4ba928b62918f5cff141579223cc0bee82bcea2f",
+        "new_blob": "e9d4bf243c3427e2a0d839e55972048eb5fcb15e",
+        "disposition": "Range model and finite value probes on one contracted build."
+      },
+      {
+        "path": "src/binary64/asinpi/asinpi.c",
+        "old_blob": "226a7fd899a1d094e6ddebbacda040007d8803b7",
+        "new_blob": "bad64991fc073752bc33a9d01e60fd90081af006",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/cbrt/cbrt.c",
+        "old_blob": "b416c6f06656eb4b0c8f3158e206859f0ba60a82",
+        "new_blob": "32485784858bb6120f4f3840f29261445e429a08",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/cos/Makefile",
+        "old_blob": "3f530b9c8ab55ea5a5bd378d99182be0a948a996",
+        "new_blob": "b8c8bfda3e79dc53d58bf1ed900fbd27cd14eba4",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/cos/check_special.c",
+        "old_blob": "da71a95c56ba7bbc1d2a43776155d869f249c38c",
+        "new_blob": "903f592a9cab14c9b9f580c827244539124a960d",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/cos/cos.c",
+        "old_blob": "9a222dab8777abeb7afb49adcd23db6603b9cb54",
+        "new_blob": "c521b3fa5e0202cb02a0401315133f661c1e836f",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/cos/cos.wc",
+        "old_blob": "c4c2aba0dd6d7be8ae3bd8f9e4bc108daa9b6759",
+        "new_blob": "16cc8b02adcc4b94fb8497fb591bb6c9eea53185",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/exp/exp.c",
+        "old_blob": "5002557cb518addee45c96c74ef90c9d6586683a",
+        "new_blob": "02e4e1ee711517956aa28c91ae336f1d03d7b659",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/exp/exp.wc",
+        "old_blob": "d5153a8da940634f94eb22823390f14a05bd440b",
+        "new_blob": "bdde4287374a8249e97ec2ee3111d5379f5f9aec",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/exp10m1/check_special.c",
+        "old_blob": "14ff92c77b4598fea9cf59c509e76f709c36cc1f",
+        "new_blob": "6397a3e52c3ceb1181f291138a5a78c23d98e0d8",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/exp2/exp2.c",
+        "old_blob": "7446ce0763f7c1424c0151232810ba971a9a022d",
+        "new_blob": "ec9c75fc90532211431707af416b48e1d25acc1b",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/exp2m1/check_special.c",
+        "old_blob": "fd2a6a5c13d67123bde7fb4c63a4e0a1cf9426f8",
+        "new_blob": "2c9886ec7929e0eaa4b8b0170e0e23f0d06970bd",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/expm1/check_special.c",
+        "old_blob": "ac476cd156a8a02241725bd99f740f279ddec4c2",
+        "new_blob": "76aa25e717f687220286ec1a97d017a8772668d5",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/hypot/check_special.c",
+        "old_blob": "3c58b2b5e06cc178dab030341ef51631c72ea995",
+        "new_blob": "886aadb2fa6d2d66b65c4367d9e020ad99932c4c",
+        "disposition": "Serial generator sampled at equal budgets."
+      },
+      {
+        "path": "src/binary64/hypot/hypot.wc",
+        "old_blob": "48833dfcf72196bdbe1d1f62e4e71f9a83a1c1d9",
+        "new_blob": "6c32a90d64d115e148b8fc38d0d92ad16b9bcc57",
+        "disposition": "Exact membership of 32 ordered prior candidates rechecked."
+      },
+      {
+        "path": "src/binary64/log/dint.h",
+        "old_blob": "f3f43d3bf1ced1269c01ebdaf89d8929eb13c44b",
+        "new_blob": "31bfbbc07cf95548bf82ce020e2d687b091d06fd",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/log.c",
+        "old_blob": "514e37e71a6cc2d4cdf2911af3810a228cd53b74",
+        "new_blob": "7b57c0c8ac9a59ed1df1020bb304bab93385f2cb",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/log.wc",
+        "old_blob": "95564ec143d0a5ae3317669594c8cde623d57a75",
+        "new_blob": "f0e03855c4cf0a8eb9bbca14c3932a2e591c46d4",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/logfast.sollya",
+        "old_blob": null,
+        "new_blob": "f061b5ff1c3857de1e0ffb08a6c8e1ef97f013fa",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/lognearzero.g",
+        "old_blob": null,
+        "new_blob": "46f0e4233e3bc2273eceef0538dd41098038e493",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/lognearzero.sh",
+        "old_blob": null,
+        "new_blob": "65e99aa7ad8f6c8185f7314139f832aae2385186",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/logtiny.g",
+        "old_blob": null,
+        "new_blob": "a0acf1558a61f47fde812a597bfebc1e05466b01",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/logtiny.sh",
+        "old_blob": null,
+        "new_blob": "ed1139597489fdbfbf3fb8ce8a954e65a9c9e746",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/log/logtiny.sollya",
+        "old_blob": null,
+        "new_blob": "f1434b3fc30a967ecc6ecbbb65af9ab6f683ad7b",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/rsqrt/rsqrt.c",
+        "old_blob": "617e67ab67dcb3a7dd6a60a11e9ba3575d8ca811",
+        "new_blob": "2b8c9b7a6ff19ad8ffd645a8431f3f0f5af98693",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/rsqrt/rsqrt.wc",
+        "old_blob": "a2c4397a17b2bba328e8300cc59397a8700c045d",
+        "new_blob": "91b5a8b3b726213f8500e386ef7445c215fa2311",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/sin/sin.c",
+        "old_blob": "293dc14c571758b399aff6960b75d7ac400e3286",
+        "new_blob": "773125ef758fd5e668ccb0457bc7dc1b1e2ecb0d",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/sincos/sincos.c",
+        "old_blob": "10ba965af37d373eb490b72c432dfe8de1944d8a",
+        "new_blob": "1267f11e2b7113f75443e7246c80d86265d2f843",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/support/check_worst_uni.c",
+        "old_blob": "c51dcd4b9249f913073c17a2fffd657cfe637a53",
+        "new_blob": "458f7a36c89e72b140af59d5b188c41a4bcae978",
+        "disposition": "Recent diff reviewed: diagnostic printf format. Earlier substantive changes remain on the prior record."
+      },
+      {
+        "path": "src/binary64/tan/tan.wc",
+        "old_blob": "82e5098ed5fddc3ac6076a0ac3be9f449a7eb1c8",
+        "new_blob": "6b35ed65bafc27f9b98b32a11ec03bdeb5d4fc81",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/tanpi/tanpi.c",
+        "old_blob": "eb157951fcc6e6fe0bc9bfe65af8086491b3ec1d",
+        "new_blob": "12aa0dcbde9ccea6729e7c269bbb6b48c330803f",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/tgamma/check_special.c",
+        "old_blob": "e30e1c3a437621cc31827b82d295d2a4a71c3304",
+        "new_blob": "3b25d3b897149a456a93af5bd5f55f0c6e53a5c3",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary64/tgamma/tgamma.c",
+        "old_blob": "d6e7bc17fac8bc08177f9bcddccc545b3273d28d",
+        "new_blob": "3de2e998e81daf3a27d4c5f16f89c86b56a31175",
+        "disposition": "Recent literal-suffix diff inspected. Three existing corpus rows verified. Numerical recheck deferred."
+      },
+      {
+        "path": "src/binary80/cbrt/cbrtl.c",
+        "old_blob": "b43053d2e9aa80b6ed2c9c6ec4f1bae2afc7af79",
+        "new_blob": "a4a6847d98cbc17341f34b3c7a0fb323754001f3",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/exp/tint.h",
+        "old_blob": "8ab712fb56cb7e83e55ac3b1491075d5b5dad3b7",
+        "new_blob": "48c6fa21518f4278cec9a8fbf8d800a14f23e78a",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/exp2/exp2l.c",
+        "old_blob": "fe63cd06fe5ef40a8a7a25c963d057b700966b27",
+        "new_blob": "810116273e85c5ec4c6382f94bafdfcc66087bf5",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/hypot/check_special.c",
+        "old_blob": "f2e4904f9c34397b6d56e92b7c83d40d2493259f",
+        "new_blob": "775ce2b71d864997db6be5213aed2ccc60a517db",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/log2/check_special.c",
+        "old_blob": "2aeaccca7e187e6247fd8c9987a889b322ded81b",
+        "new_blob": "70798b52f41015b7a37bf8a68c7780144b850b7b",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/pow/powl.c",
+        "old_blob": "b1e9063a16f366a63ce4c27db9f344e06b909856",
+        "new_blob": "1f1bb2a7874f69bf2b1cdac9dc0580c01c72cb4f",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/pow/powl_mpfr.c",
+        "old_blob": "f922e2c1ec1c5d1e3179ec93b4743617c84c769f",
+        "new_blob": "2e26d4213736e70ac8495cc1d13854928d03accd",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/rsqrt/check_special.c",
+        "old_blob": "ed0fcf1522cee21f8cf59ca4e3a6266619d13d60",
+        "new_blob": "7fa057086a920f2af1432622d306e59df13166c5",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/support/check_worst.c",
+        "old_blob": "890e0baa519f7db703f9cc35fe308af6cd7394a8",
+        "new_blob": "f20c10d00d8d50ac5bd40442bfae78024464208b",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/binary80/support/check_worst_uni.c",
+        "old_blob": "c31a278d9e0b5032f909b333c5f30e3596325e07",
+        "new_blob": "812c0e314b0fb4e69bc71a09d354bd08762f9db8",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/generic/cos/random_under_test.h",
+        "old_blob": "473b1a1995af2bafb79fe9e58991b779fa5a0940",
+        "new_blob": "298cbfd83006880875241d414471ad09c892f603",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/generic/support/bench_trig_compilers.py",
+        "old_blob": null,
+        "new_blob": "5bc88091ae05834b32da5d219571f8057159e371",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "src/generic/tan/random_under_test.h",
+        "old_blob": "32e74d114a38933fd66bcbb3a475973d2aef5181",
+        "new_blob": "298cbfd83006880875241d414471ad09c892f603",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      }
+    ],
+    "proof": [
+      {
+        "path": "cm.bib",
+        "old_blob": "6306483eca016f1f8d5390410b230cd42d8f9ca9",
+        "new_blob": "12bb40b0f83eecffbb3df03344b9430fee2954bd",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/acclarge.g",
+        "old_blob": null,
+        "new_blob": "489fd334b130c25c16699b4f56c583d6c1d1ac58",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/check_k0.c",
+        "old_blob": null,
+        "new_blob": "6e3e5db53ba6dbbe5f7cb6c43b405c2abfe85e15",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/cos.sage",
+        "old_blob": null,
+        "new_blob": "a3b1054c1b044edc6a99f8a30cf6ed0713c5d71c",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/cos.tex",
+        "old_blob": null,
+        "new_blob": "1354c72440dbe10ecc56bf2ecbaffff8ca2fe330",
+        "disposition": "Sign-bookkeeping adoption checked. Full proof and exceptional-input census deferred."
+      },
+      {
+        "path": "cos/graph1.pdf",
+        "old_blob": null,
+        "new_blob": "5f493599f7d5a6e87a181ffa756e43fb073bd7a0",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/perf1.txt",
+        "old_blob": null,
+        "new_blob": "8c0a62b014111ebfadc6cd7268a4e0c39139be83",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/perf2.txt",
+        "old_blob": null,
+        "new_blob": "6191cc51a6699d4bf17362ff9089508099562a89",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "cos/perf3.txt",
+        "old_blob": null,
+        "new_blob": "cd7e2b75c3ddb77dae5feaf20a430c2243db6394",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "exp/exp.sage",
+        "old_blob": "25e41fdd9c64dee871df0e30fc3608afa0c52797",
+        "new_blob": "384deb30aee581ac95fddf8dbdbdab5983b22a17",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "exp/exp.tex",
+        "old_blob": "d0823947c6bdc0fd130987490e82638cbac7e410",
+        "new_blob": "f3422840d739f583f6030ceb9a9f57d2d438f011",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "exp/generate.py",
+        "old_blob": "8f097c0162823d2b18028f041d8655ecfc22eb69",
+        "new_blob": "391d0a7dc4f1c19e8b68396b24d1a5eb1535feb7",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "exp/lemma4bis.g",
+        "old_blob": "7781c0f485682f9aaadbaac78c255f1e783c4957",
+        "new_blob": "36de9295c18988464a0c06d259e955e5ac981b63",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "exp/lemma4bis.sh",
+        "old_blob": null,
+        "new_blob": "ed9e368b09f147a9f804bb869411bb94bc7e1a07",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "exp/prove_lemma4bis.sh",
+        "old_blob": "ed9e368b09f147a9f804bb869411bb94bc7e1a07",
+        "new_blob": null,
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "sin/acclarge.g",
+        "old_blob": "57ad59349ecebbea9cf8f55ef5632f88187a8354",
+        "new_blob": "6ed9ef69a7403ebb60b847ef907cf56acae79185",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "sin/coslarge_acc.sollya",
+        "old_blob": "94d629895f7e68c04f46078cca4b1c905434d052",
+        "new_blob": "2ff5fb2423a1fbfe3cbcb0bb5cbc1724a512551f",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "sin/sin.sage",
+        "old_blob": "c35b89028dd4b2bba1f39fe4a0dc6427e81ff16b",
+        "new_blob": "bd3f75dd92af0223c5b2f10eb77ec9a4a3230f03",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "sin/sin.tex",
+        "old_blob": "b9f0f8ccc180a7e0cb4b11db00a4b1082fcc6f75",
+        "new_blob": "3b9e192794d1fad2d01cbd53ad6070ab8381708e",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "sin/sinlarge_acc.sollya",
+        "old_blob": "4223fb955fef485a47d0409e7c383f184a3b0591",
+        "new_blob": "8842e0a1535107b2075292cd7e46e40f07ba13db",
+        "disposition": "Inventoried. No new detailed review of this file in this run."
+      },
+      {
+        "path": "tan/divdd.g",
+        "old_blob": null,
+        "new_blob": "eb4c4eae7f3c8ff0c2cca467f17cdc8b96571c36",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/divdd.sh",
+        "old_blob": null,
+        "new_blob": "6f85ea6062e597d084a0be201c5d2395d92fa80b",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/graph1.pdf",
+        "old_blob": null,
+        "new_blob": "65169e4e92b1f9f46b789b6b8b1ca8372902353d",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/perf1.txt",
+        "old_blob": null,
+        "new_blob": "613a6dcdb935fb8b79343350644764eeccdcd1d8",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/perf2.txt",
+        "old_blob": null,
+        "new_blob": "5149c5051521f005d7fd6dd23ce91779e2615b39",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/perf3.txt",
+        "old_blob": null,
+        "new_blob": "0ff351a17b0e52225ede607b207444673a0d4de0",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/tan.sage",
+        "old_blob": null,
+        "new_blob": "5046a56580f403f56f8e1379d311c9b423402699",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      },
+      {
+        "path": "tan/tan.tex",
+        "old_blob": null,
+        "new_blob": "b35697821d6428f065e663c455a733b8ef53159d",
+        "disposition": "Inventoried. Upstream proof in progress; mathematical review deferred."
+      }
+    ]
+  },
+  "comparison_complete": true,
+  "implementation_compare_matches_full_tree_delta": true,
+  "proof_compare_matches_full_tree_delta": false,
+  "scope": "Complete path inventory from recorded global baselines. Scientific review is limited to the stated targets.",
+  "global_review_watermarks_advanced": false,
+  "recent_changed_paths": {
+    "implementation": [
+      "compiler_issues",
+      "src/binary128/acos/Makefile",
+      "src/binary128/acos/acosq.c",
+      "src/binary128/asin/Makefile",
+      "src/binary128/asin/asinq.c",
+      "src/binary128/atan/Makefile",
+      "src/binary128/atan/atanq.c",
+      "src/binary128/atan2/Makefile",
+      "src/binary128/atan2/atan2q.c",
+      "src/binary128/cbrt/Makefile",
+      "src/binary128/cbrt/cbrtq.c",
+      "src/binary128/exp/Makefile",
+      "src/binary128/exp/expq.c",
+      "src/binary128/exp10/Makefile",
+      "src/binary128/exp10/exp10q.c",
+      "src/binary128/exp2/Makefile",
+      "src/binary128/exp2/exp2q.c",
+      "src/binary128/expm1/Makefile",
+      "src/binary128/expm1/expm1q.c",
+      "src/binary128/hypot/hypotq.c",
+      "src/binary128/log/Makefile",
+      "src/binary128/log/logq.c",
+      "src/binary128/rsqrt/rsqrtq.c",
+      "src/binary128/sqrt/Makefile",
+      "src/binary128/sqrt/sqrtq.c",
+      "src/binary64/asin/asin.c",
+      "src/binary64/asinpi/asinpi.c",
+      "src/binary64/cbrt/cbrt.c",
+      "src/binary64/exp10m1/check_special.c",
+      "src/binary64/exp2/exp2.c",
+      "src/binary64/exp2m1/check_special.c",
+      "src/binary64/expm1/check_special.c",
+      "src/binary64/hypot/check_special.c",
+      "src/binary64/hypot/hypot.wc",
+      "src/binary64/rsqrt/rsqrt.c",
+      "src/binary64/sincos/sincos.c",
+      "src/binary64/support/check_worst_uni.c",
+      "src/binary64/tgamma/check_special.c",
+      "src/binary64/tgamma/tgamma.c",
+      "src/binary80/cbrt/cbrtl.c",
+      "src/binary80/exp/tint.h",
+      "src/binary80/exp2/exp2l.c",
+      "src/binary80/hypot/check_special.c",
+      "src/binary80/log2/check_special.c",
+      "src/binary80/pow/powl.c",
+      "src/binary80/pow/powl_mpfr.c",
+      "src/binary80/rsqrt/check_special.c",
+      "src/binary80/support/check_worst.c",
+      "src/binary80/support/check_worst_uni.c"
+    ],
+    "proof": [
+      "cos/cos.tex",
+      "tan/divdd.g",
+      "tan/divdd.sh",
+      "tan/tan.sage",
+      "tan/tan.tex"
+    ]
+  },
+  "adoption": {
+    "hypot_corpus_sha256": "0ccf8be8b70eac41c87749928a1e2d8bf74b714812a4cb2dcdcd3e4f11b5dfec",
+    "ordered_pickup_row_numbers": {
+      "candidates/hypot-midpoint-plus-one/hypot-midpoint-plus-one.wc": [
+        33242,
+        33243,
+        33244,
+        33245,
+        33246,
+        33247,
+        33248,
+        33249,
+        33250,
+        33251,
+        33252,
+        33253,
+        33254,
+        33255,
+        33256,
+        33257
+      ],
+      "weekly/2026-11-08/hypot-below.wc": [
+        33261,
+        33262,
+        33263,
+        33264,
+        33265,
+        33266,
+        33267,
+        33268,
+        33269,
+        33270,
+        33271,
+        33272,
+        33273,
+        33274,
+        33275,
+        33276
+      ]
+    },
+    "asin_signed_comment": true,
+    "cos_tex_sha256": "50757e2b632436644a99ed49833ac3b08525644d04234c213ad90781cd2c80dc",
+    "cos_swap_and_sign_identity_present": true,
+    "tgamma_corpus_sha256": "8663a3450869b1623006b07e38e18f000cf90f3cc79848ff25863b86d7e5b008",
+    "positive_tgamma_branch_and_neighbors": {
+      "0x0.4000000000000p-1022": [
+        [
+          545548,
+          "0x1p-1024"
+        ]
+      ],
+      "0x0.4000000000001p-1022": [
+        [
+          545550,
+          "0x1.0000000000004p-1024"
+        ]
+      ],
+      "0x0.3ffffffffffffp-1022": [
+        [
+          545552,
+          "0x1.ffffffffffff8p-1025"
+        ]
+      ]
+    }
+  }
+}

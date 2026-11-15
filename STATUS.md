@@ -1,5 +1,7 @@
 # Current status
 
+**November 15.** The contracted GCC v3 asin graph satisfies both range premises. All 6,912 sampled hypot generator pairs matched at equal serial budgets. The next bivariate task is the recovered compact table. [Weekly review](weekly/2026-11-15/REPORT.md) · [Next proposals](ROADMAP.md)
+
 **November 14 planning.** See the [roadmap](ROADMAP.md) for the next three proposals, the upstream cosine TeX update and the received bivariate transfer. Independent archive replay remains open.
 
 **November 10.** Upstream documented the signed index range −32 ≤ jt ≤ 32 in a comment and named the three constants used to approximate π/64. The November 9 certificate remains bound to its recorded source hash. [Upstream change](https://gitlab.inria.fr/core-math/core-math/-/commit/7f0987882e2412620af1da1f9dc9b909fdc88aed) · [Certificate and scope](weekly/2026-11-09-asin/REPORT.md).

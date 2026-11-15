@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-14",
-  "implementation_pin": "d5d309237132fec40a98cb866dbce43c04b98010",
-  "proof_pin": "d5fab2e483d00b7a21c5b50b1abb877cadeb5c5b",
+  "updated": "2026-11-15",
+  "implementation_pin": "a44b8b08c3e3feae8b51a9684b50464f9f24fb15",
+  "proof_pin": "08b804138d9e39b507522762c5b0df5e1b0b1478",
   "weekly_budget": {
     "cpu_hours": 4,
     "wall_minutes": 120
@@ -10,57 +10,59 @@
   "execution_policy": "One primary review task and at most one bivariate task, serially under existing locks. Remaining budget is reserve, not permission for automatic expansion.",
   "priorities": [
     {
-      "id": "P7",
+      "id": "P10",
       "rank": 1,
-      "title": "Check binary64 hypot special-test input selection",
+      "title": "Replay the transferred compact hypot table",
       "status": "planned",
       "owner": "workbench agent",
-      "reason": "Upstream 2b22bd62 reduced the default count and changed the seed/iteration structure.",
-      "next_action": "Compare deterministic case classes and streams at equal budgets. Propose a compact deterministic input or fixture only if a meaningful difference is demonstrated.",
-      "deliverable": "Before/after input-selection receipt and a conditional regression candidate.",
-      "acceptance": "Separate a measured change in selected cases from loss of mathematical coverage.",
+      "reason": "Transfer digests verified; serial generator comparison P7 finished.",
+      "next_action": "Review dependencies and replay the supplied family table from a clean Linux directory with one deliberately corrupted row.",
+      "deliverable": "Standalone verifier, table receipt and negative control, or the precise missing dependency.",
+      "acceptance": "Verify every supplied row and reject the negative control. Treat completeness regeneration as a separate milestone.",
       "budget": {
         "cpu_hours": 1,
         "wall_minutes": 30
       },
       "stop": "Stop at the card budget, missing comparable baseline, or a superseding change.",
-      "dependency": "Pinned binary64 hypot check_special source and one available bivariate slot.",
-      "last_substantive_change": "2026-11-09",
-      "change": "New source change inventoried. No regression or lost case claimed.",
-      "next_checkpoint": "2026-11-15",
+      "dependency": "One free bivariate slot and the verified portable archive.",
+      "last_substantive_change": "2026-11-15",
+      "change": "The recovered archive has ten verified transfer digests. P7 found no lost serial sample.",
+      "next_checkpoint": "2026-11-22",
       "evidence": [
-        "weekly/2026-11-09-asin/REPORT.md"
+        "weekly/2026-11-14-planning/PLANNING.md",
+        "docs/HYPOT-QUALIFICATION.md",
+        "weekly/2026-11-15/REPORT.md"
       ]
     },
     {
-      "id": "P8",
+      "id": "P9",
       "rank": 2,
-      "title": "Bind contracted asin operations to the range proof",
+      "title": "Check the compiled Clang v3 asin refinement graph",
       "status": "planned",
       "owner": "workbench agent",
-      "reason": "Strict graph is certified. Fast-contraction probes are finite.",
-      "next_action": "Inspect one pinned v3 compiler graph for fusions that change high/low residual identities. Extend the enclosure or name the first unsupported sequence.",
-      "deliverable": "One compiler-graph binding and a replayable range bound or explicit gap.",
-      "acceptance": "Bind emitted operations and rounding model before extending the proof scope.",
+      "reason": "The exact GCC v3 graph and strict model have range evidence. A different compiler may choose different fused operations.",
+      "next_action": "Compare one pinned Clang v3 fast listing with both reviewed graphs. Map the high/residual operations and replay the applicable enclosure.",
+      "deliverable": "Compiler fingerprint and a mapped enclosure or first unbound instruction.",
+      "acceptance": "Show which operations match or differ; bind square-root assumptions and the final exponent input. Stop if the only new result is identical operation order.",
       "budget": {
         "cpu_hours": 1,
         "wall_minutes": 30
       },
       "stop": "Stop at the card budget, unbound operation, or a changed source.",
-      "dependency": "Pinned asin.c, documented strict certificate and a concrete v3 toolchain.",
-      "last_substantive_change": "2026-11-09",
-      "change": "The original P2 range premises closed under strict semantics. A reachable negative signed index has a comment-only candidate.",
-      "next_checkpoint": "2026-11-15",
+      "dependency": "Pinned source, supported x86-64-v3 Clang toolchain and the reviewed interval primitives.",
+      "last_substantive_change": "2026-11-15",
+      "change": "P8 completed its named GCC build. No compiler bug reported.",
+      "next_checkpoint": "2026-11-22",
       "evidence": [
-        "weekly/2026-11-09-asin/REPORT.md",
-        "weekly/2026-11-09-asin/probes.json"
+        "weekly/2026-11-15/REPORT.md",
+        "weekly/2026-11-15/REPRODUCE.md"
       ]
     },
     {
       "id": "P3",
       "rank": 3,
       "title": "Exact bivariate regressions: move beyond the two hypot midpoint families",
-      "status": "in_progress",
+      "status": "planned",
       "owner": "workbench agent",
       "reason": "Both sides of the restricted hypot midpoint now have small certified examples. Preserve the separate archive replay work and try a different pow hypothesis.",
       "next_action": "Design an exact comparator for positive normal pow(x,3/2) by comparing x cubed with squared dyadic rounding boundaries. First certify a bounded sample and controls; no general pow runner qualification or altered exponent sweep.",
@@ -71,10 +73,10 @@
         "wall_minutes": 30
       },
       "stop": "Stop at the card budget or on a failed control. Keep archive replay and full-corpus angular comparison as separate milestones.",
-      "dependency": "Exact rational input decoding and integer comparisons. P7 has first use of the bivariate slot. Qualify any future pow library adapter separately.",
-      "last_substantive_change": "2026-11-14",
-      "change": "Both midpoint families entered upstream. October transfer digests verified November 14; independent archive replay remains pending.",
-      "next_checkpoint": "2026-11-15",
+      "dependency": "P10 has first use of the single bivariate slot. Qualify any future pow adapter separately.",
+      "last_substantive_change": "2026-11-15",
+      "change": "P7 finished. P10 now has the bivariate slot; the exact comparator stays queued.",
+      "next_checkpoint": "2026-11-22",
       "evidence": [
         "weekly/2026-11-01/REPORT.md",
         "candidates/hypot-midpoint-plus-one/README.md",

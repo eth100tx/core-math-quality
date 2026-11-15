@@ -1,0 +1,14 @@
+# Reproduce this week's checks
+
+Use Linux x86-64-v3 with GCC 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1), glibc 2.39, MPFR 4.2.1, GMP and development headers, and Python 3.10 or newer. Supply the original LF bytes of [asin.c](https://gitlab.inria.fr/core-math/core-math/-/raw/a44b8b08c3e3feae8b51a9684b50464f9f24fb15/src/binary64/asin/asin.c), [old hypot check_special.c](https://gitlab.inria.fr/core-math/core-math/-/raw/185b7dec645407a4ded6ee01d6af14a784a17514/src/binary64/hypot/check_special.c), and [new hypot check_special.c](https://gitlab.inria.fr/core-math/core-math/-/raw/a44b8b08c3e3feae8b51a9684b50464f9f24fb15/src/binary64/hypot/check_special.c). From this directory run each command serially.
+
+```sh
+timeout 180 python3 -B verify_build.py asin.c ../2026-11-09-asin/verify_asin.py
+timeout 120 python3 -B replay_hypot.py old-check_special.c new-check_special.c
+```
+
+The first command checks exact source and interval-helper hashes, rebuilds the entire optimized graph and assembly, and verifies their fingerprints before evaluating the enclosure. Assembly normalization removes comments and blank lines. All instructions, labels, operands and constants remain. Fast and off fingerprints must differ. A different compiler or instruction stream requires a new mapping.
+
+**Operation mapping.** Source lines 212–246 form the caller's lower endpoint. In the large branch GCC uses a fused subtraction to form the radicand and uses the unsigned root in the error allowance. The coefficient pairs at 241–242 feed a fused chain, including the low coefficient. In the refinement, the product in the low cosine subtraction at 297 is fused. Its exact product lies inside the outward-rounded interval. At 319 the leading Horner sum is fused and its residual subtracts the rounded increment. The two rounding errors bound that residual. The four subsequent double-double Horner steps bound each rounded high product's error separately from the fused cross term. At 322–336 the high and middle angle products are verified exactly for every integer from −32 to 32. This permits the final two fused sums to use the same enclosure as the corresponding exact product plus addend. The bound is for the high part immediately before the exponent test. The argument-to-graph mapping was checked by inspection. Hashes detect changes to the reviewed listing.
+
+Two negative controls double the refinement-index multiplier and inject a one-bit value error. Each must fail for its intended reason. The independent MPFR probe includes both signed zeros and compares result bits. The second command instruments the actual hypot generators immediately after each raw draw and immediately before the numerical checker. Exactly two draws must reach each pair. It fixes the process seed, disables OpenMP, and checks the hardware round-to-nearest setting. Its output contains only stream digests and counts.

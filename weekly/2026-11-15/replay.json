@@ -1,0 +1,28 @@
+{
+  "per_gap": 128,
+  "gaps": 27,
+  "seeds": {
+    "19": {
+      "trace_sha256": "433355caf0de1438a20a0509942c8145aaf0f4acb7b1f915d8c652ed3fc7e7af",
+      "rows": 3456,
+      "distinct_final_pairs": 3456
+    },
+    "2026": {
+      "trace_sha256": "fba91764c50415953256e910c9a26b5e99a120d31eb1c1aecc18aae40ef8cb3f",
+      "rows": 3456,
+      "distinct_final_pairs": 3456
+    }
+  },
+  "libc": [
+    "glibc",
+    "2.39"
+  ],
+  "compiler": "13.3.0",
+  "mpfr": "4.2.1",
+  "mode": "round to nearest",
+  "old_sha256": "4dbfe52b9542e9c412f505d2fad4dc0ed3bb5738d5be699569808101ae26fc45",
+  "new_sha256": "fe8f55125c456cab195e27a09b317ffa8e120ca7d6bfd2829fe3a4747366ef65",
+  "raw_pairs_per_seed_before_gap_scaling": 128,
+  "openmp": false,
+  "numerical_checker_executed": false
+}

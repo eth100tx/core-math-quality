@@ -1,0 +1,12 @@
+{
+  "binding.json": "161a69f0884f490b54dea4de98582e68d85fdf7b79e30f6b724cb96d71cbfaea",
+  "contracted_asin.py": "b9445e450d495419f2d15e2bc3e6b36f86f1f3ed86c3c2665418acb62c62d09a",
+  "LEARNING.md": "7f6402946ec022850e336ddbcd254846db0a1ef63cf7391771cb082c8024692c",
+  "probe_asin.c": "2664e65cf83a8bf13084757e05a419fd0af55488f923cdac0a4a7646ed3046b1",
+  "replay.json": "1a493a2589ebbf2d1fbc9e744e5a9a1ae4d555ac4291d68ce065b81f74d4096d",
+  "replay_hypot.py": "41bf60cabe48f1556d4b9ad16009bf06caffb4841160457d30df137a6b102840",
+  "REPORT.md": "79e540e6310fb41ca7a3ceed4d9effe424be8f64a5096f47ee3cedb5709855fe",
+  "REPRODUCE.md": "a254d07945169183c9f8b9ef28f49ac1f0851a6d086cfaf4e11b87eaefa05bf1",
+  "SOURCE-REVIEW.json": "eda98092ede9647682ebd52e328109b5203c5769c02d05df17b538f1707d78c1",
+  "verify_build.py": "cbe0d3ff7ea3417ff9b7cc116bf858d800af646e2afd2a4a6889019f8d05e542"
+}
