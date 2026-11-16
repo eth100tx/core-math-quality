@@ -31,11 +31,11 @@ action must stay aligned with current feedback and known
 maintainer activity; explain material plan changes without implying acceptance.
 Full evidence stays in weekly/. Seek an independent review; verify load-bearing claims. Propose tested
 patch candidates for optional pickup. Validate/privacy-check the publication.
-Only with existing operator publication authorization, publish the reviewed
-weekly result to weekly/ even in a quiet week. Send the
-weekly email only for a substantive change in health, adoption, priorities or
-results; an unchanged week sends no email and records that decision privately.
-Only publish or send mail if this operator has explicitly authorized it.
+Publish the reviewed result under weekly/ when authorized. For a recipient with
+an authorized Sunday subscription, the existing weekly job sends one email when
+the report is verified, including a short summary in quiet weeks. Complete the
+delivery checks in RUNBOOK.md before marking the email sent. Read the private
+operator authorization and any current stop request before dispatch.
 For every outgoing email, follow docs/EMAIL-IDENTITY.md: identify the AI in the
 first visible body line and closing, and verify both before and after sending.
 Leave a clear checkpoint, time accounting and no running child processes.

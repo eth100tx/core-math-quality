@@ -26,6 +26,26 @@ If GitLab rate limits or a transient download error interrupts acquisition,
 retain the verified cache and retry the same command later within a fresh outer
 timeout. Do not use an unbounded retry loop or treat acquisition failure as PASS.
 
+## Sunday email delivery
+
+When the operator has designated the weekly job as sender, that same invocation
+sends the reviewed report after verifying its public link. Keep the recipient,
+authorization, delivery intent and Gmail receipt in private project state.
+
+1. Check the current stop-mail state and reconcile incoming mail, Sent and any
+   matching draft. Identify one edition by recipient and local week-ending date.
+   Record the reviewed report revision. A revised link does not create a second edition.
+2. If a matching sent message exists, verify it and record its provider ID.
+   Otherwise, record the send intent and send once. In a quiet week summarize
+   what was checked, what changed and the next planned check in a few lines.
+3. Read back the raw and parsed Sent message. Verify the sole recipient, subject,
+   visible AI authorship, body, report link and any attachment bytes. Close the
+   delivery record only after these checks pass. Publication and delivery have
+   separate checkpoints.
+4. On an ambiguous send outcome, reconcile the existing attempt before retrying.
+   Alert the operator that day if delivery remains unresolved. The next activation
+   resumes delivery verification without rerunning the scientific review.
+
 ## Weekly or ad hoc
 
 Substantive authorized correspondence requests follow [DAILY.md](docs/DAILY.md)
