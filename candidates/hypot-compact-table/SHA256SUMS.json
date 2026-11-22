@@ -1,0 +1,10 @@
+{
+  "data/hypot-h100-families.json": "9e344278d2e29614d0c2df67ba0c2ea1d024cb5185853654841b5eea369c2261",
+  "PROVENANCE.json": "91fc23c655298aa2a87ab1de3dc374332186ff2874fce2125b656b286124df9a",
+  "README.md": "b63d18db1104450ce5a3435bc41d9287a1f3603029dd3d80bb0b7ece0a0d6143",
+  "tools/hypot_family_classifier.py": "e0365361ea0de0172dc82b862282564f48063d4e4c61a27f3ab63e9baf78f2c2",
+  "tools/hypot_finite_classifier.py": "43096c7d81ca216d8f81b853dbf035d1a2b483bb1417fc09fafc2e7637ec478a",
+  "tools/hypot_integer_reference.py": "7684a19ea7578469e81a7f9c134ef6501425a79ccb7477abe0f81b4e2f531f10",
+  "tools/hypot_qa_cli.py": "001a76b0e31413e3705b16a1498b486a3bcbf78ebd409fd96c6a35334bdf67c0",
+  "verify_table.py": "5a0257afbf27c0d459e8dd380b6050654f53c134f9b801d7ce09ebf67a877281"
+}

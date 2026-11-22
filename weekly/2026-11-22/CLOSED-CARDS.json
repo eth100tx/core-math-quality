@@ -1,0 +1,57 @@
+{
+  "prior_cards": [
+    {
+      "id": "P10",
+      "rank": 1,
+      "title": "Replay the transferred compact hypot table",
+      "status": "planned",
+      "owner": "workbench agent",
+      "reason": "Transfer digests verified; serial generator comparison P7 finished.",
+      "next_action": "Review dependencies and replay the supplied family table from a clean Linux directory with one deliberately corrupted row.",
+      "deliverable": "Standalone verifier, table receipt and negative control, or the precise missing dependency.",
+      "acceptance": "Verify every supplied row and reject the negative control. Treat completeness regeneration as a separate milestone.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Stop at the card budget, missing comparable baseline, or a superseding change.",
+      "dependency": "One free bivariate slot and the verified portable archive.",
+      "last_substantive_change": "2026-11-15",
+      "change": "The recovered archive has ten verified transfer digests. P7 found no lost serial sample.",
+      "next_checkpoint": "2026-11-22",
+      "evidence": [
+        "weekly/2026-11-14-planning/PLANNING.md",
+        "docs/HYPOT-QUALIFICATION.md",
+        "weekly/2026-11-15/REPORT.md"
+      ]
+    },
+    {
+      "id": "P9",
+      "rank": 2,
+      "title": "Check the compiled Clang v3 asin refinement graph",
+      "status": "planned",
+      "owner": "workbench agent",
+      "reason": "The exact GCC v3 graph and strict model have range evidence. A different compiler may choose different fused operations.",
+      "next_action": "Compare one pinned Clang v3 fast listing with both reviewed graphs. Map the high/residual operations and replay the applicable enclosure.",
+      "deliverable": "Compiler fingerprint and a mapped enclosure or first unbound instruction.",
+      "acceptance": "Show which operations match or differ; bind square-root assumptions and the final exponent input. Stop if the only new result is identical operation order.",
+      "budget": {
+        "cpu_hours": 1,
+        "wall_minutes": 30
+      },
+      "stop": "Stop at the card budget, unbound operation, or a changed source.",
+      "dependency": "Pinned source, supported x86-64-v3 Clang toolchain and the reviewed interval primitives.",
+      "last_substantive_change": "2026-11-15",
+      "change": "P8 completed its named GCC build. No compiler bug reported.",
+      "next_checkpoint": "2026-11-22",
+      "evidence": [
+        "weekly/2026-11-15/REPORT.md",
+        "weekly/2026-11-15/REPRODUCE.md"
+      ]
+    }
+  ],
+  "dispositions": {
+    "P10": "Closed supplied-table replay only; completeness and native replay remain open.",
+    "P9": "Closed at identical-object stop condition; no new range proof claimed."
+  }
+}

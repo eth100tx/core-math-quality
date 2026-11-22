@@ -6,6 +6,7 @@ edition, not a claim that a scheduled weekly review already ran.
 
 | Date | Kind | Report |
 |---|---|---|
+| 2026-11-22 | Sunday review · tangent regression, compact hypot replay and Clang asin equivalence | [Report](2026-11-22/REPORT.md) |
 | 2026-11-15 | Sunday review · contracted asin range certificate and equal-budget hypot replay | [Report](2026-11-15/REPORT.md) |
 | 2026-11-09 | Focused asin range proof and optional signed-index comment fix | [Report](2026-11-09-asin/REPORT.md) |
 | 2026-11-09 | Focused follow-up on hypot adoption and the published cosine theorem | [Report](2026-11-09/REPORT.md) |

@@ -1,0 +1,24 @@
+{
+  "source_sha256": "d9cc7c44922ac3caef5a25d0eb3d9e1e2aa94a0fea761737416d68d6f3a2a8e9",
+  "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+  "compiler_binary_sha256": "8ef402d453d1ba4902e4ee0f0f847f6cfa01400c95aa43c24e97818b9c0e3f45",
+  "flags": [
+    "-O3",
+    "-march=x86-64-v3",
+    "-frounding-math",
+    "-fno-finite-math-only",
+    "-DCORE_MATH_SUPPORT_ERRNO"
+  ],
+  "compared_contraction_settings": [
+    "fast",
+    "off"
+  ],
+  "object_sha256": "4b5a47ca513e3fcf431c2f258055d1d4d74523024cc198f79963d342982382ca",
+  "objects_byte_identical": true,
+  "listing_sha256": "9518808eb9749f637dce866179009c6057984c23b0464614b5814feede86d38a",
+  "range_certificate_replayed": false,
+  "function_value_tests_run": false,
+  "flags_checked": false,
+  "errno_checked": false,
+  "scope": "Object equivalence for the named compiler, source and flags only."
+}

@@ -38,9 +38,11 @@ P2 closed for the strict operation graph on November 9. [Range proof, two-line c
 
 | Next pickup | Deliverable and decision |
 |---|---|
-| 1 · Compact hypot verifier | Replay the supplied table from a clean Linux directory, include its dependencies and one deliberately invalid row. Publish the missing dependency if it blocks reproduction. Regenerating the family census is a separate task. |
-| 2 · Clang asin range binding | Compare the Clang v3 fast-contraction listing with the two established models. Map any different high/residual pair, then replay the bounds or identify the first unbound operation. |
-| 3 · Exact pow(x, 3/2) reference | Compare exact x³ with squared dyadic rounding boundaries on a bounded positive-normal sample. Include a wrong-neighbor control. It follows the compact table replay in the single bivariate slot. |
+| 1 · Tangent conversion regression (P11) | Isolate the just-fixed `set_dd` shift/exponent boundaries. Deliver exact helper-level boundary cases, or state why they are not reachable through the public function. This is scoped regression work, not a duplicate of the maintainer's tangent proof. |
+| 2 · Exact pow(x, 3/2) reference (P3) | Compare exact x³ with squared dyadic rounding boundaries on a bounded positive-normal sample, including a wrong-neighbor control. This has the next bivariate slot. |
+| 3 · Hypot completeness dependencies (P12, blocked) | Recover the missing adjacent-family generator and raw census/native receipts; identify exact bounds and exclusions before proposing a bounded regeneration. Table replay alone cannot close this. No search is dispatched while dependencies are missing. |
+
+P11 is the primary unary task; P3 has the next bivariate slot. P12 remains dependency-blocked. [November 22 results and limits](weekly/2026-11-22/REPORT.md)
 
 The [machine-readable queue](config/improvements.json) owns status, next action,
 budget and checkpoint. These are three real proposals, **not a quota of three
@@ -48,7 +50,7 @@ new bugs or patches every week**. Reprioritize when evidence or upstream changes
 justify it. Replace closed cards with the next eligible task. If fewer than three
 are useful, say so; never fill a slot with an invented finding.
 
-The [November 1 deferral](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) predates the strict asin result. Other ABIs remain deferred. P8 closed for one GCC graph. P9 checks Clang.
+The [November 1 deferral](weekly/2026-11-01/DEFERRED-IMPROVEMENTS.json) predates the strict asin result. Other ABIs remain deferred. P8 closed for one GCC graph. P9 closed at identical Clang objects, without a new range proof. P10 supplied-table replay is complete; missing census/native dependencies remain P12.
 
 ## Weekly acceptance and limits
 
@@ -87,8 +89,7 @@ The October transfer passed manifest verification on November 14. Review and imp
 membership at the selected pin. Compare atan2/atan2pi stage behavior with the full
 pinned corpus before claiming added stage coverage. Preserve mixed/negative
 search results and choose a different pow hypothesis instead of enlarging an
-unchanged search. Until the archived calculations are independently reproduced, their reported
-results remain unverified by this workbench and are not used as evidence.
+unchanged search. The compact table now has independent row and finite-reference checks. Other archived calculations, native exhaustive replay and completeness claims remain unverified by this workbench.
 
 Any team member or AI can select a queue ID, read the linked acceptance criterion,
 run a bounded task, and contribute its verifier, witness or candidate plus a

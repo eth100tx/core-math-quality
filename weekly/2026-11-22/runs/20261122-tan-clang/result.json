@@ -1,0 +1,316 @@
+{
+  "created_utc": "2026-11-22T14:16:35.289087+00:00",
+  "identity": {
+    "config_hashes": {
+      "improvements.json": "36b346c500fc22ea9d9225cffd63de8183a75b1eeeb1cde9a9b32aab74d95f58",
+      "profiles.json": "58b532226130eccb781f8c8d45fd159f708772e82484c44f04a364e61ac9edcb",
+      "source.json": "397afac4985ff937caf7fe695e483e5b96d3c3e1e4782f5ecdfbfc5b113fb372",
+      "targets.json": "db0d1cafc8a553eb7a5027f3b77b7458a890a79cb489cb104bf67c4b32f343ce"
+    },
+    "environment": {
+      "architecture": "x86_64",
+      "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+      "experimental": false,
+      "libc": [
+        "glibc",
+        "2.39"
+      ],
+      "platform": "Linux",
+      "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+      "profile": "clang-linux-x86_64",
+      "status": "PASS"
+    },
+    "errno": 1,
+    "functions": [
+      "tan"
+    ],
+    "pin": "333d11d04d73ef165cf217e773b3b3d6372aa66f",
+    "profile": "clang-linux-x86_64",
+    "resolved_profile": {
+      "cc": "clang-18",
+      "coverage": false,
+      "flags": [
+        "-march=x86-64"
+      ],
+      "machine": "x86_64",
+      "system": "Linux"
+    },
+    "runner_sha256": "dd122d7b1defa62af28087f859c0f799dbe0cec058ea116e1df5777533b05565",
+    "source_manifest": {
+      "archives": {},
+      "files": {
+        "src/binary64/support/Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "src/binary64/support/Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "src/binary64/support/Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "src/binary64/support/check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "src/binary64/support/check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "src/binary64/support/check_worst_uni.c": "2104f60bba554aaa50a076153bf8030e01fe7680678f952b34a5c9ba1b767e7e",
+        "src/binary64/support/fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "src/binary64/tan/Makefile": "f444cdf2479a091f939ff5ef47ec3f0014e22ac5565c4ec4b371ec08087cb9fa",
+        "src/binary64/tan/check_special.c": "dbf090533c972077c96de83223be9a35b20667d5d2661db3ce057c8f59c0007f",
+        "src/binary64/tan/function_under_test.h": "05ddabc10755fbc5527a3cd9966c309104c22d7551354ea73803cd79e7e9394f",
+        "src/binary64/tan/tan.c": "c70880173e79777b781672b880d50e7664dd4363f312aae7ecff79510158e763",
+        "src/binary64/tan/tan.sage": "3fbbfd46be25beefa5b63167e897cdf4775349125a3cd04aa43283440a3045ad",
+        "src/binary64/tan/tan.wc": "5a1287b471d60934e4a3cbfa89ce4d2beab690be3d6631536d23ec8e600637dc",
+        "src/binary64/tan/tan_mpfr.c": "c4d9dde128e1fd3da29a3cd58a2eba716035eb34060ad1854c9de28d9377029c"
+      },
+      "git_blobs": {
+        "src/binary64/support/Makefile.bivariate": "5d9ce773ae93244b42b3c0c1183673046ff08ffe",
+        "src/binary64/support/Makefile.sincos": "a88b4c50991473e7780bc01fe1dd3bb5c26ccd8f",
+        "src/binary64/support/Makefile.univariate": "0b57d3f0911a5f286ce4e7969e3c5fe265eed3d6",
+        "src/binary64/support/check_worst.c": "f45a4d41e9631c6b24bb9b8c336a90d43b4d4f47",
+        "src/binary64/support/check_worst_sincos.c": "f4f2836057482c117ac1cfa76f88b99a42bd06ea",
+        "src/binary64/support/check_worst_uni.c": "458f7a36c89e72b140af59d5b188c41a4bcae978",
+        "src/binary64/support/fenv_mpfr.h": "64d73ca5cc0c6d25ce6e476dce579895ac6fa376",
+        "src/binary64/tan/Makefile": "21607136abe8472447f3dfe2d6cb24df98a28b16",
+        "src/binary64/tan/check_special.c": "80fd909c19c1eab8c4db9a5c99b90a95c4cbbaf4",
+        "src/binary64/tan/function_under_test.h": "5dc0ddc32863ce48d4d9522401ffe63f6a5b6d64",
+        "src/binary64/tan/tan.c": "a2685f68e6c28abf3e22aeabeb1a4ae6b20dacb1",
+        "src/binary64/tan/tan.sage": "6f72ab10c40ad2cbcd0f3358318638cf4c53fade",
+        "src/binary64/tan/tan.wc": "6b35ed65bafc27f9b98b32a11ec03bdeb5d4fc81",
+        "src/binary64/tan/tan_mpfr.c": "1c745c19f8697fb5d2a9abdef63df028c20e0d94"
+      },
+      "pin": "333d11d04d73ef165cf217e773b3b3d6372aa66f"
+    }
+  },
+  "ranking": {
+    "candidates": [],
+    "complete_population": false,
+    "measured": 0,
+    "policy": "exclude zero/zero; ascending missing lines, then missing arcs, then name; zero-line branch gaps remain eligible",
+    "population": [
+      "tan"
+    ],
+    "recommendation": null
+  },
+  "results": [
+    {
+      "checker_sha256": "2104f60bba554aaa50a076153bf8030e01fe7680678f952b34a5c9ba1b767e7e",
+      "copied_files": {
+        "Makefile": "f444cdf2479a091f939ff5ef47ec3f0014e22ac5565c4ec4b371ec08087cb9fa",
+        "Makefile.bivariate": "622c6260266b98413b7a7525910ad1af4ca62c9645bf9e985a1edd752633ae75",
+        "Makefile.sincos": "eeb9df87a868909278c869a8200de27f8e13fa496153094da71ea1583b44dda2",
+        "Makefile.univariate": "2066fa11c40ce95408c95bbddf6d20e22f27aae3b7aa7d847b459c30263efdd4",
+        "check_special.c": "dbf090533c972077c96de83223be9a35b20667d5d2661db3ce057c8f59c0007f",
+        "check_worst.c": "35db8c405bed2799292b878fc75e7f898aba39efde4ec53d6e9d4a9fd57cfd22",
+        "check_worst_sincos.c": "0c35bd330c5a77c63c3cff2609a096046570171b38e9e24305272f680fd3653c",
+        "check_worst_uni.c": "2104f60bba554aaa50a076153bf8030e01fe7680678f952b34a5c9ba1b767e7e",
+        "fenv_mpfr.h": "cf0bd0f58b0f929a1d79089e272db769b405c4d1c83671b2186060439378636c",
+        "function_under_test.h": "05ddabc10755fbc5527a3cd9966c309104c22d7551354ea73803cd79e7e9394f",
+        "tan.c": "c70880173e79777b781672b880d50e7664dd4363f312aae7ecff79510158e763",
+        "tan.sage": "3fbbfd46be25beefa5b63167e897cdf4775349125a3cd04aa43283440a3045ad",
+        "tan.wc": "5a1287b471d60934e4a3cbfa89ce4d2beab690be3d6631536d23ec8e600637dc",
+        "tan_mpfr.c": "c4d9dde128e1fd3da29a3cd58a2eba716035eb34060ad1854c9de28d9377029c"
+      },
+      "corpus_rows": 1098260,
+      "corpus_sha256": "5a1287b471d60934e4a3cbfa89ce4d2beab690be3d6631536d23ec8e600637dc",
+      "coverage_flags": null,
+      "environment": {
+        "architecture": "x86_64",
+        "compiler": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "experimental": false,
+        "libc": [
+          "glibc",
+          "2.39"
+        ],
+        "platform": "Linux",
+        "probe": "binary64 rounding/subnormal/fma PASS; MPFR 4.2.1; GMP 6.3.0",
+        "profile": "clang-linux-x86_64",
+        "status": "PASS"
+      },
+      "errno": 1,
+      "expected_tests_per_mode": 2196520,
+      "finished_utc": "2026-11-22T14:16:35.274169+00:00",
+      "flags": [
+        "-O3",
+        "-frounding-math",
+        "-fno-finite-math-only",
+        "-ffp-contract=off",
+        "-DCORE_MATH_NO_OPENMP",
+        "-DCORE_MATH_CHECK_INEXACT",
+        "-march=x86-64",
+        "-DCORE_MATH_SUPPORT_ERRNO"
+      ],
+      "function": "tan",
+      "logs": {
+        "checker-build": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "check_worst_uni.c",
+            "-o",
+            "checker.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.269
+        },
+        "plain-build": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "tan.c",
+            "-o",
+            "plain.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.422
+        },
+        "plain-link": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "checker.o",
+            "plain.o",
+            "ref.o",
+            "-lmpfr",
+            "-lgmp",
+            "-lm",
+            "-o",
+            "plain"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 0.522
+        },
+        "plain-rndd": {
+          "command": [
+            "./plain",
+            "--rndd"
+          ],
+          "output": "2196520 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 17.842
+        },
+        "plain-rndn": {
+          "command": [
+            "./plain",
+            "--rndn"
+          ],
+          "output": "2196520 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 22.213
+        },
+        "plain-rndu": {
+          "command": [
+            "./plain",
+            "--rndu"
+          ],
+          "output": "2196520 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 18.799
+        },
+        "plain-rndz": {
+          "command": [
+            "./plain",
+            "--rndz"
+          ],
+          "output": "2196520 tests passed, 0 failure(s)\n",
+          "output_bytes": 35,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 18.446
+        },
+        "reference-build": {
+          "command": [
+            "clang-18",
+            "-O3",
+            "-frounding-math",
+            "-fno-finite-math-only",
+            "-ffp-contract=off",
+            "-DCORE_MATH_NO_OPENMP",
+            "-DCORE_MATH_CHECK_INEXACT",
+            "-march=x86-64",
+            "-DCORE_MATH_SUPPORT_ERRNO",
+            "-I.",
+            "-c",
+            "tan_mpfr.c",
+            "-o",
+            "ref.o"
+          ],
+          "output": "",
+          "output_bytes": 0,
+          "output_truncated": false,
+          "returncode": 0,
+          "wall_seconds": 3.082
+        }
+      },
+      "macros_referenced": {
+        "CORE_MATH_CHECK_INEXACT": true,
+        "CORE_MATH_NO_OPENMP": true,
+        "CORE_MATH_SUPPORT_ERRNO": true
+      },
+      "modes": [
+        {
+          "accepted_tests": 2196520,
+          "mode": "rndn",
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 2196520,
+          "mode": "rndz",
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 2196520,
+          "mode": "rndu",
+          "plain": "PASS"
+        },
+        {
+          "accepted_tests": 2196520,
+          "mode": "rndd",
+          "plain": "PASS"
+        }
+      ],
+      "profile": "clang-linux-x86_64",
+      "source_sha256": "c70880173e79777b781672b880d50e7664dd4363f312aae7ecff79510158e763",
+      "started_utc": "2026-11-22T14:15:13.188796+00:00",
+      "status": "PASS"
+    }
+  ],
+  "run_id": "20261122-tan-clang",
+  "schema_version": 1,
+  "scope": "upstream full .wc + unchanged checker built-in checks; four rounding modes; target .c coverage only; tested, not proven",
+  "status": "PASS",
+  "this_invocation_child_cpu_seconds": 73.881375,
+  "wall_seconds": 288.39903312800004
+}

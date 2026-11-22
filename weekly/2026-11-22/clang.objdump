@@ -1,0 +1,478 @@
+
+fast.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <cr_asin>:
+   0:	48 83 ec 38          	sub    $0x38,%rsp
+   4:	c5 79 6f c0          	vmovdqa %xmm0,%xmm8
+   8:	c4 e1 f9 7e c1       	vmovq  %xmm0,%rcx
+   d:	48 8d 04 09          	lea    (%rcx,%rcx,1),%rax
+  11:	48 ba 01 00 00 00 00 	movabs $0x7fc0000000000001,%rdx
+  18:	00 c0 7f 
+  1b:	48 39 d0             	cmp    %rdx,%rax
+  1e:	0f 82 f5 00 00 00    	jb     119 <cr_asin+0x119>
+  24:	48 c1 e9 3f          	shr    $0x3f,%rcx
+  28:	c1 e1 04             	shl    $0x4,%ecx
+  2b:	48 8d 15 00 00 00 00 	lea    0x0(%rip),%rdx        # 32 <cr_asin+0x32>
+			2e: R_X86_64_PC32	cr_asin.off-0x4
+  32:	c5 fb 10 1c 11       	vmovsd (%rcx,%rdx,1),%xmm3
+  37:	c5 fb 10 54 11 08    	vmovsd 0x8(%rcx,%rdx,1),%xmm2
+  3d:	48 89 c1             	mov    %rax,%rcx
+  40:	48 c1 e9 35          	shr    $0x35,%rcx
+  44:	81 f9 ff 03 00 00    	cmp    $0x3ff,%ecx
+  4a:	0f 83 dc 01 00 00    	jae    22c <cr_asin+0x22c>
+  50:	b8 02 00 00 00       	mov    $0x2,%eax
+  55:	c5 f3 2a c0          	vcvtsi2sd %eax,%xmm1,%xmm0
+  59:	c5 b9 54 0d 00 00 00 	vandpd 0x0(%rip),%xmm8,%xmm1        # 61 <cr_asin+0x61>
+  60:	00 
+			5d: R_X86_64_PC32	.LCPI0_2-0x4
+  61:	c5 fb 59 c9          	vmulsd %xmm1,%xmm0,%xmm1
+  65:	c5 fb 5c c1          	vsubsd %xmm1,%xmm0,%xmm0
+  69:	c5 fb 11 44 24 20    	vmovsd %xmm0,0x20(%rsp)
+  6f:	c5 fb 59 0d 00 00 00 	vmulsd 0x0(%rip),%xmm0,%xmm1        # 77 <cr_asin+0x77>
+  76:	00 
+			73: R_X86_64_PC32	.LCPI0_6-0x4
+  77:	c4 e3 71 0b c9 08    	vroundsd $0x8,%xmm1,%xmm1,%xmm1
+  7d:	c5 fb 11 4c 24 18    	vmovsd %xmm1,0x18(%rsp)
+  83:	c5 78 29 04 24       	vmovaps %xmm8,(%rsp)
+  88:	c5 fb 11 54 24 30    	vmovsd %xmm2,0x30(%rsp)
+  8e:	c5 fb 11 5c 24 28    	vmovsd %xmm3,0x28(%rsp)
+  94:	e8 00 00 00 00       	call   99 <cr_asin+0x99>
+			95: R_X86_64_PLT32	sqrt-0x4
+  99:	c5 fb 10 6c 24 18    	vmovsd 0x18(%rsp),%xmm5
+  9f:	c5 7b 10 54 24 28    	vmovsd 0x28(%rsp),%xmm10
+  a5:	c5 7b 10 4c 24 30    	vmovsd 0x30(%rsp),%xmm9
+  ab:	c5 79 28 04 24       	vmovapd (%rsp),%xmm8
+  b0:	c5 b9 57 0d 00 00 00 	vxorpd 0x0(%rip),%xmm8,%xmm1        # b8 <cr_asin+0xb8>
+  b7:	00 
+			b4: R_X86_64_PC32	.LCPI0_7-0x4
+  b8:	c5 fb 12 15 00 00 00 	vmovddup 0x0(%rip),%xmm2        # c0 <cr_asin+0xc0>
+  bf:	00 
+			bc: R_X86_64_PC32	.LCPI0_12-0x4
+  c0:	c5 f9 54 c2          	vandpd %xmm2,%xmm0,%xmm0
+  c4:	c5 e9 55 c9          	vandnpd %xmm1,%xmm2,%xmm1
+  c8:	c5 f9 28 f2          	vmovapd %xmm2,%xmm6
+  cc:	c5 f9 56 c1          	vorpd  %xmm1,%xmm0,%xmm0
+  d0:	c5 f9 28 c8          	vmovapd %xmm0,%xmm1
+  d4:	c5 fb 10 5c 24 20    	vmovsd 0x20(%rsp),%xmm3
+  da:	c4 e2 f9 ab cb       	vfmsub213sd %xmm3,%xmm0,%xmm1
+  df:	c5 fb 10 15 00 00 00 	vmovsd 0x0(%rip),%xmm2        # e7 <cr_asin+0xe7>
+  e6:	00 
+			e3: R_X86_64_PC32	.LCPI0_8-0x4
+  e7:	c5 eb 5e d3          	vdivsd %xmm3,%xmm2,%xmm2
+  eb:	c5 eb 59 d0          	vmulsd %xmm0,%xmm2,%xmm2
+  ef:	c5 e3 59 25 00 00 00 	vmulsd 0x0(%rip),%xmm3,%xmm4        # f7 <cr_asin+0xf7>
+  f6:	00 
+			f3: R_X86_64_PC32	.LCPI0_9-0x4
+  f7:	c5 f3 59 da          	vmulsd %xmm2,%xmm1,%xmm3
+  fb:	c5 d3 59 0d 00 00 00 	vmulsd 0x0(%rip),%xmm5,%xmm1        # 103 <cr_asin+0x103>
+ 102:	00 
+			ff: R_X86_64_PC32	.LCPI0_10-0x4
+ 103:	c5 db 5c c9          	vsubsd %xmm1,%xmm4,%xmm1
+ 107:	c5 fb 59 d1          	vmulsd %xmm1,%xmm0,%xmm2
+ 10b:	c5 e9 54 d6          	vandpd %xmm6,%xmm2,%xmm2
+ 10f:	c5 eb 59 15 00 00 00 	vmulsd 0x0(%rip),%xmm2,%xmm2        # 117 <cr_asin+0x117>
+ 116:	00 
+			113: R_X86_64_PC32	.LCPI0_11-0x4
+ 117:	eb 5a                	jmp    173 <cr_asin+0x173>
+ 119:	48 b9 eb 7d 24 92 e8 	movabs $0x7cae26e892247deb,%rcx
+ 120:	26 ae 7c 
+ 123:	48 39 c8             	cmp    %rcx,%rax
+ 126:	0f 86 18 01 00 00    	jbe    244 <cr_asin+0x244>
+ 12c:	31 c0                	xor    %eax,%eax
+ 12e:	c5 73 2a c8          	vcvtsi2sd %eax,%xmm1,%xmm9
+ 132:	c4 c1 3b 59 c0       	vmulsd %xmm8,%xmm8,%xmm0
+ 137:	c5 fb 59 05 00 00 00 	vmulsd 0x0(%rip),%xmm0,%xmm0        # 13f <cr_asin+0x13f>
+ 13e:	00 
+			13b: R_X86_64_PC32	.LCPI0_0-0x4
+ 13f:	c4 e3 79 0b e8 08    	vroundsd $0x8,%xmm0,%xmm0,%xmm5
+ 145:	c5 d3 59 0d 00 00 00 	vmulsd 0x0(%rip),%xmm5,%xmm1        # 14d <cr_asin+0x14d>
+ 14c:	00 
+			149: R_X86_64_PC32	.LCPI0_1-0x4
+ 14d:	c4 c2 b9 b9 c8       	vfmadd231sd %xmm8,%xmm8,%xmm1
+ 152:	c5 bb 59 c1          	vmulsd %xmm1,%xmm8,%xmm0
+ 156:	c5 f9 54 05 00 00 00 	vandpd 0x0(%rip),%xmm0,%xmm0        # 15e <cr_asin+0x15e>
+ 15d:	00 
+			15a: R_X86_64_PC32	.LCPI0_2-0x4
+ 15e:	c5 fb 59 15 00 00 00 	vmulsd 0x0(%rip),%xmm0,%xmm2        # 166 <cr_asin+0x166>
+ 165:	00 
+			162: R_X86_64_PC32	.LCPI0_3-0x4
+ 166:	c4 41 79 28 d1       	vmovapd %xmm9,%xmm10
+ 16b:	c5 79 29 cb          	vmovapd %xmm9,%xmm3
+ 16f:	c5 79 29 c0          	vmovapd %xmm8,%xmm0
+ 173:	c4 e1 fb 2c c5       	vcvttsd2si %xmm5,%rax
+ 178:	48 c1 e0 06          	shl    $0x6,%rax
+ 17c:	48 8d 0d 00 00 00 00 	lea    0x0(%rip),%rcx        # 183 <cr_asin+0x183>
+			17f: R_X86_64_PC32	.rodata-0x4
+ 183:	c5 f3 59 64 08 18    	vmulsd 0x18(%rax,%rcx,1),%xmm1,%xmm4
+ 189:	c5 db 58 64 08 10    	vaddsd 0x10(%rax,%rcx,1),%xmm4,%xmm4
+ 18f:	c5 f3 59 6c 08 28    	vmulsd 0x28(%rax,%rcx,1),%xmm1,%xmm5
+ 195:	c5 d3 58 6c 08 20    	vaddsd 0x20(%rax,%rcx,1),%xmm5,%xmm5
+ 19b:	c5 f3 59 74 08 38    	vmulsd 0x38(%rax,%rcx,1),%xmm1,%xmm6
+ 1a1:	c5 cb 58 74 08 30    	vaddsd 0x30(%rax,%rcx,1),%xmm6,%xmm6
+ 1a7:	c5 f3 59 f9          	vmulsd %xmm1,%xmm1,%xmm7
+ 1ab:	c5 c3 59 f6          	vmulsd %xmm6,%xmm7,%xmm6
+ 1af:	c5 d3 58 ee          	vaddsd %xmm6,%xmm5,%xmm5
+ 1b3:	c5 c3 59 ed          	vmulsd %xmm5,%xmm7,%xmm5
+ 1b7:	c5 db 58 e5          	vaddsd %xmm5,%xmm4,%xmm4
+ 1bb:	c5 f3 59 cc          	vmulsd %xmm4,%xmm1,%xmm1
+ 1bf:	c5 f3 58 4c 08 08    	vaddsd 0x8(%rax,%rcx,1),%xmm1,%xmm1
+ 1c5:	c5 fb 10 24 08       	vmovsd (%rax,%rcx,1),%xmm4
+ 1ca:	c5 db 59 e8          	vmulsd %xmm0,%xmm4,%xmm5
+ 1ce:	c5 f3 59 c8          	vmulsd %xmm0,%xmm1,%xmm1
+ 1d2:	c5 db 59 db          	vmulsd %xmm3,%xmm4,%xmm3
+ 1d6:	c5 f3 58 cb          	vaddsd %xmm3,%xmm1,%xmm1
+ 1da:	c4 e2 d9 ab c5       	vfmsub213sd %xmm5,%xmm4,%xmm0
+ 1df:	c5 f3 58 c0          	vaddsd %xmm0,%xmm1,%xmm0
+ 1e3:	c5 ab 58 dd          	vaddsd %xmm5,%xmm10,%xmm3
+ 1e7:	c4 c1 63 5c ca       	vsubsd %xmm10,%xmm3,%xmm1
+ 1ec:	c5 d3 5c c9          	vsubsd %xmm1,%xmm5,%xmm1
+ 1f0:	c5 b3 58 c0          	vaddsd %xmm0,%xmm9,%xmm0
+ 1f4:	c5 fb 58 c1          	vaddsd %xmm1,%xmm0,%xmm0
+ 1f8:	c5 fb 5c ca          	vsubsd %xmm2,%xmm0,%xmm1
+ 1fc:	c5 e3 58 c9          	vaddsd %xmm1,%xmm3,%xmm1
+ 200:	c5 fb 58 c2          	vaddsd %xmm2,%xmm0,%xmm0
+ 204:	c5 e3 58 c0          	vaddsd %xmm0,%xmm3,%xmm0
+ 208:	c5 f9 2e c8          	vucomisd %xmm0,%xmm1
+ 20c:	0f 9b c0             	setnp  %al
+ 20f:	0f 94 c1             	sete   %cl
+ 212:	84 c1                	test   %al,%cl
+ 214:	74 09                	je     21f <cr_asin+0x21f>
+ 216:	c5 f9 28 c1          	vmovapd %xmm1,%xmm0
+ 21a:	48 83 c4 38          	add    $0x38,%rsp
+ 21e:	c3                   	ret
+ 21f:	c5 79 29 c0          	vmovapd %xmm8,%xmm0
+ 223:	48 83 c4 38          	add    $0x38,%rsp
+ 227:	e9 00 00 00 00       	jmp    22c <cr_asin+0x22c>
+			228: R_X86_64_PLT32	.text.unlikely.-0x4
+ 22c:	48 b9 00 00 00 00 00 	movabs $0x7fe0000000000000,%rcx
+ 233:	00 e0 7f 
+ 236:	48 39 c8             	cmp    %rcx,%rax
+ 239:	75 58                	jne    293 <cr_asin+0x293>
+ 23b:	c5 e3 58 c2          	vaddsd %xmm2,%xmm3,%xmm0
+ 23f:	48 83 c4 38          	add    $0x38,%rsp
+ 243:	c3                   	ret
+ 244:	c5 b9 54 05 00 00 00 	vandpd 0x0(%rip),%xmm8,%xmm0        # 24c <cr_asin+0x24c>
+ 24b:	00 
+			248: R_X86_64_PC32	.LCPI0_2-0x4
+ 24c:	c5 fb 10 0d 00 00 00 	vmovsd 0x0(%rip),%xmm1        # 254 <cr_asin+0x254>
+ 253:	00 
+			250: R_X86_64_PC32	.LCPI0_4-0x4
+ 254:	c5 f9 2f c8          	vcomisd %xmm0,%xmm1
+ 258:	76 27                	jbe    281 <cr_asin+0x281>
+ 25a:	c5 f9 57 c0          	vxorpd %xmm0,%xmm0,%xmm0
+ 25e:	c5 79 2e c0          	vucomisd %xmm0,%xmm8
+ 262:	0f 9b c0             	setnp  %al
+ 265:	0f 94 c1             	sete   %cl
+ 268:	84 c1                	test   %al,%cl
+ 26a:	75 15                	jne    281 <cr_asin+0x281>
+ 26c:	c5 78 29 04 24       	vmovaps %xmm8,(%rsp)
+ 271:	e8 00 00 00 00       	call   276 <cr_asin+0x276>
+			272: R_X86_64_PLT32	__errno_location-0x4
+ 276:	c5 79 28 04 24       	vmovapd (%rsp),%xmm8
+ 27b:	c7 00 22 00 00 00    	movl   $0x22,(%rax)
+ 281:	c4 62 b9 99 05 00 00 	vfmadd132sd 0x0(%rip),%xmm8,%xmm8        # 28a <cr_asin+0x28a>
+ 288:	00 00 
+			286: R_X86_64_PC32	.LCPI0_5-0x4
+ 28a:	c5 79 29 c0          	vmovapd %xmm8,%xmm0
+ 28e:	48 83 c4 38          	add    $0x38,%rsp
+ 292:	c3                   	ret
+ 293:	48 b9 01 00 00 00 00 	movabs $0xffe0000000000001,%rcx
+ 29a:	00 e0 ff 
+ 29d:	48 39 c8             	cmp    %rcx,%rax
+ 2a0:	72 0a                	jb     2ac <cr_asin+0x2ac>
+ 2a2:	c4 c1 3b 58 c0       	vaddsd %xmm8,%xmm8,%xmm0
+ 2a7:	48 83 c4 38          	add    $0x38,%rsp
+ 2ab:	c3                   	ret
+ 2ac:	e8 00 00 00 00       	call   2b1 <cr_asin+0x2b1>
+			2ad: R_X86_64_PLT32	__errno_location-0x4
+ 2b1:	c7 00 21 00 00 00    	movl   $0x21,(%rax)
+ 2b7:	c5 f9 57 c0          	vxorpd %xmm0,%xmm0,%xmm0
+ 2bb:	c5 fb 5e c0          	vdivsd %xmm0,%xmm0,%xmm0
+ 2bf:	48 83 c4 38          	add    $0x38,%rsp
+ 2c3:	c3                   	ret
+
+Disassembly of section .text.unlikely.:
+
+0000000000000000 <as_asin_refine>:
+   0:	48 83 ec 58          	sub    $0x58,%rsp
+   4:	c5 f8 29 4c 24 10    	vmovaps %xmm1,0x10(%rsp)
+   a:	c5 f9 29 44 24 20    	vmovapd %xmm0,0x20(%rsp)
+  10:	c5 fb 59 e0          	vmulsd %xmm0,%xmm0,%xmm4
+  14:	c5 fb 12 0d 00 00 00 	vmovddup 0x0(%rip),%xmm1        # 1c <as_asin_refine+0x1c>
+  1b:	00 
+			18: R_X86_64_PC32	.LCPI1_0-0x4
+  1c:	c5 f9 29 4c 24 30    	vmovapd %xmm1,0x30(%rsp)
+  22:	c5 d9 57 c9          	vxorpd %xmm1,%xmm4,%xmm1
+  26:	c5 f9 28 d0          	vmovapd %xmm0,%xmm2
+  2a:	c4 e2 f9 ab d4       	vfmsub213sd %xmm4,%xmm0,%xmm2
+  2f:	c5 fb 12 1d 00 00 00 	vmovddup 0x0(%rip),%xmm3        # 37 <as_asin_refine+0x37>
+  36:	00 
+			33: R_X86_64_PC32	.LCPI1_1-0x4
+  37:	c5 f9 29 5c 24 40    	vmovapd %xmm3,0x40(%rsp)
+  3d:	c5 e3 5c e4          	vsubsd %xmm4,%xmm3,%xmm4
+  41:	c5 db 5c db          	vsubsd %xmm3,%xmm4,%xmm3
+  45:	c5 f3 5c cb          	vsubsd %xmm3,%xmm1,%xmm1
+  49:	c5 f3 5c ca          	vsubsd %xmm2,%xmm1,%xmm1
+  4d:	c5 db 58 c1          	vaddsd %xmm1,%xmm4,%xmm0
+  51:	c5 fb 11 04 24       	vmovsd %xmm0,(%rsp)
+  56:	c5 fb 5c d4          	vsubsd %xmm4,%xmm0,%xmm2
+  5a:	c5 f3 5c ca          	vsubsd %xmm2,%xmm1,%xmm1
+  5e:	c5 fb 11 4c 24 08    	vmovsd %xmm1,0x8(%rsp)
+  64:	e8 00 00 00 00       	call   69 <as_asin_refine+0x69>
+			65: R_X86_64_PLT32	sqrt-0x4
+  69:	c5 fb 10 14 24       	vmovsd (%rsp),%xmm2
+  6e:	c4 e2 f9 bb d0       	vfmsub231sd %xmm0,%xmm0,%xmm2
+  73:	c5 fb 10 4c 24 08    	vmovsd 0x8(%rsp),%xmm1
+  79:	c5 f3 5c ca          	vsubsd %xmm2,%xmm1,%xmm1
+  7d:	c5 fb 10 15 00 00 00 	vmovsd 0x0(%rip),%xmm2        # 85 <as_asin_refine+0x85>
+  84:	00 
+			81: R_X86_64_PC32	.LCPI1_2-0x4
+  85:	c5 eb 5e d0          	vdivsd %xmm0,%xmm2,%xmm2
+  89:	c5 f3 59 ea          	vmulsd %xmm2,%xmm1,%xmm5
+  8d:	c5 fb 12 35 00 00 00 	vmovddup 0x0(%rip),%xmm6        # 95 <as_asin_refine+0x95>
+  94:	00 
+			91: R_X86_64_PC32	.LCPI1_3-0x4
+  95:	c5 c9 54 4c 24 10    	vandpd 0x10(%rsp),%xmm6,%xmm1
+  9b:	c5 f3 59 0d 00 00 00 	vmulsd 0x0(%rip),%xmm1,%xmm1        # a3 <as_asin_refine+0xa3>
+  a2:	00 
+			9f: R_X86_64_PC32	.LCPI1_4-0x4
+  a3:	c4 e3 71 0b c9 08    	vroundsd $0x8,%xmm1,%xmm1,%xmm1
+  a9:	c4 e1 fb 2c c1       	vcvttsd2si %xmm1,%rax
+  ae:	b9 20 00 00 00       	mov    $0x20,%ecx
+  b3:	48 29 c1             	sub    %rax,%rcx
+  b6:	48 c1 e1 04          	shl    $0x4,%rcx
+  ba:	48 8d 15 00 00 00 00 	lea    0x0(%rip),%rdx        # c1 <as_asin_refine+0xc1>
+			bd: R_X86_64_PC32	.rodata+0x83c
+  c1:	c5 fb 10 24 11       	vmovsd (%rcx,%rdx,1),%xmm4
+  c6:	c5 fb 10 54 11 08    	vmovsd 0x8(%rcx,%rdx,1),%xmm2
+  cc:	48 c1 e0 04          	shl    $0x4,%rax
+  d0:	c5 fb 10 3c 10       	vmovsd (%rax,%rdx,1),%xmm7
+  d5:	c5 fb 10 5c 10 08    	vmovsd 0x8(%rax,%rdx,1),%xmm3
+  db:	c5 79 28 6c 24 20    	vmovapd 0x20(%rsp),%xmm13
+  e1:	c5 91 54 f6          	vandpd %xmm6,%xmm13,%xmm6
+  e5:	c5 cb 5c f3          	vsubsd %xmm3,%xmm6,%xmm6
+  e9:	c5 79 28 64 24 30    	vmovapd 0x30(%rsp),%xmm12
+  ef:	c5 19 57 c7          	vxorpd %xmm7,%xmm12,%xmm8
+  f3:	c5 fb 5c c2          	vsubsd %xmm2,%xmm0,%xmm0
+  f7:	c5 d3 5c ec          	vsubsd %xmm4,%xmm5,%xmm5
+  fb:	c5 7b 10 0d 00 00 00 	vmovsd 0x0(%rip),%xmm9        # 103 <as_asin_refine+0x103>
+ 102:	00 
+			ff: R_X86_64_PC32	.LCPI1_5-0x4
+ 103:	c5 79 28 d0          	vmovapd %xmm0,%xmm10
+ 107:	c5 c3 59 f8          	vmulsd %xmm0,%xmm7,%xmm7
+ 10b:	c4 c2 e1 a9 c1       	vfmadd213sd %xmm9,%xmm3,%xmm0
+ 110:	c4 c1 7b 5c c1       	vsubsd %xmm9,%xmm0,%xmm0
+ 115:	c4 62 e1 ab d0       	vfmsub213sd %xmm0,%xmm3,%xmm10
+ 11a:	c5 79 28 de          	vmovapd %xmm6,%xmm11
+ 11e:	c5 db 59 e6          	vmulsd %xmm6,%xmm4,%xmm4
+ 122:	c4 c2 e9 a9 f1       	vfmadd213sd %xmm9,%xmm2,%xmm6
+ 127:	c4 c1 4b 5c f1       	vsubsd %xmm9,%xmm6,%xmm6
+ 12c:	c4 62 e9 ab de       	vfmsub213sd %xmm6,%xmm2,%xmm11
+ 131:	c5 cb 5c c0          	vsubsd %xmm0,%xmm6,%xmm0
+ 135:	c5 bb 59 d2          	vmulsd %xmm2,%xmm8,%xmm2
+ 139:	c5 eb 58 d4          	vaddsd %xmm4,%xmm2,%xmm2
+ 13d:	c5 e3 59 dd          	vmulsd %xmm5,%xmm3,%xmm3
+ 141:	c5 e3 58 df          	vaddsd %xmm7,%xmm3,%xmm3
+ 145:	c5 eb 5c d3          	vsubsd %xmm3,%xmm2,%xmm2
+ 149:	c4 c1 2b 5c db       	vsubsd %xmm11,%xmm10,%xmm3
+ 14e:	c5 eb 5c d3          	vsubsd %xmm3,%xmm2,%xmm2
+ 152:	c5 fb 58 da          	vaddsd %xmm2,%xmm0,%xmm3
+ 156:	c5 e3 5c c0          	vsubsd %xmm0,%xmm3,%xmm0
+ 15a:	c5 eb 5c e8          	vsubsd %xmm0,%xmm2,%xmm5
+ 15e:	c4 c1 11 54 c4       	vandpd %xmm12,%xmm13,%xmm0
+ 163:	c5 79 28 54 24 40    	vmovapd 0x40(%rsp),%xmm10
+ 169:	c5 a9 56 f0          	vorpd  %xmm0,%xmm10,%xmm6
+ 16d:	c5 f3 59 c6          	vmulsd %xmm6,%xmm1,%xmm0
+ 171:	c5 e3 59 d3          	vmulsd %xmm3,%xmm3,%xmm2
+ 175:	c5 d3 59 cb          	vmulsd %xmm3,%xmm5,%xmm1
+ 179:	c5 e3 59 e5          	vmulsd %xmm5,%xmm3,%xmm4
+ 17d:	c5 f3 58 e4          	vaddsd %xmm4,%xmm1,%xmm4
+ 181:	c5 e3 59 ce          	vmulsd %xmm6,%xmm3,%xmm1
+ 185:	c5 eb 59 3d 00 00 00 	vmulsd 0x0(%rip),%xmm2,%xmm7        # 18d <as_asin_refine+0x18d>
+ 18c:	00 
+			189: R_X86_64_PC32	.LCPI1_6-0x4
+ 18d:	c5 c3 58 3d 00 00 00 	vaddsd 0x0(%rip),%xmm7,%xmm7        # 195 <as_asin_refine+0x195>
+ 194:	00 
+			191: R_X86_64_PC32	.LCPI1_7-0x4
+ 195:	c4 e2 e1 ab da       	vfmsub213sd %xmm2,%xmm3,%xmm3
+ 19a:	c5 eb 59 ff          	vmulsd %xmm7,%xmm2,%xmm7
+ 19e:	c5 c3 58 3d 00 00 00 	vaddsd 0x0(%rip),%xmm7,%xmm7        # 1a6 <as_asin_refine+0x1a6>
+ 1a5:	00 
+			1a2: R_X86_64_PC32	.LCPI1_8-0x4
+ 1a6:	c5 db 58 e3          	vaddsd %xmm3,%xmm4,%xmm4
+ 1aa:	c5 eb 59 df          	vmulsd %xmm7,%xmm2,%xmm3
+ 1ae:	c5 fb 10 3d 00 00 00 	vmovsd 0x0(%rip),%xmm7        # 1b6 <as_asin_refine+0x1b6>
+ 1b5:	00 
+			1b2: R_X86_64_PC32	.LCPI1_9-0x4
+ 1b6:	c5 43 58 c3          	vaddsd %xmm3,%xmm7,%xmm8
+ 1ba:	c5 bb 5c ff          	vsubsd %xmm7,%xmm8,%xmm7
+ 1be:	c5 e3 5c df          	vsubsd %xmm7,%xmm3,%xmm3
+ 1c2:	c5 e3 58 3d 00 00 00 	vaddsd 0x0(%rip),%xmm3,%xmm7        # 1ca <as_asin_refine+0x1ca>
+ 1c9:	00 
+			1c6: R_X86_64_PC32	.LCPI1_10-0x4
+ 1ca:	c5 d3 59 de          	vmulsd %xmm6,%xmm5,%xmm3
+ 1ce:	c5 bb 59 ea          	vmulsd %xmm2,%xmm8,%xmm5
+ 1d2:	c5 c3 59 f2          	vmulsd %xmm2,%xmm7,%xmm6
+ 1d6:	c5 bb 59 fc          	vmulsd %xmm4,%xmm8,%xmm7
+ 1da:	c5 cb 58 f7          	vaddsd %xmm7,%xmm6,%xmm6
+ 1de:	c4 62 e9 ab c5       	vfmsub213sd %xmm5,%xmm2,%xmm8
+ 1e3:	c5 bb 58 f6          	vaddsd %xmm6,%xmm8,%xmm6
+ 1e7:	c5 fb 10 3d 00 00 00 	vmovsd 0x0(%rip),%xmm7        # 1ef <as_asin_refine+0x1ef>
+ 1ee:	00 
+			1eb: R_X86_64_PC32	.LCPI1_11-0x4
+ 1ef:	c5 43 58 c5          	vaddsd %xmm5,%xmm7,%xmm8
+ 1f3:	c5 bb 5c ff          	vsubsd %xmm7,%xmm8,%xmm7
+ 1f7:	c5 cb 58 35 00 00 00 	vaddsd 0x0(%rip),%xmm6,%xmm6        # 1ff <as_asin_refine+0x1ff>
+ 1fe:	00 
+			1fb: R_X86_64_PC32	.LCPI1_12-0x4
+ 1ff:	c5 d3 5c ef          	vsubsd %xmm7,%xmm5,%xmm5
+ 203:	c5 cb 58 ed          	vaddsd %xmm5,%xmm6,%xmm5
+ 207:	c5 bb 59 f2          	vmulsd %xmm2,%xmm8,%xmm6
+ 20b:	c5 d3 59 ea          	vmulsd %xmm2,%xmm5,%xmm5
+ 20f:	c5 bb 59 fc          	vmulsd %xmm4,%xmm8,%xmm7
+ 213:	c5 d3 58 ef          	vaddsd %xmm7,%xmm5,%xmm5
+ 217:	c4 62 e9 ab c6       	vfmsub213sd %xmm6,%xmm2,%xmm8
+ 21c:	c5 bb 58 ed          	vaddsd %xmm5,%xmm8,%xmm5
+ 220:	c5 fb 10 3d 00 00 00 	vmovsd 0x0(%rip),%xmm7        # 228 <as_asin_refine+0x228>
+ 227:	00 
+			224: R_X86_64_PC32	.LCPI1_13-0x4
+ 228:	c5 43 58 c6          	vaddsd %xmm6,%xmm7,%xmm8
+ 22c:	c5 bb 5c ff          	vsubsd %xmm7,%xmm8,%xmm7
+ 230:	c5 cb 5c f7          	vsubsd %xmm7,%xmm6,%xmm6
+ 234:	c5 d3 58 2d 00 00 00 	vaddsd 0x0(%rip),%xmm5,%xmm5        # 23c <as_asin_refine+0x23c>
+ 23b:	00 
+			238: R_X86_64_PC32	.LCPI1_14-0x4
+ 23c:	c5 d3 58 ee          	vaddsd %xmm6,%xmm5,%xmm5
+ 240:	c5 bb 59 f2          	vmulsd %xmm2,%xmm8,%xmm6
+ 244:	c5 d3 59 ea          	vmulsd %xmm2,%xmm5,%xmm5
+ 248:	c5 bb 59 fc          	vmulsd %xmm4,%xmm8,%xmm7
+ 24c:	c5 d3 58 ef          	vaddsd %xmm7,%xmm5,%xmm5
+ 250:	c4 62 e9 ab c6       	vfmsub213sd %xmm6,%xmm2,%xmm8
+ 255:	c5 bb 58 ed          	vaddsd %xmm5,%xmm8,%xmm5
+ 259:	c5 fb 10 3d 00 00 00 	vmovsd 0x0(%rip),%xmm7        # 261 <as_asin_refine+0x261>
+ 260:	00 
+			25d: R_X86_64_PC32	.LCPI1_15-0x4
+ 261:	c5 43 58 c6          	vaddsd %xmm6,%xmm7,%xmm8
+ 265:	c5 bb 5c ff          	vsubsd %xmm7,%xmm8,%xmm7
+ 269:	c5 cb 5c f7          	vsubsd %xmm7,%xmm6,%xmm6
+ 26d:	c5 d3 58 2d 00 00 00 	vaddsd 0x0(%rip),%xmm5,%xmm5        # 275 <as_asin_refine+0x275>
+ 274:	00 
+			271: R_X86_64_PC32	.LCPI1_16-0x4
+ 275:	c5 d3 58 ee          	vaddsd %xmm6,%xmm5,%xmm5
+ 279:	c5 bb 59 f2          	vmulsd %xmm2,%xmm8,%xmm6
+ 27d:	c5 d3 59 ea          	vmulsd %xmm2,%xmm5,%xmm5
+ 281:	c5 bb 59 e4          	vmulsd %xmm4,%xmm8,%xmm4
+ 285:	c5 d3 58 e4          	vaddsd %xmm4,%xmm5,%xmm4
+ 289:	c4 e2 b9 ab d6       	vfmsub213sd %xmm6,%xmm8,%xmm2
+ 28e:	c5 db 58 d2          	vaddsd %xmm2,%xmm4,%xmm2
+ 292:	c5 79 29 d5          	vmovapd %xmm10,%xmm5
+ 296:	c5 ab 58 e6          	vaddsd %xmm6,%xmm10,%xmm4
+ 29a:	c4 c1 5b 5c ea       	vsubsd %xmm10,%xmm4,%xmm5
+ 29f:	c5 cb 5c ed          	vsubsd %xmm5,%xmm6,%xmm5
+ 2a3:	c5 eb 58 15 00 00 00 	vaddsd 0x0(%rip),%xmm2,%xmm2        # 2ab <as_asin_refine+0x2ab>
+ 2aa:	00 
+			2a7: R_X86_64_PC32	.LCPI1_17-0x4
+ 2ab:	c5 eb 58 d5          	vaddsd %xmm5,%xmm2,%xmm2
+ 2af:	c5 db 59 e9          	vmulsd %xmm1,%xmm4,%xmm5
+ 2b3:	c5 eb 59 d1          	vmulsd %xmm1,%xmm2,%xmm2
+ 2b7:	c5 db 59 db          	vmulsd %xmm3,%xmm4,%xmm3
+ 2bb:	c5 eb 58 d3          	vaddsd %xmm3,%xmm2,%xmm2
+ 2bf:	c4 e2 d9 ab cd       	vfmsub213sd %xmm5,%xmm4,%xmm1
+ 2c4:	c5 eb 58 c9          	vaddsd %xmm1,%xmm2,%xmm1
+ 2c8:	c5 fb 59 15 00 00 00 	vmulsd 0x0(%rip),%xmm0,%xmm2        # 2d0 <as_asin_refine+0x2d0>
+ 2cf:	00 
+			2cc: R_X86_64_PC32	.LCPI1_18-0x4
+ 2d0:	c5 fb 59 1d 00 00 00 	vmulsd 0x0(%rip),%xmm0,%xmm3        # 2d8 <as_asin_refine+0x2d8>
+ 2d7:	00 
+			2d4: R_X86_64_PC32	.LCPI1_19-0x4
+ 2d8:	c5 fb 59 05 00 00 00 	vmulsd 0x0(%rip),%xmm0,%xmm0        # 2e0 <as_asin_refine+0x2e0>
+ 2df:	00 
+			2dc: R_X86_64_PC32	.LCPI1_20-0x4
+ 2e0:	c5 d3 58 e3          	vaddsd %xmm3,%xmm5,%xmm4
+ 2e4:	c5 db 5c ed          	vsubsd %xmm5,%xmm4,%xmm5
+ 2e8:	c5 e3 5c dd          	vsubsd %xmm5,%xmm3,%xmm3
+ 2ec:	c5 f3 58 c0          	vaddsd %xmm0,%xmm1,%xmm0
+ 2f0:	c5 fb 58 c3          	vaddsd %xmm3,%xmm0,%xmm0
+ 2f4:	c5 eb 58 cc          	vaddsd %xmm4,%xmm2,%xmm1
+ 2f8:	c5 f3 5c d2          	vsubsd %xmm2,%xmm1,%xmm2
+ 2fc:	c5 db 5c d2          	vsubsd %xmm2,%xmm4,%xmm2
+ 300:	c5 eb 58 d8          	vaddsd %xmm0,%xmm2,%xmm3
+ 304:	c5 e3 5c d2          	vsubsd %xmm2,%xmm3,%xmm2
+ 308:	c5 fb 5c c2          	vsubsd %xmm2,%xmm0,%xmm0
+ 30c:	c5 f3 58 d3          	vaddsd %xmm3,%xmm1,%xmm2
+ 310:	c5 eb 5c c9          	vsubsd %xmm1,%xmm2,%xmm1
+ 314:	c5 e3 5c c9          	vsubsd %xmm1,%xmm3,%xmm1
+ 318:	c5 f3 58 d8          	vaddsd %xmm0,%xmm1,%xmm3
+ 31c:	c4 e1 f9 7e d8       	vmovq  %xmm3,%rax
+ 321:	c5 e3 5c c9          	vsubsd %xmm1,%xmm3,%xmm1
+ 325:	c5 fb 5c c1          	vsubsd %xmm1,%xmm0,%xmm0
+ 329:	c4 e1 f9 7e d1       	vmovq  %xmm2,%rcx
+ 32e:	48 ba 00 00 00 00 00 	movabs $0x7ff0000000000000,%rdx
+ 335:	00 f0 7f 
+ 338:	48 21 ca             	and    %rcx,%rdx
+ 33b:	48 0f ba f0 3f       	btr    $0x3f,%rax
+ 340:	48 29 c2             	sub    %rax,%rdx
+ 343:	48 b8 00 00 00 00 00 	movabs $0xf9b0000000000000,%rax
+ 34a:	00 b0 f9 
+ 34d:	48 01 d0             	add    %rdx,%rax
+ 350:	48 b9 02 00 00 00 00 	movabs $0xfd00000000000002,%rcx
+ 357:	00 00 fd 
+ 35a:	c5 eb 58 cb          	vaddsd %xmm3,%xmm2,%xmm1
+ 35e:	48 39 c8             	cmp    %rcx,%rax
+ 361:	76 09                	jbe    36c <as_asin_refine+0x36c>
+ 363:	c5 f9 28 c1          	vmovapd %xmm1,%xmm0
+ 367:	48 83 c4 58          	add    $0x58,%rsp
+ 36b:	c3                   	ret
+ 36c:	c5 79 29 e8          	vmovapd %xmm13,%xmm0
+ 370:	48 83 c4 58          	add    $0x58,%rsp
+ 374:	eb 00                	jmp    376 <as_asin_database>
+
+0000000000000376 <as_asin_database>:
+ 376:	c5 fb 12 15 00 00 00 	vmovddup 0x0(%rip),%xmm2        # 37e <as_asin_database+0x8>
+ 37d:	00 
+			37a: R_X86_64_PC32	.LCPI2_0-0x4
+ 37e:	c5 f9 54 d2          	vandpd %xmm2,%xmm0,%xmm2
+ 382:	b9 1d 00 00 00       	mov    $0x1d,%ecx
+ 387:	31 d2                	xor    %edx,%edx
+ 389:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 390 <as_asin_database+0x1a>
+			38c: R_X86_64_PC32	.rodata+0xa4c
+ 390:	8d 3c 0a             	lea    (%rdx,%rcx,1),%edi
+ 393:	89 fe                	mov    %edi,%esi
+ 395:	c1 ee 1f             	shr    $0x1f,%esi
+ 398:	01 fe                	add    %edi,%esi
+ 39a:	d1 fe                	sar    $1,%esi
+ 39c:	48 63 fe             	movslq %esi,%rdi
+ 39f:	48 8d 3c 7f          	lea    (%rdi,%rdi,2),%rdi
+ 3a3:	c5 f9 2f 14 f8       	vcomisd (%rax,%rdi,8),%xmm2
+ 3a8:	73 04                	jae    3ae <as_asin_database+0x38>
+ 3aa:	89 f1                	mov    %esi,%ecx
+ 3ac:	eb 02                	jmp    3b0 <as_asin_database+0x3a>
+ 3ae:	89 f2                	mov    %esi,%edx
+ 3b0:	8d 72 01             	lea    0x1(%rdx),%esi
+ 3b3:	39 ce                	cmp    %ecx,%esi
+ 3b5:	7c d9                	jl     390 <as_asin_database+0x1a>
+ 3b7:	48 63 ca             	movslq %edx,%rcx
+ 3ba:	48 8d 0c 49          	lea    (%rcx,%rcx,2),%rcx
+ 3be:	c5 f9 2e 14 c8       	vucomisd (%rax,%rcx,8),%xmm2
+ 3c3:	0f 9a c2             	setp   %dl
+ 3c6:	40 0f 95 c6          	setne  %sil
+ 3ca:	40 08 d6             	or     %dl,%sil
+ 3cd:	75 19                	jne    3e8 <as_asin_database+0x72>
+ 3cf:	31 d2                	xor    %edx,%edx
+ 3d1:	c5 e3 2a ca          	vcvtsi2sd %edx,%xmm3,%xmm1
+ 3d5:	c5 f9 2f c1          	vcomisd %xmm1,%xmm0
+ 3d9:	c5 fb 10 44 c8 08    	vmovsd 0x8(%rax,%rcx,8),%xmm0
+ 3df:	76 0c                	jbe    3ed <as_asin_database+0x77>
+ 3e1:	c5 fb 58 44 c8 10    	vaddsd 0x10(%rax,%rcx,8),%xmm0,%xmm0
+ 3e7:	c3                   	ret
+ 3e8:	c5 f8 28 c1          	vmovaps %xmm1,%xmm0
+ 3ec:	c3                   	ret
+ 3ed:	c5 fb 12 0d 00 00 00 	vmovddup 0x0(%rip),%xmm1        # 3f5 <as_asin_database+0x7f>
+ 3f4:	00 
+			3f1: R_X86_64_PC32	.LCPI2_1-0x4
+ 3f5:	c5 f9 57 c1          	vxorpd %xmm1,%xmm0,%xmm0
+ 3f9:	c5 fb 5c 44 c8 10    	vsubsd 0x10(%rax,%rcx,8),%xmm0,%xmm0
+ 3ff:	c3                   	ret
